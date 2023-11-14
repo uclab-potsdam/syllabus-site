@@ -22,12 +22,12 @@
 	{
 		"date": "17.4.",
 		"text": "## Utopia",
-		"actors": {
+		"actors": [{
 			"name": "wigwam eG",
 			"link": "https://wigwam.im",
 			"image": "assets/wigwam.png",
 			"role": "host"
-		},
+		}],
 		"content": [
 			"Lueder, C. (2013). [Diagram Utopias: Rota and Network as Instrument and Mirror of Utopia and Agronica](https://infovis.fh-potsdam.de/readings/lueder2013diagram.pdf). Journal of Architectural Education, 67(2):224–233.",
 			"[Petrus Apianus’ Astronomicum Caesareum](https://www.youtube.com/watch?v=lC2FSh-f_Xg) (1540)",
