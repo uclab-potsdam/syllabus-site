@@ -3,7 +3,6 @@ let currentSession = 0;
 let boxWidth = 100;
 let boxHeight = 50;
 let radius = 50;
-
 document.addEventListener('scroll', event => {
     //update connectors position according to scroll
     let connector = d3.select('#connector')
@@ -29,8 +28,8 @@ function generateCoordinatedData(json) {
             actor.linePath = null
             actor.distance = null
             actor.visible = false
-            actor.x = 200 + (window.innerWidth / 2) * Math.random() - 100
-            actor.y = (200 + (window.innerHeight / 2) * Math.random() - 100) + window.innerHeight * i
+            actor.x = 100 + (window.innerWidth - 200) * Math.random()
+            actor.y = 100 + ((window.innerHeight - 200) * Math.random()) + window.innerHeight * i
         })
         session.content = session.content.map(content => {
             return {
@@ -38,8 +37,8 @@ function generateCoordinatedData(json) {
                 linePath:null,
                 distance:null,
                 visible:false,
-                x: 200 + (window.innerWidth / 2) * Math.random() - 100,
-                y: (200 + (window.innerHeight / 2) * Math.random() - 100) + window.innerHeight * i
+                x: 100 + (window.innerWidth - 200) * Math.random() ,
+                y: 100 + ((window.innerHeight - 200) * Math.random()) + window.innerHeight * i
             }
         })
     })
