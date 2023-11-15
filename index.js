@@ -21,6 +21,8 @@ function init(course){
         generateCoordinatedData(json);
         createStaticContent(json);
         createDataPoints(json);
+        let connector = d3.select('#connector')        
+        updateDataLinks(connector);
     })
 }
 function generateCoordinatedData(json){
@@ -50,6 +52,12 @@ function createStaticContent(json){
     .attr("width", width)
     .attr("height", height);
 
+    svg.append('g')
+    .attr('id','curves')
+
+    svg.append('g')
+    .attr('id','sessions')
+
     connector = svg
     .append('rect')
     .attr('id', 'connector')
@@ -63,35 +71,13 @@ function createStaticContent(json){
     .text('Connector')
     .attr('fill', 'white')
 }
-// function applyForce(){
-//     let forcePoint =  d3.select('#connector')
-//     let nodes = d3.selectAll('.actors')
-//     var simulation = d3.forceSimulation(nodes)
-// 	.force('x', d3.forceX().x(function(d) {
-// 		return forcePoint.attr('x');
-// 	}).strength(0.005))
-// 	.force('y', d3.forceY().y(function(d) {
-// 		return forcePoint.attr('y');
-// 	}).strength(0.005)).on('tick', ticked);
-// }
-// function ticked(){
-//     let nodes = d3.selectAll('.actors')
-//     svg.selectAll('.actors')
-//     .data(nodes)
-//     .join('circle')
-//     .attr('r',5)
-//     .attr('cx', function(d) {
-//         return d.x;
-//     }).attr('cy', function(d) {
-//         return d.y;
-//     });
-// }
 function createDataPoints(json){
-    let sessions = svg.selectAll('g')
+    let sessions = svg
+    .selectAll('#sessions g')
     .data(json)
     .enter()
     .append('g')
-    .attr('class',"sessions")
+    .attr('class',"session")
     
     let actors = sessions
     .selectAll('.actors')
@@ -146,12 +132,12 @@ function updateDataLinks(connector){
             let anchor3 = [0,anchor4[1]]
             //creating anchorpoints
             if(anchor4[0] > anchor1[0]){
-                anchor2[0] = anchor1[0] + (anchor4[0]-anchor1[0])/2
-                anchor3[0] = anchor4[0] - (anchor4[0]-anchor1[0])/2
+                anchor2[0] = anchor1[0] + (anchor4[0]-anchor1[0])/4
+                anchor3[0] = anchor4[0] - (anchor4[0]-anchor1[0])/4
             }
             if(anchor4[0] < anchor1[0]){
-                anchor2[0] = anchor1[0] - (anchor1[0]-anchor4[0])/2
-                anchor3[0] = anchor4[0] + (anchor1[0]-anchor4[0])/2
+                anchor2[0] = anchor1[0] - (anchor1[0]-anchor4[0])/4
+                anchor3[0] = anchor4[0] + (anchor1[0]-anchor4[0])/4
             }
             curves.push([anchor1,anchor2,anchor3,anchor4])
         }
@@ -163,12 +149,12 @@ function updateDataLinks(connector){
             let anchor3 = [0,anchor4[1]]
             //creating anchorpoints
             if(anchor4[0] > anchor1[0]){
-                anchor2[0] = anchor1[0] + (anchor4[0]-anchor1[0])/2
-                anchor3[0] = anchor4[0] - (anchor4[0]-anchor1[0])/2
+                anchor2[0] = anchor1[0] + (anchor4[0]-anchor1[0])/4
+                anchor3[0] = anchor4[0] - (anchor4[0]-anchor1[0])/4
             }
             if(anchor4[0] < anchor1[0]){
-                anchor2[0] = anchor1[0] - (anchor1[0]-anchor4[0])/2
-                anchor3[0] = anchor4[0] + (anchor1[0]-anchor4[0])/2
+                anchor2[0] = anchor1[0] - (anchor1[0]-anchor4[0])/4
+                anchor3[0] = anchor4[0] + (anchor1[0]-anchor4[0])/4
             }
             curves.push([anchor1,anchor2,anchor3,anchor4])
         }
@@ -183,7 +169,7 @@ function drawLinks(curves){
     .data(curves)
     .join(
         function(enter){
-            return enter.append('path')
+            return enter.select('#curves').append('path')
             .attr('class','dataLinks')
             .attr('d', d => line(d))
             .attr('stroke', '#0b0bfe')
