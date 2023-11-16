@@ -7,8 +7,8 @@ const connectorHeight = 50;
 const connectorWidth = 100;
 const connectorPositionX = window.innerWidth / 2 - connectorWidth / 2
 const connectorPositionY = window.innerHeight * sessionHeightFactor / 4
-const contentWidth = 100;
-const contentHeight = 100;
+const contentWidth = 300;
+const contentHeight = 300;
 const actorRadius = 50;
 
 
@@ -207,6 +207,8 @@ function createDataPoints(json) {
         .attr('width', 10)
         .attr('height', 10)
         .append('xhtml:div')
+        .attr('class', 'text-wrapper')
+        .append('xhtml:div')
         .attr('class', 'text')
         .html(d => {
             return marked.parse(d.text)
@@ -251,9 +253,11 @@ function drawSize(){
         let ele = d3.select(this)
         ele.attr('width',d =>  10 + contentWidth * (d.distance >= 0 ? d.distance : 0))
         .attr('height',d => 10 + contentHeight * (d.distance >= 0 ? d.distance : 0))
+        ele.select('.text-wrapper')
+        .attr('style', 'width: 95%; height: 95%; border: 1px solid black; border-radius: 50%; position: relative')
 
         ele.select('.text')
-        .attr('style', d => `font-size: ${10 + 10 * (d.distance >= 0 ? d.distance : 0)}px; border: 1px solid black; width: 50%; height: 50%;`)
+        .attr('style', d => `font-size: ${10 + 10 * (d.distance >= 0 ? d.distance : 0)}px; width: 50%; height: 50%;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);`)
         
     })
 }
