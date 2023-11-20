@@ -1,3 +1,13 @@
 body{
     margin: 0;
 }
+#connector{
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 20vw;
+    padding: 2em;
+    z-index: -1;
+}
