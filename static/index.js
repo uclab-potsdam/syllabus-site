@@ -1,5 +1,6 @@
 let svg;
 let json;
+let items = [];
 let height = 0;
 let sessionsCount = 0;
 let lastSession = 0;
@@ -19,7 +20,13 @@ async function init() {
      let data = await fetch(`data.json`)
      json = await data.json();
      height = window.innerHeight * sessionHeightFactor * json.length + window.innerHeight;
-     document.getElementsByTagName('body')[0].style.height =  height + 'px'
+     let body = document.getElementsByTagName('body')[0]
+     body.style.height =  height + 'px'
+     d3.select('#app-wrapper').attr('style','height:'+height+'px; width:'+window.innerWidth+'px')
+     svg = d3.select('svg')
+     .attr('width', window.innerWidth)
+     .attr('height', height)
+     .attr('style', 'position:absolute')
      itemPaddingToWindowBorder = window.innerWidth * 0.1;
      createBaseData(json);
      createDataRepresentation(json);
@@ -31,6 +38,7 @@ function createBaseData(json) {
         session.y = 0 
 
         session.actors.map((actor,ai) => {
+            actor.center = window.innerWidth * 0.05
             actor.linePath = null
             actor.distance = null
             actor.visible = false
@@ -40,7 +48,7 @@ function createBaseData(json) {
             
             actor.y = 
             window.innerHeight * sessionHeightFactor * i + //adjust to height of session
-            ((window.innerHeight * sessionHeightFactor * 0.35) + //padding to start
+            ((window.innerHeight * sessionHeightFactor * 0.15) + //padding to start
             (itemPaddingToWindowBorder + ((window.innerHeight * sessionHeightFactor) - itemPaddingToWindowBorder*2) * //the actual height where items are placed
             (0.1/session.content.length) * // the share of space divided by the amount of items
             (ai+1))) // the current item
@@ -48,8 +56,10 @@ function createBaseData(json) {
             if(i == 0){
                 actor.y = actor.y + window.innerHeight
             }
+            items.push(actor)
         })
         session.content.map((content,ci) => {
+            content.center = window.innerWidth * 0.1
             content.linePath = null
             content.distance = null
             content.visible = false
@@ -60,17 +70,17 @@ function createBaseData(json) {
 
             content.y = 
             window.innerHeight * sessionHeightFactor * i + //adjust to height of session
-            ((window.innerHeight * sessionHeightFactor * 0.4) + //padding to actors
+            ((window.innerHeight * sessionHeightFactor * 0.25) + //padding to actors
             (itemPaddingToWindowBorder + ((window.innerHeight * sessionHeightFactor) - itemPaddingToWindowBorder*2) * //the actual height where items are placed
-            (0.35/session.content.length) * // the share of space divided by the amount of items
+            (0.45/session.content.length) * // the share of space divided by the amount of items
             (ci+1))) // the current item
             
             if(i == 0){
                 content.y = content.y + window.innerHeight
             }
+            items.push(content)
         })
     })
-    console.log(json)
 }
 function createDataRepresentation(json) {
     document.getElementById('connector').innerHTML = `<p>${json[currentSession].date}<p>` + marked.parse(json[currentSession].text)
@@ -138,10 +148,13 @@ function createDataRepresentation(json) {
                 const linkUrl = match[2];
                 let data = await fetch('/link?url=' + linkUrl)
                 data = await data.json()
-                console.log(data)
-                rootContent.innerHTML = `
-                <img src="${data.images ? data.images[0] : ""}"></img>
-                <p><a href="${data.url}">${data.title}</a></p>`
+                if( data.images){
+                    rootContent.innerHTML = `
+                    <img src="${data.images ? data.images[0] : ""}"></img>
+                    <p><a href="${data.url}">${data.title}</a></p>`
+                }else{
+                    rootContent.innerHTML = marked.parse(content.markdown)
+                }
             } else {
                 rootContent.innerHTML = marked.parse(content.markdown)
             }
@@ -152,14 +165,15 @@ function createDataRepresentation(json) {
 }
 function updateDataRepresentation(){
     let connector = d3.select('#connector')
-    if(lastSession != currentSession){
+    if(lastSession != currentSession && currentSession < json.length){
         connector.html(`<p>${json[currentSession].date}<p>` + marked.parse(json[currentSession].text))
         lastSession = currentSession
     }else{
-        connector.attr('style',`top: ${(currentPosition + window.innerHeight) - (currentProgress * window.innerHeight)}px; opacity: ${1-Math.pow(Math.sin((currentProgress) * (Math.PI/2)),10)}`)
+        connector.attr('style',`top: ${(currentPosition + window.innerHeight) - (currentProgress * window.innerHeight)}px; opacity: ${1-Math.pow(Math.sin((currentProgress) * (Math.PI/2)),15)}`)
     } 
 }
 function tick(){
     updateDataRepresentation()
+    updateLinks()
     requestAnimationFrame(tick)
 }

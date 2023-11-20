@@ -1,6 +1,11 @@
 body{
     margin: 0;
 }
+#app-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 #caption {
     position: absolute;
     top: 50%;
@@ -30,13 +35,15 @@ body{
     z-index: -1;
 }
 .content {
-    width: 20vw;
     background-color: white;
     padding: 2em;
     position: absolute;
+    max-width: 25vw;
+
+    font-size: 0.75em;
 }
 .content img {
-    width: 100%;
+    max-height: 20vh;
 }
 .actors {
     width: 10vw;
