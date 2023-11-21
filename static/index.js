@@ -17,8 +17,10 @@ document.addEventListener('scroll', event => {
     //update connectors position according to scroll
 })
 async function init() {
+    //get the data and parse it
      let data = await fetch(`data.json`)
      json = await data.json();
+    //set specific parameters adated tp datasize
      height = window.innerHeight * sessionHeightFactor * json.length + window.innerHeight;
      let body = document.getElementsByTagName('body')[0]
      body.style.height =  height + 'px'
@@ -28,17 +30,16 @@ async function init() {
      .attr('height', height)
      .attr('style', 'position:absolute')
      itemPaddingToWindowBorder = window.innerWidth * 0.1;
+    //create the data representation
      createBaseData(json);
      createDataRepresentation(json);
+     //start frame loop
      tick();
 }
 function createBaseData(json) {
     json.map((session, i) => {
-        session.x = window.innerWidth / 2
-        session.y = 0 
-
+        //set position and linerelevant data for actor
         session.actors.map((actor,ai) => {
-            actor.center = window.innerWidth * 0.05
             actor.linePath = null
             actor.distance = null
             actor.visible = false
@@ -58,8 +59,8 @@ function createBaseData(json) {
             }
             items.push(actor)
         })
+        //set position and linerelevant data for content
         session.content.map((content,ci) => {
-            content.center = window.innerWidth * 0.1
             content.linePath = null
             content.distance = null
             content.visible = false
@@ -129,6 +130,8 @@ function createDataRepresentation(json) {
             
             // Append the SVG to the rootActor element
             rootActor.appendChild(svg);
+
+            actor.domObject = rootActor
             
             rootElement.appendChild(rootActor);
         });
@@ -144,7 +147,6 @@ function createDataRepresentation(json) {
             // Extract the link text and URL using the match() method
             const match = markdown.match(linkRegex);
             if (match) {
-                const linkText = match[1];
                 const linkUrl = match[2];
                 let data = await fetch('/link?url=' + linkUrl)
                 data = await data.json()
@@ -158,13 +160,18 @@ function createDataRepresentation(json) {
             } else {
                 rootContent.innerHTML = marked.parse(content.markdown)
             }
+            content.domObject = rootContent;
             rootElement.appendChild(rootContent)
         })
-
     })
 }
 function updateDataRepresentation(){
     let connector = d3.select('#connector')
+    items.filter(item => item.width == undefined && item.domObject != undefined).map(item => {
+        let domObject = item.domObject.getBoundingClientRect()
+        item.width = domObject.width
+        item.height = domObject.height
+    })
     if(lastSession != currentSession && currentSession < json.length){
         connector.html(`<p>${json[currentSession].date}<p>` + marked.parse(json[currentSession].text))
         lastSession = currentSession

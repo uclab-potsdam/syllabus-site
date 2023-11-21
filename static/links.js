@@ -4,7 +4,9 @@ function updateLinks() {
         let cursorPosition = (currentPosition + window.innerHeight) - (currentProgress * window.innerHeight)
         let anchor1 = [window.innerWidth/2, cursorPosition]
         items.map((d, i) => {
-                let anchor4 = [d.x + d.center,d.y + d.center]
+                let anchor4 = [
+                    d.x > anchor1[0] ? d.x : d.x + d.width,
+                    d.y + d.height/2]
                 let distance = calculateDistanceY(anchor1, anchor4)
                 if (distance < window.innerHeight / 2) {
                     d.visible = true
