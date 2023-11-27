@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syllabus Site / Organigrams</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Pahawh+Hmong&family=Open+Sans&display=swap" rel="stylesheet"> 
+
     <link rel="stylesheet" href="style.css">
     <!-- d3.js for parsing, structuring and displaying the data -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <!-- Marked for parsing the markdown -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>    
+    <!-- link-preview-js for getting the social graph previews -->
+    <!-- all scripts -->
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+    <script src="links.js"></script>
+
+    <title>Syllabus Site / Organigrams</title>
 </head>
 <body>
-    <svg><g id="curves"></g></svg>
+    <svg id="links"><g id="curves"></g></svg>
     <div id="caption">
         <h1>Syllabus Site</h1>
         <h2>Organigrams from/for the future</h2> 
@@ -20,9 +32,7 @@
         <div id="connector"></div>
         <div id="diagram"></div>
     </div>
-    
-    <script src="index.js"></script>
-    <script src="links.js"></script>
+
     <script>init()</script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 {
   "name": "syllabus-site",
   "version": "1.0.0",
-  "description": "- Sticky Center     - [ ] sticky center     - [ ] create special points for content and actors     - [ ] links go to special points - Items     - [ ] no overlap     - [ ] links in the background     - [ ] connecting lines are smoother by changing the opacity - Content Items     - [ ] link content to items      - [ ] parse the markdown content to html     - [ ] preview links      - [ ] hover - Actor Items     - [ ] display name under the circle     - [ ] display image in circle (clip) - Navigation     - [ ] quicklinks to scroll left     - [ ] fontsize changes when scrolling indicating current session",
+  "description": "Development of a more interactive syllabus site",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -1,10 +1,21 @@
 body{
     margin: 0;
 }
+h1,h2,h3{
+    font-family: 'Open Sans', sans-serif;
+}
+p{
+    font-family: 'Noto Sans Pahawh Hmong', sans-serif;
+}
 #app-wrapper{
     position: absolute;
     top: 0;
     left: 0;
+}
+#links{
+    width: 100%;
+    position: absolute;
+    z-index: -2;
 }
 #caption {
     position: absolute;
@@ -25,25 +36,35 @@ body{
     position: relative;
 }
 #connector{
-    background-color: white;
-    border: 1px solid black;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
     max-width: 20vw;
+    background-color: white;
+    box-shadow: 0px 0px 0.2em 0px rgba(0,0,0,0.20);
+    border-radius: 1em;
+
     padding: 2em;
     z-index: -1;
 }
+.left{
+    left: 10%;
+}
+.right{
+    left: 70%;
+}
+
 .content {
     background-color: white;
     padding: 2em;
     position: absolute;
-    max-width: 25vw;
-
-    font-size: 0.75em;
+    max-width: 20vw;
+    border-radius: 1em;
+    font-size: 1em;
 }
 .content img {
-    max-height: 20vh;
+    width: 100%;
+    max-height: 30vh;
 }
 .actors {
     width: 10vw;
@@ -53,19 +74,27 @@ body{
 .actors img {
     border-radius: 50%;
     width: 100%;
+    background-color: white;
 }
 .content, .actors img{
-    box-shadow: 0px 0px 0.3em 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 0.2em 0px rgba(0,0,0,0.20);
 }
 @media screen and ( orientation: portrait) {
     .content{
-        width: 70vw;
+        max-width: 90vw;
     }
     .actors {
-        width: 70vw;
-        height: 70vw;
+        width: 50vw;
+        height: 50vw;
     }
     #connector{
         width: 70vw;
+        max-width: 70vw;
+    }
+    .left{
+        left: 15%;
+    }
+    .right{
+        left: 35%;  
     }
 }

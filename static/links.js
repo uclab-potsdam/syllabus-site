@@ -2,24 +2,27 @@ const line = d3.line().curve(d3.curveCatmullRom.alpha(0.5));
 function updateLinks() {
         //calculate the curves for the connectors
         let cursorPosition = (currentPosition + window.innerHeight) - (currentProgress * window.innerHeight)
-        let anchor1 = [window.innerWidth/2, cursorPosition]
+        let anchor1 = [window.innerWidth/2,  cursorPosition+10]
         items.map((d, i) => {
-                let anchor4 = [
-                    d.x > anchor1[0] ? d.x : d.x + d.width,
-                    d.y + d.height/2]
+                if(!d.name){
+                    anchor1[1] =  cursorPosition+10 + connectorDimensions.height/2 // if its content attach it to the middle of the connector
+                }
+                let left = d.left? window.innerWidth * 0.1 : window.innerWidth * 0.7
+                let anchor4 = [left + d.width/2,d.y + d.height/2]
                 let distance = calculateDistanceY(anchor1, anchor4)
                 if (distance < window.innerHeight / 2) {
                     d.visible = true
                     let anchor2 = [0, anchor1[1]]
                     let anchor3 = [0, anchor4[1]]
+                    let anchorTilt = remapRange(distance,0,window.innerHeight/2,5,4)
                     //creating anchorpoints
                     if (anchor4[0] > anchor1[0]) {
-                        anchor2[0] = anchor1[0] + (anchor4[0] - anchor1[0]) / 4
-                        anchor3[0] = anchor4[0] - (anchor4[0] - anchor1[0]) / 4
+                        anchor2[0] = anchor1[0] + (anchor4[0] - anchor1[0]) / anchorTilt 
+                        anchor3[0] = anchor4[0] - (anchor4[0] - anchor1[0]) / anchorTilt
                     }
                     if (anchor4[0] < anchor1[0]) {
-                        anchor2[0] = anchor1[0] - (anchor1[0] - anchor4[0]) / 4
-                        anchor3[0] = anchor4[0] + (anchor1[0] - anchor4[0]) / 4
+                        anchor2[0] = anchor1[0] - (anchor1[0] - anchor4[0]) / anchorTilt 
+                        anchor3[0] = anchor4[0] + (anchor1[0] - anchor4[0]) / anchorTilt
                     }
                     d.linePath = line([anchor1, anchor2, anchor3, anchor4])
                     d.distance = remapRange(distance, 0, window.innerHeight/2, 1, 0)
@@ -27,11 +30,11 @@ function updateLinks() {
                 d.visible = false
             }
         })
-    //push the position of the connector to the curves array
     drawLinks()
 }
 function drawLinks() {
-    let visible = items.filter((d, i) =>  { return d.visible == true })
+    let svg = d3.select('#links')
+    let visible = items.filter((d, i) =>  d.visible)
     svg.selectAll('.links')
         .data(visible)
         .join(
