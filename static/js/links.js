@@ -1,14 +1,20 @@
-const line = d3.line().curve(d3.curveCatmullRom.alpha(0.5));
 function updateLinks() {
         //calculate the curves for the connectors
         let cursorPosition = (currentPosition + window.innerHeight) - (currentProgress * window.innerHeight)
-        let anchor1 = [window.innerWidth/2,  cursorPosition+10]
         items.map((d, i) => {
+                let anchor1 = [window.innerWidth/2,  cursorPosition+10]
                 if(!d.name){
-                    anchor1[1] =  cursorPosition+10 + connectorDimensions.height/2 // if its content attach it to the middle of the connector
+                    anchor1[1] = cursorPosition+10 + connectorDimensions.height/2 // if its content attach it to the middle of the connector
                 }
-                let left = d.left? window.innerWidth * 0.1 : window.innerWidth * 0.7
-                let anchor4 = [left + d.width/2,d.y + d.height/2]
+                let left = d.xVarianz
+                let anchor4 = []
+                    if(d.left){
+                        left += window.innerWidth * 0.1
+                        anchor4 = [left + d.width/2,d.y + d.height/2]
+                    }else{
+                        left += window.innerWidth * 0.9
+                        anchor4 = [left - d.width/2,d.y + d.height/2]
+                    }               
                 let distance = calculateDistanceY(anchor1, anchor4)
                 if (distance < window.innerHeight / 2) {
                     d.visible = true
@@ -34,7 +40,10 @@ function updateLinks() {
 }
 function drawLinks() {
     let svg = d3.select('#links')
-    let visible = items.filter((d, i) =>  d.visible)
+    let visible = items.filter((d) =>  d.visible)
+    let connectorOpacity = currentProgress < 0.9
+    ? 1
+    : 1 - Math.pow(Math.sin(((currentProgress - 0.9) * 10) * (Math.PI / 2)), 15)
     svg.selectAll('.links')
         .data(visible)
         .join(
@@ -42,14 +51,14 @@ function drawLinks() {
                 return enter.select('#curves').append('path')
                     .attr('class', 'links')
                     .attr('d', d => d.linePath)
-                    .attr('stroke', d => `rgba(12,12,234,${d.distance})`)
+                    .attr('stroke', d => `rgba(12,12,234,${connectorOpacity <= d.distance ? Math.pow(connectorOpacity,2) :d.distance})`)
                     .attr('fill', 'none')
                     .attr('stroke-width', 1)
             },
             function (update) {
                 return update
                     .attr('d', d => d.linePath)
-                    .attr('stroke', d => `rgba(12,12,234,${d.distance})`)
+                    .attr('stroke', d => `rgba(12,12,234,${connectorOpacity <= d.distance ? Math.pow(connectorOpacity,2) :d.distance})`)
             },
         )
 }
