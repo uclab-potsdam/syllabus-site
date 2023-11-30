@@ -54,11 +54,11 @@ hr{
     height: 100%;
     position: relative;
 }
-#connector{
+#cursor{
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    max-width: 20vw;
+    max-width: 30vw;
     background-color: white;
     box-shadow: 0px 0px 0.2em 0px rgba(0,0,0,0.20);
     border-radius: 1em;
@@ -115,7 +115,7 @@ hr{
         width: 50vw;
         height: 50vw;
     }
-    #connector{
+    #cursor{
         width: 70vw;
         max-width: 70vw;
     }

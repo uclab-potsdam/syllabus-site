@@ -1,37 +1,25 @@
-//this listener updates the progress of the scrolling and the position of the connector
-document.addEventListener('scroll', () => {
-    currentSession = sessions.filter(session => session.padding < window.scrollY && window.scrollY < (session.padding + session.height))[0]?.index ?? null
-    currentProgress = (window.scrollY - sessions[currentSession].padding)/sessions[currentSession].height
-    currentPosition = window.scrollY
-    items.filter(item => item.width == undefined && item.domObject != undefined).map(item => {
-        console.log("here")
-        let domObject = item.domObject.getBoundingClientRect()
-        item.width = domObject.width
-        item.height = domObject.height
-    })
-})
-function updateConnector() {
-    let connector = d3.select('#connector')
-    if (currentSession != null) {
-        if (lastSession != currentSession && currentSession < sessions.length) {
-            connector.html(`<p>${sessions[currentSession].date}<p>` + marked.parse(sessions[currentSession].text))
-            connectorDimensions = connector.node().getBoundingClientRect()
-            lastSession = currentSession
-        } else {
-            let opacity = currentProgress < 0.9
-                ? 1
-                : 1 - Math.pow(Math.sin(((currentProgress - 0.9) * 10) * (Math.PI / 2)), 15)
-            connector.attr('style', `top: ${(currentPosition + window.innerHeight) - (currentProgress * window.innerHeight)}px; opacity: ${opacity}`)
-        }
+//this listener updates the progress of the scrolling and the position of the cursor
+function updateCursor(sessions,currentProgress,currentSession,lastSession) {
+    //only update if the current session is set
+    let cursor = d3.select('#cursor')
+    if (lastSession != currentSession && currentSession < sessions.length) {
+        //update the cursor content
+        cursor.html(`<p>${sessions[currentSession].date}<p>` + marked.parse(sessions[currentSession].text))
     }
+    let cursorDimensions = cursor.node().getBoundingClientRect()
+    let cursorPosition = ((window.scrollY + window.innerHeight) - (currentProgress * window.innerHeight))-(currentProgress * cursorDimensions.height)
+    cursor.attr('style', `top:${cursorPosition}px;`)
+
+    return [cursorDimensions,cursorPosition]
 }
 //put the update in an animation frame loop
-function animation(){
-
+function animation(sessions,items,lastSession){
+    let currentSession = sessions.filter(session => session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height))[0]?.index ?? 0
+    let currentProgress = (window.scrollY - sessions[currentSession].margin)/sessions[currentSession].height
     //update the data representation
-    updateConnector()
-    //update the links that go into the connector
-    updateLinks()
+    let [cursorDimensions,cursorPosition] = updateCursor(sessions,currentProgress,currentSession,lastSession)
+    //update the links that go into the cursor
+    updateLinks(items,currentProgress,cursorPosition,cursorDimensions)
     //loop the animation frame
-    requestAnimationFrame(animation)
+    requestAnimationFrame( () => {animation(sessions,items,currentSession)})
 }

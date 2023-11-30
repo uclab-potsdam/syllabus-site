@@ -1,83 +1,79 @@
-function createBaseData(json) {
+async function createBaseData(json) {
+    let items = [];
+    let sessions = [];
     json.map((session, sessionNumber) => {
         //set height of session
         let totalItems = session.actors.length + session.content.length
-        let itemNumber = 0
         let itemHeights = window.mobileCheck ? 0.75 : 0.35
-        session.height = (window.innerHeight * itemHeights) * totalItems + window.innerHeight
-        session.padding = json[sessionNumber - 1] ? json[sessionNumber - 1].height + json[sessionNumber - 1].padding : 0
-        if(sessionNumber+1 == json.length){
-            session.height += window.innerHeight*2 //add end padding
+        session.height = window.innerHeight + //add start padding
+        (window.innerHeight * itemHeights) * totalItems + //add the height of all items
+        window.innerHeight //add end padding
+        session.margin = json[sessionNumber - 1] ? json[sessionNumber - 1].height + json[sessionNumber - 1].margin : 0
+        if (sessionNumber + 1 == json.length) {
+            session.height += window.innerHeight * 2 //add end padding
             session.end = true;
-        }else{
+        } else {
             session.end = false;
         }
         session.index = sessionNumber
         //set position and linerelevant data for items
-        session.actors.map((actor) => {
-            updateBaseDataObject(actor, itemNumber, totalItems, session)
-            itemNumber++;
-        })
-        session.content.map((content) => {
-            updateBaseDataObject(content, itemNumber, totalItems, session)
-            itemNumber++;
-
+        let objects = [...session.actors, ...session.content]
+        objects.map((object) => {
+            updateBaseDataObject(object, session, items)
         })
         sessions.push(session)
     })
     //set height and padding according to datasize
-    let height = 0;
-    sessions.map(session => {height += session.height})
-
+    let height = sessions.reduce((accumulator, session) => { return accumulator += session.height }, 0)
     //set the body height to the height of the data
-    let elements = ['#app','#links','#wrapper']
+    let elements = ['#app', '#links', '#wrapper']
     elements.map(element => {
-        d3.select(element).attr('style', 'height:'+height+'px; width:'+window.innerWidth+'px')
+        d3.select(element).attr('style', 'height:' + height + 'px; width:' + window.innerWidth + 'px')
     })
-    createDataRepresentation(json)
+    await createDataRepresentation(items)
+    return [sessions, items]
 }
-function updateBaseDataObject(item, itemNumber, itemTotal,session) {
-    item.linePath = null
-    item.distance = null
+function updateBaseDataObject(item, session, items) {
+    let itemsInSession = session.actors.length + session.content.length
+    item.type = item.markdown ? 'content' : 'actor'
     item.visible = false
-    item.left = itemNumber % 2 == 0 ? true : false
-    if(item.left){
+    item.left = items.length % 2 == 0 ? true : false
+    if (item.left) {
         item.xVarianz = -window.innerWidth * 0.05 + Math.random() * window.innerWidth * 0.15
-    }else{
-        item.xVarianz = window.innerWidth * 0.05 + Math.random() * -window.innerWidth * 0.15 
+    } else {
+        item.xVarianz = window.innerWidth * 0.05 + Math.random() * -window.innerWidth * 0.15
     }
-    item.y = window.innerHeight + 
-    session.padding + //padding of the session
-    (session.height - (session.end ? window.innerHeight*3 : window.innerHeight)) / itemTotal * //the share of space divided by the amount of items
-    itemNumber//(itemNumber % 2 == 0 ? itemNumber : itemNumber - 1) // the index of current item
+    item.y = session.margin + //margin of the session
+        window.innerHeight + //start padding
+        session.height * 0.2 + //
+        (session.height - session.height * 0.4 - window.innerHeight) / itemsInSession * //the share of space divided by the amount of items
+        items.length // the index of current item
+    //push it to items
     items.push(item)
 }
-function createDataRepresentation(json) {
-    document.getElementById('connector').innerHTML = `<p>${json[currentSession].date}<p>` + marked.parse(json[currentSession].text)
-    connectorDimensions = document.getElementById('connector').getBoundingClientRect()
+async function createDataRepresentation(items) {
     //create svg
     let rootElement = document.getElementById('content');
-    json.map((sessions, i) => {
-        sessions.actors.map((actor, ai) => {
-            let rootActor = document.createElement('div');
-            rootActor.classList.add('actors');
-            rootActor.classList.add('fixObjects');
-            rootActor.classList.add(actor.left ? 'left' : 'right');
-            rootActor.style.top = actor.y + "px";
-            rootActor.style.transform = `translate(${actor.xVarianz}px,0)`
-            if(actor.link){
+    items.map(async (item) => {
+        let rootItem = document.createElement('div');
+        rootItem.classList.add('fixObjects');
+        rootItem.classList.add(item.left ? 'left' : 'right');
+        rootItem.style.top = item.y + "px";
+        rootItem.style.transform = `translate(${item.xVarianz}px,0)`
+        if (item.type == 'actor') {
+            rootItem.classList.add('actors');
+            if (item.link) {
                 let a = document.createElement('a');
-                a.href = actor.link;
+                a.href = item.link;
                 let img = document.createElement('img');
-                img.src = actor.image;
+                img.src = item.image;
                 a.appendChild(img);
-                rootActor.appendChild(a)
-            }else{
+                rootItem.appendChild(a)
+            } else {
                 let img = document.createElement('img');
-                img.src = actor.image;
-                rootActor.appendChild(img)
+                img.src = item.image;
+                rootItem.appendChild(img)
             }
-
             // Create a SVG element
             let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
             svg.setAttribute("width", "100%");
@@ -100,7 +96,7 @@ function createDataRepresentation(json) {
             // Create a textPath element and set the xlink:href attribute to the path ID
             let textPath = document.createElementNS("http://www.w3.org/2000/svg", "textPath");
             textPath.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "#curve");
-            textPath.textContent = actor.name;
+            textPath.textContent = item.name;
 
             // Append the textPath to the text element
             text.appendChild(textPath);
@@ -110,22 +106,10 @@ function createDataRepresentation(json) {
             svg.appendChild(text);
 
             // Append the SVG to the rootActor element
-            rootActor.appendChild(svg);
-
-            actor.domObject = rootActor
-
-            rootElement.appendChild(rootActor);
-        });
-        sessions.content.map(async (content, ci) => {
-            let rootContent = document.createElement('div')
-            rootContent.classList.add('content')
-            rootContent.classList.add('fixObjects')
-            rootContent.classList.add(content.left ? 'left' : 'right');
-            rootContent.style.top = content.y + "px"
-            rootContent.style.transform = `translate(${content.xVarianz}px,0)`
-            let markdown = content.markdown
-            let parsed = marked.parse(markdown)
-            console.log(parsed)
+            rootItem.appendChild(svg);
+        } else {
+            rootItem.classList.add('content');
+            let markdown = item.markdown
             // Regular expression pattern to match links in markdown format with https
             const linkRegex = /\[([^\]]+)\]\((https:\/\/[^\)]+)\)/;
             // Extract the link text and URL using the match() method
@@ -135,34 +119,36 @@ function createDataRepresentation(json) {
                 let data = await fetch('/link?url=' + linkUrl)
                 data = await data.json()
                 if (data.images) {
-                    console.log(data)
-                    rootContent.innerHTML = `
+                    rootItem.innerHTML = `
                     <p>
                         <a href="${data.url}">
                             <img title="${data.title}" src="${data.images[0]}"></img>
                         </a>
                     </p>`
                 } else {
-                    rootContent.innerHTML = marked.parse(content.markdown)
+                    rootItem.innerHTML = marked.parse(item.markdown)
                 }
             } else {
-                rootContent.innerHTML = marked.parse(content.markdown)
+                rootItem.innerHTML = marked.parse(item.markdown)
             }
-            if(rootContent.getElementsByTagName('img').length > 0){
-                let title = rootContent.getElementsByTagName('img')[0].getAttribute('title')
-                if(title == null){
-                    title = rootContent.getElementsByTagName('img')[0].getAttribute('alt')
+            if (rootItem.getElementsByTagName('img').length > 0) {
+                let title = rootItem.getElementsByTagName('img')[0].getAttribute('title')
+                if (title == null) {
+                    title = rootItem.getElementsByTagName('img')[0].getAttribute('alt')
                 }
                 let element = document.createElement('h3')
                 element.innerHTML = title
-                rootContent.prepend(document.createElement('br'))
-                rootContent.prepend(element)
-                rootContent.classList.add('image')
-            }else{
-                rootContent.classList.add('text')
+                rootItem.prepend(document.createElement('br'))
+                rootItem.prepend(element)
+                rootItem.classList.add('image')
+            } else {
+                rootItem.classList.add('text')
             }
-            content.domObject = rootContent;
-            rootElement.appendChild(rootContent)
-        })
+        }
+        item.domObject = rootItem
+        rootElement.appendChild(rootItem);
+        item.width = item.domObject.getBoundingClientRect().width
+        item.height = item.domObject.getBoundingClientRect().height
     })
+
 }
