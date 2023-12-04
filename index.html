@@ -49,11 +49,9 @@
             .then((json) => {
                 document.getElementById('caption').innerHTML = `
                     <img src="${json[0].image}"></img>
-                    <div>${marked.parse(json[0].text)}</div>`
+                    <div>${marked.parse(json[0].context)}</div>`
                 //create the data representation
                 createBaseData(json);
-                //start frame loop
-                animation(null);
             })</script>
 </body>
 

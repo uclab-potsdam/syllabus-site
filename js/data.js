@@ -2,35 +2,49 @@ const sessions = [];
 function createBaseData(json) {
     json.map((session, sessionIndex) => {
         session.index = sessionIndex
-        session.height = window.innerHeight * 1.5
-        session.margin = sessionIndex == 0 ? 0 : sessions[sessionIndex - 1].margin + sessions[sessionIndex - 1].height
+        session.height = window.innerHeight * 1.5 + (json.length-1 == session.index?window.innerHeight : 0)
         //set position for items
         session.items = [...session.actors, ...session.content]
         session.items.map((item,itemIndex) => {
             updateItemBase(item, session,itemIndex)
-            item.margin = item.type == "actor"? 0 : session.items[itemIndex - 1].margin + session.items[itemIndex - 1].bounding.height + window.innerHeight * 0.1 
-            session.height += item.bounding.height + window.innerHeight * 0.1
-        })
-        session.items.map((item,itemIndex) => {
-            updateItemPosition(item,itemIndex)
         })
         sessions.push(session)
     })
-    console.log(sessions)
-    //set height and padding according to datasize
-    let height = sessions.reduce((accumulator, session) => { return accumulator += session.height }, 0)
-    //set the body height to the height of the data
-    let elements = ['#app', '#links', '#wrapper']
-    elements.map(element => {
-        let ele = document.querySelector(element)
-        ele.style.height = height + 'px' 
+    updateView()
+}
+async function updateView(){
+    await new Promise(r => setTimeout(r, 500)); //due to weird race condition with some css and getBoundingClientRect
+    sessions.map((session,sessionIndex) => {
+        session.items.map((item,itemIndex) => {
+            item.bounding = item.domObject.getBoundingClientRect()
+            item.height = item.bounding.height + window.innerHeight * 0.1
+            item.margin = item.type == "actor" ? 0 : session.items[itemIndex - 1].margin + session.items[itemIndex - 1].height
+            session.height += item.height + window.innerHeight * 0.1
+        })
+        session.margin = sessionIndex == 0 ? 0 : sessions[sessionIndex - 1].margin + sessions[sessionIndex - 1].height
+        session.items.map((item,itemIndex) => {
+            updateItemPosition(item,itemIndex)
+        })
     })
-    return sessions
+    //set height and padding according to datasize
+    let height = sessions.reduce((accumulator, session) => { return accumulator += session.height}, 0)
+    //set the body height to the height of the data
+    let elements = ['#links', '#wrapper','#app']
+    elements.map(element => {
+        document.querySelector(element).style.height = height + 'px' 
+    })
+    document.querySelectorAll('.content').forEach(n => {
+        n.style.visibility = 'visible'
+    })
+    document.querySelectorAll('.actors').forEach(n => {
+        n.style.visibility = 'visible'
+    })
+    animation(null)
 }
 function updateItemPosition(item) {
     //set height of session according to mobile or desktopy
     item.y = item.session.margin + //margin to the top
-    window.innerHeight*  1.5 + //height of the session padding-top
+    window.innerHeight * 1.5 + //height of the session padding-top
     item.margin //margin to the top of the session
 
     item.varianz = item.left ? Math.random() * window.innerWidth * 0.05: Math.random() * -window.innerWidth * 0.05
@@ -102,21 +116,9 @@ function createDataRepresentation(item) {
     } else {
         rootItem.classList.add('content');
         rootItem.innerHTML = marked.parse(item.markdown)
-        if (rootItem.getElementsByTagName('img').length > 0) {
-            let title = rootItem.getElementsByTagName('img')[0].getAttribute('title')
-            if (title == null) {
-                title = rootItem.getElementsByTagName('img')[0].getAttribute('alt')
-            }
-            let element = document.createElement('h3')
-            element.innerHTML = title
-            rootItem.prepend(document.createElement('br'))
-            rootItem.prepend(element)
-            rootItem.classList.add('image')
-        } else {
-            rootItem.classList.add('text')
-        }
+
+        
     }
     item.domObject = rootItem
     rootElement.appendChild(rootItem);
-    item.bounding = item.domObject.getBoundingClientRect()
 }
