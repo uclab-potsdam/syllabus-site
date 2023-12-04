@@ -1,41 +1,173 @@
 [
 	{
-		"text": "Summer 2023\n## Organigrams for/from the future\nThe aim of this course is to visualize an economy built on solidarity, sustainability, and survival—instead of exploitation, extraction, and extinction. Given multiple interconnected crises, there is an urgent need to devise new kinds of structures that let us weave resilient relations with each other and the world we live in. Data visualization is typically used to represent what is, but rarely how things could and maybe should be. \n\n We will take on the challenge to visualize organizational structures that hardly exist yet, but are foreshadowed in the experimental configurations of cooperatives, projects, and initiatives. To find inspiration we will visit a range of organizations that are committed to social-ecological transformation and operate on principles of social and ecological justice. These organizations will share their experiences and offer opportunities to see innovative ways of working together, making decisions, and cultivating cooperation in critical times",
+		"text": "Summer 2023 · [Interface Design](https://interface.fh-potsdam.de) · [FH Potsdam](https://www.fh-potsdam.de/)\n## Organigrams for/from the future\nThe aim of this course is to visualize an economy built on solidarity, sustainability, and survival—instead of exploitation, extraction, and extinction. Given multiple interconnected crises, there is an urgent need to devise new kinds of structures that let us weave resilient relations with each other and the world we live in. Data visualization is typically used to represent what is, but rarely how things could and maybe should be. \n\n We will take on the challenge to visualize organizational structures that hardly exist yet, but are foreshadowed in the experimental configurations of cooperatives, projects, and initiatives. To find inspiration we will visit a range of organizations that are committed to social-ecological transformation and operate on principles of social and ecological justice. These organizations will share their experiences and offer opportunities to see innovative ways of working together, making decisions, and cultivating cooperation in critical times.\n\n  Below is a selected documentation of key readings, inspiring projects, our generous hosts, and the resulting projects.",
 		"actors": [
 			{
 				"name": "Prof. Dr. Marian Dörk",
+				"title": "Information Visualization & Management",
+				"link": "https://mariandoerk.de",
 				"image": "assets/marian.png",
 				"role": "instructor"
 			},
 			{
 				"name": "Prof. Myriel Milicevic",
+				"title": "Elementary Design - Form and Process",
+				"link": "https://www.fh-potsdam.de/hochschule-netzwerk/personen/myriel-milicevic",
 				"image": "assets/myriel.png",
 				"role": "instructor"
 			}
 		],
 		"content": [
-			{"markdown":"This is a nomadic course with all sessions taking place at different locations in Berlin and Potsdam. Please, plan in enough time for getting to our hosts. Technically, the course is an opportunity to revisit visualization basics and engage with more advanced research topics. Visualization methods will include techniques for representing networks and tree structures as well as spatial and temporal patterns. We will discuss and reflect on the rhetoric of data visualizations and the potential of visualization to promote advocacy and critique. "},
-			{"markdown":"Aiming to visualize structures of a social-ecological economy, each student will carry out a small data visualization project, spanning data collection, visualization design, and iterative prototyping. The visualizations will be based on practices and principles encountered during the visits, readings, and exchanges throughout the semester. While students will work individually on their projects, the entire course will form a temporary collective experimenting with some of the principles we encounter during the semester."}
+			{"markdown":"[![The first organizational chart prepared by and for the New York and Erie Railroad (1855)](assets/firstorgchart.webp \"The first organizational chart prepared by and for the New York and Erie Railroad (1855)\")](https://www.loc.gov/item/2017586274/) 1855"},
+			{"markdown":"Aiming to visualize structures of a social-ecological economy, each student will carry out a small data visualization project, spanning data collection, visualization design, and iterative prototyping. The visualizations will be based on practices and principles encountered during the visits, readings, and exchanges throughout the semester. While students will work individually on their projects, the entire course will form a temporary collective experimenting with some of the principles we encounter during the semester."},
+			{"markdown":"**Central questions for the course**\n\nWhat would you like to reveal with the organigrams you will make?\n\nWhat kind of work relations would you like to create for the future and put out there for discussion?"}
 		]
 	},
 	{
-		"text": "17.4.\n## Utopia",
+		"text": "3 April\n## Kick-off",
+		"content": [
+			{"markdown":"*It's easier to imagine the end of the world than the end of capitalism*\n\nJameson, F. (1996). The Seeds of Time."},
+			{"markdown":"*It is hard to say what today's dreams are; it seems they have been downgraded to hopes—hope that we will not allow ourselves to become extinct, hope that we can feed the starving, hope that there will be room for us all on this tiny planet. There are no more visions. We don't know how to fix the planet and ensure our survival. We are just hopeful.*\n\n Dunne, A. and Raby, F. (2013). Speculative everything: design, fiction, and social dreaming."},
+			{"markdown":"[![K.C. Green (2016). The Nib](assets/thisisnotfine.png \"K.C. Green (2016). The Nib\")](https://thenib.com/this-is-not-fine/) 2016"},
+			{"markdown":"[![Yang, A. (2012 - present). Flying Gardens of Maybe](assets/flyinggardens.jpg \"Yang, A. (2012 - present). Flying Gardens of Maybe\")](https://www.andrewyang.net/maybe) 2012 - present"},
+			{"markdown":"*That is the fundamental nature of gifts: they move, and their value increases with their passage. The fields made a gift of berries to us and we made a gift of them to our father. The more something is shared, the greater its value becomes. This is hard to grasp for societies steeped in notions of private property, where others are, by definition, excluded from sharing. Practices such as posting land against trespass, for example, are expected and accepted in a property economy but are unacceptable in an economy where land is seen as a gift to all.*\n\n *From the viewpoint of a private property economy, the “gift” is deemed to be “free” because we obtain it free of charge, at no cost. But in the gift economy, gifts are not free. The essence of the gift is that it creates a set of relationships. The currency of a gift economy is, at its root, reciprocity. In Western thinking, private land is understood to be a “bundle of rights,” whereas in a gift economy property has a “bundle of responsibilities” attached.*\n\nKimmerer, R. W. (2013). Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge and the Teachings of Plants."},
+			{"markdown":"**Guiding research questions**\n- How can we translate observations about innovative organizational structures and work processes into coherent data visualizations?\n- What are approaches that let us integrate social, aesthetic, and technical aspects into intriguing and informative representations?\n- Is it possible to account for complex issues in a comprehensible data visualization that does justice to the social and ecological challenges?"}
+		]	
+	},
+	{
+		"text": "17 April\n## Utopia",
 		"actors": [{
 			"name": "wigwam eG",
+			"title": "Kommunikationsagentur",
 			"link": "https://wigwam.im",
 			"image": "assets/wigwam.png",
 			"role": "host"
 		}],
 		"content": [
-			{"markdown":"Lueder, C. (2013). [Diagram Utopias: Rota and Network as Instrument and Mirror of Utopia and Agronica](https://infovis.fh-potsdam.de/readings/lueder2013diagram.pdf). Journal of Architectural Education, 67(2):224–233."},
+			{"markdown":"📖 *Reading*\n\nLueder, C. (2013). [Diagram Utopias: Rota and Network as Instrument and Mirror of Utopia and Agronica](https://infovis.fh-potsdam.de/readings/lueder2013diagram.pdf). Journal of Architectural Education, 67(2):224–233."},
+			{"markdown":"[![The Garden of Earthly Delights by Hieronymus Bosch](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/1100px-The_Garden_of_earthly_delights.jpg \"The Garden of Earthly Delights by Hieronymus Bosch\")](https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights) The Garden of Earthly Delights by Hieronymus Bosch, 1490-1510"},
+			{"markdown":"[![A woodcut by Ambrosius Holbein, illustrating a 1518 edition](assets/utopia.png \"Utopia (1518)\")](https://en.wikipedia.org/wiki/Utopia_(More_book)) 1516"},
 			{"markdown":"[Petrus Apianus’ Astronomicum Caesareum](https://www.youtube.com/watch?v=lC2FSh-f_Xg) (1540)"},
 			{"markdown":"[Andrea Branzi - Agronica](https://www.youtube.com/watch?v=VhfjHhhxSZc&feature=youtu.be) (1994)"},
-			{"markdown":"[![A woodcut by Ambrosius Holbein, illustrating a 1518 edition](assets/utopia.png \"Utopia (1518)\")](https://en.wikipedia.org/wiki/Utopia_(More_book)) 1516"},
-			{"markdown":"[![The Garden of Earthly Delights by Hieronymus Bosch](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/1100px-The_Garden_of_earthly_delights.jpg \"The Garden of Earthly Delights by Hieronymus Bosch\")](https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights) 1490-1510"},
-			{"markdown":"[![Berlin Friedrichstraße Utopia 2048 by Lino Zeddies](assets/berlinutopie.jpg \"Berlin Friedrichstraße Utopia 2048 by Lino Zeddies\")](https://realutopien.info/visuals/berlin-friedrichstrasse-utopia-2048/) 2023"},
 			{"markdown":"[![Why city lights and headlights still match](assets/daimler.png \"Why city lights and headlights still match\")](https://group.mercedes-benz.com/company/magazine/sustainability/sustainability-mobility-city-future.html) 2019"},
+			{"markdown":"[![Berlin Friedrichstraße Utopia 2048 by Lino Zeddies](assets/berlinutopie.jpg \"Berlin Friedrichstraße Utopia 2048 by Lino Zeddies\")](https://realutopien.info/visuals/berlin-friedrichstrasse-utopia-2048/) 2023"},
 			{"markdown":"[Broadacre City](https://en.wikipedia.org/wiki/Broadacre_City)"},
 			{"markdown":"[Garden city movement](https://en.wikipedia.org/wiki/Garden_city_movement)"}
+		]
+	},
+	{
+		"text": "24 April\n## Co-ops",
+		"actors": [{
+			"name": "INFOTEXT Berlin",
+			"title": "Agentur für Content & Grafikdesign",
+			"link": "https://infotext-berlin.de/",
+			"image": "assets/infotext.png",
+			"role": "host"
+		}],
+		"content": [
+			{"markdown":"📖 *Reading*\n\nFairbairn, B. et al. (1994). [The meaning of Rochdale: The Rochdale Pioneers and the co-operative principles](https://ageconsearch.umn.edu/record/31778/files/re94fa01.pdf). Technical report, University of Saskatchewan, Centre for the Study of Co-operatives."}
+		]
+	},
+	{
+		"text": "8 May\n## Platforms",
+		"actors": [{
+			"name": "SMart eG",
+			"title": "Genossenschaft für Selbständige",
+			"link": "https://smart-eg.de/",
+			"image": "assets/smart.png",
+			"role": "host"
+		}],
+		"content": [
+			{"markdown":"📖 *Reading*\n\nScholz, T. (2016). [Platform cooperativism. Challenging the corporate sharing economy](https://rosalux.nyc/wp-content/uploads/2020/11/RLS-NYC_platformcoop.pdf). New York, NY: Rosa Luxemburg Foundation."}
+		]
+	},
+	{
+		"text": "15 May\n## Economies",
+		"actors": [{
+			"name": "Regionalwert AG",
+			"title": "Regionalwert AG Berlin-Brandenburg",
+			"link": "https://www.regionalwert-berlin.de/",
+			"image": "assets/regionalwert.png",
+			"role": "host"
+		}],
+		"content": [
+			{"markdown":"📖 *Reading*\n\nRaworth, K. (2012). [A safe and just space for humanity](https://www-cdn.oxfam.org/s3fs-public/file_attachments/dp-a-safe-and-just-space-for-humanity-130212-en_5.pdf). Oxfam Discussion Paper."}
+		]
+	},
+	{
+		"text": "22 May\n## Co-design",
+		"actors": [{
+			"name": "Backstube Vollkornbäckerei",
+			"link": "http://die-backstube.de/",
+			"image": "assets/backstube.png",
+			"role": "host"
+		}],
+		"content": [
+			{"markdown":"📖 *Reading*\n\nSanders, E. B.-N. and Stappers, P. J. (2008). [Co-creation and the new landscapes of design](https://doi.org/10.1080/15710880701875068). Co-design, 4(1):5–18."}
+		]
+	},
+	{
+		"text": "5 June\n## Work",
+		"actors": [{
+			"name": "gruppe F",
+			"title": "gruppe F - Freiraum für alle GmbH",
+			"link": "https://gruppef.com/",
+			"image": "assets/gruppef.png",
+			"role": "host"
+		}],
+		"content": [
+			{"markdown":"📖 *Reading*\n\nWeeks, K. (2011). [The Problem with Work: Feminism, Marxism, Antiwork Politics, and Postwork Imaginaries](https://caringlabor.files.wordpress.com/2012/05/the-problem-with-work_-feminism-marxism-kathi-weeks.pdf). Introduction chapter. Pages 1–36. Duke University Press."}
+		]
+	},
+	{
+		"text": "12 June\n## Commons",
+		"actors": [{
+			"name": "Regenbogenfabrik e.V.",
+			"title": "Kinder-, Kultur- und Nachbarschaftszentrum",
+			"link": "http://regenbogenfabrik.de/",
+			"image": "assets/regenbogenfabrik.png",
+			"role": "host"
+		}],
+		"content": [
+			{"markdown":"📖 *Reading*\n\nOstrom, E., Burger, J., Field, C. B., Norgaard, R. B., and Policansky, D. (1999). [Revisiting the commons: local lessons, global challenges](http://infovis.fh-potsdam.de/readings/ostrom1999revisiting.pdf). science, 284(5412):278–282.."}
+		]
+	},
+	{
+		"text": "19 June\n## Cybersyn",
+		"actors": [{
+			"name": "SuperCoop Berlin",
+			"title": "This is not a SuperMarket",
+			"link": "https://supercoop.de/",
+			"image": "assets/supercoop.png",
+			"role": "host"
+		}],
+		"content": [
+			{"markdown":"📖 *Reading*\n\nMedina, E. (2006). [](http://infovis.fh-potsdam.de/readings/medina2006designing.pdf)Designing Freedom, Regulating a Nation: Socialist Cybernetics in Allende’s Chile](http://infovis.fh-potsdam.de/readings/medina2006designing.pdf). Journal of Latin American Studies, 38(3):571–606."}
+		]
+	},
+	{
+		"text": "26 June\n## Feminism",
+		"actors": [{
+			"name": "WeiberWirtschaft eG",
+			"link": "https://weiberwirtschaft.de/",
+			"image": "assets/weiberwirtschaft.png",
+			"role": "host"
+		}],
+		"content": [
+			{"markdown":"📖 *Reading*\n\nD’Ignazio, C. and Klein, L. F. (2020). Data Feminism. MIT Press. [Introduction chapter](https://doi.org/10.7551/mitpress/11805.003.0002)."}
+		]
+	},
+	{
+		"text": "3 July\n## Care",
+		"actors": [{
+			"name": "Madia Potsdam",
+			"title": "solidarisches Gemeinschaftsprojekt, Raum für Initiativen und Familienwohnzimmer",
+			"link": "https://madia-potsdam.de/",
+			"image": "assets/madia.png",
+			"role": "host"
+		}],
+		"content": [
+			{"markdown":"📖 *Reading*\n\nde la Bellacasa, M. P. (2017). [Matters of Care: Speculative Ethics in More Than Human Worlds](https://syllabus.pirate.care/library/Maria%20Puig%20de%20La%20Bellacasa/Matters%20of%20Care%20(171)/Matters%20of%20Care%20-%20Maria%20Puig%20de%20La%20Bellacasa.pdf). Introduction (pages 1-24). Posthumanities. University of Minnesota Press."}
 		]
 	}
 ]
