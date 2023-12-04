@@ -33,7 +33,7 @@ hr{
     gap: 2em;
 }
 #caption img{
-    height: 60%;
+    width: 40%;
 }
 #caption div{
     padding: 2em;
@@ -45,7 +45,7 @@ hr{
     width: 50%;
 }
 #caption h1{
-    font-size: 4em;
+    font-size: 2em;
 }
 #caption h2{
     font-size: 2em;
