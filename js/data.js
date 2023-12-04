@@ -73,6 +73,7 @@ function createDataRepresentation(item) {
         if (item.link) {
             let a = document.createElement('a');
             a.href = item.link;
+            if (item.title) a.title = item.title;            
             let img = document.createElement('img');
             img.src = item.image;
             a.appendChild(img);
