@@ -3,7 +3,7 @@ body{
     background-color: rgba(245,245,245,1);
     overflow-x: hidden;
 }
-h1,h2,h3,p{
+h1,h2,h3,p, li {
     font-family: 'Noto Sans Pahawh Hmong', sans-serif;
  }
 hr{
@@ -79,7 +79,6 @@ hr{
     border-radius: 0.2em;
     font-size: 0.8em;
     background-color: white;
-    text-align: justify;
     border: 0.01em solid black;
     visibility: hidden
 }
@@ -95,6 +94,9 @@ hr{
     position: absolute;
     visibility: hidden
 
+}
+.actors a {
+    cursor: pointer;
 }
 .actors img {
     border-radius: 50%;
