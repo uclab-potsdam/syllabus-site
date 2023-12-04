@@ -59,7 +59,7 @@ hr{
     top: -50%;
     left: 50%;
     transform: translate(-50%, 0);
-    max-width: 30vw;
+    max-width: 40vw;
     background-color: black;
     border-radius: 0.2em;
     padding: 2em;
@@ -85,7 +85,7 @@ hr{
 .content div{
     padding: 0.2em
 }
-.content img{
+.content img, #cursor img {
     max-width: 100%;
     max-height: 35vh;
     height: auto;

@@ -169,5 +169,21 @@
 		"content": [
 			{"markdown":"📖 *Reading*\n\nde la Bellacasa, M. P. (2017). [Matters of Care: Speculative Ethics in More Than Human Worlds](https://syllabus.pirate.care/library/Maria%20Puig%20de%20La%20Bellacasa/Matters%20of%20Care%20(171)/Matters%20of%20Care%20-%20Maria%20Puig%20de%20La%20Bellacasa.pdf). Introduction (pages 1-24). Posthumanities. University of Minnesota Press."}
 		]
+	},
+	{
+		"text": "# Projects",
+		"content": [
+			{"markdown":"Create one *organigram for/from the future,* i.e., a visualization of a cooperative work principle, structure and/or process that can help foster a social-ecological economy."}
+		]
+	},
+	{
+		"text": "## CO-OP.COMM\nVisualizing the communication landscape in collaborative work environments\n\n![CO-OP.COMM](assets/coopcomm.gif \"CO-OP.COMM\")",
+		"actors": [{
+			"name": "Vivien Serve",
+			"image": "assets/blank.png",
+			"role": "student"
+		}],
+		"content": [
+		]
 	}
 ]
