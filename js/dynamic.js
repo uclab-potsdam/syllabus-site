@@ -5,7 +5,7 @@ function updateCursor(currentSession,currentProgress,lastSession) {
     let cursor = d3.select('#cursor')
     //update the cursor if the session changes
     if (lastSession != currentSession) {
-        cursor.html(`<p>${currentSession.date}<p>` + marked.parse(currentSession.text))
+        cursor.html(marked.parse(currentSession.text))
     }
     //update the cursor dimension and the position according to the scrolling progress of the session
     let cursorDimensions = cursor.node().getBoundingClientRect()
