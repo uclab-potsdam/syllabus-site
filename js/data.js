@@ -4,7 +4,8 @@ function createBaseData(json) {
         session.index = sessionIndex
         session.height = window.innerHeight * 1.5 + (json.length-1 == session.index?window.innerHeight : 0)
         //set position for items
-        session.items = [...session.actors, ...session.content]
+        let actors = session.actors ?? [];
+        session.items = [...actors, ...session.content]
         session.items.map((item,itemIndex) => {
             updateItemBase(item, session,itemIndex)
         })
@@ -18,7 +19,8 @@ async function updateView(){
         session.items.map((item,itemIndex) => {
             item.bounding = item.domObject.getBoundingClientRect()
             item.height = item.bounding.height + window.innerHeight * 0.1
-            item.margin = item.type == "actor" ? 0 : session.items[itemIndex - 1].margin + session.items[itemIndex - 1].height
+            if (itemIndex === 0) item.margin = 0
+            else item.margin = session.items[itemIndex - 1].margin + session.items[itemIndex - 1].height            
             session.height += item.height + window.innerHeight * 0.1
         })
         session.margin = sessionIndex == 0 ? 0 : sessions[sessionIndex - 1].margin + sessions[sessionIndex - 1].height
