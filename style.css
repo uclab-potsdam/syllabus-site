@@ -11,6 +11,7 @@ hr{
 }
 #wrapper{
     position: absolute;
+    width: 100vw;
     top: 0;
     left: 0;
 }
@@ -58,7 +59,7 @@ hr{
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    max-width: 30vw;
+    width: 20vw;
     background-color: white;
     box-shadow: 0px 0px 0.2em 0px rgba(0,0,0,0.20);
     border-radius: 1em;
@@ -66,27 +67,20 @@ hr{
     z-index: -1;
 }
 .left{
-    left: 10%;
+    left: 5vw;
 }
 .right{
-    right: 10%;
+    right: 5vw;
 }
 .content {
     position: absolute;
-    
     padding: 2em;
+    max-width: 20vw;
     border-radius: 0.5em;
-    border: 1px dashed rgba(2,2,255);
     font-size: 0.8em;
     background-color: white;
 }
-.content.text{
-    max-width: 20vw;
-}
-.content.image {
-    max-width: 15vw;
-}
-.content.image img{
+.content img{
     width: 100%;
 }
 .actors {
@@ -98,33 +92,34 @@ hr{
     border-radius: 50%;
     width: 100%;
     background-color: white;
-    border: 1px dashed rgba(2,255,2);
 }
 .content, .actors img{
     box-shadow: 0px 0px 2em 0.1em rgba(0,0,0,0.10);
 }
-@media screen and ( orientation: portrait) {
+@media screen and (orientation: portrait) and (max-width: 800px) {
     .content{
-        max-width: 70vw !important;
-    }
-    .content img{
-        max-height: 20vh;
-        width: unset;
+        width: 70vw !important;
     }
     .actors {
-        width: 50vw;
-        height: 50vw;
+        width: 35vw;
+        height: 35vw;
     }
     #cursor{
         width: 70vw;
-        max-width: 70vw;
     }
     #caption{
         grid-template-columns: 100%;
         justify-items: center;
+        justify-content: unset;
+    }
+    #caption h1{
+        font-size: 2em;
     }
     #caption img{
-        height: 50%;
-        width: auto;
+        height: unset;
+        width: 50%;
+    }
+    #caption{
+        flex-direction: column;
     }
 }

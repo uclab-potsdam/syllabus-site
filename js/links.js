@@ -1,25 +1,19 @@
-function updateLinks(items,cursorPosition,cursorDimensions) {
+let logged = false
+function updateLinks(currentSession,cursorPosition,cursorDimensions) {
         //set the line generator from d3 https://d3js.org/d3-shape/curve
         let line = d3.line().curve(d3.curveCatmullRom.alpha(0.3));        
-        items.map((d) => {
+        currentSession.items.map((item) => {
                 //first anchor is the cursor 
                 let anchor1 = [window.innerWidth/2,  cursorPosition+cursorDimensions.height/2]
-                //if content is attached the line goes to the middle
-                if(!d.name){
-                    anchor1[1] = anchor1[1] 
-                }
-                let left = d.xVarianz
                 let anchor4 = []
-                    if(d.left){
-                        left += window.innerWidth * 0.1
-                        anchor4 = [left + d.width/2,d.y + d.height/2]
-                    }else{
-                        left += window.innerWidth * 0.9
-                        anchor4 = [left - d.width/2,d.y + d.height/2]
-                    }               
+                if(item.left){
+                    anchor4 = [item.x + item.bounding.width/2,item.y + item.bounding.height/2]
+                }else{
+                    anchor4 = [item.x - item.bounding.width/2,item.y + item.bounding.height/2]
+                }         
                 let distance = calculateDistanceY(anchor1, anchor4)
                 if (distance < window.innerHeight / 2) {
-                    d.visible = true
+                    item.visible = true
                     let anchor2 = [0, anchor1[1]]
                     let anchor3 = [0, anchor4[1]]
                     let anchorTilt = remapRange(distance,0,window.innerHeight/2,5,4)
@@ -32,18 +26,17 @@ function updateLinks(items,cursorPosition,cursorDimensions) {
                         anchor2[0] = anchor1[0] - (anchor1[0] - anchor4[0]) / anchorTilt 
                         anchor3[0] = anchor4[0] + (anchor1[0] - anchor4[0]) / anchorTilt
                     }
-                   
-                    d.linePath = line([anchor1, anchor2, anchor3, anchor4])
-                    d.distance = remapRange(distance, 0, window.innerHeight/2, 1, 0)
+                    item.linePath = line([anchor1, anchor2, anchor3, anchor4])
+                    item.distance = remapRange(distance, 0, window.innerHeight/2, 1, 0)
             }else{
-                d.visible = false
+                item.visible = false
             }
         })
-    drawLinks(items)
+    drawLinks(currentSession.items)
 }
 function drawLinks(items) {
     //filterout non visible objects
-    let visible = items.filter((d) =>  d.visible)
+    let visible = items.filter((item) =>  item.visible)
     //draw the links
     d3.select('#links').selectAll('.links')
         .data(visible)
@@ -52,14 +45,14 @@ function drawLinks(items) {
                 return enter.select('#curves').append('path')
                     .attr('class', 'links')
                     .attr('d', d => d.linePath)
-                    .attr('stroke', d => `rgba(12,12,234,${d.distance})`)
+                    .attr('stroke', d => `rgba(0,0,0,${d.distance})`)
                     .attr('fill', 'none')
                     .attr('stroke-width', 1)
             },
             function (update) {
                 return update
                     .attr('d', d => d.linePath)
-                    .attr('stroke', d => `rgba(12,12,234,${d.distance})`)
+                    .attr('stroke', d => `rgba(0,0,0,${d.distance})`)
             },
         )
 }

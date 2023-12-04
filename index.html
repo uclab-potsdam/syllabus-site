@@ -28,7 +28,6 @@
 <body>
     <div id="app">
         <div id="caption">
-
         </div>
         <svg id="links">
             <g id="curves"></g>
@@ -47,14 +46,14 @@
         //get the data and parse it
         fetch(`data.json`)
             .then(data => data.json())
-            .then(async (json) => {
+            .then((json) => {
                 document.getElementById('caption').innerHTML = `
                     <img src="${json[0].image}"></img>
                     <div>${marked.parse(json[0].text)}</div>`
                 //create the data representation
-                let [sessions, items] = await createBaseData(json);
+                createBaseData(json);
                 //start frame loop
-                animation(sessions, items, null);
+                animation(null);
             })</script>
 </body>
 
