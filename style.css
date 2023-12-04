@@ -105,11 +105,11 @@ hr{
 }
 @media screen and ( orientation: portrait) {
     .content{
-        max-width: 70vw;
+        max-width: 70vw !important;
     }
     .content img{
         max-height: 20vh;
-        width: unset
+        width: unset;
     }
     .actors {
         width: 50vw;

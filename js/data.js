@@ -1,8 +1,10 @@
+rootItem.style.top = item.y + "px";
+rootItem.style.transform = `translate(${item.xVarianz}px,0)`
 async function createBaseData(json) {
     let items = [];
     let sessions = [];
     json.map((session, sessionNumber) => {
-        //set height of session
+        //set height of session according to mobile or desktopy
         let totalItems = session.actors.length + session.content.length
         let itemHeights = window.mobileCheck ? 0.75 : 0.35
         session.height = window.innerHeight + //add start padding
@@ -16,7 +18,7 @@ async function createBaseData(json) {
             session.end = false;
         }
         session.index = sessionNumber
-        //set position and linerelevant data for items
+        //set position for items
         let objects = [...session.actors, ...session.content]
         objects.map((object) => {
             updateBaseDataObject(object, session, items)
@@ -26,11 +28,11 @@ async function createBaseData(json) {
     //set height and padding according to datasize
     let height = sessions.reduce((accumulator, session) => { return accumulator += session.height }, 0)
     //set the body height to the height of the data
-    let elements = ['#app', '#links', '#wrapper']
+    let elements  = ['#app', '#links', '#wrapper']
     elements.map(element => {
         d3.select(element).attr('style', 'height:' + height + 'px; width:' + window.innerWidth + 'px')
     })
-    await createDataRepresentation(items)
+    await createDataRepresentation(items);
     return [sessions, items]
 }
 function updateBaseDataObject(item, session, items) {
@@ -45,7 +47,7 @@ function updateBaseDataObject(item, session, items) {
     }
     item.y = session.margin + //margin of the session
         window.innerHeight + //start padding
-        session.height * 0.2 + //
+        session.height * 0.2 + // 
         (session.height - session.height * 0.4 - window.innerHeight) / itemsInSession * //the share of space divided by the amount of items
         items.length // the index of current item
     //push it to items
@@ -58,8 +60,6 @@ async function createDataRepresentation(items) {
         let rootItem = document.createElement('div');
         rootItem.classList.add('fixObjects');
         rootItem.classList.add(item.left ? 'left' : 'right');
-        rootItem.style.top = item.y + "px";
-        rootItem.style.transform = `translate(${item.xVarianz}px,0)`
         if (item.type == 'actor') {
             rootItem.classList.add('actors');
             if (item.link) {
@@ -109,28 +109,7 @@ async function createDataRepresentation(items) {
             rootItem.appendChild(svg);
         } else {
             rootItem.classList.add('content');
-            let markdown = item.markdown
-            // Regular expression pattern to match links in markdown format with https
-            const linkRegex = /\[([^\]]+)\]\((https:\/\/[^\)]+)\)/;
-            // Extract the link text and URL using the match() method
-            const match = markdown.match(linkRegex);
-            if (match) {
-                const linkUrl = match[2];
-                let data = await fetch('/link?url=' + linkUrl)
-                data = await data.json()
-                if (data.images) {
-                    rootItem.innerHTML = `
-                    <p>
-                        <a href="${data.url}">
-                            <img title="${data.title}" src="${data.images[0]}"></img>
-                        </a>
-                    </p>`
-                } else {
-                    rootItem.innerHTML = marked.parse(item.markdown)
-                }
-            } else {
-                rootItem.innerHTML = marked.parse(item.markdown)
-            }
+            rootItem.innerHTML = marked.parse(item.markdown)
             if (rootItem.getElementsByTagName('img').length > 0) {
                 let title = rootItem.getElementsByTagName('img')[0].getAttribute('title')
                 if (title == null) {

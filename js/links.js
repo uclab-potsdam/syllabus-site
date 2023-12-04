@@ -1,10 +1,12 @@
-function updateLinks(items,currentProgress,cursorPosition,cursorDimensions) {
-        //calculate the curves for the cursors
+function updateLinks(items,cursorPosition,cursorDimensions) {
+        //set the line generator from d3 https://d3js.org/d3-shape/curve
         let line = d3.line().curve(d3.curveCatmullRom.alpha(0.3));        
         items.map((d) => {
-                let anchor1 = [window.innerWidth/2,  cursorPosition+10]
+                //first anchor is the cursor 
+                let anchor1 = [window.innerWidth/2,  cursorPosition+cursorDimensions.height/2]
+                //if content is attached the line goes to the middle
                 if(!d.name){
-                    anchor1[1] = cursorPosition+10 + cursorDimensions.height/2 // if its content attach it to the middle of the cursor
+                    anchor1[1] = anchor1[1] 
                 }
                 let left = d.xVarianz
                 let anchor4 = []
@@ -40,7 +42,9 @@ function updateLinks(items,currentProgress,cursorPosition,cursorDimensions) {
     drawLinks(items)
 }
 function drawLinks(items) {
+    //filterout non visible objects
     let visible = items.filter((d) =>  d.visible)
+    //draw the links
     d3.select('#links').selectAll('.links')
         .data(visible)
         .join(
@@ -59,9 +63,11 @@ function drawLinks(items) {
             },
         )
 }
+// remap arbitrary ranges to a new scale
 function remapRange(value, low1, high1, low2, high2) {
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
 }
+// calculate distance as absolute y-difference
 function calculateDistanceY(p1, p2) {
     return Math.abs(p2[1] - p1[1])
 }
