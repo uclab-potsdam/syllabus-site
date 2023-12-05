@@ -25,26 +25,15 @@ p + p {
     font-family: hkgrotesk, sans-serif;
  } */
  /* Specific styles */
-#cursor{
-    position: fixed;
-    top: -50%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    max-width: 40vw;
-    background-color: var(--primary);
-    border-radius: 0.2em;
-    padding: 2em;
-    z-index: -1;
-    color: white;
-}
-#cursor:hover{
-    z-index:2;
+#app,#wrapper,#links{
+    pointer-events: none;
 }
 #wrapper{
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
+    
 }
 #caption {
     position: absolute;
@@ -70,6 +59,21 @@ p + p {
 #caption img{
     width: 50%;
 }
+#cursor{
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 40vw;
+    background-color: var(--primary);
+    border-radius: 0.2em;
+    padding: 2em;
+    color: white;
+    pointer-events: all;
+}
+#cursor:hover{
+    z-index:2;
+}
 #links{
     width: 100%;
     position: absolute;
@@ -78,6 +82,7 @@ p + p {
 #content{
     width: 100%;
     position: relative;
+    pointer-events: all;
 }
 .content {
     position: absolute;
@@ -86,7 +91,8 @@ p + p {
     border-radius: 0.2rem;
     background-color: var(--secondary);
     border: 0.01rem solid var(--primary);
-    visibility: hidden
+    visibility: hidden;
+    z-index:0;
 }
 .content div{
     padding: 0.2rem
@@ -95,6 +101,9 @@ p + p {
     max-width: 100%;
     max-height: 35vh;
     height: auto;
+}
+.content:hover{
+    z-index: 2;
 }
 a{
     text-decoration:underline;
