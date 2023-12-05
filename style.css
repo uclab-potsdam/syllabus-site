@@ -3,8 +3,8 @@ body{
     background-color: rgba(245,245,245,1);
     overflow-x: hidden;
 }
-h1,h2,h3,p, li {
-    font-family: 'Noto Sans Pahawh Hmong', sans-serif;
+h1,h2,h3,p, li, svg text {
+    font-family: hkgrotesk, sans-serif;
  }
 hr{
     border-top: 0.2px solid black

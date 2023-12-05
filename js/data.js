@@ -100,11 +100,12 @@ function createDataRepresentation(item) {
         // Create a text element
         let text = document.createElementNS("http://www.w3.org/2000/svg", "text");
         text.setAttribute("font-size", "16");
-        text.setAttribute("font-family", "Arial");
+        text.setAttribute("text-anchor", "middle");
 
         // Create a textPath element and set the xlink:href attribute to the path ID
         let textPath = document.createElementNS("http://www.w3.org/2000/svg", "textPath");
         textPath.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "#curve");
+        textPath.setAttribute("startOffset", "50%");
         textPath.textContent = item.name;
 
         // Append the textPath to the text element
