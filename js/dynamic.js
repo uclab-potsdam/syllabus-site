@@ -23,6 +23,9 @@ function animation(lastSession){
     //calculate the current session and the progress in the session
     let currentSession = sessions.filter(session => session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height))[0]
     let currentProgress = (window.scrollY - currentSession.margin)/currentSession.height
+    if(currentSession.index == 0){
+        currentProgress = ((window.scrollY+currentSession.height/2)-(currentProgress * currentSession.height/2) - currentSession.margin)/currentSession.height
+    }
     //update the cursor
     updateCursor(currentSession,currentProgress,lastSession)
     //loop the animation frame

@@ -35,30 +35,6 @@ p + p {
     left: 0;
     
 }
-#caption {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-}
-#caption div{
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    text-align: left;
-    width: 50%;
-}
-#caption img{
-    width: 50%;
-}
 #cursor{
     position: fixed;
     top: -50%;
@@ -141,12 +117,17 @@ a{
         width: 80vw;
         max-width: unset;
     }
+    .content img, #cursor img {
+        max-width: 100%;
+        max-height: unset;
+    }
     .actors {
         width: 35vw;
         height: 35vw;
     }
     #cursor{
-        width: 70vw;
+        max-width: 80vw;
+        width: 80vw;
     }
     #caption{
         grid-template-columns: 100%;
