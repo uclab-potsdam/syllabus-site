@@ -1,24 +1,50 @@
+/* Global styles*/
 body{
     margin: 0;
     background-color: rgba(245,245,245,1);
     overflow-x: hidden;
-}
-h1,h2,h3,p, li, svg text {
     font-family: hkgrotesk, sans-serif;
- }
-hr{
-    border-top: 0.2px solid black
+    --primary: #000000;
+    --secondary: #ffffff;
+    --links: #282828;
+}
+p,li {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+h2 {
+    margin: .5em 0;
+    font-size: 2rem;
+}
+
+p + p {
+    margin-top: 1em;
+}
+/* h1,h2,h3,p, li, svg text {
+    font-family: hkgrotesk, sans-serif;
+ } */
+ /* Specific styles */
+#cursor{
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 40vw;
+    background-color: var(--primary);
+    border-radius: 0.2em;
+    padding: 2em;
+    z-index: -1;
+    color: white;
+}
+#cursor:hover{
+    z-index:2;
 }
 #wrapper{
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
-}
-#links{
-    width: 100%;
-    position: absolute;
-    z-index: -2;
 }
 #caption {
     position: absolute;
@@ -32,9 +58,6 @@ hr{
     align-items: center;
     gap: 2em;
 }
-#caption img{
-    width: 50%;
-}
 #caption div{
     padding: 2em;
     display: flex;
@@ -44,51 +67,39 @@ hr{
     text-align: left;
     width: 50%;
 }
-#caption h1{
-    font-size: 2em;
+#caption img{
+    width: 50%;
 }
-#caption h2{
-    font-size: 2em;
+#links{
+    width: 100%;
+    position: absolute;
+    z-index: -2;
 }
 #content{
     width: 100%;
     position: relative;
 }
-#cursor{
-    position: fixed;
-    top: -50%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    max-width: 40vw;
-    background-color: black;
-    border-radius: 0.2em;
-    padding: 2em;
-    z-index: -1;
-    color: white;
-}
-.left{
-    left: 5vw;
-}
-.right{
-    right: 5vw;
-}
 .content {
     position: absolute;
-    padding: 1em;
+    padding: 1rem;
     max-width: 25vw;    
-    border-radius: 0.2em;
-    font-size: 0.8em;
-    background-color: white;
-    border: 0.01em solid black;
+    border-radius: 0.2rem;
+    background-color: var(--secondary);
+    border: 0.01rem solid var(--primary);
     visibility: hidden
 }
 .content div{
-    padding: 0.2em
+    padding: 0.2rem
 }
 .content img, #cursor img {
     max-width: 100%;
     max-height: 35vh;
     height: auto;
+}
+a{
+    text-decoration:underline;
+    line-height: 0.1rem;
+    color: inherit;
 }
 .actors {
     width: 10vw;
@@ -103,18 +114,13 @@ hr{
 .actors img {
     border-radius: 50%;
     width: 100%;
-    background-color: white;
+    background-color: var(--secondary);
 }
-p {
-    margin: 0;
+.left{
+    left: 5vw;
 }
-
-h2 {
-    margin: .5em 0;
-}
-
-p + p {
-    margin-top: 1em;
+.right{
+    right: 5vw;
 }
 @media screen and (orientation: portrait) and (max-width: 800px) {
     .content.left, .content.right{
@@ -139,7 +145,7 @@ p + p {
         justify-content: unset;
     }
     #caption h1{
-        font-size: 2em;
+        font-size: 2rem;
     }
     #caption img{
         height: unset;
