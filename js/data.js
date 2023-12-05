@@ -93,7 +93,7 @@ function createDataRepresentation(item) {
         // Create a path element for the curve
         let path = document.createElementNS("http://www.w3.org/2000/svg", "path");
         //path.setAttribute("d", "M30 15 Q 95 65 180 10");
-        path.setAttribute("d", "M0 40 Q 100 150 200 40");        
+        path.setAttribute("d", "M0 40 Q 100 140 200 40");        
         path.setAttribute("fill", "none");
         path.setAttribute("stroke", "none");
         path.setAttribute("id", "curve")
