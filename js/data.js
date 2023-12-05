@@ -21,10 +21,10 @@ async function updateView(){
     sessions.map((session,sessionIndex) => {
         session.items.map((item,itemIndex) => {
             item.bounding = item.domObject.getBoundingClientRect()
-            item.height = item.bounding.height + window.innerHeight * 0.1
+            item.height = item.bounding.height
             if (itemIndex === 0) item.margin = 0
             else item.margin = session.items[itemIndex - 1].margin + session.items[itemIndex - 1].height            
-            session.height += item.height + window.innerHeight * 0.1
+            session.height += item.height 
         })
         session.margin = sessionIndex == 0 ? 0 : sessions[sessionIndex - 1].margin + sessions[sessionIndex - 1].height
         session.items.map((item,itemIndex) => {
