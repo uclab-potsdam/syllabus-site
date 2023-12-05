@@ -1,3 +1,27 @@
+@font-face {
+    font-family: hkgrotesk;
+    src: url("fonts/hkgrotesk-bold.woff") format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: hkgrotesk;
+    src: url("fonts/hkgrotesk-regular.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: hkgrotesk;
+    src: url("fonts/hkgrotesk-italic.woff") format("woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: hkgrotesk;
+    src: url("fonts/hkgrotesk-bolditalic.woff") format("woff");
+    font-style: italic;          
+    font-weight: bold;
+}
 /* Global styles*/
 body{
     margin: 0;
@@ -10,9 +34,12 @@ body{
 }
 p,li {
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
-
+h1{
+    margin: 0;
+    font-size: 2.5rem;
+}
 h2 {
     margin: .5em 0;
     font-size: 2rem;
