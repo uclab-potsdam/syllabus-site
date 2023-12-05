@@ -14,7 +14,9 @@ function createBaseData(json) {
     updateView()
 }
 async function updateView(){
-    await new Promise(r => setTimeout(r, 500)); //due to weird race condition with some css and getBoundingClientRect
+    //due to weird race condition with some css and getBoundingClientRect 
+    //=> found out its due image loading that the image size cant be extracted immidiatly after setting the img tag.
+    await new Promise(r => setTimeout(r, 300)); 
     sessions.map((session,sessionIndex) => {
         session.items.map((item,itemIndex) => {
             item.bounding = item.domObject.getBoundingClientRect()
