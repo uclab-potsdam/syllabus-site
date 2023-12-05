@@ -2,7 +2,8 @@ const sessions = [];
 function createBaseData(json) {
     json.map((session, sessionIndex) => {
         session.index = sessionIndex
-        session.height = window.innerHeight * 1.5 + (json.length-1 == session.index?window.innerHeight : 0)
+        session.height = window.innerHeight * 1.5 + //padding at the beggining
+        (json.length-1 == session.index?window.innerHeight : 0)  //if last session add padding at the end
         //set position for items
         let actors = session.actors ?? [];
         session.items = [...actors, ...session.content]

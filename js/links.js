@@ -12,7 +12,7 @@ function updateLinks(currentSession,cursorPosition,cursorDimensions) {
                     anchor4 = [item.x - item.bounding.width/2,item.y + item.bounding.height/2]
                 }         
                 let distance = calculateDistanceY(anchor1, anchor4)
-                if (distance < window.innerHeight / 2) {
+                if (distance < window.innerHeight) {
                     item.visible = true
                     let anchor2 = [0, anchor1[1]]
                     let anchor3 = [0, anchor4[1]]
@@ -27,10 +27,10 @@ function updateLinks(currentSession,cursorPosition,cursorDimensions) {
                         anchor3[0] = anchor4[0] + (anchor1[0] - anchor4[0]) / anchorTilt
                     }
                     item.linePath = line([anchor1, anchor2, anchor3, anchor4])
-                    item.distance = remapRange(distance, 0, window.innerHeight/2, 1, 0)
-            }else{
-                item.visible = false
-            }
+                    item.distance = remapRange(distance, 0, window.innerHeight, 1, 0)
+                }else{
+                    item.visible = false
+                }
         })
     drawLinks(currentSession.items)
 }
@@ -47,7 +47,7 @@ function drawLinks(items) {
                     .attr('d', d => d.linePath)
                     .attr('stroke', d => `rgba(0,0,0,${d.distance})`)
                     .attr('fill', 'none')
-                    .attr('stroke-width', 1)
+                    .attr('stroke-width', '0.03rem')
             },
             function (update) {
                 return update
