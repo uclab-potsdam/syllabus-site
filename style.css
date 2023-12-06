@@ -37,14 +37,30 @@ p,li {
     font-size: 0.95rem;
 }
 h1{
-    margin: 0;
-    font-size: 2.5rem;
+    margin: 1rem 0;
+    font-size: 3rem;
 }
 h2 {
-    margin: .5em 0;
+    margin: .5rem 0;
     font-size: 2rem;
 }
-
+h3 {
+    margin: .5rem 0;
+    font-size: 1.25rem;    
+}
+ul {
+    padding-inline-start: 1.25rem;
+    list-style-type: none;
+}
+ul li::before {
+    content: '·';
+    color: var(--primary);
+    margin-right: .5rem;
+    margin-left: -.8rem;
+}
+blockquote {
+    font-style: italic;
+}
 p + p {
     margin-top: 1em;
 }
@@ -74,7 +90,7 @@ p + p {
     color: white;
     pointer-events: all;
 }
-#cursor:hover{
+#cursor:hover, #cursor:active, #cursor:focus {
     z-index:2;
 }
 #links{
@@ -90,7 +106,7 @@ p + p {
 .content {
     position: absolute;
     padding: 1rem;
-    max-width: 25vw;    
+    max-width: calc(15vw + 15vh);
     border-radius: 0.2rem;
     background-color: var(--secondary);
     border: 0.01rem solid var(--primary);
@@ -102,10 +118,11 @@ p + p {
 }
 .content img, #cursor img {
     max-width: 100%;
-    max-height: 35vh;
-    height: auto;
+    max-height: calc(15vw + 15vh);
+    object-fit: contain;
+    xheight: auto;
 }
-.content:hover{
+.content:hover, .content:active, .content:focus{
     z-index: 2;
 }
 a{
