@@ -34,7 +34,6 @@ body{
     overflow-x: hidden;
     font-family: hkgrotesk, sans-serif;
     background-color: var(--background)
-
 }
 p,li {
     margin: 0;
@@ -90,7 +89,7 @@ p + p {
     position: fixed;
     max-width: 40vw;
     background-color: var(--background-cursor);
-    border: 0.1em solid var(--primary);
+    xborder: 0.1em solid var(--primary);
     padding: 1.5em;
     pointer-events: all;
 }
@@ -103,9 +102,9 @@ p + p {
     z-index: -2;
 }
 #curves line{
-    stroke: var(--primary);
+    stroke: var(--background-content);
     fill: none;
-    stroke-width: 0.08em;
+    stroke-width: 0.25em;
 }
 #content{
     width: 100%;
@@ -117,11 +116,11 @@ p + p {
     padding: 1em;
     max-width: calc(15vw + 15vh);
     background-color: var(--background-content);
-    border: 0.1em solid var(--primary);
+    xborder: 0.1em solid var(--primary);
     visibility: hidden;
     z-index:0;
 }
-.content div{
+.content div {
     padding: 0.2em
 }
 .content img, #cursor img {
@@ -225,8 +224,8 @@ a[href^="#"] {
 }
 @media (prefers-color-scheme: dark) {
     body{
-        --background:  #222;
-        --background-cursor: #111; 
+        --background:  #333;
+        --background-cursor: #222; 
         --background-content: #000;
         --primary: #fff;
         --font: #fff;
