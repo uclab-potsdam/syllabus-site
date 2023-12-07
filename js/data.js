@@ -32,15 +32,16 @@ async function updateView(){
         session.items.map((item,itemIndex) => {
             updateItemPosition(item,itemIndex)
         })
+        //create menu item with scroll function
         let menuItem = document.createElement('p')
         let html  = domParser.parseFromString(marked.parse(session.text), 'text/html');
         let title = html.getElementsByTagName('h1')
         if(title.length == 0){
-            title = html.getElementsByTagName('h2')[0]
+            title = html.getElementsByTagName('h2')[0].textContent
         }else{
-            title = title[0]
+            title = title[0].textContent
         }
-        menuItem.innerHTML = title.innerHTML
+        menuItem.innerHTML = title
         menuItem.addEventListener("click", () => {
             window.scrollTo({top: session.index == 0 ? 0 :session.margin + (session.height/2),behavior: 'smooth' })
         }) 
