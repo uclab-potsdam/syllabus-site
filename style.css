@@ -34,29 +34,29 @@ body{
 }
 p,li {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: .9em;
 }
 h1{
-    margin: 1rem 0;
-    font-size: 3rem;
+    margin: .33em 0;
+    font-size: 2.5em;
 }
 h2 {
-    margin: .5rem 0;
-    font-size: 2rem;
+    margin: .5em 0;
+    font-size: 2em;
 }
 h3 {
-    margin: .5rem 0;
-    font-size: 1.25rem;    
+    margin: .5em 0;
+    font-size: 1.25em;    
 }
 ul {
-    padding-inline-start: 1.25rem;
+    padding-inline-start: 1.25em;
     list-style-type: none;
 }
 ul li::before {
     content: '·';
     color: var(--primary);
-    margin-right: .5rem;
-    margin-left: -.8rem;
+    margin-right: .5em;
+    margin-left: -.8em;
 }
 blockquote {
     font-style: italic;
@@ -105,16 +105,16 @@ p + p {
 }
 .content {
     position: absolute;
-    padding: 1rem;
+    padding: 1em;
     max-width: calc(15vw + 15vh);
-    border-radius: 0.2rem;
+    border-radius: 0.2em;
     background-color: var(--secondary);
-    border: 0.01rem solid var(--primary);
+    border: 0.01em solid var(--primary);
     visibility: hidden;
     z-index:0;
 }
 .content div{
-    padding: 0.2rem
+    padding: 0.2em
 }
 .content img, #cursor img {
     max-width: 100%;
@@ -127,12 +127,12 @@ p + p {
 }
 a{
     text-decoration:underline;
-    line-height: 0.1rem;
+    line-height: 0.1em;
     color: inherit;
 }
 a[href^="#"] {
     text-decoration: none;
-    border-bottom: .075rem dashed var(--primary);
+    border-bottom: .075em dashed var(--primary);
 }
 .actors {
     width: 10vw;
@@ -183,7 +183,7 @@ a[href^="#"] {
         justify-content: unset;
     }
     #caption h1{
-        font-size: 2rem;
+        font-size: 2em;
     }
     #caption img{
         height: unset;
