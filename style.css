@@ -93,7 +93,7 @@ p + p {
     padding: 1em;
     pointer-events: all;
 }
-#cursor:hover, #cursor:active, #cursor:focus {
+#cursor:active, #cursor:focus {
     z-index:2;
 }
 #links{
