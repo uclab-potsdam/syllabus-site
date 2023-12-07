@@ -34,12 +34,15 @@ async function updateView(){
         })
         //create menu item with scroll function
         let menuItem = document.createElement('p')
-        let html  = domParser.parseFromString(marked.parse(session.text), 'text/html');
-        let title = html.getElementsByTagName('h1')
-        if(title.length == 0){
-            title = html.getElementsByTagName('h2')[0].textContent
-        }else{
-            title = title[0].textContent
+        let title = "Start"
+        if(sessionIndex != 0){
+            let html  = domParser.parseFromString(marked.parse(session.text), 'text/html');
+            title = html.getElementsByTagName('h1')
+            if(title.length == 0){
+                title = html.getElementsByTagName('h2')[0].textContent
+            }else{
+                title = title[0].textContent
+            }
         }
         menuItem.innerHTML = title
         menuItem.addEventListener("click", () => {
