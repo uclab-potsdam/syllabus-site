@@ -31,6 +31,7 @@ function animation(){
 }
 function update(){
     let currentSession = sessions.filter(session => session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height))[0]
+    if (typeof currentSession == "undefined") return;
     let currentProgress = (window.scrollY - currentSession.margin)/currentSession.height
     if(currentSession.index == 0){
         currentProgress = ((window.scrollY+currentSession.height/2)-(currentProgress * currentSession.height/2) - currentSession.margin)/currentSession.height
