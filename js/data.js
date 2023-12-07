@@ -91,7 +91,7 @@ function createDataRepresentation(item) {
         svg.setAttribute("width", "100%");
         svg.setAttribute("height", "100%");
         svg.setAttribute('viewBox', '0 0 200 200')
-        svg.setAttribute('style', 'margin-top: -35%')
+        svg.setAttribute('style', 'margin-top: -33%')
 
         // Create a path element for the curve
         let path = document.createElementNS("http://www.w3.org/2000/svg", "path");
@@ -103,7 +103,7 @@ function createDataRepresentation(item) {
 
         // Create a text element
         let text = document.createElementNS("http://www.w3.org/2000/svg", "text");
-        //text.setAttribute("font-size", "16");
+        text.setAttribute("font-size", "1.33rem");
         text.setAttribute("text-anchor", "middle");
 
         // Create a textPath element and set the xlink:href attribute to the path ID
