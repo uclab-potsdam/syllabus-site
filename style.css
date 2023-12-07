@@ -24,11 +24,11 @@
 }
 /* Global styles*/
 body{
-    --background: #e0e0e0;
-    --background-cursor: #f0f0f0;
-    --background-content: #ffffff;
-    --primary: #000000;
-    --font: #000000;
+    --background: #ddd;
+    --background-cursor: #eee;
+    --background-content: #fff;
+    --primary: #000;
+    --font: #000;
 
     margin: 0;
     overflow-x: hidden;
@@ -88,12 +88,9 @@ p + p {
 }
 #cursor{
     position: fixed;
-    top: -50%;
-    left: 50%;
-    transform: translate(-50%, 0);
     max-width: 40vw;
     background-color: var(--background-cursor);
-    border: 0.01em solid var(--primary);
+    border: 0.1em solid var(--primary);
     padding: 1.5em;
     pointer-events: all;
 }
@@ -108,7 +105,7 @@ p + p {
 #curves line{
     stroke: var(--primary);
     fill: none;
-    stroke-width: 0.03em;
+    stroke-width: 0.1em;
 }
 #content{
     width: 100%;
@@ -120,7 +117,7 @@ p + p {
     padding: 1em;
     max-width: calc(15vw + 15vh);
     background-color: var(--background-content);
-    border: 0.01em solid var(--primary);
+    border: 0.1em solid var(--primary);
     visibility: hidden;
     z-index:0;
 }
@@ -199,6 +196,9 @@ a[href^="#"] {
     text-decoration: underline;
 }
 @media screen and (orientation: portrait) and (max-width: 767px) {
+    body {
+        font-size: 14px !important;
+    }
     .content{
         max-width: 80vw;
     }
@@ -227,9 +227,9 @@ a[href^="#"] {
     body{
         --background:  #222;
         --background-cursor: #111; 
-        --background-content: #000; 
-        --primary: #ffffff;
-        --font: #ffffff;
+        --background-content: #000;
+        --primary: #fff;
+        --font: #fff;
     }
 
 }
