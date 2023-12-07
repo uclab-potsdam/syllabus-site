@@ -42,7 +42,7 @@ h1{
 }
 h2 {
     margin: .5em 0;
-    font-size: 2em;
+    font-size: 1.75em;
 }
 h3 {
     margin: .5em 0;
@@ -86,7 +86,7 @@ p + p {
     max-width: 40vw;
     background-color: var(--primary);
     border-radius: 0.2em;
-    padding: 2em;
+    padding: 1em;
     color: white;
     pointer-events: all;
 }
