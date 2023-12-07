@@ -161,30 +161,34 @@ a[href^="#"] {
 .right{
     right: 5vw;
 }
-#burger{
+#menu, #burger{
     position: fixed;
-    left: 1%;
-    top: 1em;
+    left: 1em;
+    text-align: left;
     z-index: 5;
     color: var(--font);
     pointer-events: all;
+    font-size: 1em;
+}
+#burger{
+    top: 1em;
 }
 #menu{
-    position: fixed;
-    left: 1%;
-    top: 4em;
-    z-index: 5;
-    color: var(--font);
-    pointer-events: all;
-    font-size: 0.8em;
-    cursor: pointer;
+    top: 3em;
     display: none;
+    padding: 0.5em;
 }
-#menu p:hover{
+#menu p {
+    margin: 0;
+    padding: 0.2em;
+}
+#menu p:hover, #burger:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 #menu.active{
     display: block;
+    background-color: var(--background-content);
 }
 #menu .active{
     font-weight: bold;
@@ -226,6 +230,12 @@ a[href^="#"] {
     }
     #caption{
         flex-direction: column;
+    }
+    #menu,#burger{
+        left: unset;
+        right: 1em;
+        text-align: right;
+        font-size: 2em;
     }
 }
 @media (prefers-color-scheme: dark) {
