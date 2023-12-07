@@ -102,9 +102,9 @@ p + p {
     z-index: -2;
 }
 #curves line{
-    stroke: var(--background-content);
+    stroke: var(--background-cursor);
     fill: none;
-    stroke-width: 0.25em;
+    stroke-width: 0.2em;
 }
 #content{
     width: 100%;

@@ -11,7 +11,8 @@ function updateLinks(currentSession,cursorPosition,cursorDimensions) {
                 anchor4 = [item.x - item.bounding.width/2,item.y + item.bounding.height/2]
             }    
             let distance = calculateDistanceY(anchor1, anchor4)
-            if (distance < window.innerHeight*1.5) {
+            // if (distance < window.innerHeight*1.5) {
+            if (true) {
                 item.visible = true
                 item.distance = remapRange(distance, 0, window.innerHeight*1.5, 1, 0)
                 item.linePath = [...anchor1,...anchor4]
@@ -36,7 +37,7 @@ function drawLinks(items) {
                     .attr('y1', d => d.linePath[1])
                     .attr('x2', d => d.linePath[2])
                     .attr('y2', d => d.linePath[3])
-                    .attr('opacity',d => d.distance)
+                    .attr('opacity',1) //d => d.distance)
             },
             function (update) {
                 return update
@@ -44,7 +45,8 @@ function drawLinks(items) {
                     .attr('y1', d => d.linePath[1])
                     .attr('x2', d => d.linePath[2])
                     .attr('y2', d => d.linePath[3])
-                    .attr('opacity',d => d.distance)
+                    .attr('opacity',1)
+                   // .attr('opacity',d => d.distance)
             },
         )
 }
