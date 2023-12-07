@@ -36,13 +36,16 @@ async function updateView(){
         let menuItem = document.createElement('p')
         let title = "Start"
         if(sessionIndex != 0){
+            if (session.text.indexOf("<!--skipnav-->")>-1) return;
+
             let html  = domParser.parseFromString(marked.parse(session.text), 'text/html');
-            title = html.getElementsByTagName('h1')
-            if(title.length == 0){
-                title = html.getElementsByTagName('h2')[0].textContent
-            }else{
-                title = title[0].textContent
-            }
+            
+            title = html.getElementsByTagName('h1');
+
+            if(title.length == 0) title = html.getElementsByTagName('h2')
+            if(title.length == 0) title = html.getElementsByTagName('h3')            
+            if(title.length == 0) return  
+            else title = title[0].textContent
         }
         menuItem.innerHTML = title
         menuItem.addEventListener("click", () => {

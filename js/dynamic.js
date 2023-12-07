@@ -11,7 +11,8 @@ function updateCursor(currentSession,currentProgress) {
         cursor.html(marked.parse(currentSession.text))
         lastSession = currentSession
         document.getElementById('menu').childNodes.forEach(childNode => {childNode.classList.remove('active')})
-        document.getElementById('menu').childNodes[currentSession.index].classList.add('active')
+        let currentNav = document.getElementById('menu').childNodes[currentSession.index]
+        if (currentNav!= null) currentNav.classList.add('active')
     }
     //update the cursor dimension and the position according to the scrolling progress of the session
     let cursorDimensions = cursor.node().getBoundingClientRect()
