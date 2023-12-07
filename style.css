@@ -192,7 +192,6 @@ a[href^="#"] {
 }
 #menu .active{
     font-weight: bold;
-    text-decoration: underline;
 }
 @media screen and (orientation: portrait) and (max-width: 767px) {
     body {
