@@ -24,13 +24,17 @@
 }
 /* Global styles*/
 body{
+    --background: #e0e0e0;
+    --background-cursor: #f0f0f0;
+    --background-content: #ffffff;
+    --primary: #000000;
+    --font: #000000;
+
     margin: 0;
-    background-color: rgba(245,245,245,1);
     overflow-x: hidden;
     font-family: hkgrotesk, sans-serif;
-    --primary: #000000;
-    --secondary: #ffffff;
-    --links: #282828;
+    background-color: var(--background)
+
 }
 p,li {
     margin: 0;
@@ -54,7 +58,7 @@ ul {
 }
 ul li::before {
     content: '·';
-    color: var(--primary);
+    color: var(--font);
     margin-right: .5em;
     margin-left: -.8em;
 }
@@ -76,7 +80,7 @@ p + p {
     width: 100%;
     top: 0;
     left: 0;
-    
+        color: var(--font);
 }
 #cursor{
     position: fixed;
@@ -84,10 +88,9 @@ p + p {
     left: 50%;
     transform: translate(-50%, 0);
     max-width: 40vw;
-    background-color: var(--primary);
-    border-radius: 0.2em;
+    background-color: var(--background-cursor);
+    border: 0.01em solid var(--primary);
     padding: 1em;
-    color: white;
     pointer-events: all;
 }
 #cursor:hover, #cursor:active, #cursor:focus {
@@ -98,6 +101,9 @@ p + p {
     position: absolute;
     z-index: -2;
 }
+#curves path{
+    stroke: var(--primary)
+}
 #content{
     width: 100%;
     position: relative;
@@ -107,8 +113,7 @@ p + p {
     position: absolute;
     padding: 1em;
     max-width: calc(15vw + 15vh);
-    border-radius: 0.2em;
-    background-color: var(--secondary);
+    background-color: var(--background-content);
     border: 0.01em solid var(--primary);
     visibility: hidden;
     z-index:0;
@@ -120,7 +125,6 @@ p + p {
     max-width: 100%;
     max-height: calc(15vw + 15vh);
     object-fit: contain;
-    xheight: auto;
 }
 .content:hover, .content:active, .content:focus{
     z-index: 2;
@@ -147,7 +151,7 @@ a[href^="#"] {
 .actors img {
     border-radius: 50%;
     width: 100%;
-    background-color: var(--secondary);
+    background-color: var(--background-content);
 }
 .left{
     left: 5vw;
@@ -192,4 +196,14 @@ a[href^="#"] {
     #caption{
         flex-direction: column;
     }
+}
+@media (prefers-color-scheme: dark) {
+    body{
+        --background:  #000000;
+        --background-cursor: #0f0f0f; 
+        --background-content: #1f1f1f; 
+        --primary: #ffffff;
+        --font: #ffffff;
+    }
+
 }
