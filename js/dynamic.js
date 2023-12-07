@@ -37,3 +37,12 @@ function update(){
     //update the cursor
     updateCursor(currentSession,currentProgress)
 }
+let menuState = false;
+function toggleMenu(){
+    menuState = !menuState
+    if(menuState){
+        document.getElementById('menu').classList.add('active')
+    }else{
+        document.getElementById('menu').classList.remove('active')
+    }
+}

@@ -161,19 +161,30 @@ a[href^="#"] {
 .right{
     right: 5vw;
 }
+#burger{
+    position: fixed;
+    left: 1%;
+    top: 1em;
+    z-index: 5;
+    color: var(--font);
+    pointer-events: all;
+}
 #menu{
     position: fixed;
     left: 1%;
-    top: 50%;
-    transform: translate(0, -50%);
+    top: 4em;
     z-index: 5;
     color: var(--font);
     pointer-events: all;
     font-size: 0.8em;
     cursor: pointer;
+    display: none;
 }
 #menu p:hover{
     text-decoration: underline;
+}
+#menu.active{
+    display: block;
 }
 #menu .active{
     font-weight: bold;
