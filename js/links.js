@@ -1,7 +1,6 @@
 let logged = false
 function updateLinks(currentSession,cursorPosition,cursorDimensions) {
         //set the line generator from d3 https://d3js.org/d3-shape/curve
-        let line = d3.line().curve(d3.curveCatmullRom.alpha(0.3));      
         let anchor1 = [window.innerWidth/2,  cursorPosition+cursorDimensions.height/2]
         currentSession.items.map((item) => {
             //first anchor is the cursor 
@@ -12,9 +11,9 @@ function updateLinks(currentSession,cursorPosition,cursorDimensions) {
                 anchor4 = [item.x - item.bounding.width/2,item.y + item.bounding.height/2]
             }    
             let distance = calculateDistanceY(anchor1, anchor4)
-            if (distance < window.innerHeight) {
+            if (distance < window.innerHeight*1.5) {
                 item.visible = true
-                item.distance = remapRange(distance, 0, window.innerHeight, 1, 0)
+                item.distance = remapRange(distance, 0, window.innerHeight*1.5, 1, 0)
                 item.linePath = [...anchor1,...anchor4]
             }
             else{
