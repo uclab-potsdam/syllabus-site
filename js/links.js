@@ -1,38 +1,27 @@
 let logged = false
 function updateLinks(currentSession,cursorPosition,cursorDimensions) {
         //set the line generator from d3 https://d3js.org/d3-shape/curve
-        let line = d3.line().curve(d3.curveCatmullRom.alpha(0.3));        
+        let line = d3.line().curve(d3.curveCatmullRom.alpha(0.3));      
+        let anchor1 = [window.innerWidth/2,  cursorPosition+cursorDimensions.height/2]
         currentSession.items.map((item) => {
-                //first anchor is the cursor 
-                let anchor1 = [window.innerWidth/2,  cursorPosition+cursorDimensions.height/2]
-                let anchor4 = []
-                if(item.left){
-                    anchor4 = [item.x + item.bounding.width/2,item.y + item.bounding.height/2]
-                }else{
-                    anchor4 = [item.x - item.bounding.width/2,item.y + item.bounding.height/2]
-                }         
-                let distance = calculateDistanceY(anchor1, anchor4)
-                if (distance < window.innerHeight) {
-                    item.visible = true
-                    let anchor2 = [0, anchor1[1]]
-                    let anchor3 = [0, anchor4[1]]
-                    let anchorTilt = remapRange(distance,0,window.innerHeight/2,5,4)
-                    //creating anchorpoints
-                    if (anchor4[0] > anchor1[0]) {
-                        anchor2[0] = anchor1[0] + (anchor4[0] - anchor1[0]) / anchorTilt 
-                        anchor3[0] = anchor4[0] - (anchor4[0] - anchor1[0]) / anchorTilt
-                    }
-                    if (anchor4[0] < anchor1[0]) {
-                        anchor2[0] = anchor1[0] - (anchor1[0] - anchor4[0]) / anchorTilt 
-                        anchor3[0] = anchor4[0] + (anchor1[0] - anchor4[0]) / anchorTilt
-                    }
-                    item.linePath = line([anchor1, anchor2, anchor3, anchor4])
-                    item.distance = remapRange(distance, 0, window.innerHeight, 1, 0)
-                }else{
-                    item.visible = false
-                }
+            //first anchor is the cursor 
+            let anchor4 = []
+            if(item.left){
+                anchor4 = [item.x + item.bounding.width/2,item.y + item.bounding.height/2]
+            }else{
+                anchor4 = [item.x - item.bounding.width/2,item.y + item.bounding.height/2]
+            }    
+            let distance = calculateDistanceY(anchor1, anchor4)
+            if (distance < window.innerHeight) {
+                item.visible = true
+                item.distance = remapRange(distance, 0, window.innerHeight, 1, 0)
+                item.linePath = [...anchor1,...anchor4]
+            }
+            else{
+                item.visible = false
+            }
         })
-    drawLinks(currentSession.items)
+        drawLinks(currentSession.items)
 }
 function drawLinks(items) {
     //filterout non visible objects
@@ -42,17 +31,21 @@ function drawLinks(items) {
         .data(visible)
         .join(
             function (enter) {
-                return enter.select('#curves').append('path')
+                return enter.select('#curves').append('line')
                     .attr('class', 'links')
-                    .attr('d', d => d.linePath)
-                    .attr('stroke', d => `rgba(0,0,0,${d.distance})`)
-                    .attr('fill', 'none')
-                    .attr('stroke-width', '0.03rem')
+                    .attr('x1', d => d.linePath[0])
+                    .attr('y1', d => d.linePath[1])
+                    .attr('x2', d => d.linePath[2])
+                    .attr('y2', d => d.linePath[3])
+                    .attr('opacity',d => d.distance)
             },
             function (update) {
                 return update
-                    .attr('d', d => d.linePath)
-                    .attr('stroke', d => `rgba(0,0,0,${d.distance})`)
+                    .attr('x1', d => d.linePath[0])
+                    .attr('y1', d => d.linePath[1])
+                    .attr('x2', d => d.linePath[2])
+                    .attr('y2', d => d.linePath[3])
+                    .attr('opacity',d => d.distance)
             },
         )
 }

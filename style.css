@@ -101,8 +101,10 @@ p + p {
     position: absolute;
     z-index: -2;
 }
-#curves path{
-    stroke: var(--primary)
+#curves line{
+    stroke: var(--primary);
+    fill: none;
+    stroke-width: 0.03em;
 }
 #content{
     width: 100%;
