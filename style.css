@@ -90,7 +90,7 @@ p + p {
     max-width: 40vw;
     background-color: var(--background-cursor);
     border: 0.01em solid var(--primary);
-    padding: 1em;
+    padding: 1.5em;
     pointer-events: all;
 }
 #cursor:active, #cursor:focus {
@@ -166,10 +166,14 @@ a[href^="#"] {
     left: 1%;
     top: 50%;
     transform: translate(0, -50%);
-    z-index: 1;
+    z-index: 5;
     color: var(--font);
     pointer-events: all;
     font-size: 0.8em;
+    cursor: pointer;
+}
+#menu p:hover{
+    text-decoration: underline;
 }
 #menu .active{
     font-weight: bold;
