@@ -64,6 +64,8 @@ ul li::before {
 }
 blockquote {
     font-style: italic;
+    margin-inline-start: 1.5em;
+    margin-inline-end: 1.5em;
 }
 p + p {
     margin-top: 1em;
@@ -80,7 +82,9 @@ p + p {
     width: 100%;
     top: 0;
     left: 0;
-        color: var(--font);
+    color: var(--font);
+    display: flex;
+    justify-content: center;
 }
 #cursor{
     position: fixed;
@@ -194,15 +198,9 @@ a[href^="#"] {
     font-weight: bold;
     text-decoration: underline;
 }
-@media screen and (orientation: portrait) and (max-width: 800px) {
-    .content.left, .content.right{
-        left: 50%;
-        right:unset;
-        transform: translate(-50%, 0) !important;
-    }
+@media screen and (orientation: portrait) and (max-width: 767px) {
     .content{
-        width: 80vw;
-        max-width: unset;
+        max-width: 80vw;
     }
     .content img, #cursor img {
         max-width: 100%;
@@ -213,23 +211,10 @@ a[href^="#"] {
         height: 35vw;
     }
     #cursor{
-        max-width: 80vw;
-        width: 80vw;
-    }
-    #caption{
-        grid-template-columns: 100%;
-        justify-items: center;
-        justify-content: unset;
-    }
-    #caption h1{
-        font-size: 2em;
-    }
-    #caption img{
-        height: unset;
-        width: 50%;
-    }
-    #caption{
-        flex-direction: column;
+        max-width: 85vw;
+        left: unset;
+        transform: unset;
+        margin: auto;        
     }
     #menu,#burger{
         left: unset;
@@ -240,9 +225,9 @@ a[href^="#"] {
 }
 @media (prefers-color-scheme: dark) {
     body{
-        --background:  #000000;
-        --background-cursor: #0f0f0f; 
-        --background-content: #1f1f1f; 
+        --background:  #222;
+        --background-cursor: #111; 
+        --background-content: #000; 
         --primary: #ffffff;
         --font: #ffffff;
     }
