@@ -18,6 +18,8 @@ async function updateView(){
     //due to weird race condition with some css and getBoundingClientRect 
     //=> found out its due image loading that the image size cant be extracted immidiatly after setting the img tag.
     await new Promise(r => setTimeout(r, 300)); 
+    let menu = document.querySelector('#menu')
+    let domParser = new DOMParser();
     sessions.map((session,sessionIndex) => {
         session.items.map((item,itemIndex) => {
             item.bounding = item.domObject.getBoundingClientRect()
@@ -30,10 +32,25 @@ async function updateView(){
         session.items.map((item,itemIndex) => {
             updateItemPosition(item,itemIndex)
         })
+        let menuItem = document.createElement('p')
+        let html  = domParser.parseFromString(marked.parse(session.text), 'text/html');
+        let title = html.getElementsByTagName('h1')
+        if(title.length == 0){
+            title = html.getElementsByTagName('h2')[0]
+        }else{
+            title = title[0]
+        }
+        menuItem.innerHTML = title.innerHTML
+        menuItem.addEventListener("click", () => {
+            window.scrollTo({top: session.index == 0 ? 0 :session.margin + (session.height/2),behavior: 'smooth' })
+        }) 
+        menu.appendChild(menuItem)
     })
     //set height and padding according to datasize
     let height = sessions.reduce((accumulator, session) => { return accumulator += session.height}, 0)
     //set the body height to the height of the data
+    
+    sessions
     let elements = ['#links', '#wrapper','#app']
     elements.map(element => {
         document.querySelector(element).style.height = height + 'px' 
@@ -44,7 +61,7 @@ async function updateView(){
     document.querySelectorAll('.actors').forEach(n => {
         n.style.visibility = 'visible'
     })
-    animation(null)
+    animation()
 }
 function updateItemPosition(item) {
     //set height of session according to mobile or desktopy

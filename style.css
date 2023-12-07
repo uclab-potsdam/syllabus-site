@@ -161,6 +161,20 @@ a[href^="#"] {
 .right{
     right: 5vw;
 }
+#menu{
+    position: fixed;
+    left: 1%;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+    color: var(--font);
+    pointer-events: all;
+    font-size: 0.8em;
+}
+#menu .active{
+    font-weight: bold;
+    text-decoration: underline;
+}
 @media screen and (orientation: portrait) and (max-width: 800px) {
     .content.left, .content.right{
         left: 50%;
