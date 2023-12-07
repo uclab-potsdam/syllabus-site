@@ -130,6 +130,10 @@ a{
     line-height: 0.1rem;
     color: inherit;
 }
+a[href^="#"] {
+    text-decoration: none;
+    border-bottom: .075rem dashed var(--primary);
+}
 .actors {
     width: 10vw;
     height: 10vw;
