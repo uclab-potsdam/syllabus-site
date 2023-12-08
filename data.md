@@ -8,6 +8,7 @@ We will take on the challenge to visualize organizational structures that hardly
 
 This webpage presents a selective documentation of key readings, inspiring projects, our generous hosts, and the resulting projects.
 
+
 [<img src='assets/marian.png' style='width:10em;'>](https://mariandoerk.de/)  
 Prof. Dr. Marian Dörk
 
@@ -119,7 +120,7 @@ Hieronymus Bosch, 1490-1510
 Ambrosius Holbein, 1516
 
 
-[![Petrus Apianus’ Astronomicum Caesareum, 1540](https://i.ytimg.com/vi/lC2FSh-f_Xg/maxresdefault.jpg)](https://www.youtube.com/watch?v=lC2FSh-f_Xg)  
+[![Petrus Apianus’ Astronomicum Caesareum, 1540](https://img.youtube.com/vi/lC2FSh-f_Xg/0.jpg)](https://www.youtube.com/watch?v=lC2FSh-f_Xg)  
 Petrus Apianus, 1540
 
 
@@ -131,7 +132,7 @@ Ebenezer Howard, 1902
 Frank Lloyd Wright, 1932
 
 
-[![Andrea Branzi - Agronica, 1994](https://i.ytimg.com/vi/VhfjHhhxSZc/maxresdefault.jpg)](https://www.youtube.com/watch?v=VhfjHhhxSZc)  
+[![Andrea Branzi - Agronica, 1994](https://img.youtube.com/vi/VhfjHhhxSZc/0.jpg)](https://www.youtube.com/watch?v=VhfjHhhxSZc)  
 Andrea Branzi, 1995
 
 
@@ -147,144 +148,193 @@ Lino Zeddies, 2023
 24 April
 ## Co-ops
 
-
-[<img src='assets/infotext.png' style='width:10em; '>](https://infotext-berlin.de/)  
-INFOTEXT Berlin
-
-
-📖 *Reading*
-
 Fairbairn, B. et al. (1994). [The meaning of Rochdale: The Rochdale Pioneers and the co-operative principles](https://ageconsearch.umn.edu/record/31778/files/re94fa01.pdf). Technical report, University of Saskatchewan, Centre for the Study of Co-operatives.
 
 > Rochdale, England, is known by millions for one reason: a handful of labourers established a co-operative there in 1844 known as the Rochdale Society of Equitable Pioneers. That co-operative was adopted as the inspiration and model for a movement that now includes nearly 700 million people around the world. As this paper is being written, co-operators around the world are preparing to celebrate the 150th anniversary of its birth. But what did Rochdale mean? Why is it considered so important?"}
 
 
+[<img src='assets/infotext.png' style='width:10em; '>](https://infotext-berlin.de/)  
+INFOTEXT Berlin
+
+
+[<img src='assets/coopflag.png' style='width:10em; '>](http://bheleccs.in/co-operative-flag/)  
+Co-operative flag, 1925
+
+
+[![](assets/libstructures.png)](https://www.liberatingstructures.com/ls-menu/)  
+Liberating Structures, 2012
+
+
+[![](assets/mondragon.jpeg)](http://www.maussen.eu/blog/2015/10/08/3-2mondragon-cooperative-corporation-mcc-3-2-5-cooperative-structure/index.htm)  
+Mondragon Cooperative Corporation, 2015
+
+
+[![](assets/coopprinciples.png)](https://www.willystreet.coop/about-us/about-our-coop)  
+Willy Street Co-op, 2016
+
+
+[![Bullfrog Films presents...FOOD COOP, 2017](https://img.youtube.com/vi/_Ae4CFpKCoU/0.jpg)](https://www.youtube.com/watch?v=_Ae4CFpKCoU)  
+Bullfrog Films presents...FOOD COOP, 2017
+
+
+[![](assets/upstream.png)](https://www.upstreampodcast.org/workercoops1)  
+Upstream Podcast / Phil Wrigglesworth, 2018
+
+
+[![](https://img.youtube.com/vi/xKYxAHMWc0c/0.jpg)](https://www.youtube.com/watch?v=xKYxAHMWc0c)  
+Co op City, The Bronx DiverseCITY, 2019
+
+
+[![](https://img.youtube.com/vi/RsQdi0OU_W0/0.jpg)](https://www.youtube.com/watch?v=RsQdi0OU_W0)  
+Exploring Co-op City - The Bronx, NYC, 2021
+
+
+[![](https://img.youtube.com/vi/UsP8I2bT5J8/0.jpg)](https://www.youtube.com/watch?v=UsP8I2bT5J8)  
+At Home in Utopia Trailer, 2021
+
+
+[![](assets/workingclassutopias.webp)](https://press.princeton.edu/books/hardcover/9780691234748/working-class-utopias)  
+Robert M. Fogelson, 2022
+
+
+The following [cooperative principles](https://www.ica.coop/en/cooperatives/cooperative-identity) help coops turn their values into practice:
+
+1. Voluntary and Open Membership
+2. Democratic Member Control
+3. Member Economic Participation
+4. Autonomy and Independence
+5. Education, Training, and Information
+6. Cooperation among Cooperatives
+7. Concern for Community
+
 
 8 May
 ## Platforms
-
-
-[<img src='assets/smart.png' style='width:10em; '>](https://smart-eg.de/)  
-SMartDe eG
-
-
-📖 *Reading*
 
 Scholz, T. (2016). [Platform cooperativism. Challenging the corporate sharing economy](https://rosalux.nyc/wp-content/uploads/2020/11/RLS-NYC_platformcoop.pdf). New York, NY: Rosa Luxemburg Foundation.
 
 > Among all the problems with 21st-century work — the ballooning of the low wage service sector, economic inequality, the crumbling of worker rights  — the main problem really is that there are so few realistic alternatives. What has been missing from the debate about the future of work is an approach that offers peo- ple something that they can wholeheartedly embrace. This is what this essay is about.
 
 
+[<img src='assets/smart.png' style='width:10em; '>](https://smart-eg.de/)  
+SMartDe eG
+
+
+[![](assets/centralized-distributed.png)](https://pages.cs.wisc.edu/~akella/CS740/F08/740-Papers/Bar64.pdf)  
+Paul Baran, 1962
+
+
+Skowronnek, A., Vogel, L. & Parnow, J. (2015) [AIRBNB vs. BERLIN. Was sagen die Daten?](https://airbnbvsberlin.de)
+
+
+[![](assets/airbnbvsberlin.webp)](https://airbnbvsberlin.com/)  
+Alsino Skowronnek, Lucas Vogel & Jonas Parnow, 2015
+
+
+[![](https://platform.coop/wp-content/uploads/2018/09/KitPhoto.jpg)](https://platform.coop/blog/the-platform-co-op-development-kit/)  
+Trebor Scholz, 2018
+
+
+![](assets/platformcooperativism.png)  
+Platform Cooperativism, 2020
+
+
+[![](https://axbom.com/content/images/size/w2000/2023/01/fediverse-branches-axbom-30-CC-BY-SA.webp)](https://axbom.com/fediverse/)  
+Per Axbom, 2022
+
+
+[![](https://platform.coop/wp-content/uploads/2023/05/Sociocracy.png)](https://platform.coop/blog/democratic-decision-making/)  
+Victoria Sgarro, 2023
+
+
 
 15 May
 ## Economies
-
-
-[<img src='assets/regionalwert.png' style='width:10em; '>](https://www.regionalwert-berlin.de/)  
-Regionalwert AG Berlin Brandenburg
-
-
-📖 *Reading*
 
 Raworth, K. (2012). [A safe and just space for humanity](https://www-cdn.oxfam.org/s3fs-public/file_attachments/dp-a-safe-and-just-space-for-humanity-130212-en_5.pdf). Oxfam Discussion Paper.
 
 > Humanity’s challenge in the 21st century is to eradicate poverty and achieve prosperity for all within the means of the planet’s limited natural resources. In the run-up to Rio+20, this discussion paper presents a visual framework – shaped like a doughnut – which brings planetary boundaries together with social boundaries, creating a safe and just space between the two, in which humanity can thrive. Moving into this space demands far greater equity – within and between countries – in the use of natural resources, and far greater efficiency in transforming those resources to meet human needs.
 
 
+[<img src='assets/regionalwert.png' style='width:10em; '>](https://www.regionalwert-berlin.de/)  
+Regionalwert AG Berlin Brandenburg
+
+
 
 22 May
 ## Co-design
-
-
-[<img src='assets/backstube.png' style='width:10em; '>](http://die-backstube.de/)  
-Backstube Vollkornbäckerei
-
-
-📖 *Reading*
 
 Sanders, E. B.-N. and Stappers, P. J. (2008). [Co-creation and the new landscapes of design](https://doi.org/10.1080/15710880701875068). Co-design, 4(1):5–18.
 
 > Designers have been moving increasingly closer to the future users of what they design and the next new thing in the changing landscape of design research has become co-designing with your users. But co-designing is actually not new at all, having taken distinctly different paths in the US and in Europe. The evolution in design research from a user-centred approach to co-designing is changing the roles of the designer, the researcher and the person formerly known as the ‘user’. The implications of this shift for the education of designers and researchers are enormous. The evolution in design research from a user-centred approach to co-designing is changing the landscape of design practice as well, creating new domains of collective creativity. It is hoped that this evolution will support a transformation toward more sustainable ways of living in the future.
 
 
+[<img src='assets/backstube.png' style='width:10em; '>](http://die-backstube.de/)  
+Backstube Vollkornbäckerei
+
+
 
 5 June
 ## Work
-
-
-[<img src='assets/gruppef.png' style='width:10em; '>](https://gruppef.com/)  
-gruppe F Berlin
-
-
-📖 *Reading*
 
 Weeks, K. (2011). [The Problem with Work: Feminism, Marxism, Antiwork Politics, and Postwork Imaginaries](https://caringlabor.files.wordpress.com/2012/05/the-problem-with-work_-feminism-marxism-kathi-weeks.pdf). Introduction chapter. Pages 1–36. Duke University Press.
 
 >In The Problem with Work, Kathi Weeks boldly challenges the presupposition that work, or waged labor, is inherently a social and political good. While progressive political movements, including the Marxist and feminist movements, have fought for equal pay, better work conditions, and the recognition of unpaid work as a valued form of labor, even they have tended to accept work as a naturalized or inevitable activity. Weeks argues that in taking work as a given, we have “depoliticized” it, or removed it from the realm of political critique. Employment is now largely privatized, and work-based activism in the United States has atrophied. We have accepted waged work as the primary mechanism for income distribution, as an ethical obligation, and as a means of defining ourselves and others as social and political subjects. Taking up Marxist and feminist critiques, Weeks proposes a postwork society that would allow people to be productive and creative rather than relentlessly bound to the employment relation. Work, she contends, is a legitimate, even crucial, subject for political theory.
 
 
+[<img src='assets/gruppef.png' style='width:10em; '>](https://gruppef.com/)  
+gruppe F Berlin
+
+
 
 12 June
 ## Commons
-
-
-[<img src='assets/regenbogenfabrik.png' style='width:10em; '>](http://regenbogenfabrik.de/)  
-Regenbogenfabrik e.V.
-
-
-📖 *Reading*
 
 Ostrom, E., Burger, J., Field, C. B., Norgaard, R. B., and Policansky, D. (1999). [Revisiting the commons: local lessons, global challenges](http://infovis.fh-potsdam.de/readings/ostrom1999revisiting.pdf). science, 284(5412):278–282.
 
 > In a seminal paper, Garrett Hardin argued in 1968 that users of a commons are caught in an inevitable process that leads to the destruction of the resources on which they depend. This article discusses new insights about such problems and the conditions most likely to favor sustainable uses of common-pool resources. Some of the most difficult challenges concern the management of large-scale resources that depend on international cooperation, such as fresh water in international basins or large marine ecosystems. Institutional diversity may be as important as biological diversity for our long-term survival.
 
 
+[<img src='assets/regenbogenfabrik.png' style='width:10em; '>](http://regenbogenfabrik.de/)  
+Regenbogenfabrik e.V.
+
+
 
 19 June
 ## Cybersyn
-
-
-[<img src='assets/supercoop.png' style='width:10em; '>](https://supercoop.de/)  
-SuperCoop Berlin
-
-
-📖 *Reading*
 
 Medina, E. (2006). [Designing Freedom, Regulating a Nation: Socialist Cybernetics in Allende’s Chile](http://infovis.fh-potsdam.de/readings/medina2006designing.pdf). Journal of Latin American Studies, 38(3):571–606.
 
 > This article presents a history of ‘Project Cybersyn’, an early computer network developed in Chile during the socialist presidency of Salvador Allende (1970–1973) to regulate the growing social property area and manage the transition of Chile’s economy from capitalism to socialism. Under the guidance of British cybernetician Stafford Beer, often lauded as the ‘father of management cybernetics’, an interdisciplinary Chilean team designed cybernetic models of factories within the nationalised sector and created a network for the rapid transmission of econ- omic data between the government and the factory floor. The article describes the construction of this unorthodox system, examines how its structure reflected the socialist ideology of the Allende government, and documents the contributions of this technology to the Allende administration.
 
 
+[<img src='assets/supercoop.png' style='width:10em; '>](https://supercoop.de/)  
+SuperCoop Berlin
+
+
 
 26 June
 ## Feminism
-
-
-[<img src='assets/weiberwirtschaft.png' style='width:10em; '>](https://weiberwirtschaft.de/)  
-WeiberWirtschaft eG
-
-
-📖 *Reading*
 
 D’Ignazio, C. and Klein, L. F. (2020). Data Feminism. MIT Press. [Introduction chapter](https://doi.org/10.7551/mitpress/11805.003.0002).
 
 > Today, data science is a form of power. It has been used to expose injustice, improve health outcomes, and topple governments. But it has also been used to discriminate, police, and surveil. This potential for good, on the one hand, and harm, on the other, makes it essential to ask: Data science by whom? Data science for whom? Data science with whose interests in mind? The narratives around big data and data science are overwhelmingly white, male, and techno-heroic. In Data Feminism, Catherine D'Ignazio and Lauren Klein present a new way of thinking about data science and data ethics—one that is informed by intersectional feminist thought.
 
 
+[<img src='assets/weiberwirtschaft.png' style='width:10em; '>](https://weiberwirtschaft.de/)  
+WeiberWirtschaft eG
+
 
 3 July
 ## Care
 
-
-[<img src='assets/madia.png' style='width:10em; '>](https://madia-potsdam.de/)  
-Madia Potsdam
-
-
-📖 *Reading*
-
 de la Bellacasa, M. P. (2017). [Matters of Care: Speculative Ethics in More Than Human Worlds](https://syllabus.pirate.care/library/Maria%20Puig%20de%20La%20Bellacasa/Matters%20of%20Care%20(171)/Matters%20of%20Care%20-%20Maria%20Puig%20de%20La%20Bellacasa.pdf). Introduction (pages 1-24). Posthumanities. University of Minnesota Press.
 
 > To care can feel good, or it can feel bad. It can do good, it can oppress. But what is care? A moral obligation? A burden? A joy? Is it only human? In Matters of Care, María Puig de la Bellacasa presents a powerful challenge to conventional notions of care, exploring its significance as an ethical and political obligation for thinking in the more than human worlds of technoscience and naturecultures.
+
+
+[<img src='assets/madia.png' style='width:10em; '>](https://madia-potsdam.de/)  
+Madia Potsdam
 
 
 
