@@ -92,6 +92,7 @@ p + p {
     xborder: 0.1em solid var(--primary);
     padding: 1.5em;
     pointer-events: all;
+    z-index: 1;
 }
 #cursor:active, #cursor:focus {
     z-index:2;
@@ -118,10 +119,11 @@ p + p {
     background-color: var(--background-content);
     xborder: 0.1em solid var(--primary);
     visibility: hidden;
-    z-index:0;
+    z-index:2;
+    
 }
 .content div {
-    padding: 0.2em
+    padding: 0.2em;
 }
 .content img, #cursor img {
     max-width: 100%;
