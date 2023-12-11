@@ -68,16 +68,16 @@ Kimmerer, R. W. (2013). Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowl
 ### Themes
 
 The course passes through ten central themes, each of which is accompanied by a key reading and a range of visual materials such as exemplary diagrams and visualizations:
-- Utopia
-- Co-ops
-- Platforms
-- Economies
-- Co-design
-- Work
-- Commons
-- Cybersyn
-- Feminism
-- Care
+- [Utopia](#utopia)
+- [Co-ops](#co-ops)
+- [Platforms](#platforms)
+- [Economies](#economies)
+- [Co-design](#co-design)
+- [Work](#work)
+- [Commons](#wommons)
+- [Cybersyn](#cybersyn)
+- [Feminism](#feminism)
+- [Care](#care)
 
 
 ### Hosts
