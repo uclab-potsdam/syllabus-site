@@ -17,7 +17,7 @@ function createBaseData(json) {
 async function updateView(){
     //due to weird race condition with some css and getBoundingClientRect 
     //=> found out its due image loading that the image size cant be extracted immidiatly after setting the img tag.
-    await new Promise(r => setTimeout(r, 300)); 
+    await new Promise(r => setTimeout(r, 100)); 
     let menu = document.querySelector('#menu')
     let domParser = new DOMParser();
     sessions.map((session,sessionIndex) => {
