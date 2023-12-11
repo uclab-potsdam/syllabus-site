@@ -61,7 +61,7 @@ async function updateView(){
     let height = sessions.reduce((accumulator, session) => { return accumulator += session.height}, 0)
     //set the body height to the height of the data
     
-    sessions
+    // sessions
     let elements = ['#links', '#wrapper','#app']
     elements.map(element => {
         document.querySelector(element).style.height = height + 'px' 
@@ -74,7 +74,6 @@ async function updateView(){
     })
     document.querySelector('footer').style.visibility = 'visible';
     
-
     animation()
 }
 function updateItemPosition(item) {
@@ -87,7 +86,7 @@ function updateItemPosition(item) {
     item.x = item.left ? window.innerWidth * 0.05 + item.varianz : window.innerWidth * 0.95 + item.varianz
     
     item.domObject.style.top = item.y + "px";
-    item.domObject.style.transform = `translate(${item.varianz}px,0)`
+    item.domObject.style.transform = 'translate(${item.varianz}px,0)'
 }
 function updateItemBase(item, session,itemIndex) {
     item.type = item.markdown ? 'content' : 'actor'
