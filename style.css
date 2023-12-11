@@ -67,7 +67,7 @@ blockquote {
     margin-inline-end: 1.5em;
 }
 p + p {
-    margin-top: 1em;
+    margin: .5em 0 ;
 }
 /* h1,h2,h3,p, li, svg text {
     font-family: hkgrotesk, sans-serif;
@@ -119,8 +119,7 @@ p + p {
     background-color: var(--background-content);
     xborder: 0.1em solid var(--primary);
     visibility: hidden;
-    z-index:2;
-    
+    z-index:2;    
 }
 .content div {
     padding: 0.2em;
@@ -199,9 +198,19 @@ footer{
     visibility: hidden;
     display:flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 2em 2em 1.5em 2em;
     font-size: 1em;
+    background-color: #888;
+    color: #000;
 }
+footer img {
+    vertical-align: top;
+    margin-right: 1.5em;
+}
+footer a {
+    color: #000;
+}
+
 @media screen and (orientation: portrait) and (max-width: 767px) {
     body {
         font-size: 14px !important;
