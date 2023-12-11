@@ -219,9 +219,7 @@ footer img {
 footer a {
     color: #000;
 }
-blockquote{
-    margin: 0 0 1em 0;
-}
+
 @media screen and (orientation: portrait) and (max-width: 767px) {
     body {
         font-size: 16px !important;
