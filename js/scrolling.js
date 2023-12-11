@@ -41,7 +41,7 @@ function update(){
     }
     let items = sessions[currentSession.index].items
     items.map((item,i)  =>  {
-        if(window.scrollY + window.innerHeight/2 > (item.y + item.bounding.height) &&  window.scrollY + window.innerHeight/2 < (items[i+1] ? items[i+1].y + items[i+1].bounding.height: item.y + item.bounding.height)){
+        if(window.scrollY + window.innerHeight/2 > (item.y + item.bounding.height/2) &&  window.scrollY + window.innerHeight/2 < (items[i+1] ? items[i+1].y + items[i+1].bounding.height: item.y + item.bounding.height)){
             item.domObject.style["z-index"] = 3;
         }else{
             item.domObject.style["z-index"] = 2;
