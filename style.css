@@ -51,11 +51,11 @@ div.content:has(img) {
 }
 h1 {
     margin: .33em 0;
-    font-size: 2.25em;
+    font-size: 2em;
 }
 h2 {
     margin: .5em 0;
-    font-size: 1.75em;
+    font-size: 1.5em;
 }
 h3 {
     margin: .5em 0;
@@ -254,6 +254,21 @@ footer a:hover img, footer a:active img {
     #menu.active #anchors{
         left: unset;
         right: 0;
+    }
+
+    footer {
+        display:unset;
+        justify-content: center;
+        margin: auto;
+    }
+
+    footer p {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    footer p a:last-child img {
+        margin-right: 0;
     }
 }
 @media (prefers-color-scheme: dark) {
