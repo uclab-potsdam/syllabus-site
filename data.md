@@ -208,6 +208,7 @@ The following [cooperative principles](https://www.ica.coop/en/cooperatives/coop
 7. Concern for Community
 
 
+
 8 May
 ## Platforms
 
