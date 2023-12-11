@@ -68,6 +68,9 @@ async function updateView(){
     document.querySelectorAll('.actors').forEach(n => {
         n.style.visibility = 'visible'
     })
+    document.querySelector('footer').style.visibility = 'visible';
+    
+
     animation()
 }
 function updateItemPosition(item) {

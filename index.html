@@ -36,6 +36,7 @@
             <div id="content"></div>
         </div>
     </div>
+    <footer></footer>
     <script>
         window.mobileCheck = (function () {
             let check = false;
@@ -49,15 +50,26 @@
 	        document.querySelector("body").style.fontSize = 7+.7*vw+.3*vh+"px";
         }
         window.onresize = setFontSize;
-        setFontSize();
 
-        //get the data and parse it
-        fetch(`data.json`)
-            .then(data => data.json())
-            .then((json) => {
-                //create the data representation
-                createBaseData(json);
-            })</script>
+        setFontSize();
+        fetch('data.md')
+        .then(data => data.text())
+        .then(text => {
+            let data = []
+            let sessions = text.split("\n\n\n\n")
+            let footer  = sessions.slice(-1)[0]
+            document.querySelector("footer").innerHTML = marked.parse(footer)
+            sessions.slice(0,-1).map(session => {
+                let sessionObject = {}
+                let sessionData = session.split("\n\n\n")
+                sessionObject.text = sessionData[0]
+                sessionData = sessionData.slice(1)
+                sessionObject.content = sessionData.map(content => { return {"markdown" : content}})
+                data.push(sessionObject)
+            })
+            createBaseData(data)
+        })
+            </script>
 </body>
 
 </html>
