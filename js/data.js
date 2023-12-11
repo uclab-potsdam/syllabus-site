@@ -2,8 +2,7 @@ const sessions = [];
 function createBaseData(json) {
     json.map((session, sessionIndex) => {
         session.index = sessionIndex
-        session.height = window.innerHeight * 1.5 + //padding at the beggining
-        (json.length-1 == session.index?window.innerHeight : 0)  //if last session add padding at the end
+        session.height = (json.length-1 == session.index ? window.innerHeight : 0) //height of the session//if last session add padding at the end
         //set position for items
         let actors = session.actors ?? [];
         session.alignment = Math.random() > 0.5? true : false
@@ -27,10 +26,11 @@ async function updateView(){
             item.height = item.bounding.height + window.innerHeight * 0.33
             if (itemIndex === 0 || item.type == "actor") item.margin = 0
             else item.margin = session.items[itemIndex - 1].margin + session.items[itemIndex - 1].height            
-            session.height += item.height + window.innerHeight * 0.1
-            
+            session.height += item.height + window.innerHeight * 0.33 
         })
         session.margin = sessionIndex == 0 ? 0 : sessions[sessionIndex - 1].margin + sessions[sessionIndex - 1].height
+        session.paddingStart = sessionIndex == 0 ? window.innerHeight * 1.5 : session.height//padding at the beggining
+        session.height += session.paddingStart
         session.items.map((item,itemIndex) => {
             updateItemPosition(item,itemIndex)
         })
@@ -79,7 +79,7 @@ async function updateView(){
 function updateItemPosition(item) {
     //set height of session according to mobile or desktopy
     item.y = item.session.margin + //margin to the top
-    window.innerHeight * 1.5 + //height of the session padding-top
+    item.session.paddingStart + //height of the session padding-top
     item.margin //margin to the top of the session
 
     item.varianz = item.left ? Math.random() * window.innerWidth * 0.1: Math.random() * -window.innerWidth * 0.1
