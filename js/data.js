@@ -29,7 +29,7 @@ async function updateView(){
             session.height += item.height + window.innerHeight * 0.33 
         })
         session.margin = sessionIndex == 0 ? 0 : sessions[sessionIndex - 1].margin + sessions[sessionIndex - 1].height
-        session.paddingStart = sessionIndex == 0 ? window.innerHeight * 1.5 : session.height //padding at the beggining
+        session.paddingStart = sessionIndex == 0 ? window.innerHeight * 1.5 : session.height/2 //padding at the beggining
         session.height += session.paddingStart
         if(session.height < window.innerHeight) session.height = window.innerHeight
         session.items.map((item,itemIndex) => {
@@ -55,7 +55,6 @@ async function updateView(){
         menuItem.addEventListener("click", () => {
             window.location.hash = session.hash
         }) 
-        console.log(menuItem)
         anchors.appendChild(menuItem)
     })
     //set height and padding according to datasize
@@ -94,7 +93,6 @@ function updateItemBase(item, session,itemIndex) {
     item.type = item.markdown ? 'content' : 'actor'
     item.session = session
     item.visible = false
-    console.log(session.alignment)
     item.left = itemIndex % 2 == 0 ? session.alignment : !session.alignment
     createDataRepresentation(item);
 }

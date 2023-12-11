@@ -177,10 +177,13 @@ a[href^="#"] {
     color: var(--font);
     pointer-events: all;
     font-size: 1em;
+    height: 100vh;
 }
 #anchors{
-    margin-top: 7vh;
-    display: none;
+    margin-top: 10vh;
+    position: relative;
+    left: -100%;
+    transition: all 0.3s ease-in-out;
     padding: 0.5em;
 }
 #anchors p {
@@ -192,12 +195,10 @@ a[href^="#"] {
     text-decoration: underline;
     cursor: pointer;
 }
-#menu.active{
-    background-color: var(--background-content);
-    box-shadow: 0 0 1em 0em var(--background-content);
-}
 #menu.active #anchors{
-    display: block;
+   left: 0%;
+   background-color: var(--background-content);
+   box-shadow: 0 0 1em 0em var(--background-content);
 }
 #anchors .active{
     font-weight: bold;
@@ -223,7 +224,7 @@ blockquote{
 }
 @media screen and (orientation: portrait) and (max-width: 767px) {
     body {
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
     .content{
         max-width: 80vw;
@@ -247,6 +248,14 @@ blockquote{
         right: 1%;
         text-align: right;
         font-size: 2em;
+    }
+    #anchors{
+        left: unset;
+        right: -100%;
+    }
+    #menu.active #anchors{
+        left: unset;
+        right: 0%
     }
 }
 @media (prefers-color-scheme: dark) {
