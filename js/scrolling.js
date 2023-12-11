@@ -20,7 +20,7 @@ function updateCursor(currentSession,currentProgress) {
     let cursorPositionRelative = (window.innerHeight - (currentProgress * window.innerHeight))-(currentProgress * cursorDimensions.height)
     cursor.attr('style', `top:${cursorPositionRelative}px;`)
     lastCursorPosition = cursorPositionRelative
-    updateLinks(currentSession,cursorPosition,cursorDimensions)
+    updateLinks(currentSession,cursorPositionRelative,cursorDimensions)
 }
 function animation(){
     if(!scrolled && sessions.length > 0){

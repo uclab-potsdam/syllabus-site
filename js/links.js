@@ -1,50 +1,52 @@
-let logged = false
-function updateLinks(currentSession,cursorPosition,cursorDimensions) {
-        //set the line generator from d3 https://d3js.org/d3-shape/curve
-        let anchor1 = [window.innerWidth/2,  cursorPosition+cursorDimensions.height/2]
-        currentSession.items.map((item) => {
-            //first anchor is the cursor 
-            let bounding = item.domObject.getBoundingClientRect()
-            let anchor4 = [bounding.left + item.bounding.width/2,item.y + item.bounding.height/2]  
-            let distance = calculateDistanceY(anchor1, anchor4)
-            item.visible = true
-            item.distance = remapRange(distance, 0, window.innerHeight*1.5, 1, 0)
-            item.linePath = [...anchor1,...anchor4]
-        })
-        drawLinks(currentSession.items)
+let logged = false;
+
+function updateLinks(currentSession, cursorPosition, cursorDimensions) {
+    let anchor1 = [window.innerWidth / 2, cursorPosition + cursorDimensions.height / 2];
+    currentSession.items.map((item) => {
+        let bounding = item.domObject.getBoundingClientRect();
+        let anchor4 = [bounding.left + bounding.width / 2, bounding.top + bounding.height / 2];
+        let distance = calculateDistanceY(anchor1, anchor4);
+
+        item.visible = true;
+        item.distance = remapRange(distance, 0, window.innerHeight * 1.5, 1, 0);
+        item.linePath = [...anchor1, ...anchor4];
+        
+    });
+    drawLinks(currentSession.items);
 }
+
 function drawLinks(items) {
-    //filterout non visible objects
-    let visible = items.filter((item) =>  item.visible)
-    //draw the links
-    d3.select('#links').selectAll('.links')
-        .data(visible)
-        .join(
-            function (enter) {
-                return enter.select('#curves').append('line')
-                    .attr('class', 'links')
-                    .attr('x1', d => d.linePath[0])
-                    .attr('y1', d => d.linePath[1])
-                    .attr('x2', d => d.linePath[2])
-                    .attr('y2', d => d.linePath[3])
-                    .attr('opacity',1) //d => d.distance)
-            },
-            function (update) {
-                return update
-                    .attr('x1', d => d.linePath[0])
-                    .attr('y1', d => d.linePath[1])
-                    .attr('x2', d => d.linePath[2])
-                    .attr('y2', d => d.linePath[3])
-                    .attr('opacity',1)
-                   // .attr('opacity',d => d.distance)
-            },
-        )
+
+    let dpr = window.devicePixelRatio || 1;
+    let canvas = document.getElementById('links');
+    if (!canvas.getContext) return;
+
+    let ctx = canvas.getContext('2d');
+
+    let w = document.documentElement.clientWidth;
+    let h = document.documentElement.clientHeight;	
+    let vw = w/100;
+    let vh = h/100;
+
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    ctx.scale(dpr, dpr);
+    ctx.clearRect(0, 0, w, h);
+  
+    items.filter(item => item.visible).forEach(item => {
+        ctx.lineWidth = fs/15;
+        ctx.strokeStyle = '#888';
+        ctx.beginPath();
+        ctx.moveTo(item.linePath[0], item.linePath[1]);
+        ctx.lineTo(item.linePath[2], item.linePath[3]);
+        ctx.stroke();
+    });
 }
-// remap arbitrary ranges to a new scale
+
 function remapRange(value, low1, high1, low2, high2) {
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
 }
-// calculate distance as absolute y-difference
+
 function calculateDistanceY(p1, p2) {
-    return Math.abs(p2[1] - p1[1])
+    return Math.abs(p2[1] - p1[1]);
 }

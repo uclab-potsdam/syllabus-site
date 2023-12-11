@@ -62,7 +62,7 @@ async function updateView(){
     //set the body height to the height of the data
     
     // sessions
-    let elements = ['#links', '#wrapper','#app']
+    let elements = ['#wrapper','#app']
     elements.map(element => {
         document.querySelector(element).style.height = height + 'px' 
     })
@@ -96,67 +96,12 @@ function updateItemBase(item, session,itemIndex) {
     createDataRepresentation(item);
 }
 function createDataRepresentation(item) {
-    //create svg
     let rootElement = document.getElementById('content');
     let rootItem = document.createElement('div');
     rootItem.classList.add('fixObjects');
     rootItem.classList.add(item.left ? 'left' : 'right');
-    if (item.type == 'actor') {
-        rootItem.classList.add('actors');
-        if (item.link) {
-            let a = document.createElement('a');
-            a.href = item.link;
-            if (item.title) a.title = item.title;            
-            let img = document.createElement('img');
-            img.src = item.image;
-            a.appendChild(img);
-            rootItem.appendChild(a)
-        } else {
-            let img = document.createElement('img');
-            img.src = item.image;
-            rootItem.appendChild(img)
-        }
-        // Create a SVG element
-        let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        svg.setAttribute("width", "100%");
-        svg.setAttribute("height", "100%");
-        svg.setAttribute('viewBox', '0 0 200 200')
-        svg.setAttribute('style', 'margin-top: -33%')
-
-        // Create a path element for the curve
-        let path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-        //path.setAttribute("d", "M30 15 Q 95 65 180 10");
-        path.setAttribute("d", "M0 40 Q 100 130 200 40");        
-        path.setAttribute("fill", "none");
-        path.setAttribute("stroke", "none");
-        path.setAttribute("id", "curve")
-
-        // Create a text element
-        let text = document.createElementNS("http://www.w3.org/2000/svg", "text");
-        text.setAttribute("font-size", "1.33rem");
-        text.setAttribute("text-anchor", "middle");
-
-        // Create a textPath element and set the xlink:href attribute to the path ID
-        let textPath = document.createElementNS("http://www.w3.org/2000/svg", "textPath");
-        textPath.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "#curve");
-        textPath.setAttribute("startOffset", "50%");
-        textPath.textContent = item.name;
-
-        // Append the textPath to the text element
-        text.appendChild(textPath);
-
-        // Append the path and text elements to the SVG
-        svg.appendChild(path);
-        svg.appendChild(text);
-
-        // Append the SVG to the rootActor element
-        rootItem.appendChild(svg);
-    } else {
-        rootItem.classList.add('content');
-        rootItem.innerHTML = marked.parse(item.markdown)
-
-        
-    }
+    rootItem.classList.add('content');
+    rootItem.innerHTML = marked.parse(item.markdown)
     item.domObject = rootItem
     rootElement.appendChild(rootItem);
 }

@@ -38,9 +38,8 @@
         <div id="menu">
               <div id="anchors"></div>
         </div>
-        <svg id="links">
-            <g id="curves"></g>
-        </svg>
+        <canvas id="links">
+        </canvas>
         <div id="wrapper">
             <div id="cursor"></div>
             <div id="content"></div>
@@ -54,10 +53,12 @@
             return check;
         })()
         //fontsize based on window size
+        let fs = 14;
         function setFontSize(){
-	        vw = document.documentElement.clientWidth/100;
-	        vh = document.documentElement.clientHeight/100;	
-	        document.querySelector("body").style.fontSize = 7+.7*vw+.3*vh+"px";
+            vw = document.documentElement.clientWidth/100;
+            vh = document.documentElement.clientHeight/100;
+            fs = 7+.7*vw+.3*vh;	
+	        document.querySelector("body").style.fontSize = fs+"px";
         }
         window.onresize = setFontSize;
 

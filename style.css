@@ -78,9 +78,7 @@ blockquote {
 p + p {
     margin: .5em 0 ;
 }
-/* h1,h2,h3,p, li, svg text {
-    font-family: hkgrotesk, sans-serif;
- } */
+
  /* Specific styles */
 #app,#wrapper,#links{
     pointer-events: none;
@@ -107,14 +105,17 @@ p + p {
     z-index:2;
 }
 #links{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    position: absolute;
+    height: 100%;
+    position: fixed;
+    padding: 0;
+    margin: 0;
     z-index: -2;
-}
-#curves line{
-    stroke: var(--background-cursor);
-    fill: none;
-    stroke-width: 0.12em;
+    transform: translate3d(0, 0, 0);
 }
 #content{
     width: 100%;
