@@ -23,8 +23,8 @@ function drawLinks(items) {
 
     let ctx = canvas.getContext('2d');
 
-    let w = document.documentElement.clientWidth;
-    let h = document.documentElement.clientHeight;	
+    let w = canvas.clientWidth;
+    let h = canvas.clientHeight;	
     let vw = w/100;
     let vh = h/100;
 
