@@ -195,6 +195,13 @@ a[href^="#"] {
 #menu .active{
     font-weight: bold;
 }
+footer{
+    visibility: hidden;
+    display:flex;
+    justify-content: space-between;
+    padding: 2em;
+    font-size: 1em;
+}
 @media screen and (orientation: portrait) and (max-width: 767px) {
     body {
         font-size: 14px !important;

@@ -36,6 +36,7 @@
             <div id="content"></div>
         </div>
     </div>
+    <footer></footer>
     <script>
         window.mobileCheck = (function () {
             let check = false;
@@ -49,14 +50,16 @@
 	        document.querySelector("body").style.fontSize = 7+.7*vw+.3*vh+"px";
         }
         window.onresize = setFontSize;
-        
+
         setFontSize();
         fetch('data.md')
         .then(data => data.text())
         .then(text => {
             let data = []
             let sessions = text.split("\n\n\n\n")
-            sessions.map(session => {
+            let footer  = sessions.slice(-1)[0]
+            document.querySelector("footer").innerHTML = marked.parse(footer)
+            sessions.slice(0,-1).map(session => {
                 let sessionObject = {}
                 let sessionData = session.split("\n\n\n")
                 sessionObject.text = sessionData[0]
