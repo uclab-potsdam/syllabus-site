@@ -33,11 +33,15 @@ body{
     margin: 0;
     overflow-x: hidden;
     font-family: hkgrotesk, sans-serif;
-    background-color: var(--background)
+    background-color: var(--background);
 }
 p,li {
     margin: 0;
     font-size: .9em;
+}
+
+div.content:has(img) {
+   background: unset;
 }
 h1{
     margin: .33em 0;
@@ -105,7 +109,7 @@ p + p {
 #curves line{
     stroke: var(--background-cursor);
     fill: none;
-    stroke-width: 0.2em;
+    stroke-width: 0.15em;
 }
 #content{
     width: 100%;
@@ -114,7 +118,7 @@ p + p {
 }
 .content {
     position: absolute;
-    padding: 1em;
+    padding: .75em;
     max-width: calc(15vw + 15vh);
     background-color: var(--background-content);
     xborder: 0.1em solid var(--primary);
