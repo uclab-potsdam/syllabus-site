@@ -100,6 +100,7 @@ Every week the course takes place at different locations in Berlin or Potsdam. B
 17 April
 ## Utopia
 
+
 Lueder, C. (2013). [Diagram Utopias: Rota and Network as Instrument and Mirror of Utopia and Agronica](https://infovis.fh-potsdam.de/readings/lueder2013diagram.pdf). Journal of Architectural Education, 67(2):224–233.
 
 > Utopian visions and diagrams have engaged in a multitude of relationships. For example, a utopian narrative can be conceived as a diagram, or with the aid of diagrams, and understood through diagrammatic (re) annotation. This notion is explored through an interpretation of Thom- as More’s Utopia and Andrea Branzi’s Agronica. Both schemes address various structural conditions through diagrammatic operations. In More’s scheme the channel that separates Utopia from the mainland, dug by its putative founder King Abraxas, inscribes a circular boundary, reiterated in the city walls and moat; it is resonant with contempora- neous rota and volvelle schemata. Conversely, Andrea Branzi’s “mirror simulator” multiplies Agronica’s centrifugal grid to infinity, negating the “outside,” and is evocative of pervasive virtual networks.
@@ -144,6 +145,7 @@ Lino Zeddies, 2023
 
 24 April
 ## Co-ops
+
 
 Fairbairn, B. et al. (1994). [The meaning of Rochdale: The Rochdale Pioneers and the co-operative principles](https://ageconsearch.umn.edu/record/31778/files/re94fa01.pdf). Technical report, University of Saskatchewan, Centre for the Study of Co-operatives.
 
@@ -209,6 +211,7 @@ The following [cooperative principles](https://www.ica.coop/en/cooperatives/coop
 8 May
 ## Platforms
 
+
 Scholz, T. (2016). [Platform cooperativism. Challenging the corporate sharing economy](https://rosalux.nyc/wp-content/uploads/2020/11/RLS-NYC_platformcoop.pdf). New York, NY: Rosa Luxemburg Foundation.
 
 > Among all the problems with 21st-century work — the ballooning of the low wage service sector, economic inequality, the crumbling of worker rights  — the main problem really is that there are so few realistic alternatives. What has been missing from the debate about the future of work is an approach that offers peo- ple something that they can wholeheartedly embrace. This is what this essay is about.
@@ -220,9 +223,6 @@ SMartDe eG
 
 [![](assets/centralized-distributed.png)](https://pages.cs.wisc.edu/~akella/CS740/F08/740-Papers/Bar64.pdf)  
 Paul Baran, 1962
-
-
-Skowronnek, A., Vogel, L. & Parnow, J. (2015) [AIRBNB vs. BERLIN. Was sagen die Daten?](https://airbnbvsberlin.de)
 
 
 [![](assets/airbnbvsberlin.webp)](https://airbnbvsberlin.com/)  
@@ -249,6 +249,7 @@ Victoria Sgarro, 2023
 15 May
 ## Economies
 
+
 Raworth, K. (2012). [A safe and just space for humanity](https://www-cdn.oxfam.org/s3fs-public/file_attachments/dp-a-safe-and-just-space-for-humanity-130212-en_5.pdf). Oxfam Discussion Paper.
 
 > Humanity’s challenge in the 21st century is to eradicate poverty and achieve prosperity for all within the means of the planet’s limited natural resources. In the run-up to Rio+20, this discussion paper presents a visual framework – shaped like a doughnut – which brings planetary boundaries together with social boundaries, creating a safe and just space between the two, in which humanity can thrive. Moving into this space demands far greater equity – within and between countries – in the use of natural resources, and far greater efficiency in transforming those resources to meet human needs.
@@ -261,6 +262,7 @@ Regionalwert AG Berlin Brandenburg
 
 22 May
 ## Co-design
+
 
 Sanders, E. B.-N. and Stappers, P. J. (2008). [Co-creation and the new landscapes of design](https://doi.org/10.1080/15710880701875068). Co-design, 4(1):5–18.
 
@@ -275,6 +277,7 @@ Backstube Vollkornbäckerei
 5 June
 ## Work
 
+
 Weeks, K. (2011). [The Problem with Work: Feminism, Marxism, Antiwork Politics, and Postwork Imaginaries](https://caringlabor.files.wordpress.com/2012/05/the-problem-with-work_-feminism-marxism-kathi-weeks.pdf). Introduction chapter. Pages 1–36. Duke University Press.
 
 >In The Problem with Work, Kathi Weeks boldly challenges the presupposition that work, or waged labor, is inherently a social and political good. While progressive political movements, including the Marxist and feminist movements, have fought for equal pay, better work conditions, and the recognition of unpaid work as a valued form of labor, even they have tended to accept work as a naturalized or inevitable activity. Weeks argues that in taking work as a given, we have “depoliticized” it, or removed it from the realm of political critique. Employment is now largely privatized, and work-based activism in the United States has atrophied. We have accepted waged work as the primary mechanism for income distribution, as an ethical obligation, and as a means of defining ourselves and others as social and political subjects. Taking up Marxist and feminist critiques, Weeks proposes a postwork society that would allow people to be productive and creative rather than relentlessly bound to the employment relation. Work, she contends, is a legitimate, even crucial, subject for political theory.
@@ -287,6 +290,7 @@ gruppe F Berlin
 
 12 June
 ## Commons
+
 
 Ostrom, E., Burger, J., Field, C. B., Norgaard, R. B., and Policansky, D. (1999). [Revisiting the commons: local lessons, global challenges](http://infovis.fh-potsdam.de/readings/ostrom1999revisiting.pdf). science, 284(5412):278–282.
 
@@ -301,6 +305,7 @@ Regenbogenfabrik e.V.
 19 June
 ## Cybersyn
 
+
 Medina, E. (2006). [Designing Freedom, Regulating a Nation: Socialist Cybernetics in Allende’s Chile](http://infovis.fh-potsdam.de/readings/medina2006designing.pdf). Journal of Latin American Studies, 38(3):571–606.
 
 > This article presents a history of ‘Project Cybersyn’, an early computer network developed in Chile during the socialist presidency of Salvador Allende (1970–1973) to regulate the growing social property area and manage the transition of Chile’s economy from capitalism to socialism. Under the guidance of British cybernetician Stafford Beer, often lauded as the ‘father of management cybernetics’, an interdisciplinary Chilean team designed cybernetic models of factories within the nationalised sector and created a network for the rapid transmission of econ- omic data between the government and the factory floor. The article describes the construction of this unorthodox system, examines how its structure reflected the socialist ideology of the Allende government, and documents the contributions of this technology to the Allende administration.
@@ -313,6 +318,7 @@ SuperCoop Berlin
 
 26 June
 ## Feminism
+
 
 D’Ignazio, C. and Klein, L. F. (2020). Data Feminism. MIT Press. [Introduction chapter](https://doi.org/10.7551/mitpress/11805.003.0002).
 
@@ -327,6 +333,7 @@ WeiberWirtschaft eG
 3 July
 ## Care
 
+
 de la Bellacasa, M. P. (2017). [Matters of Care: Speculative Ethics in More Than Human Worlds](https://syllabus.pirate.care/library/Maria%20Puig%20de%20La%20Bellacasa/Matters%20of%20Care%20(171)/Matters%20of%20Care%20-%20Maria%20Puig%20de%20La%20Bellacasa.pdf). Introduction (pages 1-24). Posthumanities. University of Minnesota Press.
 
 > To care can feel good, or it can feel bad. It can do good, it can oppress. But what is care? A moral obligation? A burden? A joy? Is it only human? In Matters of Care, María Puig de la Bellacasa presents a powerful challenge to conventional notions of care, exploring its significance as an ethical and political obligation for thinking in the more than human worlds of technoscience and naturecultures.
@@ -339,7 +346,11 @@ Madia Potsdam
 
 # Projects
 
-Aiming to visualize structures of a social-ecological economy, each student carried out a small data visualization project, spanning data collection, visualization design, and iterative prototyping. The visualizations are based on practices and principles encountered during the visits, readings, and exchanges throughout the semester. 
+
+Aiming to visualize structures of a social-ecological economy, each student carried out a small data visualization project, spanning data collection, visualization design, and iterative prototyping. 
+
+
+The visualizations are based on practices and principles encountered during the visits, readings, and exchanges throughout the semester. 
 
 
 
@@ -361,7 +372,8 @@ The current version of co-op.comm is presented as a [Figma prototype](https://ww
 
 
 
-[<img src='assets/fhp.svg' style='height:3em'>](https://www.fh-potsdam.de/) 
-[<img src='assets/id.svg' style='height:2.25em'>](https://interface.fh-potsdam.de/) 
 
-[Imprint](https://www.fh-potsdam.de/impressum) · [Privacy](https://www.fh-potsdam.de/en/privacy) · *Created with [Syllabus Site](https://github.com/uclab-potsdam/syllabus-site/)*
+[<img src='assets/fhp.svg' style='height:2.25em'>](https://www.fh-potsdam.de/) 
+[<img src='assets/id.svg' style='height:1.75em'>](https://interface.fh-potsdam.de/) 
+
+[Imprint](https://www.fh-potsdam.de/impressum) · [Privacy](https://www.fh-potsdam.de/en/privacy) · *This is a [Syllabus Site](https://github.com/uclab-potsdam/syllabus-site/)*

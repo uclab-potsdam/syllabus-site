@@ -51,6 +51,7 @@ async function updateView(){
         }
         session.hash = title.toLowerCase()
         menuItem.innerHTML = title
+        menuItem.classList.add(session.hash)
         menuItem.addEventListener("click", () => {
             window.location.hash = session.hash
         }) 

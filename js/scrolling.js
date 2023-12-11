@@ -8,11 +8,15 @@ function updateCursor(currentSession,currentProgress) {
     let cursor = d3.select('#cursor')
     //update the cursor if the session changes
     if (lastSession == null || lastSession.index != currentSession.index) {
+        console.log(currentSession);
         cursor.html(marked.parse(currentSession.text))
         lastSession = currentSession
         document.getElementById('anchors').childNodes.forEach(childNode => {childNode.classList.remove('active')})
-        let currentNav = document.getElementById('anchors').childNodes[currentSession.index]
-        if (currentNav!= null) currentNav.classList.add('active')
+        let currentNav = document.querySelector('#anchors .'+currentSession.hash)
+        if (currentNav!= null) {
+            currentNav.classList.add('active')
+            // console.log(currentSession.index);
+        }
     }
     //update the cursor dimension and the position according to the scrolling progress of the session
     let cursorDimensions = cursor.node().getBoundingClientRect()
