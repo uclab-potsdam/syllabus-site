@@ -200,24 +200,17 @@ footer{
     justify-content: space-between;
     padding: 2em 2em 1.5em 2em;
     font-size: 1em;
-    background-color: var(--gray);
-    color: #000;
+    background-color: var(--background);
+    color: var(--font);
 }
 footer img {
     vertical-align: top;
     margin-right: 1.5em;
-}
-footer a {
-    color: #000;
-    text-decoration: none;
-}
-footer a:hover {
-    color: #fff;
-    text-decoration: underline;
+    opacity: .5;
 }
 
-footer a:hover img {
-    filter: invert(100%);
+footer a:hover img, footer a:active img {
+    opacity: 1;
 }
 
 @media screen and (orientation: portrait) and (max-width: 767px) {
@@ -264,6 +257,9 @@ footer a:hover img {
         --background-content: hsl(0, 0%, 18%);
         --primary: #fff;
         --font: #fff;
+    }
+    footer img {
+        filter: invert(100%);
     }
 
 }
