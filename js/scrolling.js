@@ -1,7 +1,6 @@
 //put the update in an animation frame loop
 let lastCursorPosition = 0
 let lastSession = null
-let scrolled = false
 document.addEventListener("scroll",() => {
     d3.select('#cursor').attr('style', `top:${lastCursorPosition}px;`)
 })
@@ -23,8 +22,6 @@ function updateCursor(currentSession,currentProgress) {
     lastCursorPosition = cursorPositionRelative
     updateLinks(currentSession,cursorPosition,cursorDimensions)
 }
-
-
 function animation(){
     if(!scrolled && sessions.length > 0){
         hashChange()
@@ -44,26 +41,4 @@ function update(){
     }
     //update the cursor
     updateCursor(currentSession,currentProgress)
-}
-let menuState = false;
-function toggleMenu(){
-    menuState = !menuState
-    if(menuState){
-        document.getElementById('menu').classList.add('active')
-    }else{
-        document.getElementById('menu').classList.remove('active')
-    }
-}
-window.onhashchange = () => {hashChange()}
-function hashChange(){
-    if(sessions.length > 0){
-        if (window.location.hash == ""){
-            window.scrollTo({top: 0,behavior: 'smooth' })
-            return;
-        }
-        let session = sessions.filter(session => session.hash == window.location.hash.substring(1))[0]
-        if(typeof session != "undefined"){
-            window.scrollTo({top: session.index == 0 ? 0 :session.margin + (session.height/2), behavior: 'smooth' })
-        }
-    }
 }
