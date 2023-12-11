@@ -4,22 +4,12 @@ function updateLinks(currentSession,cursorPosition,cursorDimensions) {
         let anchor1 = [window.innerWidth/2,  cursorPosition+cursorDimensions.height/2]
         currentSession.items.map((item) => {
             //first anchor is the cursor 
-            let anchor4 = []
-            if(item.left){
-                anchor4 = [item.x + item.bounding.width/2,item.y + item.bounding.height/2]
-            }else{
-                anchor4 = [item.x - item.bounding.width/2,item.y + item.bounding.height/2]
-            }    
+            let bounding = item.domObject.getBoundingClientRect()
+            let anchor4 = [bounding.left + item.bounding.width/2,item.y + item.bounding.height/2]  
             let distance = calculateDistanceY(anchor1, anchor4)
-            // if (distance < window.innerHeight*1.5) {
-            if (true) {
-                item.visible = true
-                item.distance = remapRange(distance, 0, window.innerHeight*1.5, 1, 0)
-                item.linePath = [...anchor1,...anchor4]
-            }
-            else{
-                item.visible = false
-            }
+            item.visible = true
+            item.distance = remapRange(distance, 0, window.innerHeight*1.5, 1, 0)
+            item.linePath = [...anchor1,...anchor4]
         })
         drawLinks(currentSession.items)
 }
