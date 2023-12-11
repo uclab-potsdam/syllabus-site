@@ -360,3 +360,10 @@ Vivien Serve
 
 
 The current version of co-op.comm is presented as a [Figma prototype](https://www.figma.com/proto/d8CQHPhjl30T0BQ1ud5Z40/Unfolding-the-edges-of-communication?kind=proto&node-id=588-445426&page-id=579%3A439053&scaling=min-zoom&starting-point-node-id=588%3A445426&t=Kwvimi6MrSj9fhXM-1&type=design&viewport=606%2C116%2C0.15) and contains 3 visualized cooperative models.
+
+
+
+[<img src='assets/fhp.svg' style='height:3em; padding-top: .2em'>](https://www.fh-potsdam.de/) 
+[<img src='assets/id.svg' style='height:2.5em; padding-left: 2em;'>](https://interface.fh-potsdam.de/) 
+
+[Imprint](https://www.fh-potsdam.de/impressum) · [Privacy](https://www.fh-potsdam.de/en/privacy)
