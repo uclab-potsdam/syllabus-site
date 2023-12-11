@@ -37,6 +37,12 @@ body{
     font-family: hkgrotesk, sans-serif;
     background-color: var(--background);
 }
+
+*::selection {
+    color: var(--background-menu);
+    background-color: var(--font);
+}
+
 p,li {
     margin: 0;
     font-size: .9em;
@@ -58,7 +64,7 @@ h2 {
     font-size: 1.5em;
 }
 h3 {
-    margin: 0 0 .25em 0;
+    margin: .5em 0;
     font-size: 1.25em;    
 }
 ul {
@@ -78,7 +84,7 @@ blockquote {
     margin-inline-end: 1.25em;
     padding: 0;
 }
-p + p {
+p {
     margin: .5em 0 ;
 }
 
@@ -99,7 +105,7 @@ p + p {
     position: fixed;
     max-width: 40vw;
     background-color: var(--background-cursor);
-    padding: 1.5em;
+    padding: 1em 1.5em;
     pointer-events: all;
     z-index: 1;
 }
@@ -126,7 +132,7 @@ p + p {
 }
 .content {
     position: absolute;
-    padding: .75em;
+    padding: 0.25em .75em;
     max-width: calc(15vw + 15vh);
     background-color: var(--background-content);
     visibility: hidden;
@@ -166,7 +172,6 @@ a[href^="#"] {
     z-index: 0;
     position: fixed;
     text-align: left;
-    color: var(--font);
     pointer-events: all;
     font-size: 1em;
     height: 100vh;
@@ -175,16 +180,16 @@ a[href^="#"] {
     z-index: 5;
 }
 #anchors{
-    margin-top: 3em;
     position: relative;
     left: -100%;
     transition: all 0.3s ease-in-out;
-    padding: 0.75em;
+    padding: 3em 0.75em 0.75em 0.75em;
 }
 #anchors p {
     margin: 0;
     padding: 0.2em;
     font-size: 1em;
+    color: var(--gray);
 }
 #anchors p:hover, #burger:hover{
     text-decoration: underline;
@@ -196,6 +201,7 @@ a[href^="#"] {
 }
 #anchors .active{
     font-weight: bold;
+    color: var(--font);
 }
 footer{
     visibility: hidden;

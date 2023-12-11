@@ -21,14 +21,13 @@ Prof. Myriel Milicevic
 New York and Erie Railroad, 1855
 
 
-**Central questions for the course**
+### Central questions for the course
 
 - What would you like to reveal with the organigrams you will make?
 - What kind of work relations would you like to create for the future and put out there for discussion?
 
 
 
-3 April
 ## Kick-off
 
 This is an experimental course on the visualization of organizational structures utilizing narration and exploration to encourage reflection and imagination about work and the economy.
@@ -97,7 +96,6 @@ Every week the course takes place at different locations in Berlin or Potsdam. B
 
 
 
-17 April
 ## Utopia
 
 
@@ -143,7 +141,6 @@ Lino Zeddies, 2023
 
 
 
-24 April
 ## Co-ops
 
 
@@ -208,7 +205,6 @@ The following [cooperative principles](https://www.ica.coop/en/cooperatives/coop
 
 
 
-8 May
 ## Platforms
 
 
@@ -246,7 +242,6 @@ Victoria Sgarro, 2023
 
 
 
-15 May
 ## Economies
 
 
@@ -260,7 +255,6 @@ Regionalwert AG Berlin Brandenburg
 
 
 
-22 May
 ## Co-design
 
 
@@ -274,7 +268,6 @@ Backstube Vollkornbäckerei
 
 
 
-5 June
 ## Work
 
 
@@ -288,7 +281,6 @@ gruppe F Berlin
 
 
 
-12 June
 ## Commons
 
 
@@ -302,7 +294,6 @@ Regenbogenfabrik e.V.
 
 
 
-19 June
 ## Cybersyn
 
 
@@ -316,7 +307,6 @@ SuperCoop Berlin
 
 
 
-26 June
 ## Feminism
 
 
@@ -330,7 +320,6 @@ WeiberWirtschaft eG
 
 
 
-3 July
 ## Care
 
 
