@@ -366,4 +366,4 @@ The current version of co-op.comm is presented as a [Figma prototype](https://ww
 [<img src='assets/fhp.svg' style='height:3em; padding-top: .2em'>](https://www.fh-potsdam.de/) 
 [<img src='assets/id.svg' style='height:2.5em; padding-left: 2em;'>](https://interface.fh-potsdam.de/) 
 
-[Imprint](https://www.fh-potsdam.de/impressum) · [Privacy](https://www.fh-potsdam.de/en/privacy)
+[Imprint](https://www.fh-potsdam.de/impressum) · [Privacy](https://www.fh-potsdam.de/en/privacy) · *Created with [Syllabus Site](https://github.com/uclab-potsdam/syllabus-site/)*
