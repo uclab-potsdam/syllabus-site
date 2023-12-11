@@ -86,7 +86,7 @@ function updateItemPosition(item) {
     item.x = item.left ? window.innerWidth * 0.05 + item.varianz : window.innerWidth * 0.95 + item.varianz
     
     item.domObject.style.top = item.y + "px";
-    item.domObject.style.transform = 'translate(${item.varianz}px,0)'
+    item.domObject.style.transform = `translate(${item.varianz}px,0)`
 }
 function updateItemBase(item, session,itemIndex) {
     item.type = item.markdown ? 'content' : 'actor'
