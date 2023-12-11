@@ -39,7 +39,9 @@ p,li {
     margin: 0;
     font-size: .9em;
 }
-
+li{
+    margin-bottom: 0.2em;
+}
 div.content:has(img) {
    background: unset;
    text-align: center;
@@ -57,8 +59,9 @@ h3 {
     font-size: 1.25em;    
 }
 ul {
-    padding-inline-start: 1.25em;
+    padding: 0 1em 0 1em;
     list-style-type: none;
+    margin: 0.5em 0 0.5em 0;
 }
 ul li::before {
     content: '·';
@@ -110,7 +113,7 @@ p + p {
 #curves line{
     stroke: var(--background-cursor);
     fill: none;
-    stroke-width: 0.15em;
+    stroke-width: 0.12em;
 }
 #content{
     width: 100%;
@@ -167,36 +170,36 @@ a[href^="#"] {
 .right{
     right: 5vw;
 }
-#menu, #burger{
+#menu{
     position: fixed;
-    left: 1em;
     text-align: left;
     z-index: 5;
     color: var(--font);
     pointer-events: all;
     font-size: 1em;
 }
-#burger{
-    top: 1em;
-}
-#menu{
-    top: 3em;
+#anchors{
+    margin-top: 7vh;
     display: none;
     padding: 0.5em;
 }
-#menu p {
+#anchors p {
     margin: 0;
     padding: 0.2em;
+    font-size: 0.8em;
 }
-#menu p:hover, #burger:hover{
+#anchors p:hover, #burger:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 #menu.active{
-    display: block;
     background-color: var(--background-content);
+    box-shadow: 0 0 1em 0em var(--background-content);
 }
-#menu .active{
+#menu.active #anchors{
+    display: block;
+}
+#anchors .active{
     font-weight: bold;
 }
 footer{
@@ -215,7 +218,9 @@ footer img {
 footer a {
     color: #000;
 }
-
+blockquote{
+    margin: 0 0 1em 0;
+}
 @media screen and (orientation: portrait) and (max-width: 767px) {
     body {
         font-size: 14px !important;
@@ -238,9 +243,8 @@ footer a {
         transform: unset;
         margin: auto;        
     }
-    #menu,#burger{
-        left: unset;
-        right: 1em;
+    #menu{
+        right: 1%;
         text-align: right;
         font-size: 2em;
     }

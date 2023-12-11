@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="burger.css">
     <!-- d3.js for parsing, structuring and displaying the data -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <!-- Marked for parsing the markdown -->
@@ -28,8 +29,16 @@
 
 <body>
     <div id="app">
-        <div id="burger" onclick="toggleMenu()">Navigation</div>
-        <div id="menu"></div>
+
+        <div id="menu">
+            <div class="hamburger-icon" id="icon" onclick="toggleMenu()">
+                <div class="icon-1" id="a"></div>
+                <div class="icon-2" id="b"></div>
+                <div class="icon-3" id="c"></div>
+                <div class="clear"></div>
+              </div>
+              <div id="anchors"></div>
+        </div>
         <svg id="links">
             <g id="curves"></g>
         </svg>

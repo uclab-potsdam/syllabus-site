@@ -2,7 +2,7 @@ const sessions = [];
 function createBaseData(json) {
     json.map((session, sessionIndex) => {
         session.index = sessionIndex
-        session.height = (json.length-1 == session.index ? window.innerHeight : 0) //height of the session//if last session add padding at the end
+        session.height = (json.length-1 == session.index ? window.innerHeight*2 : 0) //height of the session//if last session add padding at the end
         //set position for items
         let actors = session.actors ?? [];
         session.alignment = Math.random() > 0.5? true : false
@@ -18,7 +18,7 @@ async function updateView(){
     //due to weird race condition with some css and getBoundingClientRect 
     //=> found out its due image loading that the image size cant be extracted immidiatly after setting the img tag.
     //await new Promise(r => setTimeout(r, 300)); 
-    let menu = document.querySelector('#menu')
+    let anchors = document.querySelector('#anchors')
     let domParser = new DOMParser();
     sessions.map((session,sessionIndex) => {
         session.items.map((item,itemIndex) => {
@@ -29,8 +29,9 @@ async function updateView(){
             session.height += item.height + window.innerHeight * 0.33 
         })
         session.margin = sessionIndex == 0 ? 0 : sessions[sessionIndex - 1].margin + sessions[sessionIndex - 1].height
-        session.paddingStart = sessionIndex == 0 ? window.innerHeight * 1.5 : session.height//padding at the beggining
+        session.paddingStart = sessionIndex == 0 ? window.innerHeight * 1.5 : session.height //padding at the beggining
         session.height += session.paddingStart
+        if(session.height < window.innerHeight) session.height = window.innerHeight
         session.items.map((item,itemIndex) => {
             updateItemPosition(item,itemIndex)
         })
@@ -54,7 +55,8 @@ async function updateView(){
         menuItem.addEventListener("click", () => {
             window.location.hash = session.hash
         }) 
-        menu.appendChild(menuItem)
+        console.log(menuItem)
+        anchors.appendChild(menuItem)
     })
     //set height and padding according to datasize
     let height = sessions.reduce((accumulator, session) => { return accumulator += session.height}, 0)
