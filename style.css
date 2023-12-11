@@ -217,6 +217,7 @@ footer a {
     }
     .content{
         max-width: 80vw;
+        transform: unset !important
     }
     .content img, #cursor img {
         max-width: 100%;

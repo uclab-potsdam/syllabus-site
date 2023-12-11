@@ -23,7 +23,7 @@ async function updateView(){
     sessions.map((session,sessionIndex) => {
         session.items.map((item,itemIndex) => {
             item.bounding = item.domObject.getBoundingClientRect()
-            item.height = item.bounding.height + window.innerHeight * 0.1
+            item.height = item.bounding.height + window.innerHeight * 0.33
             if (itemIndex === 0 || item.type == "actor") item.margin = 0
             else item.margin = session.items[itemIndex - 1].margin + session.items[itemIndex - 1].height            
             session.height += item.height + window.innerHeight * 0.1
