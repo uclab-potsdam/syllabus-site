@@ -136,7 +136,7 @@ p + p {
 a{
     text-decoration:underline;
     line-height: 0.1em;
-    color: inherit;
+    color: var(--font);
 }
 a[href^="#"] {
     text-decoration: none;
