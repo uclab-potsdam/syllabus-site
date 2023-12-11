@@ -325,6 +325,7 @@ D’Ignazio, C. and Klein, L. F. (2020). Data Feminism. MIT Press. [Introduction
 WeiberWirtschaft eG
 
 
+
 3 July
 ## Care
 
