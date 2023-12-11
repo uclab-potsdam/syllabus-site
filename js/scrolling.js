@@ -39,9 +39,10 @@ function update(){
     if(currentSession.index == 0){
         currentProgress = ((window.scrollY+currentSession.height/2)-(currentProgress * currentSession.height/2) - currentSession.margin)/currentSession.height
     }
-    sessions[currentSession.index].items.map(item  =>  {
-        if(window.scrollY + window.innerHeight/2 > item.y &&  window.scrollY + window.innerHeight/2 < item.y + item.bounding.height){
-            item.domObject.style["z-index"] = 10;
+    let items = sessions[currentSession.index].items
+    items.map((item,i)  =>  {
+        if(window.scrollY + window.innerHeight/2 > (item.y + item.bounding.height) &&  window.scrollY + window.innerHeight/2 < (items[i+1] ? items[i+1].y + items[i+1].bounding.height: item.y + item.bounding.height)){
+            item.domObject.style["z-index"] = 3;
         }else{
             item.domObject.style["z-index"] = 2;
         }
