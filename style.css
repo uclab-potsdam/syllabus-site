@@ -42,6 +42,7 @@ p,li {
 
 div.content:has(img) {
    background: unset;
+   text-align: center;
 }
 h1{
     margin: .33em 0;
