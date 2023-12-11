@@ -50,15 +50,15 @@ div.content:has(img) {
    padding: 0;
 }
 h1 {
-    margin: .33em 0;
+    margin: .25em 0;
     font-size: 2em;
 }
 h2 {
-    margin: .5em 0;
+    margin: .25em 0;
     font-size: 1.5em;
 }
 h3 {
-    margin: .5em 0;
+    margin: 0 0 .25em 0;
     font-size: 1.25em;    
 }
 ul {
