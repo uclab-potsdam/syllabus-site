@@ -39,6 +39,13 @@ function update(){
     if(currentSession.index == 0){
         currentProgress = ((window.scrollY+currentSession.height/2)-(currentProgress * currentSession.height/2) - currentSession.margin)/currentSession.height
     }
+    sessions[currentSession.index].items.map(item  =>  {
+        if(window.scrollY + window.innerHeight/2 > item.y &&  window.scrollY + window.innerHeight/2 < item.y + item.bounding.height){
+            item.domObject.style["z-index"] = 10;
+        }else{
+            item.domObject.style["z-index"] = 2;
+        }
+        })
     //update the cursor
     updateCursor(currentSession,currentProgress)
 }
