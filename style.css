@@ -162,13 +162,16 @@ a[href^="#"] {
     right: 5vw;
 }
 #menu{
+    z-index: 0;
     position: fixed;
     text-align: left;
-    z-index: 5;
     color: var(--font);
     pointer-events: all;
     font-size: 1em;
     height: 100vh;
+}
+#menu.active {
+    z-index: 5;
 }
 #anchors{
     margin-top: 3em;
