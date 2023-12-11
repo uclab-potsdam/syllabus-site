@@ -21,9 +21,6 @@ Prof. Myriel Milicevic
 New York and Erie Railroad, 1855
 
 
-Aiming to visualize structures of a social-ecological economy, each student will carry out a small data visualization project, spanning data collection, visualization design, and iterative prototyping. The visualizations will be based on practices and principles encountered during the visits, readings, and exchanges throughout the semester. While students will work individually on their projects, the entire course will form a temporary collective experimenting with some of the principles we encounter during the semester.
-
-
 **Central questions for the course**
 
 - What would you like to reveal with the organigrams you will make?
@@ -342,7 +339,7 @@ Madia Potsdam
 
 # Projects
 
-Create one *organigram for/from the future,* i.e., a visualization of a cooperative work principle, structure and/or process that can help foster a social-ecological economy.
+Aiming to visualize structures of a social-ecological economy, each student carried out a small data visualization project, spanning data collection, visualization design, and iterative prototyping. The visualizations are based on practices and principles encountered during the visits, readings, and exchanges throughout the semester. 
 
 
 
