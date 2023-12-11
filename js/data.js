@@ -47,9 +47,10 @@ async function updateView(){
             if(title.length == 0) return  
             else title = title[0].textContent
         }
+        session.hash = title.toLowerCase()
         menuItem.innerHTML = title
         menuItem.addEventListener("click", () => {
-            window.scrollTo({top: session.index == 0 ? 0 :session.margin + (session.height/2),behavior: 'smooth' })
+            window.location.hash = session.hash
         }) 
         menu.appendChild(menuItem)
     })
@@ -79,7 +80,7 @@ function updateItemPosition(item) {
     window.innerHeight * 1.5 + //height of the session padding-top
     item.margin //margin to the top of the session
 
-    item.varianz = item.left ? Math.random() * window.innerWidth * 0.05: Math.random() * -window.innerWidth * 0.05
+    item.varianz = item.left ? Math.random() * window.innerWidth * 0.1: Math.random() * -window.innerWidth * 0.1
     item.x = item.left ? window.innerWidth * 0.05 + item.varianz : window.innerWidth * 0.95 + item.varianz
     
     item.domObject.style.top = item.y + "px";
