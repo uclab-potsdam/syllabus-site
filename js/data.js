@@ -4,9 +4,8 @@ function createBaseData(json) {
         session.index = sessionIndex
         session.height = (json.length-1 == session.index ? window.innerHeight*2 : 0) //height of the session//if last session add padding at the end
         //set position for items
-        let actors = session.actors ?? [];
         session.alignment = Math.random() > 0.5? true : false
-        session.items = [...actors, ...session.content]
+        session.items = [...session.content]
         session.items.map((item,itemIndex) => {
             updateItemBase(item, session,itemIndex)
         })
@@ -24,7 +23,7 @@ async function updateView(){
         session.items.map((item,itemIndex) => {
             item.bounding = item.domObject.getBoundingClientRect()
             item.height = item.bounding.height + window.innerHeight * 0.33
-            if (itemIndex === 0 || item.type == "actor") item.margin = 0
+            if (itemIndex === 0) item.margin = 0
             else item.margin = session.items[itemIndex - 1].margin + session.items[itemIndex - 1].height            
             session.height += item.height + window.innerHeight * 0.33 
         })
@@ -69,9 +68,6 @@ async function updateView(){
     document.querySelectorAll('.content').forEach(n => {
         n.style.visibility = 'visible'
     })
-    document.querySelectorAll('.actors').forEach(n => {
-        n.style.visibility = 'visible'
-    })
     document.querySelector('footer').style.visibility = 'visible';
     
     animation()
@@ -89,7 +85,6 @@ function updateItemPosition(item) {
     item.domObject.style.transform = `translate(${item.varianz}px,0)`
 }
 function updateItemBase(item, session,itemIndex) {
-    item.type = item.markdown ? 'content' : 'actor'
     item.session = session
     item.visible = false
     item.left = itemIndex % 2 == 0 ? session.alignment : !session.alignment

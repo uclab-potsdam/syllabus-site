@@ -47,10 +47,11 @@ li {
 div.content:has(img) {
    background: unset;
    text-align: center;
+   padding: 0;
 }
 h1 {
     margin: .33em 0;
-    font-size: 2.5em;
+    font-size: 2.25em;
 }
 h2 {
     margin: .5em 0;
@@ -183,7 +184,7 @@ a[href^="#"] {
 #anchors p {
     margin: 0;
     padding: 0.2em;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 #anchors p:hover, #burger:hover{
     text-decoration: underline;
@@ -217,7 +218,7 @@ footer a:hover img, footer a:active img {
 
 @media screen and (orientation: portrait) and (max-width: 767px) {
     body {
-        font-size: 16px !important;
+        font-size: 15px !important;
     }
     .content{
         max-width: 75vw;
@@ -228,7 +229,7 @@ footer a:hover img, footer a:active img {
         max-height: 75vw;
     }
     div.content:has(img) {
-        background: var(--background-content);
+        background: var(--background);
     }
     #cursor{
         max-width: 85vw;
@@ -241,9 +242,14 @@ footer a:hover img, footer a:active img {
         text-align: right;
         font-size: 1.5em;
     }
-    #anchors{
+    #anchors {
         left: unset;
         right: -100%;
+    }
+    #anchors p {
+        margin: 0;
+        padding: 0.2em;
+        font-size: .9em;
     }
     #menu.active #anchors{
         left: unset;
