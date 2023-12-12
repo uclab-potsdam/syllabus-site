@@ -17,7 +17,7 @@ Marian Dörk
 Myriel Milicevic
 
 
-[![The first organizational chart prepared by and for the New York and Erie Railroad (1855)](assets/firstorgchart.webp)](https://www.loc.gov/item/2017586274/)  
+[<img src='assets/firstorgchart.webp' style='height:20em'>](https://www.loc.gov/item/2017586274/)  
 New York and Erie Railroad, 1855
 
 
@@ -150,7 +150,6 @@ Fairbairn, B. et al. (1994). [The meaning of Rochdale: The Rochdale Pioneers and
 
 
 [<img src='assets/infotext.png' style='width:10em; '>](https://infotext-berlin.de/)  
-INFOTEXT Berlin
 
 
 [<img src='assets/coopflag.png' style='width:10em; '>](http://bheleccs.in/co-operative-flag/)  
@@ -250,8 +249,55 @@ Raworth, K. (2012). [A safe and just space for humanity](https://www-cdn.oxfam.o
 > Humanity’s challenge in the 21st century is to eradicate poverty and achieve prosperity for all within the means of the planet’s limited natural resources. In the run-up to Rio+20, this discussion paper presents a visual framework – shaped like a doughnut – which brings planetary boundaries together with social boundaries, creating a safe and just space between the two, in which humanity can thrive. Moving into this space demands far greater equity – within and between countries – in the use of natural resources, and far greater efficiency in transforming those resources to meet human needs.
 
 
-[<img src='assets/regionalwert.png' style='width:10em; '>](https://www.regionalwert-berlin.de/)  
-Regionalwert AG Berlin Brandenburg
+[<img src='assets/regionalwert.png' style='width:10em; '>](https://www.regionalwert-berlin.de/) 
+
+
+[![](https://img.youtube.com/vi/kwTlX3C5H9I/0.jpg)](https://www.youtube.com/watch?v=OoIcsjkwTlX3C5H9I9ysvs)  
+Regionalwert AG Berlin-Brandenburg, 2018
+
+
+[![](assets/boundaries.png)](https://en.wikipedia.org/wiki/Planetary_boundaries)
+Planetary Boundaries, 2009-2023
+
+
+[![](https://upload.wikimedia.org/wikipedia/commons/1/12/Doughnut_%28economic_model%29.jpg)](https://en.wikipedia.org/wiki/Doughnut_(economic_model))
+Doughnut economics, 2012
+
+
+[![](assets/raworth_ted.png)](https://www.ted.com/talks/kate_raworth_a_healthy_economy_should_be_designed_to_thrive_not_grow)
+Kate Raworth: A healthy economy should be designed to thrive, not grow, 2018
+
+
+[![](assets/deal.png)](https://doughnuteconomics.org/tools/2)
+Doughnut Economics Action Lab, 2023
+
+
+![](assets/donut.jpg)
+Goodwin, K. (2021) [Designing the Doughnut: A Story of Five Cities.](https://doughnuteconomics.org/stories/93)
+
+
+[![](assets/sdgs.png)](https://sdgs.un.org/goals)
+Sustainable Development Goals, 2015
+
+
+[![](assets/frames.png)](https://framesforfuture.tv)
+Frames For Future, 2023
+
+
+[![](assets/dollarstreet.png)](https://www.gapminder.org/dollar-street)
+Dollar Street | Gapminder, 2016
+
+
+[![](assets/hungryplanet.jpg)](https://time.com/8515/what-the-world-eats-hungry-planet/)
+Hungry Planet: What The World Eats | Time, 2016
+
+
+[![](https://img.youtube.com/vi/jbkSRLYSojo/0.jpg)](https://www.youtube.com/watch?v=jbkSRLYSojo)  
+Hans Rosling's 200 Countries, 200 Years, 4 Minutes, 2010
+
+
+[![](https://img.youtube.com/vi/OoIcsj9ysvs/0.jpg)](https://www.youtube.com/watch?v=OoIcsj9ysvs)  
+Better and better? A comment on Hans Rosling by Roland Paulsen, 2019
 
 
 
@@ -263,8 +309,42 @@ Sanders, E. B.-N. and Stappers, P. J. (2008). [Co-creation and the new landscape
 > Designers have been moving increasingly closer to the future users of what they design and the next new thing in the changing landscape of design research has become co-designing with your users. But co-designing is actually not new at all, having taken distinctly different paths in the US and in Europe. The evolution in design research from a user-centred approach to co-designing is changing the roles of the designer, the researcher and the person formerly known as the ‘user’. The implications of this shift for the education of designers and researchers are enormous. The evolution in design research from a user-centred approach to co-designing is changing the landscape of design practice as well, creating new domains of collective creativity. It is hoped that this evolution will support a transformation toward more sustainable ways of living in the future.
 
 
-[<img src='assets/backstube.png' style='width:10em; '>](http://die-backstube.de/)  
-Backstube Vollkornbäckerei
+[<img src='assets/backstube.png' style='width:10em; '>](http://die-backstube.de/) 
+
+
+[![](assets/arnsteins_ladder.png)](https://www.citizenshandbook.org/arnsteinsladder.html)
+Sherry Arnstein’s Ladder of citizen participation, 1969
+
+
+[![](assets/opensource.png)](https://opensource.com/business/10/4/why-open-source-way-trumps-crowdsourcing-way)
+Why the open source way trumps the crowdsourcing way, 2010
+
+
+[![](assets/codesign.png)](https://doi.org/10.1515/opis-2020-0102)
+Marian Dörk et al., 2020
+
+
+![](assets/codesign.jpg)
+
+
+[![](assets/fivelevels.png)](https://uxdesign.cc/ready-five-levels-of-creativity-2ef100ed12b5)
+Hoang Nguyen, 2020
+
+
+[![](assets/bakehouse.jpg)](https://www.flatbreadsociety.net/actions/35/bakehouse/)
+BAKEHOUSE - Flatbread Society, 2012
+
+
+[![](assets/mobisol.jpg)](https://thisisdesignthinking.net/2016/05/reinventing-solar-energy-supply-for-rural-africa/)
+Reinventing Solar Energy Supply for Rural Africa, 2016
+
+
+[![](assets/empowerment.png)](http://www.applaus-potsdam.de/2018/aussteller/empowerment-durch-co-design)
+Bastian Braun, 2018
+
+
+[![](assets/coc.png)](https://www.cocplayfulminds.org/media/c5kplktm/coc-playful-minds_research-journal_build-environment.pdf)
+CoC Playful Minds, 2020
 
 
 
