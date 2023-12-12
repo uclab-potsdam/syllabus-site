@@ -508,13 +508,13 @@ THE F*WORD - Guerrilla Girls and Feminist Graphic Design, MK&G, 2023
 ## Care
 
 
+[<img src='assets/madia.png' style='width:10em'>](https://madia-potsdam.de/)  
+Madia Potsdam
+
+
 de la Bellacasa, M. P. (2017). [Matters of Care: Speculative Ethics in More Than Human Worlds](https://syllabus.pirate.care/library/Maria%20Puig%20de%20La%20Bellacasa/Matters%20of%20Care%20(171)/Matters%20of%20Care%20-%20Maria%20Puig%20de%20La%20Bellacasa.pdf). Introduction (pages 1-24). Posthumanities. University of Minnesota Press.
 
 > To care can feel good, or it can feel bad. It can do good, it can oppress. But what is care? A moral obligation? A burden? A joy? Is it only human? In Matters of Care, María Puig de la Bellacasa presents a powerful challenge to conventional notions of care, exploring its significance as an ethical and political obligation for thinking in the more than human worlds of technoscience and naturecultures.
-
-
-[<img src='assets/madia.png' style='width:10em'>](https://madia-potsdam.de/)  
-Madia Potsdam
 
 
 [![](https://img.youtube.com/vi/WIhf3UBNTlA/0.jpg)](https://www.youtube.com/watch?v=WIhf3UBNTlA)  
