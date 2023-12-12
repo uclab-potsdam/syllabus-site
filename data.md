@@ -518,8 +518,7 @@ THE F*WORD - Guerrilla Girls and Feminist Graphic Design, MK&G, 2023
 ## Care
 
 
-[<img src='assets/madia.png' style='width:10em'>](https://madia-potsdam.de/)  
-Madia Potsdam
+[<img src='assets/madia.png' style='width:12em'>](https://madia-potsdam.de/)
 
 
 de la Bellacasa, M. P. (2017). [Matters of Care: Speculative Ethics in More Than Human Worlds](https://syllabus.pirate.care/library/Maria%20Puig%20de%20La%20Bellacasa/Matters%20of%20Care%20(171)/Matters%20of%20Care%20-%20Maria%20Puig%20de%20La%20Bellacasa.pdf). Introduction (pages 1-24). Posthumanities. University of Minnesota Press.
