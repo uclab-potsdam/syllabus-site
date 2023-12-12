@@ -225,7 +225,7 @@ footer a:hover img, footer a:active img {
 
 @media screen and (orientation: portrait) and (max-width: 767px) {
     body {
-        font-size: 15px !important;
+        font-size: 16px !important;
     }
     .content{
         max-width: 75vw;
