@@ -23,6 +23,9 @@
     font-weight: bold;
 }
 /* Global styles*/
+html {
+    scroll-behavior: smooth;
+}
 body{
     --background-menu: hsl(0, 0%, 100%);
     --background: hsl(0, 0%, 94%);
