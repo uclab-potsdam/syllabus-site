@@ -74,7 +74,7 @@
         .then(data => data.text())
         .then(text => {
             let data = []
-            let sessions = text.split("\n\n\n\n")
+            let sessions = text.split(/\n{4,}/)
             let footer  = sessions.slice(-1)[0]
             document.querySelector("footer").innerHTML = marked.parse(footer)
             sessions.slice(0,-1).map(session => {
