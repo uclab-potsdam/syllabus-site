@@ -9,11 +9,11 @@ We will take on the challenge to visualize organizational structures that hardly
 This webpage presents a selective documentation of key readings, inspiring projects, our generous hosts, and the resulting projects.
 
 
-[<img src='assets/marian.png' style='width:8em'>](https://mariandoerk.de/)  
+[<img src='assets/marian.png' style='width:8em'>](https://mariandoerk.de/)  \
 Marian Dörk
 
 
-[<img src='assets/myriel.png' style='width:8em'>](https://www.fh-potsdam.de/hochschule-netzwerk/personen/myriel-milicevic)  
+[<img src='assets/myriel.png' style='width:8em'>](https://www.fh-potsdam.de/hochschule-netzwerk/personen/myriel-milicevic)  \
 Myriel Milicevic
 
 
@@ -562,6 +562,35 @@ Vivien Serve
 
 
 <!--skipnav-->
+## [Status Growth](https://fhp.incom.org/project/25152)
+
+> In an environment mainly consisting of hierarchically organised companies some alternative ways of organising work emerge: cooperatives. What defines their way of growing? What is their influence on traditionally organised companies? How do they affect not only working environment but also our way of thinking?
+
+
+<img src='assets/blank.png' style='width:8em'>  \
+Jaqueline Grob
+
+
+[![](assets/statusgrowth.png)](https://fhp.incom.org/project/25152)
+
+
+
+<!--skipnav-->
+## [Flexibility equals power](https://www.figma.com/file/sqE0zBAuWFxidxotFlhuSh/flexibility-equals-power-final?type=design&node-id=0-1&mode=design)
+
+> This prototype of an animated organigram illustrates the transformation from a hierarchical structured company to a cooperative one, highlighting the significance of flexibility and its effects on both individuals and the collective.
+
+
+<img src='assets/blank.png' style='width:8em'>  \
+Luka Saje
+
+
+[![](assets/equality.png)](https://www.figma.com/file/sqE0zBAuWFxidxotFlhuSh/flexibility-equals-power-final?type=design&node-id=0-1&mode=design)
+
+
+
+
+<!--skipnav-->
 ## [Flows of Non-Pecuniary Values](https://fhp.incom.org/project/25222)  
 
 > The aim of this project is to show how our capitalist world can move towards degrowth by focusing on values other than money.
@@ -575,6 +604,36 @@ Chloé Le Mézo
 
 
 [![](assets/flows.png)](https://fhp.incom.org/project/25222)
+
+
+
+
+<!--skipnav-->
+## [Money Flow](https://vimeo.com/843699475)
+
+> This project explores the often sensitive and under-discussed topic of financial distribution within cooperatives. Despite a common belief that "money has no value" in such settings and that resources are equally shared, this research aims to uncover the actual dynamics at play. It delves into the origins of the funds in cooperatives, the methods of allocation among members, and the final monetary compensation each member receives.
+
+
+<img src='assets/blank.png' style='width:8em'>  \
+Julia Semenikhina
+
+
+[![](assets/moneyflow.png)](https://vimeo.com/843699475)
+
+
+
+
+<!--skipnav-->
+## [Values of cooperatives](https://prezi.com/view/VSVmkvg7c5UTmqBrTZkw/)
+
+> Each everyday object the coop members use, subconsciously embody a value of the organization, this gets spread between the members as they use and share that object, helping them build the social environment the coop is shaped on.
+
+
+<img src='assets/blank.png' style='width:8em'>  \
+Beatrice Leone
+
+
+[![](assets/values.png)](https://prezi.com/view/VSVmkvg7c5UTmqBrTZkw/)
 
 
 
@@ -593,20 +652,6 @@ Dishunee Pandya
 
 
 <!--skipnav-->
-## [Money Flow](https://vimeo.com/843699475)
-
-> This project explores the often sensitive and under-discussed topic of financial distribution within cooperatives. Despite a common belief that "money has no value" in such settings and that resources are equally shared, this research aims to uncover the actual dynamics at play. It delves into the origins of the funds in cooperatives, the methods of allocation among members, and the final monetary compensation each member receives.
-
-
-<img src='assets/blank.png' style='width:8em'>  \
-Julia Semenikhina
-
-
-[![](assets/moneyflow.png)](https://vimeo.com/843699475)
-
-
-
-<!--skipnav-->
 ## Social Innovation
 
 > The aim of my project was to try to analyse and narrate the historical and cultural value that collectives and cooperatives carry today, in 2023. I interpreted these organisations as bearers of *Social Innovation*, a concept now recognised by the European Union that indicates the construction of "new ideas: services, products or models that meet people needs, create relationships and form new collaborations". Social Innovation can be seen as a response to the enormous density of changes that have occurred since the last century, which have shaken the balance of the world in a very short space of time. In my research, I wanted to see these organisations as part of the path our society is taking in search of a new balance, and new ways of being together.
@@ -621,32 +666,19 @@ Viviana Sorvillo
 
 
 <!--skipnav-->
-## [Status Growth](https://fhp.incom.org/project/25152)
+## [Soupi](https://prezi.com/view/VSVmkvg7c5UTmqBrTZkw/)
 
-> In an environment mainly consisting of hierarchically organised companies some alternative ways of organising work emerge: cooperatives. What defines their way of growing? What is their influence on traditionally organised companies? How do they affect not only working environment but also our way of thinking?
-
-
-<img src='assets/blank.png' style='width:8em'>  \
-Jaqueline Grob
-
-
-[![](assets/statusgrowth.png)](https://fhp.incom.org/project/25152)
-
-
-
-
-<!--skipnav-->
-## [Values of cooperatives](https://prezi.com/view/VSVmkvg7c5UTmqBrTZkw/)
-
-> Each everyday object the coop members use, subconsciously embody a value of the organization, this gets spread between the members as they use and share that object, helping them build the social environment the coop is shaped on.
+> Soupi is a student foodsaving project that cooks delicious, healthy soups with saved foods.
+It will also be a design course, an educational program at schools and a movement that connects people and helps to reduce foodwaste.
+At this point we connected with foodsources like supermarkets, people who work in foodsaving projects since years and cooked our first soups from saved vegetables.
+The organigram is visualizing the process of turning the saved foods into soups from the foodsources and the non-hierarchical, democratic structure of the course that allows everyone at Soupi to bring in their own ideas and visions.
 
 
 <img src='assets/blank.png' style='width:8em'>  \
-Beatrice Leone
+Georg Wähmer
 
 
-[![](assets/values.png)](https://prezi.com/view/VSVmkvg7c5UTmqBrTZkw/)
-
+[![](assets/soupi.jpg)](https://prezi.com/view/VSVmkvg7c5UTmqBrTZkw/)
 
 
 
