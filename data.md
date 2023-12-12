@@ -38,7 +38,8 @@ This is an experimental course on the visualization of organizational structures
 Jameson, F. (1996). The Seeds of Time.
 
 
-[![K.C. Green (2016). The Nib](assets/thisisnotfine.png)](https://thenib.com/this-is-not-fine/) K.C. Green, 2016
+[![](assets/thisisnotfine.png)](https://thenib.com/this-is-not-fine/)  
+K.C. Green, 2016
 
 
 > It is hard to say what today's dreams are; it seems they have been downgraded to hopes—hope that we will not allow ourselves to become extinct, hope that we can feed the starving, hope that there will be room for us all on this tiny planet. There are no more visions. We don't know how to fix the planet and ensure our survival. We are just hopeful.
@@ -106,8 +107,6 @@ Wigwam eG
 Lueder, C. (2013). [Diagram Utopias: Rota and Network as Instrument and Mirror of Utopia and Agronica](https://infovis.fh-potsdam.de/readings/lueder2013diagram.pdf). Journal of Architectural Education, 67(2):224–233.
 
 > Utopian visions and diagrams have engaged in a multitude of relationships. For example, a utopian narrative can be conceived as a diagram, or with the aid of diagrams, and understood through diagrammatic (re) annotation. This notion is explored through an interpretation of Thom- as More’s Utopia and Andrea Branzi’s Agronica. Both schemes address various structural conditions through diagrammatic operations. In More’s scheme the channel that separates Utopia from the mainland, dug by its putative founder King Abraxas, inscribes a circular boundary, reiterated in the city walls and moat; it is resonant with contempora- neous rota and volvelle schemata. Conversely, Andrea Branzi’s “mirror simulator” multiplies Agronica’s centrifugal grid to infinity, negating the “outside,” and is evocative of pervasive virtual networks.
-
-
 
 
 [![The Garden of Earthly Delights by Hieronymus Bosch](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/1100px-The_Garden_of_earthly_delights.jpg)](https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights)  
@@ -262,39 +261,39 @@ Raworth, K. (2012). [A safe and just space for humanity](https://www-cdn.oxfam.o
 Regionalwert AG Berlin-Brandenburg, 2018
 
 
-[![](assets/boundaries.png)](https://en.wikipedia.org/wiki/Planetary_boundaries)
+[![](assets/boundaries.png)](https://en.wikipedia.org/wiki/Planetary_boundaries)  
 Planetary Boundaries, 2009-2023
 
 
-[![](https://upload.wikimedia.org/wikipedia/commons/1/12/Doughnut_%28economic_model%29.jpg)](https://en.wikipedia.org/wiki/Doughnut_(economic_model))
+[![](https://upload.wikimedia.org/wikipedia/commons/1/12/Doughnut_%28economic_model%29.jpg)](https://en.wikipedia.org/wiki/Doughnut_(economic_model))  
 Doughnut economics, 2012
 
 
-[![](assets/raworth_ted.png)](https://www.ted.com/talks/kate_raworth_a_healthy_economy_should_be_designed_to_thrive_not_grow)
+[![](assets/raworth_ted.png)](https://www.ted.com/talks/kate_raworth_a_healthy_economy_should_be_designed_to_thrive_not_grow)  
 Kate Raworth: A healthy economy should be designed to thrive, not grow, 2018
 
 
-[![](assets/deal.png)](https://doughnuteconomics.org/tools/2)
+[![](assets/deal.png)](https://doughnuteconomics.org/tools/2)  
 Doughnut Economics Action Lab, 2023
 
 
-![](assets/donut.jpg)
+![](assets/donut.jpg)  
 Goodwin, K. (2021) [Designing the Doughnut: A Story of Five Cities.](https://doughnuteconomics.org/stories/93)
 
 
-[![](assets/sdgs.png)](https://sdgs.un.org/goals)
+[![](assets/sdgs.png)](https://sdgs.un.org/goals)  
 Sustainable Development Goals, 2015
 
 
-[![](assets/frames.png)](https://framesforfuture.tv)
+[![](assets/frames.png)](https://framesforfuture.tv)  
 Frames For Future, 2023
 
 
-[![](assets/dollarstreet.png)](https://www.gapminder.org/dollar-street)
+[![](assets/dollarstreet.png)](https://www.gapminder.org/dollar-street)  
 Dollar Street | Gapminder, 2016
 
 
-[![](assets/hungryplanet.jpg)](https://time.com/8515/what-the-world-eats-hungry-planet/)
+[![](assets/hungryplanet.jpg)](https://time.com/8515/what-the-world-eats-hungry-planet/)  
 Hungry Planet: What The World Eats | Time, 2016
 
 
@@ -318,34 +317,34 @@ Sanders, E. B.-N. and Stappers, P. J. (2008). [Co-creation and the new landscape
 > Designers have been moving increasingly closer to the future users of what they design and the next new thing in the changing landscape of design research has become co-designing with your users. But co-designing is actually not new at all, having taken distinctly different paths in the US and in Europe. The evolution in design research from a user-centred approach to co-designing is changing the roles of the designer, the researcher and the person formerly known as the ‘user’. The implications of this shift for the education of designers and researchers are enormous. The evolution in design research from a user-centred approach to co-designing is changing the landscape of design practice as well, creating new domains of collective creativity. It is hoped that this evolution will support a transformation toward more sustainable ways of living in the future.
 
 
-[![](assets/arnsteins_ladder.png)](https://www.citizenshandbook.org/arnsteinsladder.html)
+[![](assets/arnsteins_ladder.png)](https://www.citizenshandbook.org/arnsteinsladder.html)  
 Sherry Arnstein’s Ladder of citizen participation, 1969
 
 
-[![](assets/opensource.png)](https://opensource.com/business/10/4/why-open-source-way-trumps-crowdsourcing-way)
+[![](assets/opensource.png)](https://opensource.com/business/10/4/why-open-source-way-trumps-crowdsourcing-way)  
 Why the open source way trumps the crowdsourcing way, 2010
 
 
-[![](assets/codesign.png)](https://doi.org/10.1515/opis-2020-0102)
+[![](assets/codesign.png)](https://doi.org/10.1515/opis-2020-0102)  
 Marian Dörk et al., 2020
 
 
 ![](assets/codesign.jpg)
 
 
-[![](assets/fivelevels.png)](https://uxdesign.cc/ready-five-levels-of-creativity-2ef100ed12b5)
+[![](assets/fivelevels.png)](https://uxdesign.cc/ready-five-levels-of-creativity-2ef100ed12b5)  
 Hoang Nguyen, 2020
 
 
-[![](assets/bakehouse.jpg)](https://www.flatbreadsociety.net/actions/35/bakehouse/)
+[![](assets/bakehouse.jpg)](https://www.flatbreadsociety.net/actions/35/bakehouse/)  
 BAKEHOUSE - Flatbread Society, 2012
 
 
-[![](assets/mobisol.jpg)](https://thisisdesignthinking.net/2016/05/reinventing-solar-energy-supply-for-rural-africa/)
+[![](assets/mobisol.jpg)](https://thisisdesignthinking.net/2016/05/reinventing-solar-energy-supply-for-rural-africa/)  
 Reinventing Solar Energy Supply for Rural Africa, 2016
 
 
-[![](assets/empowerment.png)](http://www.applaus-potsdam.de/2018/aussteller/empowerment-durch-co-design)
+[![](assets/empowerment.png)](http://www.applaus-potsdam.de/2018/aussteller/empowerment-durch-co-design)  
 Bastian Braun, 2018
 
 
@@ -365,31 +364,32 @@ Weeks, K. (2011). [The Problem with Work: Feminism, Marxism, Antiwork Politics, 
 >In The Problem with Work, Kathi Weeks boldly challenges the presupposition that work, or waged labor, is inherently a social and political good. While progressive political movements, including the Marxist and feminist movements, have fought for equal pay, better work conditions, and the recognition of unpaid work as a valued form of labor, even they have tended to accept work as a naturalized or inevitable activity. Weeks argues that in taking work as a given, we have “depoliticized” it, or removed it from the realm of political critique. Employment is now largely privatized, and work-based activism in the United States has atrophied. We have accepted waged work as the primary mechanism for income distribution, as an ethical obligation, and as a means of defining ourselves and others as social and political subjects. Taking up Marxist and feminist critiques, Weeks proposes a postwork society that would allow people to be productive and creative rather than relentlessly bound to the employment relation. Work, she contends, is a legitimate, even crucial, subject for political theory.
 
 
-[![](assets/pyramid.jpg)](https://en.wikipedia.org/wiki/Pyramid_of_Capitalist_System)
+[![](assets/pyramid.jpg)](https://en.wikipedia.org/wiki/Pyramid_of_Capitalist_System)  
 Nedeljkovich, Brashich, & Kuharich, 1911
 
 
-[![](assets/unpaidwork.png)](https://twitter.com/monachalabi/status/971795322904162304)
+[![](assets/unpaidwork.png)](https://twitter.com/monachalabi/status/971795322904162304)  
 Mona Chalabi, 2018
 
 
-[![](assets/eurostat.png)](https://ec.europa.eu/eurostat/web/products-eurostat-news/-/EDN-20180307-1)
+[![](assets/eurostat.png)](https://ec.europa.eu/eurostat/web/products-eurostat-news/-/EDN-20180307-1)  
 eurostat, 2018
 
 
-[![](assets/timespent.png)](https://www.nytimes.com/interactive/2020/03/04/opinion/women-unpaid-labor.html)
+[![](assets/timespent.png)](https://www.nytimes.com/interactive/2020/03/04/opinion/women-unpaid-labor.html)  
 Gus Wezerek and Kristen R. Ghodsee, 2020
 
 
-[![](assets/jeffbezos.png)](https://www.nytimes.com/interactive/2022/04/07/magazine/jeff-bezos-net-worth.html)
+[![](assets/jeffbezos.png)](https://www.nytimes.com/interactive/2022/04/07/magazine/jeff-bezos-net-worth.html)  
 Mona Chalabi, 2022
 
 
-[![](assets/allezeit.png)](https://www.ullstein.de/werke/alle-zeit/hardcover/9783550201721)  
+[![](assets/allezeit.png)](https://www.ullstein.de/werke/alle-zeit/hardcover/9783550201721)   
 Teresa Bücker, 2022
 
 
 [![](assets/grundeinkommen.png)](https://www.mein-grundeinkommen.de)  
+Mein Grundeinkommen, since 2014
 
 
 
@@ -399,17 +399,57 @@ Teresa Bücker, 2022
 ## Commons
 
 
+[<img src='assets/regenbogenfabrik.png' style='width:12em; '>](http://regenbogenfabrik.de/)  
+Regenbogenfabrik e.V.
+
+
 Ostrom, E., Burger, J., Field, C. B., Norgaard, R. B., and Policansky, D. (1999). [Revisiting the commons: local lessons, global challenges](http://infovis.fh-potsdam.de/readings/ostrom1999revisiting.pdf). science, 284(5412):278–282.
 
 > In a seminal paper, Garrett Hardin argued in 1968 that users of a commons are caught in an inevitable process that leads to the destruction of the resources on which they depend. This article discusses new insights about such problems and the conditions most likely to favor sustainable uses of common-pool resources. Some of the most difficult challenges concern the management of large-scale resources that depend on international cooperation, such as fresh water in international basins or large marine ecosystems. Institutional diversity may be as important as biological diversity for our long-term survival.
 
 
-[<img src='assets/regenbogenfabrik.png' style='width:10em; '>](http://regenbogenfabrik.de/)  
-Regenbogenfabrik e.V.
+[![](assets/commons.jpg)](https://www.onthecommons.org/work/framework-commons/index.html)  
+A Framework for the Commons, 2012
+
+
+[Legal Structures for Protecting the Commons](https://www.onthecommons.org/work/legal-structures-protecting-commons/index.html):
+- Agricultural land trust
+- Cooperative
+- Co-housing 
+- Land trust
+- Public trust doctrine
+- Trust
+
+
+[![](assets/our-open-design-commons.png)](https://commonsblog.wordpress.com/2013/06/14/commoning-or-commoneering-wtf/)  
+Silke Helfrich, 2013
+
+
+[![](assets/commoningtriad.jpg)](https://www.resilience.org/stories/2019-12-19/the-triad-of-commoning/)  
+Silke Helfrich and David Bollier, 2019
+
+
+[![](assets/freefairalivebook.png)](https://freefairandalive.org/read-it/)  
+2019
+
+
+[![](assets/urbancommons.png)](https://www.re-thinkingthefuture.com/city-and-architecture/a2279-the-concept-of-commoning-what-architects-must-know/)  
+Reclaiming the urban commons, 2019
+
+
+[![](assets/cc.png)](https://creativecommons.org/about/)  
+Creative Commons
+
+
+[![](https://img.youtube.com/vi/A9iRBVEU72c/0.jpg)](https://www.youtube.com/watch?v=A9iRBVEU72c)  
+Environmental Global Commons GSDR, 2020
 
 
 
 ## Cybersyn
+
+
+[<img src='assets/supercoop.png' style='width:12em; '>](https://supercoop.de/) 
 
 
 Medina, E. (2006). [Designing Freedom, Regulating a Nation: Socialist Cybernetics in Allende’s Chile](http://infovis.fh-potsdam.de/readings/medina2006designing.pdf). Journal of Latin American Studies, 38(3):571–606.
@@ -417,12 +457,26 @@ Medina, E. (2006). [Designing Freedom, Regulating a Nation: Socialist Cybernetic
 > This article presents a history of ‘Project Cybersyn’, an early computer network developed in Chile during the socialist presidency of Salvador Allende (1970–1973) to regulate the growing social property area and manage the transition of Chile’s economy from capitalism to socialism. Under the guidance of British cybernetician Stafford Beer, often lauded as the ‘father of management cybernetics’, an interdisciplinary Chilean team designed cybernetic models of factories within the nationalised sector and created a network for the rapid transmission of econ- omic data between the government and the factory floor. The article describes the construction of this unorthodox system, examines how its structure reflected the socialist ideology of the Allende government, and documents the contributions of this technology to the Allende administration.
 
 
-[<img src='assets/supercoop.png' style='width:10em; '>](https://supercoop.de/)  
-SuperCoop Berlin
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/CyberSyn-render-107.png/2880px-CyberSyn-render-107.png)](https://en.wikipedia.org/wiki/Project_Cybersyn)  
+Project Cybersyn, 1971-1973
+
+
+[![](assets/countercultureroom.png)](http://countercultureroom.com)  
+the counterculture room, 2016
+
+
+[![](assets/counterculturescreen.png)](https://vimeo.com/243861674)  
+
+
+[![](assets/the-santiago-boys.png)](https://the-santiago-boys.com)  
+The Santiago Boys - Podcast, 2023
 
 
 
 ## Feminism
+
+
+[<img src='assets/weiberwirtschaft.png' style='width:15em; '>](https://weiberwirtschaft.de/)
 
 
 D’Ignazio, C. and Klein, L. F. (2020). Data Feminism. MIT Press. [Introduction chapter](https://doi.org/10.7551/mitpress/11805.003.0002).
@@ -430,8 +484,24 @@ D’Ignazio, C. and Klein, L. F. (2020). Data Feminism. MIT Press. [Introduction
 > Today, data science is a form of power. It has been used to expose injustice, improve health outcomes, and topple governments. But it has also been used to discriminate, police, and surveil. This potential for good, on the one hand, and harm, on the other, makes it essential to ask: Data science by whom? Data science for whom? Data science with whose interests in mind? The narratives around big data and data science are overwhelmingly white, male, and techno-heroic. In Data Feminism, Catherine D'Ignazio and Lauren Klein present a new way of thinking about data science and data ethics—one that is informed by intersectional feminist thought.
 
 
-[<img src='assets/weiberwirtschaft.png' style='width:10em; '>](https://weiberwirtschaft.de/)  
-WeiberWirtschaft eG
+[![](https://infovis.fh-potsdam.de/femscroll/index_files/banner2x1.png)](https://infovis.fh-potsdam.de/femscroll/)  
+Feminist Scrollytelling, FH Potsdam, 2019
+
+
+[![](assets/datafeminism.png)](http://datafeminism.io/blog/book/data-feminism-infographic/)  
+Data Feminism Infographics, 2020
+
+
+[![](https://img.youtube.com/vi/jZl55PsfZJQ/0.jpg)](https://www.youtube.com/watch?v=jZl55PsfZJQ)  
+Coded Bias | Trailer, 2020
+
+
+[![](assets/intervis.png)](https://uclab.fh-potsdam.de/intervis/)  
+Hannah Schwan et al., 2021
+
+
+[![](assets/fword.jpg)](https://www.mkg-hamburg.de/en/exhibitions/the-fword/)  
+THE F*WORD - Guerrilla Girls and Feminist Graphic Design, MK&G, 2023
 
 
 
@@ -443,8 +513,27 @@ de la Bellacasa, M. P. (2017). [Matters of Care: Speculative Ethics in More Than
 > To care can feel good, or it can feel bad. It can do good, it can oppress. But what is care? A moral obligation? A burden? A joy? Is it only human? In Matters of Care, María Puig de la Bellacasa presents a powerful challenge to conventional notions of care, exploring its significance as an ethical and political obligation for thinking in the more than human worlds of technoscience and naturecultures.
 
 
-[<img src='assets/madia.png' style='width:10em; '>](https://madia-potsdam.de/)  
+[<img src='assets/madia.png' style='width:10em'>](https://madia-potsdam.de/)  
 Madia Potsdam
+
+
+[![](https://img.youtube.com/vi/WIhf3UBNTlA/0.jpg)](https://www.youtube.com/watch?v=WIhf3UBNTlA)  
+Mierle Laderman Ukeles, 1973 (2018)
+
+
+[![](assets/carevolution.png)](https://care-revolution.org)  
+Care Revolution, 2018
+
+
+[<img src='assets/criticalcare.png' style='width:12em'>](https://www.endlich-wachstum.de/kapitel/die-ganze-arbeit/)  
+2019
+
+
+[<img src='assets/dieganzearbeit.jpg' style='width:12em'>](https://www.endlich-wachstum.de/kapitel/die-ganze-arbeit/)  
+2021
+
+
+
 
 
 
@@ -454,7 +543,7 @@ Madia Potsdam
 Aiming to visualize structures of a social-ecological economy, each student carried out a small data visualization project, spanning data collection, visualization design, and iterative prototyping. 
 
 
-The visualizations are based on practices and principles encountered during the visits, readings, and exchanges throughout the semester. 
+The following visualization projects are based on the practices and principles encountered during the visits, readings, and exchanges throughout the semester. 
 
 
 
