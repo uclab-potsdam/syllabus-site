@@ -2,9 +2,9 @@ Summer 2023 · [Interface Design](https://interface.fh-potsdam.de) · [FH Potsda
 
 # Organigrams for/from the future
 
-The aim of this course is to visualize an economy built on solidarity, sustainability, and survival—instead of exploitation, extraction, and extinction. Given multiple interconnected crises, there is an urgent need to devise new kinds of structures that let us weave resilient relations with each other and the world we live in. Data visualization is typically used to represent what is, but rarely how things could and maybe should be. 
+The aim of this course was to visualize an economy built on solidarity, sustainability, and survival—instead of exploitation, extraction, and extinction. Given multiple interconnected crises, there is an urgent need to devise new kinds of structures that let us weave resilient relations with each other and the world we live in. Data visualization is typically used to represent what is, but rarely how things could and maybe should be. 
 
-We will take on the challenge to visualize organizational structures that hardly exist yet, but are foreshadowed in the experimental configurations of cooperatives, projects, and initiatives. To find inspiration we will visit a range of organizations that are committed to social-ecological transformation and operate on principles of social and ecological justice. These organizations will share their experiences and offer opportunities to see innovative ways of working together, making decisions, and cultivating cooperation in critical times.
+We take on the challenge to visualize organizational structures that hardly exist yet, but are foreshadowed in the experimental configurations of cooperatives, projects, and initiatives. To find inspiration we visit a range of organizations that are committed to social-ecological transformation and operate on principles of social and ecological justice. These organizations share their experiences and offer opportunities to see innovative ways of working together, making decisions, and cultivating cooperation in critical times.
 
 This webpage presents a selective documentation of key readings, inspiring projects, our generous hosts, and the resulting projects.
 
@@ -28,6 +28,7 @@ New York and Erie Railroad, 1855
 
 
 
+3 April
 ## Kick-off
 
 This is an experimental course on the visualization of organizational structures utilizing narration and exploration to encourage reflection and imagination about work and the economy.
@@ -67,7 +68,8 @@ Kimmerer, R. W. (2013). Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowl
 
 ### Themes
 
-The course passes through ten central themes, each of which is accompanied by a key reading and a range of visual materials such as exemplary diagrams and visualizations:
+With each course session, we passs through ten central themes, each of which is accompanied by a key reading and a range of visual materials such as exemplary diagrams and visualizations:
+
 - [Utopia](#utopia)
 - [Co-ops](#co-ops)
 - [Platforms](#platforms)
@@ -97,6 +99,7 @@ Every week the course takes place at different locations in Berlin or Potsdam. B
 
 
 
+17 April
 ## Utopia
 
 
@@ -146,6 +149,7 @@ Lino Zeddies, 2023
 
 
 
+24 April
 ## Co-ops
 
 
@@ -209,6 +213,7 @@ The following [cooperative principles](https://www.ica.coop/en/cooperatives/coop
 
 
 
+8 May
 ## Platforms
 
 
@@ -245,7 +250,7 @@ Per Axbom, 2022
 Victoria Sgarro, 2023
 
 
-
+15 May
 ## Economies
 
 
@@ -306,6 +311,7 @@ Better and better? A comment on Hans Rosling by Roland Paulsen, 2019
 
 
 
+22 May
 ## Co-design
 
 
@@ -353,6 +359,7 @@ CoC Playful Minds, 2020
 
 
 
+5 June
 ## Work
 
 
@@ -393,9 +400,7 @@ Mein Grundeinkommen, since 2014
 
 
 
-
-
-
+12 June
 ## Commons
 
 
@@ -446,6 +451,7 @@ Environmental Global Commons GSDR, 2020
 
 
 
+19 June
 ## Cybersyn
 
 
@@ -473,6 +479,7 @@ The Santiago Boys - Podcast, 2023
 
 
 
+26  June
 ## Feminism
 
 
@@ -505,6 +512,7 @@ THE F*WORD - Guerrilla Girls and Feminist Graphic Design, MK&G, 2023
 
 
 
+3 July
 ## Care
 
 
