@@ -145,9 +145,6 @@ p {
     visibility: hidden;
     z-index:2;    
 }
-.content div {
-    padding: 0.2em;
-}
 .content img, #cursor img {
     max-width: 100%;
     max-height: calc(20vw + 20vh);

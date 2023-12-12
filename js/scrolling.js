@@ -41,14 +41,26 @@ function update(){
     if(currentSession.index == 0){
         currentProgress = ((window.scrollY+currentSession.height/2)-(currentProgress * currentSession.height/2) - currentSession.margin)/currentSession.height
     }
+
     let items = sessions[currentSession.index].items
+    const windowHeight = window.innerHeight;
+    const middleY = windowHeight / 2;
+
     items.map((item,i)  =>  {
         if(window.scrollY + window.innerHeight/2 > (item.y + item.bounding.height/2) &&  window.scrollY + window.innerHeight/2 < (items[i+1] ? items[i+1].y + items[i+1].bounding.height: item.y + item.bounding.height)){
             item.domObject.style["z-index"] = 3;
         }else{
             item.domObject.style["z-index"] = 2;
         }
-        })
+        let element = item.domObject;
+        let rect = element.getBoundingClientRect();
+        let elementY = rect.top + rect.height / 2;
+        let minScale = .75;
+        let maxScale = 1; 
+        let scale = minScale + (maxScale - minScale) * ((windowHeight - elementY) / middleY);
+        if (elementY<middleY) scale = 1;
+        element.style.transform = `translate(${item.varianz}px,0) scale(${scale})`;        
+    })
     //update the cursor
     updateCursor(currentSession,currentProgress)
 }
