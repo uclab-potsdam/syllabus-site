@@ -49,7 +49,7 @@ p,li {
     font-size: .9em;
 }
 li {
-    margin-bottom: 0.2em;
+    margin-bottom: 0.25em;
 }
 div.content:has(img) {
    background: unset;
@@ -76,7 +76,7 @@ ul {
 ul li::before {
     content: '·';
     color: var(--font);
-    margin-right: .5em;
+    margin-right: .55em;
     margin-left: -.9em;
 }
 blockquote {
