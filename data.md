@@ -4,7 +4,7 @@ Summer 2023 · [Interface Design](https://interface.fh-potsdam.de) · [FH Potsda
 
 How can we visualize an economy built on solidarity, sustainability, and survival—instead of exploitation, extraction, and extinction? Given multiple interconnected crises, there is an urgent need to devise new kinds of structures that let us weave resilient relations with each other and the world we live in. Data visualization is typically used to represent what is, but rarely how things could and maybe should be.
 
-We take on the challenge to visualize organizational structures that hardly exist yet, but are foreshadowed in the experimental configurations of cooperatives, projects, and initiatives. To seek inspiration we visit organizations that are committed to social-ecological transformation and operate on principles of social and ecological justice. These organizations share their experiences and offer opportunities to see innovative ways of working together, making decisions, and cultivating cooperation in critical times.
+This course takes on the challenge to visualize organizational structures that hardly exist yet, but are foreshadowed in the experimental configurations of cooperatives, projects, and initiatives. To seek inspiration we visit organizations that are committed to social-ecological transformation and operate on principles of social and ecological justice. These organizations share their experiences and offer opportunities to see innovative ways of working together, making decisions, and cultivating cooperation in critical times.
 
 
 [<img src='assets/marian.png' style='width:8em'>](https://mariandoerk.de/)  \
@@ -19,10 +19,10 @@ Myriel Milicevic
 New York and Erie Railroad, 1855
 
 
-This webpage presents a selective documentation of inspiring readings and references along ten [themes](#themes), our generous [hosts](#hosts), and the resulting [projects](#projects).
+This webpage contains a selective documentation of inspiring readings and references along ten [themes](#themes), our generous [hosts](#hosts), and the resulting student [projects](#projects).
 
 
-### Central questions for the course
+### Central questions
 
 - What would you like to reveal with the organigrams you will make?
 - What kind of work relations would you like to create for the future and put out there for discussion?
@@ -251,6 +251,7 @@ Per Axbom, 2022
 Victoria Sgarro, 2023
 
 
+
 15 May
 ## Economies
 
@@ -355,7 +356,7 @@ Reinventing Solar Energy Supply for Rural Africa, 2016
 Bastian Braun, 2018
 
 
-[![](assets/coc.png)](https://www.cocplayfulminds.org/media/c5kplktm/coc-playful-minds_research-journal_build-environment.pdf)
+[![](assets/coc.png)](https://www.cocplayfulminds.org/media/c5kplktm/coc-playful-minds_research-journal_build-environment.pdf)  \
 CoC Playful Minds, 2020
 
 

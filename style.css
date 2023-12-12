@@ -276,6 +276,7 @@ footer a:hover img, footer a:active img {
         display: block;
         width: 100%;
         text-align: center;
+        margin: 2em 0 0 0;
     }
     footer p a:last-child img {
         margin-right: 0;
