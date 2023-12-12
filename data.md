@@ -132,6 +132,10 @@ Frank Lloyd Wright, 1932
 Andrea Branzi, 1995
 
 
+[![](assets/utopiaforrealists.png)](https://en.wikipedia.org/wiki/Utopia_for_Realists)  
+Rutger Bregman, 2014/2018
+
+
 [![Why city lights and headlights still match](assets/daimler.png "Why city lights and headlights still match")](https://group.mercedes-benz.com/company/magazine/sustainability/sustainability-mobility-city-future.html)  
 Mercedes-Benz Group, 2019
 
@@ -356,8 +360,37 @@ Weeks, K. (2011). [The Problem with Work: Feminism, Marxism, Antiwork Politics, 
 >In The Problem with Work, Kathi Weeks boldly challenges the presupposition that work, or waged labor, is inherently a social and political good. While progressive political movements, including the Marxist and feminist movements, have fought for equal pay, better work conditions, and the recognition of unpaid work as a valued form of labor, even they have tended to accept work as a naturalized or inevitable activity. Weeks argues that in taking work as a given, we have “depoliticized” it, or removed it from the realm of political critique. Employment is now largely privatized, and work-based activism in the United States has atrophied. We have accepted waged work as the primary mechanism for income distribution, as an ethical obligation, and as a means of defining ourselves and others as social and political subjects. Taking up Marxist and feminist critiques, Weeks proposes a postwork society that would allow people to be productive and creative rather than relentlessly bound to the employment relation. Work, she contends, is a legitimate, even crucial, subject for political theory.
 
 
-[<img src='assets/gruppef.png' style='width:10em; '>](https://gruppef.com/)  
-gruppe F Berlin
+[<img src='assets/gruppef.png' style='width:10em; '>](https://gruppef.com/)
+
+
+[![](assets/pyramid.jpg)](https://en.wikipedia.org/wiki/Pyramid_of_Capitalist_System)
+Nedeljkovich, Brashich, & Kuharich, 1911
+
+
+[![](assets/unpaidwork.png)](https://twitter.com/monachalabi/status/971795322904162304)
+Mona Chalabi, 2018
+
+
+[![](assets/eurostat.png)](https://ec.europa.eu/eurostat/web/products-eurostat-news/-/EDN-20180307-1)
+eurostat, 2018
+
+
+[![](assets/timespent.png)](https://www.nytimes.com/interactive/2020/03/04/opinion/women-unpaid-labor.html)
+Gus Wezerek and Kristen R. Ghodsee, 2020
+
+
+[![](assets/jeffbezos.png)](https://www.nytimes.com/interactive/2022/04/07/magazine/jeff-bezos-net-worth.html)
+Mona Chalabi, 2022
+
+
+[![](assets/allezeit.png)](https://www.ullstein.de/werke/alle-zeit/hardcover/9783550201721)  
+Teresa Bücker, 2022
+
+
+[![](assets/grundeinkommen.png)](https://www.mein-grundeinkommen.de)  
+
+
+
 
 
 
