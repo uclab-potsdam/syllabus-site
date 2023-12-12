@@ -666,7 +666,7 @@ Viviana Sorvillo
 
 
 <!--skipnav-->
-## [Soupi](https://prezi.com/view/VSVmkvg7c5UTmqBrTZkw/)
+## Soupi
 
 > Soupi is a student foodsaving project that cooks delicious, healthy soups with saved foods.
 It will also be a design course, an educational program at schools and a movement that connects people and helps to reduce foodwaste.
@@ -678,7 +678,7 @@ The organigram is visualizing the process of turning the saved foods into soups 
 Georg Wähmer
 
 
-[![](assets/soupi.jpg)](https://prezi.com/view/VSVmkvg7c5UTmqBrTZkw/)
+![](assets/soupi.jpg)
 
 
 
