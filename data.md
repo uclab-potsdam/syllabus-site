@@ -99,13 +99,15 @@ Every week the course takes place at different locations in Berlin or Potsdam. B
 ## Utopia
 
 
+[<img src='assets/wigwam.png' style='width:10em; '>](https://wigwam.im/)  
+Wigwam eG
+
+
 Lueder, C. (2013). [Diagram Utopias: Rota and Network as Instrument and Mirror of Utopia and Agronica](https://infovis.fh-potsdam.de/readings/lueder2013diagram.pdf). Journal of Architectural Education, 67(2):224–233.
 
 > Utopian visions and diagrams have engaged in a multitude of relationships. For example, a utopian narrative can be conceived as a diagram, or with the aid of diagrams, and understood through diagrammatic (re) annotation. This notion is explored through an interpretation of Thom- as More’s Utopia and Andrea Branzi’s Agronica. Both schemes address various structural conditions through diagrammatic operations. In More’s scheme the channel that separates Utopia from the mainland, dug by its putative founder King Abraxas, inscribes a circular boundary, reiterated in the city walls and moat; it is resonant with contempora- neous rota and volvelle schemata. Conversely, Andrea Branzi’s “mirror simulator” multiplies Agronica’s centrifugal grid to infinity, negating the “outside,” and is evocative of pervasive virtual networks.
 
 
-[<img src='assets/wigwam.png' style='width:10em; '>](https://wigwam.im/)  
-Wigwam eG
 
 
 [![The Garden of Earthly Delights by Hieronymus Bosch](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/1100px-The_Garden_of_earthly_delights.jpg)](https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights)  
@@ -148,12 +150,12 @@ Lino Zeddies, 2023
 ## Co-ops
 
 
+[<img src='assets/infotext.png' style='width:10em; '>](https://infotext-berlin.de/)  
+
+
 Fairbairn, B. et al. (1994). [The meaning of Rochdale: The Rochdale Pioneers and the co-operative principles](https://ageconsearch.umn.edu/record/31778/files/re94fa01.pdf). Technical report, University of Saskatchewan, Centre for the Study of Co-operatives.
 
 > Rochdale, England, is known by millions for one reason: a handful of labourers established a co-operative there in 1844 known as the Rochdale Society of Equitable Pioneers. That co-operative was adopted as the inspiration and model for a movement that now includes nearly 700 million people around the world. As this paper is being written, co-operators around the world are preparing to celebrate the 150th anniversary of its birth. But what did Rochdale mean? Why is it considered so important?"}
-
-
-[<img src='assets/infotext.png' style='width:10em; '>](https://infotext-berlin.de/)  
 
 
 [<img src='assets/coopflag.png' style='width:10em; '>](http://bheleccs.in/co-operative-flag/)  
@@ -211,13 +213,13 @@ The following [cooperative principles](https://www.ica.coop/en/cooperatives/coop
 ## Platforms
 
 
+[<img src='assets/smart.png' style='width:10em; '>](https://smart-eg.de/)  
+SMartDe eG
+
+
 Scholz, T. (2016). [Platform cooperativism. Challenging the corporate sharing economy](https://rosalux.nyc/wp-content/uploads/2020/11/RLS-NYC_platformcoop.pdf). New York, NY: Rosa Luxemburg Foundation.
 
 > Among all the problems with 21st-century work — the ballooning of the low wage service sector, economic inequality, the crumbling of worker rights  — the main problem really is that there are so few realistic alternatives. What has been missing from the debate about the future of work is an approach that offers peo- ple something that they can wholeheartedly embrace. This is what this essay is about.
-
-
-[<img src='assets/smart.png' style='width:10em; '>](https://smart-eg.de/)  
-SMartDe eG
 
 
 [![](assets/centralized-distributed.png)](https://pages.cs.wisc.edu/~akella/CS740/F08/740-Papers/Bar64.pdf)  
@@ -248,12 +250,12 @@ Victoria Sgarro, 2023
 ## Economies
 
 
+[<img src='assets/regionalwert.png' style='width:10em; '>](https://www.regionalwert-berlin.de/) 
+
+
 Raworth, K. (2012). [A safe and just space for humanity](https://www-cdn.oxfam.org/s3fs-public/file_attachments/dp-a-safe-and-just-space-for-humanity-130212-en_5.pdf). Oxfam Discussion Paper.
 
 > Humanity’s challenge in the 21st century is to eradicate poverty and achieve prosperity for all within the means of the planet’s limited natural resources. In the run-up to Rio+20, this discussion paper presents a visual framework – shaped like a doughnut – which brings planetary boundaries together with social boundaries, creating a safe and just space between the two, in which humanity can thrive. Moving into this space demands far greater equity – within and between countries – in the use of natural resources, and far greater efficiency in transforming those resources to meet human needs.
-
-
-[<img src='assets/regionalwert.png' style='width:10em; '>](https://www.regionalwert-berlin.de/) 
 
 
 [![](https://img.youtube.com/vi/kwTlX3C5H9I/0.jpg)](https://www.youtube.com/watch?v=OoIcsjkwTlX3C5H9I9ysvs)  
@@ -308,12 +310,12 @@ Better and better? A comment on Hans Rosling by Roland Paulsen, 2019
 ## Co-design
 
 
+[<img src='assets/backstube.png' style='width:10em; '>](http://die-backstube.de/) 
+
+
 Sanders, E. B.-N. and Stappers, P. J. (2008). [Co-creation and the new landscapes of design](https://doi.org/10.1080/15710880701875068). Co-design, 4(1):5–18.
 
 > Designers have been moving increasingly closer to the future users of what they design and the next new thing in the changing landscape of design research has become co-designing with your users. But co-designing is actually not new at all, having taken distinctly different paths in the US and in Europe. The evolution in design research from a user-centred approach to co-designing is changing the roles of the designer, the researcher and the person formerly known as the ‘user’. The implications of this shift for the education of designers and researchers are enormous. The evolution in design research from a user-centred approach to co-designing is changing the landscape of design practice as well, creating new domains of collective creativity. It is hoped that this evolution will support a transformation toward more sustainable ways of living in the future.
-
-
-[<img src='assets/backstube.png' style='width:10em; '>](http://die-backstube.de/) 
 
 
 [![](assets/arnsteins_ladder.png)](https://www.citizenshandbook.org/arnsteinsladder.html)
@@ -355,12 +357,12 @@ CoC Playful Minds, 2020
 ## Work
 
 
+[<img src='assets/gruppef.png' style='width:10em; '>](https://gruppef.com/)
+
+
 Weeks, K. (2011). [The Problem with Work: Feminism, Marxism, Antiwork Politics, and Postwork Imaginaries](https://caringlabor.files.wordpress.com/2012/05/the-problem-with-work_-feminism-marxism-kathi-weeks.pdf). Introduction chapter. Pages 1–36. Duke University Press.
 
 >In The Problem with Work, Kathi Weeks boldly challenges the presupposition that work, or waged labor, is inherently a social and political good. While progressive political movements, including the Marxist and feminist movements, have fought for equal pay, better work conditions, and the recognition of unpaid work as a valued form of labor, even they have tended to accept work as a naturalized or inevitable activity. Weeks argues that in taking work as a given, we have “depoliticized” it, or removed it from the realm of political critique. Employment is now largely privatized, and work-based activism in the United States has atrophied. We have accepted waged work as the primary mechanism for income distribution, as an ethical obligation, and as a means of defining ourselves and others as social and political subjects. Taking up Marxist and feminist critiques, Weeks proposes a postwork society that would allow people to be productive and creative rather than relentlessly bound to the employment relation. Work, she contends, is a legitimate, even crucial, subject for political theory.
-
-
-[<img src='assets/gruppef.png' style='width:10em; '>](https://gruppef.com/)
 
 
 [![](assets/pyramid.jpg)](https://en.wikipedia.org/wiki/Pyramid_of_Capitalist_System)
