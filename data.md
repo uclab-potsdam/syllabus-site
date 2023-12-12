@@ -9,12 +9,12 @@ We will take on the challenge to visualize organizational structures that hardly
 This webpage presents a selective documentation of key readings, inspiring projects, our generous hosts, and the resulting projects.
 
 
-[<img src='assets/marian.png' style='width:10em;'>](https://mariandoerk.de/)  
-Prof. Dr. Marian Dörk
+[<img src='assets/marian.png' style='width:8em'>](https://mariandoerk.de/)  
+Marian Dörk
 
 
-[<img src='assets/myriel.png' style='width:10em;'>](https://www.fh-potsdam.de/hochschule-netzwerk/personen/myriel-milicevic)  
-Prof. Myriel Milicevic
+[<img src='assets/myriel.png' style='width:8em'>](https://www.fh-potsdam.de/hochschule-netzwerk/personen/myriel-milicevic)  
+Myriel Milicevic
 
 
 [![The first organizational chart prepared by and for the New York and Erie Railroad (1855)](assets/firstorgchart.webp)](https://www.loc.gov/item/2017586274/)  
@@ -345,19 +345,103 @@ The visualizations are based on practices and principles encountered during the 
 
 <!--skipnav-->
 ## [CO-OP.COMM](https://fhp.incom.org/project/25346)  
-### Visualizing the communication landscape in collaborative work environments
 
 > Within the course, we visited different collectives, cooperatives and other company models that were on a path towards cooperativism. These structures communicate with each other in interwoven, self-determined and fluid ways. Through this unique communication, they jointly develop sustainable and subjective solutions. Communication can help transport values, ideas and benefits of collectives and cooperatives. But because of the individuality of each co-structure, explaining them is often not easy. It takes curiosity and exploration to gain an understanding. I understand this work as an attempt to visualise the complex communication structure of cooperatives and verify the hypothesis if this can function as a mirror of the complex co-operative work environment.
 
 
-<img src='assets/vivien.jpg' style='width:10em; '>  \
+<img src='assets/blank.png' style='width:8em'>  \
 Vivien Serve
 
 
-![](assets/coopcomm.gif)
+[![](assets/coopcomm.png)](https://fhp.incom.org/project/25346)
 
 
-The current version of co-op.comm is presented as a [Figma prototype](https://www.figma.com/proto/d8CQHPhjl30T0BQ1ud5Z40/Unfolding-the-edges-of-communication?kind=proto&node-id=588-445426&page-id=579%3A439053&scaling=min-zoom&starting-point-node-id=588%3A445426&t=Kwvimi6MrSj9fhXM-1&type=design&viewport=606%2C116%2C0.15) and contains 3 visualized cooperative models.
+
+<!--skipnav-->
+## [Flows of Non-Pecuniary Values](https://fhp.incom.org/project/25222)  
+
+> The aim of this project is to show how our capitalist world can move towards degrowth by focusing on values other than money.
+One of the major problems in our society is monetary value. It is an infinite value that we place in a finite world with limited resources.
+So what would happen if we did away with money?
+This organigram explores the different streams of non-pecuniary value in a heterotopia.
+
+
+<img src='assets/blank.png' style='width:8em'>  \
+Chloé Le Mézo
+
+
+[![](assets/flows.png)](https://fhp.incom.org/project/25222)
+
+
+
+<!--skipnav-->
+## [Interdependency and Collaboration in a Co-operative](https://fhp.incom.org/project/25416)  
+
+> The goal of this data visualization project is to demonstrate the relationships, interactions and overlaps within a cooperative, taking inspiration from the intricate yet incredibly powerful interactions of human cells. The project highlights the significance of working together towards a common goal, like how human cells collaborate to ensure the body functions properly. Exploring this concept delves into the collective entity that cooperatives embody.
+
+
+<img src='assets/blank.png' style='width:8em'>  \
+Dishunee Pandya
+
+
+[![](assets/interdependency.png)](https://fhp.incom.org/project/25416)
+
+
+
+<!--skipnav-->
+## [Money Flow](https://vimeo.com/843699475)
+
+> This project explores the often sensitive and under-discussed topic of financial distribution within cooperatives. Despite a common belief that "money has no value" in such settings and that resources are equally shared, this research aims to uncover the actual dynamics at play. It delves into the origins of the funds in cooperatives, the methods of allocation among members, and the final monetary compensation each member receives.
+
+
+<img src='assets/blank.png' style='width:8em'>  \
+Julia Semenikhina
+
+
+[![](assets/moneyflow.png)](https://vimeo.com/843699475)
+
+
+
+<!--skipnav-->
+## Social Innovation
+
+> The aim of my project was to try to analyse and narrate the historical and cultural value that collectives and cooperatives carry today, in 2023. I interpreted these organisations as bearers of *Social Innovation*, a concept now recognised by the European Union that indicates the construction of "new ideas: services, products or models that meet people needs, create relationships and form new collaborations". Social Innovation can be seen as a response to the enormous density of changes that have occurred since the last century, which have shaken the balance of the world in a very short space of time. In my research, I wanted to see these organisations as part of the path our society is taking in search of a new balance, and new ways of being together.
+
+
+<img src='assets/blank.png' style='width:8em'>  \
+Viviana Sorvillo
+
+
+![](assets/socialinnovation.png)]
+
+
+
+<!--skipnav-->
+## [Status Growth](https://fhp.incom.org/project/25152)
+
+> In an environment mainly consisting of hierarchically organised companies some alternative ways of organising work emerge: cooperatives. What defines their way of growing? What is their influence on traditionally organised companies? How do they affect not only working environment but also our way of thinking?
+
+
+<img src='assets/blank.png' style='width:8em'>  \
+Jaqueline Grob
+
+
+[![](assets/statusgrowth.png)](https://fhp.incom.org/project/25152)
+
+
+
+
+<!--skipnav-->
+## [Values of cooperatives](https://prezi.com/view/VSVmkvg7c5UTmqBrTZkw/)
+
+> Each everyday object the coop members use, subconsciously embody a value of the organization, this gets spread between the members as they use and share that object, helping them build the social environment the coop is shaped on.
+
+
+<img src='assets/blank.png' style='width:8em'>  \
+Beatrice Leone
+
+
+[![](assets/values.png)](https://prezi.com/view/VSVmkvg7c5UTmqBrTZkw/)
 
 
 
