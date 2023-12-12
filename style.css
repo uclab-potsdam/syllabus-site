@@ -110,6 +110,9 @@ p {
     pointer-events: all;
     z-index: 1;
 }
+#cursor:has(h1) {
+    max-width: 50vw;
+}
 #cursor:active, #cursor:focus {
     z-index:2;
 }
@@ -238,8 +241,8 @@ footer a:hover img, footer a:active img {
     div.content:has(img) {
         background: var(--background);
     }
-    #cursor{
-        max-width: 85vw;
+    #cursor, #cursor:has(h1){
+        max-width: 100%;
         left: unset;
         transform: unset;
         margin: auto;        
