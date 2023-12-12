@@ -69,7 +69,7 @@ Kimmerer, R. W. (2013). Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowl
 
 <h3 id="themes">Themes</h3>
 
-With each course session, we passs through ten central themes, each of which is accompanied by a key reading and a range of visual materials such as exemplary diagrams and visualizations:
+Each course session covers one central theme that is accompanied by a key reading and a range of visual materials such as exemplary diagrams and visualizations:
 
 - [Utopia](#utopia)
 - [Co-ops](#co-ops)
