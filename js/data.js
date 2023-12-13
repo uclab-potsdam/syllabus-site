@@ -72,6 +72,13 @@ async function updateView(){
     document.querySelector('footer').style.visibility = 'visible';
     
     animation()
+		
+		// open links in new tab/window
+		document.querySelectorAll('a').forEach(link => {
+			if (!link.getAttribute('href').startsWith('#')) {
+		        link.target = '_blank';
+		    }
+		});
 }
 function updateItemPosition(item) {
     //set height of session according to mobile or desktopy
