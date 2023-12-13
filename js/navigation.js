@@ -18,6 +18,7 @@ function toggleMenu(){
 window.onhashchange = () => {hashChange()}
 function hashChange(){
     if(sessions.length > 0) {
+				resetEnlargedImage();
         let hash = window.location.hash;
         if (hash == ""){
             window.scrollTo({top: 0})

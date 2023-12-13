@@ -146,6 +146,7 @@ Rutger Bregman, 2014/2018
 ![Why city lights and headlights still match](assets/daimler.png "Why city lights and headlights still match")  \
 [Mercedes-Benz Group, 2019](https://group.mercedes-benz.com/company/magazine/sustainability/sustainability-mobility-city-future.html)  
 
+
 ![Berlin Friedrichstraße Utopia 2048 by Lino Zeddies](assets/berlinutopie.jpg)  \
 [Lino Zeddies, 2023](https://realutopien.info/visuals/berlin-friedrichstrasse-utopia-2048/)  
 

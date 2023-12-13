@@ -33,7 +33,6 @@ function animation(){
 
 		if (lastScrollY!=window.scrollY) {
 			lastScrollY=window.scrollY;
-			resetEnlargedImage()
 			update()
 		}
 
@@ -41,7 +40,6 @@ function animation(){
     requestAnimationFrame(() => {animation()})
 }
 function update(){
-	console.log("update");
     let currentSession = sessions.filter(session => session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height))[0]
     if (typeof currentSession == "undefined") return;
     let currentProgress = (window.scrollY - currentSession.margin)/currentSession.height

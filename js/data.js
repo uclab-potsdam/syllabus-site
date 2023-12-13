@@ -84,6 +84,7 @@ async function updateView(){
 		document.querySelectorAll('.content p > img').forEach(img => {
 		    img.addEventListener('click', function(e) {
 					e.preventDefault();
+					
 					let content = img.closest('.content');
 					let app = document.querySelector('#app');
 						
@@ -102,11 +103,13 @@ async function updateView(){
 			        const offsetY = centerY - rect.top;
 							
 							this.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(2)`;
+							
 							content.classList.add('enlarged');
 							app.classList.add('overlay');
-								
-		          document.body.addEventListener('touchmove', preventDefault, { passive: false });
-		          document.body.addEventListener('wheel', preventDefault, { passive: false });								
+														
+		          document.body.addEventListener('touchstart', preventDefault);
+		          // document.body.addEventListener('mousedown', preventDefault);
+		          document.body.addEventListener('wheel', preventDefault);
 		        }
 					})
 
@@ -115,12 +118,16 @@ async function updateView(){
 
 
 
-function preventDefault(e) { e.preventDefault(); }
+function preventDefault(e) { 
+	e.stopPropagation();	
+	resetEnlargedImage();
+}
 
 function resetEnlargedImage() {
 	
-	document.body.removeEventListener('touchmove', preventDefault, { passive: false });
-  document.body.removeEventListener('wheel', preventDefault, { passive: false });
+	document.body.removeEventListener('touchstart', preventDefault);
+	// document.body.removeEventListener('mousedown', preventDefault);
+  document.body.removeEventListener('wheel', preventDefault);
 	
   let over = document.querySelector(".overlay");
 	if (over) over.classList.remove("overlay");

@@ -27,7 +27,8 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    --background-menu: hsl(0, 0%, 100%);
+		touch-action: pan-x pan-y;
+	  --background-menu: hsl(0, 0%, 100%);
     --background: hsl(0, 0%, 94%);
     --background-cursor: hsl(0, 0%, 88%);
     --background-content: hsl(0, 0%, 82%);
