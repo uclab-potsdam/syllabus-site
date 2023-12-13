@@ -29,6 +29,7 @@
 
 <body>
     <div id="app">
+        <div class="overlay"></div>
         <div class="hamburger-icon" id="icon" onclick="toggleMenu()">
             <div class="icon-1" id="a"></div>
             <div class="icon-2" id="b"></div>
@@ -55,18 +56,22 @@
         //fontsize based on window size
         let fs = 14;
         function setFontSize(){
-            vw = document.documentElement.clientWidth/100;
-            vh = document.documentElement.clientHeight/100;
-            fs = 7+.7*vw+.3*vh;	
+          vw = document.documentElement.clientWidth/100;
+          vh = document.documentElement.clientHeight/100;
+          fs = 7+.7*vw+.3*vh;	
 	        document.querySelector("body").style.fontSize = fs+"px";
+          update();
         }
         window.onresize = setFontSize;
         // when pressing escape scroll up and remove hash
         document.onkeyup = function(e) {
-            if (e.key === "Escape") {
-		        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-		        history.pushState("", document.title, window.location.pathname);
-                if (menuState) toggleMenu();
+          if (e.key === "Escape") {
+            if (document.querySelector("#app.overlay")) resetEnlargedImage();            
+            else {
+  		        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  		        history.pushState("", document.title, window.location.pathname);
+              if (menuState) toggleMenu();              
+            }
 	        }
         }
         setFontSize();

@@ -71,7 +71,7 @@ async function updateView(){
     })
     document.querySelector('footer').style.visibility = 'visible';
     
-    animation()
+		animation()
 		
 		// open links in new tab/window
 		document.querySelectorAll('a').forEach(link => {
@@ -79,7 +79,61 @@ async function updateView(){
 		        link.target = '_blank';
 		    }
 		});
+		
+		// images to be resized
+		document.querySelectorAll('.content p > img').forEach(img => {
+		    img.addEventListener('click', function(e) {
+					e.preventDefault();
+					let content = img.closest('.content');
+					let app = document.querySelector('#app');
+						
+		        if (content.classList.contains('enlarged')) {
+		           
+							resetEnlargedImage();
+								
+		        } else {
+							
+			        // Calculate centering
+			        const rect = img.getBoundingClientRect();
+			        const centerX = (window.innerWidth / 2) - (rect.width / 2);
+			        const centerY = (window.innerHeight / 2) - (rect.height / 2);
+
+			        const offsetX = centerX - rect.left;
+			        const offsetY = centerY - rect.top;
+							
+							this.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(2)`;
+							content.classList.add('enlarged');
+							app.classList.add('overlay');
+								
+		          document.body.addEventListener('touchmove', preventDefault, { passive: false });
+		          document.body.addEventListener('wheel', preventDefault, { passive: false });								
+		        }
+					})
+
+		});
 }
+
+
+
+function preventDefault(e) { e.preventDefault(); }
+
+function resetEnlargedImage() {
+	
+	document.body.removeEventListener('touchmove', preventDefault, { passive: false });
+  document.body.removeEventListener('wheel', preventDefault, { passive: false });
+	
+  let over = document.querySelector(".overlay");
+	if (over) over.classList.remove("overlay");
+  let img = document.querySelector(".enlarged img")
+	if (img) {
+	  img.style.transform = 'scale(1)';
+	  img.style.left = '0';
+	  img.style.top = '0';
+	}
+  let enl = document.querySelector(".enlarged");
+	if (enl) enl.classList.remove("enlarged");	
+}
+
 function updateItemPosition(item) {
     //set height of session according to mobile or desktopy
     item.y = item.session.margin + //margin to the top

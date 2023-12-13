@@ -15,8 +15,8 @@ Marian Dörk
 Myriel Milicevic
 
 
-[<img src='assets/firstorgchart.webp' style='height:20em'>](https://www.loc.gov/item/2017586274/)  
-New York and Erie Railroad, 1855
+![](assets/firstorgchart.webp 'This organizational chart is considered to be the first organigram')  \
+[New York and Erie Railroad, 1855](https://www.loc.gov/item/2017586274/)
 
 
 This webpage contains a selective documentation of inspiring readings and references along ten [themes](#themes), our generous [hosts](#hosts), and the resulting student [projects](#projects).
@@ -40,17 +40,19 @@ This is an experimental course on the visualization of organizational structures
 Jameson, F. (1996). The Seeds of Time.
 
 
-[![](assets/thisisnotfine.png)](https://thenib.com/this-is-not-fine/)  
-K.C. Green, 2016
+![](assets/thisisnotfine.png)  \
+[K.C. Green, 2016](https://thenib.com/this-is-not-fine/)  
+
 
 
 > It is hard to say what today's dreams are; it seems they have been downgraded to hopes—hope that we will not allow ourselves to become extinct, hope that we can feed the starving, hope that there will be room for us all on this tiny planet. There are no more visions. We don't know how to fix the planet and ensure our survival. We are just hopeful.
 
- Dunne, A. and Raby, F. (2013). Speculative everything: design, fiction, and social dreaming.
+Dunne, A. and Raby, F. (2013). Speculative everything: design, fiction, and social dreaming.
 
 
-[![Yang, A. (2012 - present). Flying Gardens of Maybe](assets/flyinggardens.jpg)](https://www.andrewyang.net/maybe)  
-Andrew Yang, 2012 - present
+![](assets/flyinggardens.jpg)  \
+[Andrew Yang, 2012 - present](https://www.andrewyang.net/maybe)  
+
 
 
 > That is the fundamental nature of gifts: they move, and their value increases with their passage. The fields made a gift of berries to us and we made a gift of them to our father. The more something is shared, the greater its value becomes. This is hard to grasp for societies steeped in notions of private property, where others are, by definition, excluded from sharing. Practices such as posting land against trespass, for example, are expected and accepted in a property economy but are unacceptable in an economy where land is seen as a gift to all.
@@ -113,40 +115,40 @@ Lueder, C. (2013). [Diagram Utopias: Rota and Network as Instrument and Mirror o
 > Utopian visions and diagrams have engaged in a multitude of relationships. For example, a utopian narrative can be conceived as a diagram, or with the aid of diagrams, and understood through diagrammatic (re) annotation. This notion is explored through an interpretation of Thom- as More’s Utopia and Andrea Branzi’s Agronica. Both schemes address various structural conditions through diagrammatic operations. In More’s scheme the channel that separates Utopia from the mainland, dug by its putative founder King Abraxas, inscribes a circular boundary, reiterated in the city walls and moat; it is resonant with contempora- neous rota and volvelle schemata. Conversely, Andrea Branzi’s “mirror simulator” multiplies Agronica’s centrifugal grid to infinity, negating the “outside,” and is evocative of pervasive virtual networks.
 
 
-[![The Garden of Earthly Delights by Hieronymus Bosch](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/1100px-The_Garden_of_earthly_delights.jpg)](https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights)  
-Hieronymus Bosch, 1490-1510
+![The Garden of Earthly Delights by Hieronymus Bosch](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/1100px-The_Garden_of_earthly_delights.jpg)  \
+[Hieronymus Bosch, 1490-1510](https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights)  
 
 
-[![A woodcut by Ambrosius Holbein, illustrating a 1518 edition of Thomas More's Utopia](assets/utopia.png)](https://en.wikipedia.org/wiki/Utopia_(More_book))  
-Ambrosius Holbein, 1516
+![A woodcut by Ambrosius Holbein, illustrating a 1518 edition of Thomas More's Utopia](assets/utopia.png)  \
+[Ambrosius Holbein, 1516](https://en.wikipedia.org/wiki/Utopia_(More_book))
 
 
-[![Petrus Apianus’ Astronomicum Caesareum, 1540](https://img.youtube.com/vi/lC2FSh-f_Xg/0.jpg)](https://www.youtube.com/watch?v=lC2FSh-f_Xg)  
-Petrus Apianus, 1540
+![](https://img.youtube.com/vi/lC2FSh-f_Xg/0.jpg)  \
+[Petrus Apianus’ Astronomicum Caesareum, 1540](https://www.youtube.com/watch?v=lC2FSh-f_Xg)
 
 
-[![Garden City Concept](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Garden_City_Concept_by_Howard.jpg/460px-Garden_City_Concept_by_Howard.jpg)](https://en.wikipedia.org/wiki/Garden_city_movement)  
-Ebenezer Howard, 1902
+![Garden City Concept](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Garden_City_Concept_by_Howard.jpg/460px-Garden_City_Concept_by_Howard.jpg)  \
+[Ebenezer Howard, 1902](https://en.wikipedia.org/wiki/Garden_city_movement)
 
 
-[![Wright Sketches for Broadacre City](https://upload.wikimedia.org/wikipedia/commons/9/95/Wright_Sketches_for_Broadacre_City.jpg)](https://en.wikipedia.org/wiki/Broadacre_City)  
-Frank Lloyd Wright, 1932
+![Wright Sketches for Broadacre City](https://upload.wikimedia.org/wikipedia/commons/9/95/Wright_Sketches_for_Broadacre_City.jpg)  \
+[Frank Lloyd Wright, 1932](https://en.wikipedia.org/wiki/Broadacre_City)  
 
 
-[![Andrea Branzi - Agronica, 1994](https://img.youtube.com/vi/VhfjHhhxSZc/0.jpg)](https://www.youtube.com/watch?v=VhfjHhhxSZc)  
-Andrea Branzi, 1995
+![Andrea Branzi - Agronica, 1994](https://img.youtube.com/vi/VhfjHhhxSZc/0.jpg)  \
+[Andrea Branzi, 1995](https://www.youtube.com/watch?v=VhfjHhhxSZc)  
 
 
-[![](assets/utopiaforrealists.png)](https://en.wikipedia.org/wiki/Utopia_for_Realists)  
+[![](assets/utopiaforrealists.png)](https://en.wikipedia.org/wiki/Utopia_for_Realists)  \
 Rutger Bregman, 2014/2018
 
 
-[![Why city lights and headlights still match](assets/daimler.png "Why city lights and headlights still match")](https://group.mercedes-benz.com/company/magazine/sustainability/sustainability-mobility-city-future.html)  
-Mercedes-Benz Group, 2019
+![Why city lights and headlights still match](assets/daimler.png "Why city lights and headlights still match")  \
+[Mercedes-Benz Group, 2019](https://group.mercedes-benz.com/company/magazine/sustainability/sustainability-mobility-city-future.html)  
 
+![Berlin Friedrichstraße Utopia 2048 by Lino Zeddies](assets/berlinutopie.jpg)  \
+[Lino Zeddies, 2023](https://realutopien.info/visuals/berlin-friedrichstrasse-utopia-2048/)  
 
-[![Berlin Friedrichstraße Utopia 2048 by Lino Zeddies](assets/berlinutopie.jpg)](https://realutopien.info/visuals/berlin-friedrichstrasse-utopia-2048/)  
-Lino Zeddies, 2023
 
 
 ---
@@ -670,7 +672,7 @@ Dishunee Pandya
 Viviana Sorvillo
 
 
-![](assets/socialinnovation.png)]
+![](assets/socialinnovation.png)
 
 
 ---

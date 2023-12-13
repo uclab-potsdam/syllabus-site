@@ -1,6 +1,7 @@
 //put the update in an animation frame loop
 let lastCursorPosition = 0
 let lastSession = null
+let lastScrollY = null;
 document.addEventListener("scroll",() => {
     d3.select('#cursor').attr('style', `top:${lastCursorPosition}px;`)
 })
@@ -29,12 +30,18 @@ function animation(){
         hashChange()
         scrolled = true
     }
-    //calculate the current session and the progress in the session
-    update()
+
+		if (lastScrollY!=window.scrollY) {
+			lastScrollY=window.scrollY;
+			resetEnlargedImage()
+			update()
+		}
+
     //loop the animation frame
     requestAnimationFrame(() => {animation()})
 }
 function update(){
+	console.log("update");
     let currentSession = sessions.filter(session => session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height))[0]
     if (typeof currentSession == "undefined") return;
     let currentProgress = (window.scrollY - currentSession.margin)/currentSession.height
@@ -46,13 +53,5 @@ function update(){
     const windowHeight = window.innerHeight;
     const middleY = windowHeight / 2;
 
-    items.map((item,i)  =>  {
-        if(window.scrollY + window.innerHeight/2 > (item.y + item.bounding.height/2) &&  window.scrollY + window.innerHeight/2 < (items[i+1] ? items[i+1].y + items[i+1].bounding.height: item.y + item.bounding.height)){
-            item.domObject.style["z-index"] = 3;
-        }else{
-            item.domObject.style["z-index"] = 2;
-        }        
-    })
-    //update the cursor
     updateCursor(currentSession,currentProgress)
 }
