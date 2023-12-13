@@ -51,15 +51,7 @@ function update(){
             item.domObject.style["z-index"] = 3;
         }else{
             item.domObject.style["z-index"] = 2;
-        }
-        let element = item.domObject;
-        let rect = element.getBoundingClientRect();
-        let elementY = rect.top + rect.height / 2;
-        let minScale = .75;
-        let maxScale = 1; 
-        let scale = minScale + (maxScale - minScale) * ((windowHeight - elementY) / middleY);
-        if (elementY<middleY) scale = 1;
-        element.style.transform = `translate(${item.varianz}px,0) scale(${scale})`;        
+        }        
     })
     //update the cursor
     updateCursor(currentSession,currentProgress)
