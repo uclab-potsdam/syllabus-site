@@ -74,12 +74,12 @@
         .then(data => data.text())
         .then(text => {
             let data = []
-            let sessions = text.split(/\n{4,}/)
+            let sessions = text.split("---\n")
             let footer  = sessions.slice(-1)[0]
             document.querySelector("footer").innerHTML = marked.parse(footer)
             sessions.slice(0,-1).map(session => {
                 let sessionObject = {}
-                let sessionData = session.split("\n\n\n")
+                let sessionData = session.trim().split(/\n{3,}/)
                 sessionObject.text = sessionData[0]
                 sessionData = sessionData.slice(1)
                 sessionObject.content = sessionData.map(content => { return {"markdown" : content}})

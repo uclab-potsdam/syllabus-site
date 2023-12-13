@@ -27,7 +27,7 @@ This webpage contains a selective documentation of inspiring readings and refere
 - What would you like to reveal with the organigrams you will make?
 - What kind of work relations would you like to create for the future and put out there for discussion?
 
-
+---
 
 3 April
 ## Kick-off
@@ -99,7 +99,7 @@ Every week the course takes place at different locations in Berlin or Potsdam. B
 -   [Madia Potsdam - Gemeinschaft, Café und Familienwohnzimmer](https://madia-potsdam.de)
 
 
-
+---
 17 April
 ## Utopia
 
@@ -149,7 +149,7 @@ Mercedes-Benz Group, 2019
 Lino Zeddies, 2023
 
 
-
+---
 24 April
 ## Co-ops
 
@@ -213,7 +213,7 @@ The following [cooperative principles](https://www.ica.coop/en/cooperatives/coop
 7. Concern for Community
 
 
-
+---
 8 May
 ## Platforms
 
@@ -251,7 +251,7 @@ Per Axbom, 2022
 Victoria Sgarro, 2023
 
 
-
+---
 15 May
 ## Economies
 
@@ -312,7 +312,7 @@ Hans Rosling's 200 Countries, 200 Years, 4 Minutes, 2010
 Better and better? A comment on Hans Rosling by Roland Paulsen, 2019
 
 
-
+---
 22 May
 ## Co-design
 
@@ -360,7 +360,7 @@ Bastian Braun, 2018
 CoC Playful Minds, 2020
 
 
-
+---
 5 June
 ## Work
 
@@ -401,7 +401,7 @@ Teresa Bücker, 2022
 Mein Grundeinkommen, since 2014
 
 
-
+---
 12 June
 ## Commons
 
@@ -452,7 +452,7 @@ Creative Commons
 Environmental Global Commons GSDR, 2020
 
 
-
+---
 19 June
 ## Cybersyn
 
@@ -480,8 +480,8 @@ the counterculture room, 2016
 The Santiago Boys - Podcast, 2023
 
 
-
-26  June
+---
+26 June
 ## Feminism
 
 
@@ -513,7 +513,7 @@ Hannah Schwan et al., 2021
 THE F*WORD - Guerrilla Girls and Feminist Graphic Design, MK&G, 2023
 
 
-
+---
 3 July
 ## Care
 
@@ -545,7 +545,7 @@ Care Revolution, 2018
 
 
 
-
+---
 # Projects
 
 
@@ -555,7 +555,7 @@ Aiming to visualize structures of a social-ecological economy, each student carr
 The following visualization projects are based on the practices and principles encountered during the visits, readings, and exchanges throughout the semester. 
 
 
-
+---
 <!--skipnav-->
 ## [CO-OP.COMM](https://fhp.incom.org/project/25346)  
 
@@ -569,7 +569,7 @@ Vivien Serve
 [![](assets/coopcomm.png)](https://fhp.incom.org/project/25346)
 
 
-
+---
 <!--skipnav-->
 ## [Status Growth](https://fhp.incom.org/project/25152)
 
@@ -583,7 +583,7 @@ Jaqueline Grob
 [![](assets/statusgrowth.png)](https://fhp.incom.org/project/25152)
 
 
-
+---
 <!--skipnav-->
 ## [Flexibility equals power](https://www.figma.com/file/sqE0zBAuWFxidxotFlhuSh/flexibility-equals-power-final?type=design&node-id=0-1&mode=design)
 
@@ -598,7 +598,7 @@ Luka Saje
 
 
 
-
+---
 <!--skipnav-->
 ## [Flows of Non-Pecuniary Values](https://fhp.incom.org/project/25222)  
 
@@ -616,7 +616,7 @@ Chloé Le Mézo
 
 
 
-
+---
 <!--skipnav-->
 ## [Money Flow](https://vimeo.com/843699475)
 
@@ -631,7 +631,7 @@ Julia Semenikhina
 
 
 
-
+---
 <!--skipnav-->
 ## [Values of cooperatives](https://prezi.com/view/VSVmkvg7c5UTmqBrTZkw/)
 
@@ -645,7 +645,7 @@ Beatrice Leone
 [![](assets/values.png)](https://prezi.com/view/VSVmkvg7c5UTmqBrTZkw/)
 
 
-
+---
 <!--skipnav-->
 ## [Interdependency and Collaboration in a Co-operative](https://fhp.incom.org/project/25416)  
 
@@ -659,7 +659,7 @@ Dishunee Pandya
 [![](assets/interdependency.png)](https://fhp.incom.org/project/25416)
 
 
-
+---
 <!--skipnav-->
 ## Social Innovation
 
@@ -673,7 +673,7 @@ Viviana Sorvillo
 ![](assets/socialinnovation.png)]
 
 
-
+---
 <!--skipnav-->
 ## Soupi
 
@@ -690,7 +690,7 @@ Georg Wähmer
 ![](assets/soupi.jpg)
 
 
-
+---
 [<img src='assets/fhp.svg' style='height:2.25em'>](https://www.fh-potsdam.de/) 
 [<img src='assets/id.svg' style='height:1.75em'>](https://interface.fh-potsdam.de/) 
 
