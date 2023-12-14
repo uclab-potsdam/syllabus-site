@@ -7,12 +7,12 @@ How can we visualize an economy built on solidarity, sustainability, and surviva
 This course takes on the challenge to visualize organizational structures that hardly exist yet, but are foreshadowed in the experimental configurations of cooperatives, projects, and initiatives. To seek inspiration we visit organizations that are committed to social-ecological transformation and operate on principles of social and ecological justice. These organizations share their experiences and offer opportunities to see innovative ways of working together, making decisions, and cultivating cooperation in critical times.
 
 
-[<img src='assets/marian.png' style='width:8em'>](https://mariandoerk.de/)  \
-Marian Dörk
+<img src='assets/marian.png' class="noresize" style='width:8em'>  \
+[Marian Dörk](https://mariandoerk.de)
 
 
-[<img src='assets/myriel.png' style='width:8em'>](https://www.fh-potsdam.de/hochschule-netzwerk/personen/myriel-milicevic)  \
-Myriel Milicevic
+<img src='assets/myriel.png' class="noresize" style='width:8em'>  \
+[Myriel Milicevic](https://www.fh-potsdam.de/hochschule-netzwerk/personen/myriel-milicevic)
 
 
 ![](assets/firstorgchart.webp 'This organizational chart is considered to be the first organigram')  \
