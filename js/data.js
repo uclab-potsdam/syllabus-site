@@ -128,11 +128,10 @@ async function updateView(){
 
                     content.classList.add('enlarged');
                     app.classList.add('overlay');
-														
+					if (menuState) toggleMenu();		
 		            document.body.addEventListener('touchstart', preventDefault);
 		            document.body.addEventListener('wheel', preventDefault);
-                    document.addEventListener('scroll', preventDefault);
-		            
+                    document.addEventListener('scroll', preventDefault);		            
 		        }
 			})
 

@@ -24,8 +24,6 @@ function updateCursor(currentSession,currentProgress) {
     return []
 }
 
-
-
 function cloneCursor(originalDivId) {
     const originalDiv = document.getElementById(originalDivId);
     if (!originalDiv) return;
@@ -33,10 +31,17 @@ function cloneCursor(originalDivId) {
     const cloneDivId = originalDivId + '_clone';
     let cloneDiv = document.getElementById(cloneDivId);
 
+    // Get the #app element to append clones to
+    const appElement = document.getElementById('app');
+    if (!appElement) {
+        console.error('Element with ID #app not found.');
+        return;
+    }
+
     // Check if any part of the original div is in the viewport
     const rect = originalDiv.getBoundingClientRect();
     const isVisiblePartially = 
-        (rect.top < window.innerHeight && rect.bottom >= 0) // Vertical visibility
+        (rect.top < window.innerHeight && rect.bottom >= 0); // Vertical visibility
 
     if (!isVisiblePartially) {
         // If no part of the original div is visible, remove the clone if it exists
@@ -50,7 +55,7 @@ function cloneCursor(originalDivId) {
         cloneDiv = originalDiv.cloneNode(true);
         cloneDiv.id = cloneDivId;
         cloneDiv.style.position = 'fixed';
-        document.body.appendChild(cloneDiv);
+        appElement.appendChild(cloneDiv); // Append to the #app element instead of document.body
     }
 
     // Adjust the position of the duplicate
