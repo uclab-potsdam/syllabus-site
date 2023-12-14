@@ -109,6 +109,7 @@ Every week the course takes place at different locations in Berlin or Potsdam. B
 [<img src='assets/wigwam.png' class="noresize" style='width:10em; '>](https://wigwam.im/)  \
 Wigwam eG
 
+
 Lueder, C. (2013). [Diagram Utopias: Rota and Network as Instrument and Mirror of Utopia and Agronica](https://infovis.fh-potsdam.de/readings/lueder2013diagram.pdf). Journal of Architectural Education, 67(2):224–233.
 
 > Utopian visions and diagrams have engaged in a multitude of relationships. For example, a utopian narrative can be conceived as a diagram, or with the aid of diagrams, and understood through diagrammatic (re) annotation. This notion is explored through an interpretation of Thom- as More’s Utopia and Andrea Branzi’s Agronica. Both schemes address various structural conditions through diagrammatic operations. In More’s scheme the channel that separates Utopia from the mainland, dug by its putative founder King Abraxas, inscribes a circular boundary, reiterated in the city walls and moat; it is resonant with contempora- neous rota and volvelle schemata. Conversely, Andrea Branzi’s “mirror simulator” multiplies Agronica’s centrifugal grid to infinity, negating the “outside,” and is evocative of pervasive virtual networks.
@@ -229,28 +230,28 @@ Scholz, T. (2016). [Platform cooperativism. Challenging the corporate sharing ec
 > Among all the problems with 21st-century work — the ballooning of the low wage service sector, economic inequality, the crumbling of worker rights  — the main problem really is that there are so few realistic alternatives. What has been missing from the debate about the future of work is an approach that offers peo- ple something that they can wholeheartedly embrace. This is what this essay is about.
 
 
-[![](assets/centralized-distributed.png)](https://pages.cs.wisc.edu/~akella/CS740/F08/740-Papers/Bar64.pdf)  
-Paul Baran, 1962
+![](assets/centralized-distributed.png)  \
+[Paul Baran, 1962](https://pages.cs.wisc.edu/~akella/CS740/F08/740-Papers/Bar64.pdf)
 
 
-[![](assets/airbnbvsberlin.webp)](https://airbnbvsberlin.com/)  
-Alsino Skowronnek, Lucas Vogel & Jonas Parnow, 2015
+![](assets/airbnbvsberlin.webp)  \
+[Alsino Skowronnek, Lucas Vogel & Jonas Parnow, 2015](https://airbnbvsberlin.com/)  
 
 
-[![](https://platform.coop/wp-content/uploads/2018/09/KitPhoto.jpg)](https://platform.coop/blog/the-platform-co-op-development-kit/)  
-Trebor Scholz, 2018
+![](https://platform.coop/wp-content/uploads/2018/09/KitPhoto.jpg)  \
+[Trebor Scholz, 2018](https://platform.coop/blog/the-platform-co-op-development-kit/)
 
 
 ![](assets/platformcooperativism.png)  
 Platform Cooperativism, 2020
 
 
-[![](https://axbom.com/content/images/size/w2000/2023/01/fediverse-branches-axbom-30-CC-BY-SA.webp)](https://axbom.com/fediverse/)  
-Per Axbom, 2022
+![](https://axbom.com/content/images/size/w2000/2023/01/fediverse-branches-axbom-30-CC-BY-SA.webp)  \
+[Per Axbom, 2022](https://axbom.com/fediverse/)  
 
 
-[![](https://platform.coop/wp-content/uploads/2023/05/Sociocracy.png)](https://platform.coop/blog/democratic-decision-making/)  
-Victoria Sgarro, 2023
+![](https://platform.coop/wp-content/uploads/2023/05/Sociocracy.png)  \
+[Victoria Sgarro, 2023](https://platform.coop/blog/democratic-decision-making/)  
 
 
 ---
@@ -266,52 +267,52 @@ Raworth, K. (2012). [A safe and just space for humanity](https://www-cdn.oxfam.o
 > Humanity’s challenge in the 21st century is to eradicate poverty and achieve prosperity for all within the means of the planet’s limited natural resources. In the run-up to Rio+20, this discussion paper presents a visual framework – shaped like a doughnut – which brings planetary boundaries together with social boundaries, creating a safe and just space between the two, in which humanity can thrive. Moving into this space demands far greater equity – within and between countries – in the use of natural resources, and far greater efficiency in transforming those resources to meet human needs.
 
 
-[![](https://img.youtube.com/vi/kwTlX3C5H9I/0.jpg)](https://www.youtube.com/watch?v=OoIcsjkwTlX3C5H9I9ysvs)  
-Regionalwert AG Berlin-Brandenburg, 2018
+![](https://img.youtube.com/vi/kwTlX3C5H9I/0.jpg)  \
+[Regionalwert AG Berlin-Brandenburg, 2018](https://www.youtube.com/watch?v=OoIcsjkwTlX3C5H9I9ysvs)
 
 
-[![](assets/boundaries.png)](https://en.wikipedia.org/wiki/Planetary_boundaries)  
-Planetary Boundaries, 2009-2023
+![](assets/boundaries.png)  \
+[Planetary Boundaries, 2009-2023](https://en.wikipedia.org/wiki/Planetary_boundaries)  
 
 
-[![](https://upload.wikimedia.org/wikipedia/commons/1/12/Doughnut_%28economic_model%29.jpg)](https://en.wikipedia.org/wiki/Doughnut_(economic_model))  
-Doughnut economics, 2012
+![](https://upload.wikimedia.org/wikipedia/commons/1/12/Doughnut_%28economic_model%29.jpg)  \
+[Doughnut economics, 2012](https://en.wikipedia.org/wiki/Doughnut_(economic_model))
 
 
 [![](assets/raworth_ted.png)](https://www.ted.com/talks/kate_raworth_a_healthy_economy_should_be_designed_to_thrive_not_grow)  
 Kate Raworth: A healthy economy should be designed to thrive, not grow, 2018
 
 
-[![](assets/deal.png)](https://doughnuteconomics.org/tools/2)  
-Doughnut Economics Action Lab, 2023
+![](assets/deal.png)
+[Doughnut Economics Action Lab, 2023](https://doughnuteconomics.org/tools/2)  
 
 
 ![](assets/donut.jpg)  
 Goodwin, K. (2021) [Designing the Doughnut: A Story of Five Cities.](https://doughnuteconomics.org/stories/93)
 
 
-[![](assets/sdgs.png)](https://sdgs.un.org/goals)  
-Sustainable Development Goals, 2015
+![](assets/sdgs.png)  \
+[Sustainable Development Goals, 2015](https://sdgs.un.org/goals)
 
 
-[![](assets/frames.png)](https://framesforfuture.tv)  
-Frames For Future, 2023
+![](assets/frames.png)  \\
+[Frames For Future, 2023](https://framesforfuture.tv)
 
 
-[![](assets/dollarstreet.png)](https://www.gapminder.org/dollar-street)  
-Dollar Street | Gapminder, 2016
+![](assets/dollarstreet.png)  \
+[Dollar Street | Gapminder, 2016](https://www.gapminder.org/dollar-street)
 
 
-[![](assets/hungryplanet.jpg)](https://time.com/8515/what-the-world-eats-hungry-planet/)  
-Hungry Planet: What The World Eats | Time, 2016
+![](assets/hungryplanet.jpg)  \
+[Hungry Planet: What The World Eats | Time, 2016](https://time.com/8515/what-the-world-eats-hungry-planet/)
 
 
-[![](https://img.youtube.com/vi/jbkSRLYSojo/0.jpg)](https://www.youtube.com/watch?v=jbkSRLYSojo)  
-Hans Rosling's 200 Countries, 200 Years, 4 Minutes, 2010
+![](https://img.youtube.com/vi/jbkSRLYSojo/0.jpg)  \
+[Hans Rosling's 200 Countries, 200 Years, 4 Minutes, 2010](https://www.youtube.com/watch?v=jbkSRLYSojo)
 
 
-[![](https://img.youtube.com/vi/OoIcsj9ysvs/0.jpg)](https://www.youtube.com/watch?v=OoIcsj9ysvs)  
-Better and better? A comment on Hans Rosling by Roland Paulsen, 2019
+![](https://img.youtube.com/vi/OoIcsj9ysvs/0.jpg)  \
+[Better and better? A comment on Hans Rosling by Roland Paulsen, 2019](https://www.youtube.com/watch?v=OoIcsj9ysvs)
 
 
 ---
@@ -395,8 +396,8 @@ Weeks, K. (2011). [The Problem with Work: Feminism, Marxism, Antiwork Politics, 
 [Mona Chalabi, 2022](https://www.nytimes.com/interactive/2022/04/07/magazine/jeff-bezos-net-worth.html)  
 
 
-![](assets/allezeit.png)  \
-[Teresa Bücker, 2022](https://www.ullstein.de/werke/alle-zeit/hardcover/9783550201721)
+[![](assets/allezeit.png)](https://www.ullstein.de/werke/alle-zeit/hardcover/9783550201721)  \
+Teresa Bücker, 2022
 
 
 ![](assets/grundeinkommen.png)
@@ -497,7 +498,7 @@ D’Ignazio, C. and Klein, L. F. (2020). Data Feminism. MIT Press. [Introduction
 
 
 ![](https://infovis.fh-potsdam.de/femscroll/index_files/banner2x1.png)  \
-[Feminist Scrollytelling, FH Potsdam, 2019](https://infovis.fh-potsdam.de/femscroll/)  
+[Feminist Scrollytelling, FH Potsdam, 2019](https://infovis.fh-potsdam.de/femscroll/)  
 
 
 ![](assets/datafeminism.png)  \
