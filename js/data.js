@@ -115,12 +115,11 @@ async function updateView(){
 							
 							this.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(2)`;
 							
-							content.classList.add('enlarged');
-							app.classList.add('overlay');
+				    content.classList.add('enlarged');
+				    app.classList.add('overlay');
 														
-		          document.body.addEventListener('touchstart', preventDefault);
-		          // document.body.addEventListener('mousedown', preventDefault);
-		          document.body.addEventListener('wheel', preventDefault);
+		            document.body.addEventListener('touchstart', preventDefault);
+		            document.body.addEventListener('wheel', preventDefault);
 		        }
 					})
 

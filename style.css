@@ -71,15 +71,15 @@ body {
 }
 
 #app.overlay .content.enlarged, #app.overlay .content.enlarged a {
-  opacity: 1;
-	color: var(--background) !important;
-  background-color: var(--background) !important;
+    opacity: 1;
+    color: var(--background) !important;
+    background-color: var(--background) !important;
 }
 
 #app.overlay .enlarged img {
     z-index: 1000; 
-	  pointer-events: auto;
-		cursor: zoom-out;
+	 pointer-events: auto;
+	cursor: zoom-out;
 }
 
 p,li {
@@ -90,9 +90,10 @@ li {
     margin-bottom: 0.25em;
 }
 div.content:has(img) {
-   background: unset;
-   text-align: center;
-   padding: 0;
+    background: var(--background);
+    max-width: calc(12.5vw + 12.5vh);
+    text-align: center;
+    padding: 0;
 }
 div.content:has(img) p:first-child {
     margin-top: 0;
@@ -183,7 +184,7 @@ p {
 .content {
     position: absolute;
     padding: 0.25em .75em;
-    max-width: calc(15vw + 15vh);
+    max-width: calc(16vw + 16vh);
     background-color: var(--background-content);
     visibility: hidden;
     z-index:2;    
@@ -276,14 +277,11 @@ footer a:hover img, footer a:active img {
         max-width: 75vw;
         transform: unset !important
     }
-    .content img, .cursor img {
-        max-width: 50vw;
-        max-height: 50vw;
+    .content img, #cursor img {
+        max-width: 100%;
     }
-    div.content:has(img) {
-        background: var(--background);
-    }
-    .cursor, .cursor:has(h1){
+
+    #cursor, #cursor:has(h1){
         max-width: 100%;
         left: unset;
         transform: unset;
