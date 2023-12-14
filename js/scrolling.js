@@ -38,6 +38,8 @@ function update(){
             d3.select('#anchor'+(session.index))?.classed('active',(session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height)))
             let currentProgress = (window.scrollY - session.margin)/session.height
             linkItems.push( updateCursor(session,currentProgress))
+        }else{
+            d3.select('#anchor'+(session.index))?.classed('active',false)
         }
     })  
     drawLinks(linkItems.flat())
