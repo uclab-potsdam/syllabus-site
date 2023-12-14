@@ -1,11 +1,14 @@
 //put the update in an animation frame loop
+document.addEventListener('scroll', (e) => {
+    e.preventDefault()
+    update()
+})
 let lastScrollY = null;
 let visibleCursors = [];
 function updateCursor(currentSession,currentProgress) {
     let cursor = d3.select('#cursor'+(currentSession.index))
     if(cursor.node()){
         let cursorDimensions = cursor.node().getBoundingClientRect()
-
         let cursorPosition = 
         (currentSession.margin + (currentSession.index == 0 ? window.innerHeight/2: window.innerHeight)) + //start from the bottom of the screen
         (currentProgress * currentSession.height) - //add the progress of the current session

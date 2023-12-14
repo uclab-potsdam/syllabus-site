@@ -125,10 +125,11 @@ async function updateView(){
 					})
 
 		});
-        setTimeout(() => {animation()},100)
+        setTimeout(() => {
+            window.location.hash = window.location.hash
+            animation()
+        },100)
 }
-
-
 
 function preventDefault(e) { 
 	e.stopPropagation();	
