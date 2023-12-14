@@ -153,6 +153,7 @@ p {
     padding: 1em 1.5em;
     pointer-events: all;
     z-index: 1;
+    will-change: top;
 }
 .cursor--shadow {
     visibility:  hidden;
