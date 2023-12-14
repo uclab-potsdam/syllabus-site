@@ -17,45 +17,56 @@ async function updateView(){
     //due to weird race condition with some css and getBoundingClientRect 
     //=> found out its due image loading that the image size cant be extracted immidiatly after setting the img tag.
     //await new Promise(r => setTimeout(r, 300)); 
-    let anchors = document.querySelector('#anchors')
+    let anchors = d3.select('#anchors')
+    let cursors = d3.select('#cursors')
     let domParser = new DOMParser();
     sessions.map((session,sessionIndex) => {
         session.items.map((item,itemIndex) => {
             item.bounding = item.domObject.getBoundingClientRect()
-            item.height = item.bounding.height + window.innerHeight * 0.33
+            item.height = item.bounding.height + window.innerHeight * 0.2
             if (itemIndex === 0) item.margin = 0
             else item.margin = session.items[itemIndex - 1].margin + session.items[itemIndex - 1].height            
-            session.height += item.height + window.innerHeight * 0.33 
+            session.height += item.bounding.height + window.innerHeight * 0.2
         })
         session.margin = sessionIndex == 0 ? 0 : sessions[sessionIndex - 1].margin + sessions[sessionIndex - 1].height
-        session.paddingStart = sessionIndex == 0 ? window.innerHeight * 1.5 : session.height/2 //padding at the beggining
+        session.paddingStart = window.innerHeight * 3
         session.height += session.paddingStart
         if(session.height < window.innerHeight) session.height = window.innerHeight
         session.items.map((item,itemIndex) => {
             updateItemPosition(item,itemIndex)
         })
         //create menu item with scroll function
-        let menuItem = document.createElement('p')
+
         let title = "Start"
         if(sessionIndex != 0){
-            if (session.text.indexOf("<!--skipnav-->")>-1) return;
-
+           
             let html  = domParser.parseFromString(marked.parse(session.text), 'text/html');
-            
             title = html.getElementsByTagName('h1');
-
             if(title.length == 0) title = html.getElementsByTagName('h2')
             if(title.length == 0) title = html.getElementsByTagName('h3')            
             if(title.length == 0) return  
             else title = title[0].textContent
         }
         session.hash = title.toLowerCase()
-        menuItem.innerHTML = title
-        menuItem.classList.add(session.hash)
-        menuItem.addEventListener("click", () => {
-            window.location.hash = session.hash
-        }) 
-        anchors.appendChild(menuItem)
+        if(!(session.text.indexOf("<!--skipnav-->")>-1)){
+            anchors.append('p')
+            .attr('class', 'anchor')
+            .attr('id', 'anchor'+sessionIndex)
+            .append('a')
+            .attr('href', '#'+session.hash)
+            .html(title)
+        }
+        let shadowCursor = cursors.append('div')
+        .attr('id', session.hash)
+        .attr('class', 'cursor--shadow')
+        shadowCursor.attr('style', `top:${sessionIndex == 0 ? session.margin: session.margin + session.height /2}px;`)
+
+        let cursor  = cursors.append('div')
+        .attr('class', 'cursor')
+        .attr('id', 'cursor'+sessionIndex)
+        .html(marked.parse(session.text))
+
+        cursor.attr('style', `top:${session.margin}px;`)
     })
     //set height and padding according to datasize
     let height = sessions.reduce((accumulator, session) => { return accumulator += session.height}, 0)
@@ -71,7 +82,7 @@ async function updateView(){
     })
     document.querySelector('footer').style.visibility = 'visible';
     
-		animation()
+		
 		
 		// open links in new tab/window
 		document.querySelectorAll('a').forEach(link => {
@@ -114,6 +125,7 @@ async function updateView(){
 					})
 
 		});
+        setTimeout(() => {animation()},100)
 }
 
 

@@ -48,11 +48,11 @@ body {
     opacity: 1;
 }
 
-.content, .content *, canvas, #cursor {
+.content, .content *, canvas, .cursor {
 	transition: opacity 0.25s ease, color 0.25s ease, background-color 0.25s ease;
 }
 
-#app.overlay .content, #app.overlay canvas, #app.overlay #cursor {
+#app.overlay .content, #app.overlay canvas, #app.overlay .cursor {
   opacity: 0;
   pointer-events: none;
 }
@@ -143,18 +143,23 @@ p {
     display: flex;
     justify-content: center;
 }
-#cursor {
-    position: fixed;
+.cursor, .cursor--shadow {
+    position: absolute;
     max-width: 40vw;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: var(--background-cursor);
     padding: 1em 1.5em;
     pointer-events: all;
     z-index: 1;
 }
-#cursor:has(h1) {
+.cursor--shadow {
+    visibility:  hidden;
+}
+.cursor:has(h1) {
     max-width: 50vw;
 }
-#cursor:active, #cursor:focus {
+.cursor:active, .cursor:focus {
     z-index:2;
 }
 #links {
@@ -183,7 +188,7 @@ p {
     visibility: hidden;
     z-index:2;    
 }
-.content img, #cursor img {
+.content img, .cursor img {
     max-width: 100%;
     max-height: calc(15vw + 15vh);
     object-fit: contain;
@@ -231,19 +236,18 @@ a[href^="#"] {
     margin: 0;
     padding: 0.2em;
     font-size: 1em;
-    color: var(--gray);
+    color: var(--font);
 }
 #anchors p:hover, #burger:hover{
-    text-decoration: underline;
     cursor: pointer;
 }
 #menu.active #anchors{
    left: 0%;
    background-color: var(--background-menu);
 }
-#anchors .active{
+#anchors .active a{
     font-weight: bold;
-    color: var(--font);
+    color: var(--font) !important;
 }
 footer{
     visibility: hidden;
@@ -272,14 +276,14 @@ footer a:hover img, footer a:active img {
         max-width: 75vw;
         transform: unset !important
     }
-    .content img, #cursor img {
-        max-width: 40vw;
-        xmax-height: 40vh;
+    .content img, .cursor img {
+        max-width: 50vw;
+        max-height: 50vw;
     }
     div.content:has(img) {
         background: var(--background);
     }
-    #cursor, #cursor:has(h1){
+    .cursor, .cursor:has(h1){
         max-width: 100%;
         left: unset;
         transform: unset;

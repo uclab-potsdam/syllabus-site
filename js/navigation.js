@@ -18,19 +18,6 @@ function toggleMenu(){
 window.onhashchange = () => {hashChange()}
 function hashChange(){
     if(sessions.length > 0) {
-				resetEnlargedImage();
-        let hash = window.location.hash;
-        if (hash == ""){
-            window.scrollTo({top: 0})
-        }
-        else {
-            let session = sessions.filter(session => session.hash == window.location.hash.substring(1))[0]
-            if (typeof session != "undefined") {
-                window.scrollTo({top: session.index == 0 ? 0 :session.margin + (session.height/2)})
-                return
-            }
-            let element = document.getElementById(hash);
-            if (element) element.scrollIntoView();
-        }
+		resetEnlargedImage();
     }
 }
