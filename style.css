@@ -280,7 +280,7 @@ footer a:hover img, footer a:active img {
 .cursor{
     scroll-behavior: unset;
 }
-@media screen and (orientation: portrait) and (max-width: 767px) {
+@media only screen and (max-width: 767px) and (orientation: portrait) {
     body {
         font-size: 16px !important;
     }
@@ -291,8 +291,14 @@ footer a:hover img, footer a:active img {
     .content img, #cursor img {
         max-width: 100%;
     }
+    .cursor{
+        max-width: 100%;
+        left: unset;
+        transform: unset;
+        margin: auto;        
+    }
 
-    .cursor, .cursor:has(h1){
+    .cursor:has(h1){
         max-width: 100%;
         left: unset;
         transform: unset;
