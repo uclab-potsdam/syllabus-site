@@ -2,126 +2,130 @@ const sessions = [];
 function createBaseData(json) {
     json.map((session, sessionIndex) => {
         session.index = sessionIndex
-        session.height = (json.length - 1 == session.index ? window.innerHeight * 2 : 0) //height of the session//if last session add padding at the end
+        session.height = (json.length-1 == session.index ? window.innerHeight*2 : 0) //height of the session//if last session add padding at the end
         //set position for items
-        session.alignment = Math.random() > 0.5 ? true : false
+        session.alignment = Math.random() > 0.5? true : false
         session.items = [...session.content]
-        session.items.map((item, itemIndex) => {
-            updateItemBase(item, session, itemIndex)
+        session.items.map((item,itemIndex) => {
+            updateItemBase(item, session,itemIndex)
         })
         sessions.push(session)
     })
     updateView()
 }
-async function updateView() {
+async function updateView(){
     //due to weird race condition with some css and getBoundingClientRect 
     //=> found out its due image loading that the image size cant be extracted immidiatly after setting the img tag.
     //await new Promise(r => setTimeout(r, 300)); 
-    let anchors = document.querySelector('#anchors')
+    let anchors = d3.select('#anchors')
+    let cursors = d3.select('#cursors')
     let domParser = new DOMParser();
-    sessions.map((session, sessionIndex) => {
-        session.items.map((item, itemIndex) => {
+    sessions.map((session,sessionIndex) => {
+        session.items.map((item,itemIndex) => {
             item.bounding = item.domObject.getBoundingClientRect()
-            item.height = item.bounding.height + window.innerHeight * 0.33
+            item.height = item.bounding.height + window.innerHeight * 0.2
             if (itemIndex === 0) item.margin = 0
-            else item.margin = session.items[itemIndex - 1].margin + session.items[itemIndex - 1].height
-            session.height += item.height + window.innerHeight * 0.33
+            else item.margin = session.items[itemIndex - 1].margin + session.items[itemIndex - 1].height            
+            session.height += item.bounding.height + window.innerHeight * 0.2
         })
         session.margin = sessionIndex == 0 ? 0 : sessions[sessionIndex - 1].margin + sessions[sessionIndex - 1].height
-        session.paddingStart = sessionIndex == 0 ? window.innerHeight * 1.5 : session.height / 2 //padding at the beggining
+        session.paddingStart = window.innerHeight * 3
         session.height += session.paddingStart
-        if (session.height < window.innerHeight) session.height = window.innerHeight
-        session.items.map((item, itemIndex) => {
-            updateItemPosition(item, itemIndex)
+        if(session.height < window.innerHeight) session.height = window.innerHeight
+        session.items.map((item,itemIndex) => {
+            updateItemPosition(item,itemIndex)
         })
         //create menu item with scroll function
-        let menuItem = document.createElement('p')
+
         let title = "Start"
-        if (sessionIndex != 0) {
-            if (session.text.indexOf("<!--skipnav-->") > -1) return;
-
-            let html = domParser.parseFromString(marked.parse(session.text), 'text/html');
-
+        if(sessionIndex != 0){
+           
+            let html  = domParser.parseFromString(marked.parse(session.text), 'text/html');
             title = html.getElementsByTagName('h1');
-
-            if (title.length == 0) title = html.getElementsByTagName('h2')
-            if (title.length == 0) title = html.getElementsByTagName('h3')
-            if (title.length == 0) return
+            if(title.length == 0) title = html.getElementsByTagName('h2')
+            if(title.length == 0) title = html.getElementsByTagName('h3')            
+            if(title.length == 0) return  
             else title = title[0].textContent
         }
         session.hash = title.toLowerCase()
-        menuItem.innerHTML = title
-        menuItem.classList.add(session.hash)
-        menuItem.addEventListener("click", () => {
-            window.location.hash = session.hash
-        })
-        anchors.appendChild(menuItem)
+        if(!(session.text.indexOf("<!--skipnav-->")>-1)){
+            anchors.append('p')
+            .attr('class', 'anchor')
+            .attr('id', 'anchor'+sessionIndex)
+            .append('a')
+            .attr('href', '#'+session.hash)
+            .html(title)
+        }
+        let shadowCursor = cursors.append('div')
+        .attr('id', session.hash)
+        .attr('class', 'cursor--shadow')
+        shadowCursor.attr('style', `top:${sessionIndex == 0 ? session.margin: session.margin + session.height /2}px;`)
+
+        let cursor  = cursors.append('div')
+        .attr('class', 'cursor')
+        .attr('id', 'cursor'+sessionIndex)
+        .html(marked.parse(session.text))
+
+        cursor.attr('style', `top:${session.margin}px;`)
     })
     //set height and padding according to datasize
-    let height = sessions.reduce((accumulator, session) => { return accumulator += session.height }, 0)
+    let height = sessions.reduce((accumulator, session) => { return accumulator += session.height}, 0)
     //set the body height to the height of the data
-
+    
     // sessions
-    let elements = ['#wrapper', '#app']
+    let elements = ['#wrapper','#app']
     elements.map(element => {
-        document.querySelector(element).style.height = height + 'px'
+        document.querySelector(element).style.height = height + 'px' 
     })
     document.querySelectorAll('.content').forEach(n => {
         n.style.visibility = 'visible'
     })
     document.querySelector('footer').style.visibility = 'visible';
+    
+		
+		
+		// open links in new tab/window
+		document.querySelectorAll('a').forEach(link => {
+			if (!link.getAttribute('href').startsWith('#')) {
+		        link.target = '_blank';
+		    }
+		});
+		
+		// images to be resized
+		document.querySelectorAll('.content p > img:not(.noresize)').forEach(img => {
+		    img.addEventListener('click', function(e) {
+					e.preventDefault();
+					
+					let content = img.closest('.content');
+					let app = document.querySelector('#app');
+						
+		        if (content.classList.contains('enlarged')) {
+		           
+							resetEnlargedImage();
+								
+		        } else {
+							
+			        // Calculate centering
+			        const rect = img.getBoundingClientRect();
+			        const centerX = (window.innerWidth / 2) - (rect.width / 2);
+			        const centerY = (window.innerHeight / 2) - (rect.height / 2);
 
-    animation()
+			        const offsetX = centerX - rect.left;
+			        const offsetY = centerY - rect.top;
+							
+							this.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(2)`;
+							
+							content.classList.add('enlarged');
+							app.classList.add('overlay');
+														
+		          document.body.addEventListener('touchstart', preventDefault);
+		          // document.body.addEventListener('mousedown', preventDefault);
+		          document.body.addEventListener('wheel', preventDefault);
+		        }
+					})
 
-    // open links in new tab/window
-    document.querySelectorAll('a').forEach(link => {
-        if (!link.getAttribute('href').startsWith('#')) {
-            link.target = '_blank';
-        }
-    });
-
-    // images to be resized
-    document.querySelectorAll('.content p > img:not(.noresize)').forEach(img => {
-        img.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            let content = img.closest('.content');
-            let app = document.querySelector('#app');
-
-            if (content.classList.contains('enlarged')) {
-                resetEnlargedImage();
-            } else {
-
-                // Calculate centering
-                const rect = img.getBoundingClientRect();
-                const centerX = (window.innerWidth / 2) - (rect.width / 2);
-                const centerY = (window.innerHeight / 2) - (rect.height / 2);
-
-                const offsetX = centerX - rect.left;
-                const offsetY = centerY - rect.top;
-
-                // Get the natural dimensions of the image
-                const naturalWidth = img.naturalWidth;
-                const naturalHeight = img.naturalHeight;
-
-                // Calculate the maximum scale factor
-                const maxScaleX = window.innerWidth / rect.width;
-                const maxScaleY = window.innerHeight / rect.height;
-                const maxScaleNatural = Math.min(naturalWidth / rect.width, naturalHeight / rect.height);
-                const scale = Math.min(maxScaleX, maxScaleY, maxScaleNatural);
-
-                // Apply the transform
-                this.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
-
-                content.classList.add('enlarged');
-                app.classList.add('overlay');
-
-                document.body.addEventListener('touchstart', preventDefault);
-                document.body.addEventListener('wheel', preventDefault);
-            }
-        })
-
-    });
+		});
+        setTimeout(() => {animation()},100)
 }
 
 
@@ -132,8 +136,10 @@ function preventDefault(e) {
 }
 
 function resetEnlargedImage() {
+	
 	document.body.removeEventListener('touchstart', preventDefault);
-    document.body.removeEventListener('wheel', preventDefault);
+	// document.body.removeEventListener('mousedown', preventDefault);
+  document.body.removeEventListener('wheel', preventDefault);
 	
   let over = document.querySelector(".overlay");
 	if (over) over.classList.remove("overlay");

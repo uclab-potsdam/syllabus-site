@@ -1,28 +1,21 @@
 //put the update in an animation frame loop
-let lastCursorPosition = 0
-let lastSession = null
 let lastScrollY = null;
-document.addEventListener("scroll",() => {
-    d3.select('#cursor').attr('style', `top:${lastCursorPosition}px;`)
-})
+let visibleCursors = [];
 function updateCursor(currentSession,currentProgress) {
-    let cursor = d3.select('#cursor')
-    //update the cursor if the session changes
-    if (lastSession == null || lastSession.index != currentSession.index) {
-        cursor.html(marked.parse(currentSession.text))
-        lastSession = currentSession
-        document.getElementById('anchors').childNodes.forEach(childNode => {childNode.classList.remove('active')})
-        let currentNav = document.querySelector('#anchors .'+currentSession.hash)
-        if (currentNav!= null) {
-            currentNav.classList.add('active')
-        }
+    let cursor = d3.select('#cursor'+(currentSession.index))
+    if(cursor.node()){
+        let cursorDimensions = cursor.node().getBoundingClientRect()
+
+        let cursorPosition = 
+        (currentSession.margin + (currentSession.index == 0 ? window.innerHeight/2: window.innerHeight)) + //start from the bottom of the screen
+        (currentProgress * currentSession.height) - //add the progress of the current session
+        (currentProgress * (currentSession.index == 0 ? window.innerHeight/2: window.innerHeight)) - //subtract the progress of the window
+        (cursorDimensions.height / 2) //subtract half the height of the cursor
+    
+        cursor.attr('style', `top:${cursorPosition}px;`)
+        return updateLinks(currentSession,currentProgress,cursorDimensions)
     }
-    //update the cursor dimension and the position according to the scrolling progress of the session
-    let cursorDimensions = cursor.node().getBoundingClientRect()
-    let cursorPositionRelative = (window.innerHeight - (currentProgress * window.innerHeight))-(currentProgress * cursorDimensions.height)
-    cursor.attr('style', `top:${cursorPositionRelative}px;`)
-    lastCursorPosition = cursorPositionRelative
-    updateLinks(currentSession,cursorPositionRelative,cursorDimensions)
+    return []
 }
 function animation(){
     if(!scrolled && sessions.length > 0){
@@ -39,16 +32,13 @@ function animation(){
     requestAnimationFrame(() => {animation()})
 }
 function update(){
-    let currentSession = sessions.filter(session => session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height))[0]
-    if (typeof currentSession == "undefined") return;
-    let currentProgress = (window.scrollY - currentSession.margin)/currentSession.height
-    if(currentSession.index == 0){
-        currentProgress = ((window.scrollY+currentSession.height/2)-(currentProgress * currentSession.height/2) - currentSession.margin)/currentSession.height
-    }
-
-    let items = sessions[currentSession.index].items
-    const windowHeight = window.innerHeight;
-    const middleY = windowHeight / 2;
-
-    updateCursor(currentSession,currentProgress)
+    let linkItems = []
+    sessions.map(session => {
+        if(session.margin <= window.scrollY + window.innerHeight){
+            d3.select('#anchor'+(session.index))?.classed('active',(session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height)))
+            let currentProgress = (window.scrollY - session.margin)/session.height
+            linkItems.push( updateCursor(session,currentProgress))
+        }
+    })  
+    drawLinks(linkItems.flat())
 }

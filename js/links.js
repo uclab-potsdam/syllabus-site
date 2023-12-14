@@ -1,20 +1,17 @@
-let logged = false;
 
-function updateLinks(currentSession, cursorPosition, cursorDimensions) {
-    let anchor1 = [window.innerWidth / 2, cursorPosition + cursorDimensions.height / 2];
+function updateLinks(currentSession, cursorProgress, cursorDimensions) {
+    let position = window.innerHeight - (cursorProgress * window.innerHeight) + (cursorDimensions.height/4)
+    if(currentSession.index == 0){
+        position = window.innerHeight/2 - (cursorProgress * window.innerHeight/2) + (cursorDimensions.height/4)
+    }
+    let anchor1 = [window.innerWidth / 2, position];
     currentSession.items.map((item) => {
         let bounding = item.domObject.getBoundingClientRect();
         let anchor4 = [bounding.left + bounding.width / 2, bounding.top + bounding.height / 2];
-        let distance = calculateDistanceY(anchor1, anchor4);
-
-        item.visible = true;
-        item.distance = remapRange(distance, 0, window.innerHeight * 1.5, 1, 0);
-        item.linePath = [...anchor1, ...anchor4];
-        
+        item.linePath = [...anchor1, ...anchor4]; 
     });
-    drawLinks(currentSession.items);
+    return currentSession.items
 }
-
 function drawLinks(items) {
 
     let dpr = window.devicePixelRatio || 1;
@@ -25,15 +22,13 @@ function drawLinks(items) {
 
     let w = canvas.clientWidth;
     let h = canvas.clientHeight;	
-    let vw = w/100;
-    let vh = h/100;
 
     canvas.width = w * dpr;
     canvas.height = h * dpr;
     ctx.scale(dpr, dpr);
     ctx.clearRect(0, 0, w, h);
   
-    items.filter(item => item.visible).forEach(item => {
+    items.map(item => {
         ctx.lineWidth = fs/15;
         ctx.strokeStyle = '#888';
         ctx.beginPath();
