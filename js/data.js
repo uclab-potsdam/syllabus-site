@@ -131,8 +131,10 @@ async function updateView(){
 														
 		            document.body.addEventListener('touchstart', preventDefault);
 		            document.body.addEventListener('wheel', preventDefault);
+                    document.addEventListener('scroll', preventDefault);
+		            
 		        }
-					})
+			})
 
 		});
         setTimeout(() => {
@@ -149,8 +151,8 @@ function preventDefault(e) {
 function resetEnlargedImage() {
 	
 	document.body.removeEventListener('touchstart', preventDefault);
-	// document.body.removeEventListener('mousedown', preventDefault);
-  document.body.removeEventListener('wheel', preventDefault);
+	document.body.removeEventListener('wheel', preventDefault);
+    document.removeEventListener('scroll', preventDefault);
 	
   let over = document.querySelector(".overlay");
 	if (over) over.classList.remove("overlay");
