@@ -3,6 +3,9 @@
 //     e.preventDefault()
 //     update()
 // })
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    update();
+});
 let lastScrollY = null;
 let visibleCursors = [];
 function updateCursor(currentSession,currentProgress) {

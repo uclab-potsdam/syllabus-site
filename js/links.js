@@ -27,10 +27,13 @@ function drawLinks(items) {
     canvas.height = h * dpr;
     ctx.scale(dpr, dpr);
     ctx.clearRect(0, 0, w, h);
-  
+    
+    let root = getComputedStyle(document.body);
+    let lineColor = root.getPropertyValue('--background-content').trim();
+    ctx.strokeStyle = lineColor;
+
     items.map(item => {
         ctx.lineWidth = fs/15;
-        ctx.strokeStyle = '#888';
         ctx.beginPath();
         ctx.moveTo(item.linePath[0], item.linePath[1]);
         ctx.lineTo(item.linePath[2], item.linePath[3]);

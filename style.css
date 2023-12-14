@@ -90,7 +90,7 @@ li {
     margin-bottom: 0.25em;
 }
 div.content:has(img) {
-    background: var(--background);
+    background: none;
     max-width: calc(12.5vw + 12.5vh);
     text-align: center;
     padding: 0;
@@ -192,7 +192,7 @@ p {
 }
 .content img, .cursor img {
     max-width: 100%;
-    max-height: calc(15vw + 15vh);
+    max-height: calc(12.5vw + 12.5vh);
     object-fit: contain;
 }
 .content:hover, .content:active, .content:focus{
