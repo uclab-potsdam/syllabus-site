@@ -146,7 +146,7 @@ p {
 }
 .cursor, .cursor--shadow {
     position: absolute;
-    max-width: 40vw;
+    max-width: 33vw;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--background-cursor);
