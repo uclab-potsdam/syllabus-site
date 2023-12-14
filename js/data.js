@@ -29,7 +29,7 @@ async function updateView(){
             session.height += item.bounding.height + window.innerHeight * 0.2
         })
         session.margin = sessionIndex == 0 ? 0 : sessions[sessionIndex - 1].margin + sessions[sessionIndex - 1].height
-        session.paddingStart = window.innerHeight * 3
+        session.paddingStart = window.innerHeight * 2
         session.height += session.paddingStart
         if(session.height < window.innerHeight) session.height = window.innerHeight
         session.items.map((item,itemIndex) => {
