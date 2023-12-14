@@ -185,7 +185,7 @@ p {
 }
 .content img, #cursor img {
     max-width: 100%;
-    max-height: 40vh;
+    max-height: calc(15vw + 15vh);
     object-fit: contain;
 }
 .content:hover, .content:active, .content:focus{
@@ -273,8 +273,8 @@ footer a:hover img, footer a:active img {
         transform: unset !important
     }
     .content img, #cursor img {
-        max-width: 50vw;
-        max-height: 50vw;
+        max-width: 40vw;
+        xmax-height: 40vh;
     }
     div.content:has(img) {
         background: var(--background);

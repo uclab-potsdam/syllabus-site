@@ -19,7 +19,6 @@ function updateCursor(currentSession,currentProgress) {
     }
     //update the cursor dimension and the position according to the scrolling progress of the session
     let cursorDimensions = cursor.node().getBoundingClientRect()
-    let cursorPosition = ((window.scrollY + window.innerHeight) - (currentProgress * window.innerHeight))-(currentProgress * cursorDimensions.height)
     let cursorPositionRelative = (window.innerHeight - (currentProgress * window.innerHeight))-(currentProgress * cursorDimensions.height)
     cursor.attr('style', `top:${cursorPositionRelative}px;`)
     lastCursorPosition = cursorPositionRelative
@@ -31,10 +30,10 @@ function animation(){
         scrolled = true
     }
 
-		if (lastScrollY!=window.scrollY) {
-			lastScrollY=window.scrollY;
-			update()
-		}
+	if (lastScrollY!=window.scrollY) {
+		lastScrollY=window.scrollY;
+		update();
+	}
 
     //loop the animation frame
     requestAnimationFrame(() => {animation()})
