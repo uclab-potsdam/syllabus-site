@@ -60,6 +60,7 @@ function cloneCursor(originalDivId) {
 
     // Adjust the position of the duplicate
     cloneDiv.style.top = rect.top + 'px';
+    cloneDiv.style.left = rect.left + 'px';
     cloneDiv.classList.add('clone');
 }
 
