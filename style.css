@@ -268,7 +268,15 @@ footer img {
 footer a:hover img, footer a:active img {
     opacity: 1;
 }
-
+#cursors{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: unset;
+}
+.cursor{
+    scroll-behavior: unset;
+}
 @media screen and (orientation: portrait) and (max-width: 767px) {
     body {
         font-size: 16px !important;

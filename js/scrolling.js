@@ -1,8 +1,3 @@
-//put the update in an animation frame loop
-document.addEventListener('scroll', (e) => {
-    e.preventDefault()
-    update()
-})
 let lastScrollY = null;
 let visibleCursors = [];
 function updateCursor(currentSession,currentProgress) {
@@ -20,6 +15,7 @@ function updateCursor(currentSession,currentProgress) {
     }
     return []
 }
+
 function animation(){
     if(!scrolled && sessions.length > 0){
         hashChange()
