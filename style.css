@@ -40,6 +40,7 @@ body {
     overflow-x: hidden;
     font-family: hkgrotesk, sans-serif;
     background-color: var(--background);
+    color: var(--font);
 }
 
 *::selection {
@@ -140,7 +141,6 @@ p {
     width: 100%;
     top: 0;
     left: 0;
-    color: var(--font);
     display: flex;
     justify-content: center;
 }
