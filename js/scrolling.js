@@ -17,10 +17,62 @@ function updateCursor(currentSession,currentProgress) {
         (currentProgress * currentSession.height) - //add the progress of the current session
         (currentProgress * (currentSession.index == 0 ? window.innerHeight/2: window.innerHeight)) - //subtract the progress of the window
         (cursorDimensions.height / 2) //subtract half the height of the cursor
-        cursor.attr('style', `top:${cursorPosition}px;`)
+        cursor.attr('style', `top:${cursorPosition}px;`);
+        cloneCursor('cursor'+(currentSession.index));
         return updateLinks(currentSession,currentProgress,cursorDimensions)
     }
     return []
+}
+
+
+
+function cloneCursor(originalDivId) {
+    const originalDiv = document.getElementById(originalDivId);
+    if (!originalDiv) return;
+
+    const cloneDivId = originalDivId + '_clone';
+    let cloneDiv = document.getElementById(cloneDivId);
+
+    // Check if any part of the original div is in the viewport
+    const rect = originalDiv.getBoundingClientRect();
+    const isVisiblePartially = 
+        (rect.top < window.innerHeight && rect.bottom >= 0) // Vertical visibility
+
+    if (!isVisiblePartially) {
+        // If no part of the original div is visible, remove the clone if it exists
+        if (cloneDiv) {
+            cloneDiv.parentNode.removeChild(cloneDiv);
+        }
+        return;
+    }
+
+    if (!cloneDiv) {
+        cloneDiv = originalDiv.cloneNode(true);
+        cloneDiv.id = cloneDivId;
+        cloneDiv.style.position = 'fixed';
+        document.body.appendChild(cloneDiv);
+    }
+
+    // Adjust the position of the duplicate
+    cloneDiv.style.top = rect.top + 'px';
+    cloneDiv.classList.add('clone');
+}
+
+function removeInvisibleClones() {
+    const clones = document.querySelectorAll('.clone');
+
+    clones.forEach(clone => {
+        const originalId = clone.id.replace('_clone', '');
+        const originalDiv = document.getElementById(originalId);
+
+        if (originalDiv) {
+            const rect = originalDiv.getBoundingClientRect();
+            const isVisiblePartially = (rect.top < window.innerHeight && rect.bottom >= 0);                
+            if (!isVisiblePartially) clone.parentNode.removeChild(clone);            
+        } 
+        else clone.parentNode.removeChild(clone);
+        
+    });
 }
 
 function animation(){
@@ -33,11 +85,12 @@ function animation(){
 		lastScrollY=window.scrollY;
 		update();
 	}
+    
 
     //loop the animation frame
     requestAnimationFrame(() => {animation()})
 }
-function update(){
+function update(){    
     let linkItems = []
     sessions.map(session => {
         if(session.margin <= window.scrollY + window.innerHeight){
@@ -48,5 +101,8 @@ function update(){
             d3.select('#anchor'+(session.index))?.classed('active',false)
         }
     })  
-    drawLinks(linkItems.flat())
+    drawLinks(linkItems.flat());
+
+    let clones = document.querySelectorAll('.clone');
+    if (clones.length > 1) removeInvisibleClones();
 }

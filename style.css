@@ -154,6 +154,10 @@ p {
     pointer-events: all;
     z-index: 1;
     will-change: top;
+    visibility: hidden;
+}
+.cursor.clone, .cursor--shadow.clone {
+    visibility: visible;
 }
 .cursor--shadow {
     visibility:  hidden;
