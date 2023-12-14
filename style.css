@@ -66,6 +66,10 @@ body {
     cursor: pointer; 
 }
 
+.content > p > img.noresize {
+    cursor: unset;
+}
+
 #app.overlay .content.enlarged, #app.overlay .content.enlarged a {
   opacity: 1;
 	color: var(--background) !important;

@@ -81,7 +81,7 @@ async function updateView(){
 		});
 		
 		// images to be resized
-		document.querySelectorAll('.content p > img').forEach(img => {
+		document.querySelectorAll('.content p > img:not(.noresize)').forEach(img => {
 		    img.addEventListener('click', function(e) {
 					e.preventDefault();
 					
