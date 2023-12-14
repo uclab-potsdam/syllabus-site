@@ -105,18 +105,29 @@ async function updateView(){
 								
 		        } else {
 							
-			        // Calculate centering
-			        const rect = img.getBoundingClientRect();
-			        const centerX = (window.innerWidth / 2) - (rect.width / 2);
-			        const centerY = (window.innerHeight / 2) - (rect.height / 2);
+                    // Calculate centering
+                    const rect = img.getBoundingClientRect();
+                    const centerX = (window.innerWidth / 2) - (rect.width / 2);
+                    const centerY = (window.innerHeight / 2) - (rect.height / 2);
 
-			        const offsetX = centerX - rect.left;
-			        const offsetY = centerY - rect.top;
-							
-							this.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(2)`;
-							
-				    content.classList.add('enlarged');
-				    app.classList.add('overlay');
+                    const offsetX = centerX - rect.left;
+                    const offsetY = centerY - rect.top;
+
+                    // Get the natural dimensions of the image
+                    const naturalWidth = img.naturalWidth;
+                    const naturalHeight = img.naturalHeight;
+
+                    // Calculate the maximum scale factor
+                    const maxScaleX = window.innerWidth / rect.width;
+                    const maxScaleY = window.innerHeight / rect.height;
+                    const maxScaleNatural = Math.min(naturalWidth / rect.width, naturalHeight / rect.height);
+                    const scale = Math.min(maxScaleX, maxScaleY, maxScaleNatural);
+
+                    // Apply the transform
+                    this.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
+
+                    content.classList.add('enlarged');
+                    app.classList.add('overlay');
 														
 		            document.body.addEventListener('touchstart', preventDefault);
 		            document.body.addEventListener('wheel', preventDefault);
