@@ -147,8 +147,6 @@ p {
 .cursor, .cursor--shadow {
     position: absolute;
     max-width: 33vw;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: var(--background-cursor);
     padding: 1em 1.5em;
     pointer-events: all;
