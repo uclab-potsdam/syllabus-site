@@ -92,7 +92,7 @@ li {
 }
 div.content:has(img) {
     background: none;
-    max-width: calc(12.5vw + 12.5vh);
+    max-width: 20em;
     text-align: center;
     padding: 0;
 }
@@ -146,7 +146,7 @@ p {
 }
 .cursor, .cursor--shadow {
     position: absolute;
-    max-width: 33vw;
+    max-width: 25em;
     background-color: var(--background-cursor);
     padding: 1em 1.5em;
     pointer-events: all;
@@ -162,7 +162,7 @@ p {
     visibility:  hidden;
 }
 .cursor:has(h1) {
-    max-width: 50vw;
+    max-width: 30em;
 }
 .cursor:active, .cursor:focus {
     z-index:2;
@@ -188,7 +188,7 @@ p {
 .content {
     position: absolute;
     padding: 0.25em .75em;
-    max-width: calc(16vw + 16vh);
+    max-width: 20em;
     background-color: var(--background-content);
     visibility: hidden;
     z-index:2;
@@ -196,8 +196,8 @@ p {
 }
 .content img, .cursor img {
     max-width: 100%;
-    height: calc(12.5vw + 12.5vh);
-    max-height: calc(12.5vw + 12.5vh);
+    height: 20em;
+    max-height: 20em;
     object-fit: contain;
 }
 .content:hover, .content:active, .content:focus{
@@ -290,12 +290,13 @@ footer a:hover img, footer a:active img {
         font-size: 16px !important;
     }
     .content{
-        max-width: 75vw;
+        max-width: 25em;
         transform: unset !important
     }
     .content img, #cursor img {
-        max-width: 100%;
-        height: calc(10vw + 10vh);        
+        max-width: 15em;
+        max-height: 15em;
+        height: 15em;
     }
     .cursor{
         max-width: 85%;

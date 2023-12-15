@@ -32,7 +32,7 @@ This webpage is an experiment in documenting design courses. Below you find the 
 3 April
 ## Kick-off
 
-This is an experimental course on the visualization of organizational structures utilizing narration and exploration to encourage reflection and imagination about work and the economy.
+This is a nomadic course about the visualization of organizational structures utilizing narration and exploration to encourage reflection and imagination about work and the economy.
 
 
 > It's easier to imagine the end of the world than the end of capitalism.
