@@ -11,6 +11,12 @@ function createBaseData(json) {
         })
         sessions.push(session)
     })
+    var images = document.getElementsByTagName('img');
+    for (var i = 0; i < images.length; i++) {
+        images[i].onload = function() {
+            if(!this.style.height) this.style.height = 'auto'; 
+        };
+    }
     updateView()
 }
 async function updateView(){
@@ -23,7 +29,10 @@ async function updateView(){
     sessions.map((session,sessionIndex) => {
         session.items.map((item,itemIndex) => {
             item.bounding = item.domObject.getBoundingClientRect()
-            item.height = item.bounding.height + window.innerHeight * 0.2
+            //item.height = item.bounding.height + window.innerHeight * 0.1
+            let mobileQuery = "(max-width: 767px) and (orientation: portrait)";
+            if (window.matchMedia(mobileQuery)) item.height = item.bounding.height + window.innerHeight * 0.05
+            else item.height = item.bounding.height*0.5 + window.innerHeight * 0.1
             if (itemIndex === 0) item.margin = 0
             else item.margin = session.items[itemIndex - 1].margin + session.items[itemIndex - 1].height            
             session.height += item.bounding.height + window.innerHeight * 0.2
@@ -172,11 +181,6 @@ function updateItemPosition(item) {
     item.y = item.session.margin + //margin to the top
     item.session.paddingStart + //height of the session padding-top
     item.margin //margin to the top of the session
-
-    if (item.session.index==0) {
-        console.log(item.session.paddingStart);
-    }
-    
 
     item.varianz = item.left ? Math.random() * window.innerWidth * 0.1: Math.random() * -window.innerWidth * 0.1
     item.x = item.left ? window.innerWidth * 0.05 + item.varianz : window.innerWidth * 0.95 + item.varianz
