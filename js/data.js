@@ -29,7 +29,8 @@ async function updateView(){
             session.height += item.bounding.height + window.innerHeight * 0.2
         })
         session.margin = sessionIndex == 0 ? 0 : sessions[sessionIndex - 1].margin + sessions[sessionIndex - 1].height
-        session.paddingStart = window.innerHeight * 2
+        if (sessionIndex==0) session.paddingStart = window.innerHeight
+        else session.paddingStart = window.innerHeight * 2
         session.height += session.paddingStart
         if(session.height < window.innerHeight) session.height = window.innerHeight
         session.items.map((item,itemIndex) => {
@@ -167,9 +168,15 @@ function resetEnlargedImage() {
 
 function updateItemPosition(item) {
     //set height of session according to mobile or desktopy
+
     item.y = item.session.margin + //margin to the top
     item.session.paddingStart + //height of the session padding-top
     item.margin //margin to the top of the session
+
+    if (item.session.index==0) {
+        console.log(item.session.paddingStart);
+    }
+    
 
     item.varianz = item.left ? Math.random() * window.innerWidth * 0.1: Math.random() * -window.innerWidth * 0.1
     item.x = item.left ? window.innerWidth * 0.05 + item.varianz : window.innerWidth * 0.95 + item.varianz
