@@ -19,7 +19,7 @@ This course takes on the challenge to visualize organizational structures that h
 [New York and Erie Railroad, 1855](https://www.loc.gov/item/2017586274/)
 
 
-This webpage contains a selective documentation of inspiring readings and references along ten [themes](#themes), our generous [hosts](#hosts), and the resulting student [projects](#projects).
+This webpage is an experiment in documenting design courses. Below you find the readings and references along central [themes](#themes), our generous [hosts](#hosts), and the resulting student [projects](#projects).
 
 
 ### Central questions
