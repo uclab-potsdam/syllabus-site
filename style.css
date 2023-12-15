@@ -153,6 +153,7 @@ p {
     z-index: 1;
     will-change: top;
     visibility: hidden;
+    border-radius: 1em;
 }
 .cursor.clone, .cursor--shadow.clone {
     visibility: visible;
@@ -190,7 +191,8 @@ p {
     max-width: calc(16vw + 16vh);
     background-color: var(--background-content);
     visibility: hidden;
-    z-index:2;    
+    z-index:2;
+    border-radius: .5em;
 }
 .content img, .cursor img {
     max-width: 100%;
@@ -294,14 +296,14 @@ footer a:hover img, footer a:active img {
         max-width: 100%;
     }
     .cursor{
-        max-width: 100%;
+        max-width: 85%;
         left: unset;
         transform: unset;
-        margin: auto;        
+        margin: auto;
     }
 
     .cursor:has(h1){
-        max-width: 100%;
+        max-width: 85%;
         left: unset;
         transform: unset;
         margin: auto;        

@@ -283,7 +283,7 @@ Raworth, K. (2012). [A safe and just space for humanity](https://www-cdn.oxfam.o
 Kate Raworth: A healthy economy should be designed to thrive, not grow, 2018
 
 
-![](assets/deal.png)
+![](assets/deal.png)  \
 [Doughnut Economics Action Lab, 2023](https://doughnuteconomics.org/tools/2)  
 
 
@@ -295,7 +295,7 @@ Goodwin, K. (2021) [Designing the Doughnut: A Story of Five Cities.](https://dou
 [Sustainable Development Goals, 2015](https://sdgs.un.org/goals)
 
 
-![](assets/frames.png)  \\
+![](assets/frames.png)  \
 [Frames For Future, 2023](https://framesforfuture.tv)
 
 
@@ -413,7 +413,7 @@ Teresa Bücker, 2022
 Regenbogenfabrik e.V.
 
 
-Ostrom, E., Burger, J., Field, C. B., Norgaard, R. B., and Policansky, D. (1999). [Revisiting the commons: local lessons, global challenges](http://infovis.fh-potsdam.de/readings/ostrom1999revisiting.pdf). science, 284(5412):278–282.
+Ostrom, E., Burger, J., Field, C. B., Norgaard, R. B., and Policansky, D. (1999). [Revisiting the commons: local lessons, global challenges](https://web.mit.edu/mission/www/m2018/pdfs/science.pdf). science, 284(5412):278–282.
 
 > In a seminal paper, Garrett Hardin argued in 1968 that users of a commons are caught in an inevitable process that leads to the destruction of the resources on which they depend. This article discusses new insights about such problems and the conditions most likely to favor sustainable uses of common-pool resources. Some of the most difficult challenges concern the management of large-scale resources that depend on international cooperation, such as fresh water in international basins or large marine ecosystems. Institutional diversity may be as important as biological diversity for our long-term survival.
 
@@ -463,7 +463,7 @@ Ostrom, E., Burger, J., Field, C. B., Norgaard, R. B., and Policansky, D. (1999)
 [<img src='assets/supercoop.png' style='width:12em; '>](https://supercoop.de/) 
 
 
-Medina, E. (2006). [Designing Freedom, Regulating a Nation: Socialist Cybernetics in Allende’s Chile](http://infovis.fh-potsdam.de/readings/medina2006designing.pdf). Journal of Latin American Studies, 38(3):571–606.
+Medina, E. (2006). [Designing Freedom, Regulating a Nation: Socialist Cybernetics in Allende’s Chile](http://waste.informatik.hu-berlin.de/Lehre/ss11/SE_Kybernetik/reader/edenmedina_cinco.pdf). Journal of Latin American Studies, 38(3):571–606.
 
 > This article presents a history of ‘Project Cybersyn’, an early computer network developed in Chile during the socialist presidency of Salvador Allende (1970–1973) to regulate the growing social property area and manage the transition of Chile’s economy from capitalism to socialism. Under the guidance of British cybernetician Stafford Beer, often lauded as the ‘father of management cybernetics’, an interdisciplinary Chilean team designed cybernetic models of factories within the nationalised sector and created a network for the rapid transmission of economic data between the government and the factory floor. The article describes the construction of this unorthodox system, examines how its structure reflected the socialist ideology of the Allende government, and documents the contributions of this technology to the Allende administration.
 
