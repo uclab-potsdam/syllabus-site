@@ -196,7 +196,9 @@ function createDataRepresentation(item) {
     rootItem.classList.add('fixObjects');
     rootItem.classList.add(item.left ? 'left' : 'right');
     rootItem.classList.add('content');
-    rootItem.innerHTML = marked.parse(item.markdown)
-    item.domObject = rootItem
+    let parsed = marked.parse(item.markdown);
+    parsed = parsed.replace('<img ', '<img loading="lazy" ');
+    rootItem.innerHTML = parsed;
+    item.domObject = rootItem;
     rootElement.appendChild(rootItem);
 }
