@@ -15,21 +15,18 @@ function createBaseData(json) {
     for (var i = 0; i < images.length; i++) {
         images[i].onload = function() {
             if(!this.style.height) this.style.height = 'auto'; 
+            update();
         };
     }
     updateView()
 }
 async function updateView(){
-    //due to weird race condition with some css and getBoundingClientRect 
-    //=> found out its due image loading that the image size cant be extracted immidiatly after setting the img tag.
-    //await new Promise(r => setTimeout(r, 300)); 
     let anchors = d3.select('#anchors')
     let cursors = d3.select('#cursors')
     let domParser = new DOMParser();
     sessions.map((session,sessionIndex) => {
         session.items.map((item,itemIndex) => {
             item.bounding = item.domObject.getBoundingClientRect()
-            //item.height = item.bounding.height + window.innerHeight * 0.1
             let mobileQuery = "(max-width: 767px) and (orientation: portrait)";
             if (window.matchMedia(mobileQuery)) item.height = item.bounding.height + window.innerHeight * 0.05
             else item.height = item.bounding.height*0.5 + window.innerHeight * 0.1
