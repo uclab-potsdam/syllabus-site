@@ -63,7 +63,8 @@ body {
 
 #app.overlay .content.enlarged, #app.overlay .content.enlarged a {
     opacity: 1;
-    color: var(--background) !important;
+    color: var(--background);
+    background-color: var(--background);
 }
 
 #app.overlay .enlarged img {
