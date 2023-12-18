@@ -369,7 +369,7 @@ footer a:hover img, footer a:active img {
   width: 32px;
   height: 2px;
   background-color: var(--font);
-  transition: all 400ms cubic-bezier(0.84, 0.06, 0.52, 1.8);
+  transition: all 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .icon-1 {
   transform: translateY(-8px);
