@@ -42,7 +42,7 @@ body {
 }
 
 .content, .content *, canvas, .cursor {
-	transition: opacity 0.25s ease, color 0.25s ease, background-color 0.25s ease;
+	transition: opacity 0.25s ease, background-color 0.25s ease;
 }
 
 #app.overlay .content, #app.overlay canvas, #app.overlay .cursor {
@@ -201,13 +201,22 @@ a {
     color: var(--link);
 }
 a:hover {
-    color: var(--font);
+    color: var(--theme-color);
+}
+.anchor a[href^="#"], .anchor a[href^="#"]:hover {
+    text-decoration: none;
+    border-bottom: none;
 }
 
 a[href^="#"] {
     text-decoration: none;
     border-bottom: .075em dashed var(--link);
 }
+a[href^="#"]:hover {
+    text-decoration: none;
+    border-bottom: .075em dashed var(--theme-color);
+}
+
 .left{
     left: 5vw;
 }
