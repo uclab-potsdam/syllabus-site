@@ -362,3 +362,56 @@ footer a:hover img, footer a:active img {
     }
 
 }
+
+/* BURGER */
+
+.hamburger-icon {
+    pointer-events: all;
+     position: fixed;
+     height: 60px;
+     width: 60px;
+     z-index: 1000;
+     cursor: pointer;
+     transition: all 0.2s ease-in-out;
+   }
+.hamburger-icon:hover {
+    transform: scale(1.1);
+}
+.icon-1, .icon-2, .icon-3 {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  width: 32px;
+  height: 2px;
+  background-color: var(--font);
+  transition: all 400ms cubic-bezier(0.84, 0.06, 0.52, 1.8);
+}
+.icon-1 {
+  transform: translateY(-8px);
+  animation-delay: 100ms;
+}
+
+.icon-3 {
+  transform: translateY(8px);
+  animation-delay: 250ms;
+}
+.icon-1.a {
+  transform: rotate(40deg);
+}
+
+.icon-3.b {
+  transform: rotate(-40deg);
+}
+
+.icon-2.c {
+  opacity: 0;
+}
+.clear {
+  clear: both;
+}
+@media screen and (orientation: portrait) and (max-width: 767px) {
+    .hamburger-icon{
+        left: unset;
+        right: 1%;
+    }
+}
