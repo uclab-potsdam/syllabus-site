@@ -1,8 +1,3 @@
-//put the update in an animation frame loop
-// document.addEventListener('scroll', (e) => {
-//     e.preventDefault()
-//     update()
-// })
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     update();
 });
