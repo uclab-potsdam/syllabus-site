@@ -287,7 +287,7 @@ footer a:hover img, footer a:active img {
         font-size: 16px !important;
     }
     .content{
-        max-width: 25em;
+        max-width: 17.5em;
         transform: unset !important
     }
     .content img, #cursor img {

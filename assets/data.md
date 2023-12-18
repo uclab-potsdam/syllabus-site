@@ -4,7 +4,7 @@ Summer 2023 · [Interface Design](https://interface.fh-potsdam.de) · [FH Potsda
 
 How can we visualize an economy built on solidarity, sustainability, and survival—instead of exploitation, extraction, and extinction? Given multiple interconnected crises, there is an urgent need to devise new kinds of structures that let us weave resilient relations with each other and the world we live in. Data visualization is typically used to represent what is, but rarely how things could and maybe should be.
 
-This course takes on the challenge to visualize organizational structures that hardly exist yet, but are foreshadowed in the experimental configurations of cooperatives, projects, and initiatives. To seek inspiration we visit organizations that are committed to social-ecological transformation and operate on principles of social and ecological justice. These organizations share their experiences and offer opportunities to see innovative ways of working together, making decisions, and cultivating cooperation in critical times.
+This course takes on the challenge to visualize organizational structures that hardly exist yet, but are foreshadowed in the experimental configurations of cooperatives, projects, and initiatives. To seek inspiration we visit organizations that are committed to social-ecological transformation and operate on principles of social and environmental justice. These organizations share their experiences and offer opportunities to see innovative ways of working together, making decisions, and cultivating cooperation in critical times.
 
 
 <img src='assets/images/marian.png' class="noresize" style='height:8em'>  \
@@ -74,7 +74,7 @@ Each course session covers one central theme that is accompanied by a key readin
 - [Economies](#economies)
 - [Co-design](#co-design)
 - [Work](#work)
-- [Commons](#wommons)
+- [Commons](#commons)
 - [Cybersyn](#cybersyn)
 - [Feminism](#feminism)
 - [Care](#care)
