@@ -13,7 +13,6 @@ function updateLinks(currentSession, cursorProgress, cursorDimensions) {
     return currentSession.items
 }
 function drawLinks(items) {
-
     let dpr = window.devicePixelRatio || 1;
     let canvas = document.getElementById('links');
     if (!canvas.getContext) return;
@@ -28,8 +27,8 @@ function drawLinks(items) {
     ctx.scale(dpr, dpr);
     ctx.clearRect(0, 0, w, h);
     
-    let root = getComputedStyle(document.body);
-    let lineColor = root.getPropertyValue('--background-content').trim();
+    let root = window.getComputedStyle(document.body);
+    let lineColor = root.getPropertyValue('--theme-color').trim();
     ctx.strokeStyle = lineColor;
 
     items.map(item => {

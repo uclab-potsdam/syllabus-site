@@ -7,15 +7,15 @@ How can we visualize an economy built on solidarity, sustainability, and surviva
 This course takes on the challenge to visualize organizational structures that hardly exist yet, but are foreshadowed in the experimental configurations of cooperatives, projects, and initiatives. To seek inspiration we visit organizations that are committed to social-ecological transformation and operate on principles of social and ecological justice. These organizations share their experiences and offer opportunities to see innovative ways of working together, making decisions, and cultivating cooperation in critical times.
 
 
-<img src='assets/marian.png' class="noresize" style='height:8em'>  \
+<img src='assets/images/marian.png' class="noresize" style='height:8em'>  \
 [Marian Dörk](https://mariandoerk.de)
 
 
-<img src='assets/myriel.png' class="noresize" style='height:8em'>  \
+<img src='assets/images/myriel.png' class="noresize" style='height:8em'>  \
 [Myriel Milicevic](https://www.fh-potsdam.de/hochschule-netzwerk/personen/myriel-milicevic)
 
 
-![](assets/firstorgchart.webp 'This organizational chart is considered to be the first organigram')  \
+![](assets/images/firstorgchart.webp 'This organizational chart is considered to be the first organigram')  \
 [New York and Erie Railroad, 1855](https://www.loc.gov/item/2017586274/)
 
 
@@ -40,7 +40,7 @@ This is a nomadic course about the visualization of organizational structures ut
 Jameson, F. (1996). The Seeds of Time.
 
 
-![](assets/thisisnotfine.png)  \
+![](assets/images/thisisnotfine.png)  \
 [K.C. Green, 2016](https://thenib.com/this-is-not-fine/)  
 
 
@@ -50,7 +50,7 @@ Jameson, F. (1996). The Seeds of Time.
 Dunne, A. and Raby, F. (2013). Speculative everything: design, fiction, and social dreaming.
 
 
-![](assets/flyinggardens.jpg)  \
+![](assets/images/flyinggardens.jpg)  \
 [Andrew Yang, 2012 - present](https://www.andrewyang.net/maybe)  
 
 
@@ -106,7 +106,7 @@ Every week the course takes place at different locations in Berlin or Potsdam. B
 ## Utopia
 
 
-[<img src='assets/wigwam.png' class="noresize" style='width:10em; '>](https://wigwam.im/)  \
+[<img src='assets/images/wigwam.png' class="noresize" style='width:10em; '>](https://wigwam.im/)  \
 Wigwam eG
 
 
@@ -119,7 +119,7 @@ Lueder, C. (2013). [Diagram Utopias: Rota and Network as Instrument and Mirror o
 [Hieronymus Bosch, 1490-1510](https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights)  
 
 
-![A woodcut by Ambrosius Holbein, illustrating a 1518 edition of Thomas More's Utopia](assets/utopia.png)  \
+![A woodcut by Ambrosius Holbein, illustrating a 1518 edition of Thomas More's Utopia](assets/images/utopia.png)  \
 [Ambrosius Holbein, 1516](https://en.wikipedia.org/wiki/Utopia_(More_book))
 
 
@@ -139,15 +139,15 @@ Lueder, C. (2013). [Diagram Utopias: Rota and Network as Instrument and Mirror o
 [Andrea Branzi, 1995](https://www.youtube.com/watch?v=VhfjHhhxSZc)  
 
 
-[![](assets/utopiaforrealists.png)](https://en.wikipedia.org/wiki/Utopia_for_Realists)  \
+[![](assets/images/utopiaforrealists.png)](https://en.wikipedia.org/wiki/Utopia_for_Realists)  \
 Rutger Bregman, 2014/2018
 
 
-![Why city lights and headlights still match](assets/daimler.png "Why city lights and headlights still match")  \
+![Why city lights and headlights still match](assets/images/daimler.png "Why city lights and headlights still match")  \
 [Mercedes-Benz Group, 2019](https://group.mercedes-benz.com/company/magazine/sustainability/sustainability-mobility-city-future.html)  
 
 
-![Berlin Friedrichstraße Utopia 2048 by Lino Zeddies](assets/berlinutopie.jpg)  \
+![Berlin Friedrichstraße Utopia 2048 by Lino Zeddies](assets/images/berlinutopie.jpg)  \
 [Lino Zeddies, 2023](https://realutopien.info/visuals/berlin-friedrichstrasse-utopia-2048/)  
 
 
@@ -157,7 +157,7 @@ Rutger Bregman, 2014/2018
 ## Co-ops
 
 
-[<img src='assets/infotext.png' style='width:10em; '>](https://infotext-berlin.de/)  
+[<img src='assets/images/infotext.png' style='width:10em; '>](https://infotext-berlin.de/)  
 
 
 Fairbairn, B. et al. (1994). [The meaning of Rochdale: The Rochdale Pioneers and the co-operative principles](https://ageconsearch.umn.edu/record/31778/files/re94fa01.pdf). Technical report, University of Saskatchewan, Centre for the Study of Co-operatives.
@@ -165,19 +165,19 @@ Fairbairn, B. et al. (1994). [The meaning of Rochdale: The Rochdale Pioneers and
 > Rochdale, England, is known by millions for one reason: a handful of labourers established a co-operative there in 1844 known as the Rochdale Society of Equitable Pioneers. That co-operative was adopted as the inspiration and model for a movement that now includes nearly 700 million people around the world. As this paper is being written, co-operators around the world are preparing to celebrate the 150th anniversary of its birth. But what did Rochdale mean? Why is it considered so important?"}
 
 
-<img src='assets/coopflag.png' style='width:10em; '>  \
+<img src='assets/images/coopflag.png' style='width:10em; '>  \
 [Co-operative flag, 1925](http://bheleccs.in/co-operative-flag/)  
 
 
-![](assets/libstructures.png)  \
+![](assets/images/libstructures.png)  \
 [Liberating Structures, 2012](https://www.liberatingstructures.com/ls-menu/)  
 
 
-![](assets/mondragon.jpeg)  \
+![](assets/images/mondragon.jpeg)  \
 [Mondragon Cooperative Corporation, 2015](http://www.maussen.eu/blog/2015/10/08/3-2mondragon-cooperative-corporation-mcc-3-2-5-cooperative-structure/index.htm)
 
 
-![](assets/coopprinciples.png)  \
+![](assets/images/coopprinciples.png)  \
 [Willy Street Co-op, 2016](https://www.willystreet.coop/about-us/about-our-coop)  
 
 
@@ -185,7 +185,7 @@ Fairbairn, B. et al. (1994). [The meaning of Rochdale: The Rochdale Pioneers and
 [Bullfrog Films presents...FOOD COOP, 2017](https://www.youtube.com/watch?v=_Ae4CFpKCoU)  
 
 
-![](assets/upstream.png)  \
+![](assets/images/upstream.png)  \
 [Upstream Podcast / Phil Wrigglesworth, 2018](https://www.upstreampodcast.org/workercoops1)  
 
 
@@ -201,7 +201,7 @@ Fairbairn, B. et al. (1994). [The meaning of Rochdale: The Rochdale Pioneers and
 [At Home in Utopia Trailer, 2021](https://www.youtube.com/watch?v=UsP8I2bT5J8)  
 
 
-![](assets/workingclassutopias.webp)  \
+![](assets/images/workingclassutopias.webp)  \
 [Robert M. Fogelson, 2022](https://press.princeton.edu/books/hardcover/9780691234748/working-class-utopias)  
 
 
@@ -221,7 +221,7 @@ The following [cooperative principles](https://www.ica.coop/en/cooperatives/coop
 ## Platforms
 
 
-[<img src='assets/smart.png' style='width:10em; '>](https://smart-eg.de/)  
+[<img src='assets/images/smart.png' style='width:10em; '>](https://smart-eg.de/)  
 SMartDe eG
 
 
@@ -230,11 +230,11 @@ Scholz, T. (2016). [Platform cooperativism. Challenging the corporate sharing ec
 > Among all the problems with 21st-century work — the ballooning of the low wage service sector, economic inequality, the crumbling of worker rights  — the main problem really is that there are so few realistic alternatives. What has been missing from the debate about the future of work is an approach that offers peo- ple something that they can wholeheartedly embrace. This is what this essay is about.
 
 
-![](assets/centralized-distributed.png)  \
+![](assets/images/centralized-distributed.png)  \
 [Paul Baran, 1962](https://pages.cs.wisc.edu/~akella/CS740/F08/740-Papers/Bar64.pdf)
 
 
-![](assets/airbnbvsberlin.webp)  \
+![](assets/images/airbnbvsberlin.webp)  \
 [Alsino Skowronnek, Lucas Vogel & Jonas Parnow, 2015](https://airbnbvsberlin.com/)  
 
 
@@ -242,7 +242,7 @@ Scholz, T. (2016). [Platform cooperativism. Challenging the corporate sharing ec
 [Trebor Scholz, 2018](https://platform.coop/blog/the-platform-co-op-development-kit/)
 
 
-![](assets/platformcooperativism.png)  
+![](assets/images/platformcooperativism.png)  
 Platform Cooperativism, 2020
 
 
@@ -259,7 +259,7 @@ Platform Cooperativism, 2020
 ## Economies
 
 
-[<img src='assets/regionalwert.png' style='width:10em; '>](https://www.regionalwert-berlin.de/) 
+[<img src='assets/images/regionalwert.png' style='width:10em; '>](https://www.regionalwert-berlin.de/) 
 
 
 Raworth, K. (2012). [A safe and just space for humanity](https://www-cdn.oxfam.org/s3fs-public/file_attachments/dp-a-safe-and-just-space-for-humanity-130212-en_5.pdf). Oxfam Discussion Paper.
@@ -271,7 +271,7 @@ Raworth, K. (2012). [A safe and just space for humanity](https://www-cdn.oxfam.o
 [Regionalwert AG Berlin-Brandenburg, 2018](https://www.youtube.com/watch?v=OoIcsjkwTlX3C5H9I9ysvs)
 
 
-![](assets/boundaries.png)  \
+![](assets/images/boundaries.png)  \
 [Planetary Boundaries, 2009-2023](https://en.wikipedia.org/wiki/Planetary_boundaries)  
 
 
@@ -279,31 +279,31 @@ Raworth, K. (2012). [A safe and just space for humanity](https://www-cdn.oxfam.o
 [Doughnut economics, 2012](https://en.wikipedia.org/wiki/Doughnut_(economic_model))
 
 
-[![](assets/raworth_ted.png)](https://www.ted.com/talks/kate_raworth_a_healthy_economy_should_be_designed_to_thrive_not_grow)  
+[![](assets/images/raworth_ted.png)](https://www.ted.com/talks/kate_raworth_a_healthy_economy_should_be_designed_to_thrive_not_grow)  
 Kate Raworth: A healthy economy should be designed to thrive, not grow, 2018
 
 
-![](assets/deal.png)  \
+![](assets/images/deal.png)  \
 [Doughnut Economics Action Lab, 2023](https://doughnuteconomics.org/tools/2)  
 
 
-![](assets/donut.jpg)  
+![](assets/images/donut.jpg)  
 Goodwin, K. (2021) [Designing the Doughnut: A Story of Five Cities.](https://doughnuteconomics.org/stories/93)
 
 
-![](assets/sdgs.png)  \
+![](assets/images/sdgs.png)  \
 [Sustainable Development Goals, 2015](https://sdgs.un.org/goals)
 
 
-![](assets/frames.png)  \
+![](assets/images/frames.png)  \
 [Frames For Future, 2023](https://framesforfuture.tv)
 
 
-![](assets/dollarstreet.png)  \
+![](assets/images/dollarstreet.png)  \
 [Dollar Street | Gapminder, 2016](https://www.gapminder.org/dollar-street)
 
 
-![](assets/hungryplanet.jpg)  \
+![](assets/images/hungryplanet.jpg)  \
 [Hungry Planet: What The World Eats | Time, 2016](https://time.com/8515/what-the-world-eats-hungry-planet/)
 
 
@@ -320,7 +320,7 @@ Goodwin, K. (2021) [Designing the Doughnut: A Story of Five Cities.](https://dou
 ## Co-design
 
 
-[<img src='assets/backstube.png' style='width:10em; '>](http://die-backstube.de/) 
+[<img src='assets/images/backstube.png' style='width:10em; '>](http://die-backstube.de/) 
 
 
 Sanders, E. B.-N. and Stappers, P. J. (2008). [Co-creation and the new landscapes of design](https://doi.org/10.1080/15710880701875068). Co-design, 4(1):5–18.
@@ -328,38 +328,38 @@ Sanders, E. B.-N. and Stappers, P. J. (2008). [Co-creation and the new landscape
 > Designers have been moving increasingly closer to the future users of what they design and the next new thing in the changing landscape of design research has become co-designing with your users. But co-designing is actually not new at all, having taken distinctly different paths in the US and in Europe. The evolution in design research from a user-centred approach to co-designing is changing the roles of the designer, the researcher and the person formerly known as the ‘user’. The implications of this shift for the education of designers and researchers are enormous. The evolution in design research from a user-centred approach to co-designing is changing the landscape of design practice as well, creating new domains of collective creativity. It is hoped that this evolution will support a transformation toward more sustainable ways of living in the future.
 
 
-![](assets/arnsteins_ladder.png)  \
+![](assets/images/arnsteins_ladder.png)  \
 [Sherry Arnstein’s Ladder of citizen participation, 1969](https://www.citizenshandbook.org/arnsteinsladder.html)
 
 
-![](assets/opensource.png)  \
+![](assets/images/opensource.png)  \
 [Why the open source way trumps the crowdsourcing way, 2010](https://opensource.com/business/10/4/why-open-source-way-trumps-crowdsourcing-way)  
 
 
-![](assets/codesign.png)  \
+![](assets/images/codesign.png)  \
 [Marian Dörk et al., 2020](https://doi.org/10.1515/opis-2020-0102)  
 
 
-![](assets/codesign.jpg)
+![](assets/images/codesign.jpg)
 
 
-![](assets/fivelevels.png)  \
+![](assets/images/fivelevels.png)  \
 [Hoang Nguyen, 2020](https://uxdesign.cc/ready-five-levels-of-creativity-2ef100ed12b5)
 
 
-![](assets/bakehouse.jpg)  \
+![](assets/images/bakehouse.jpg)  \
 [BAKEHOUSE - Flatbread Society, 2012](https://www.flatbreadsociety.net/actions/35/bakehouse/)
 
 
-![](assets/mobisol.jpg)  \
+![](assets/images/mobisol.jpg)  \
 [Reinventing Solar Energy Supply for Rural Africa, 2016](https://thisisdesignthinking.net/2016/05/reinventing-solar-energy-supply-for-rural-africa/)
 
 
-![](assets/empowerment.png)  \
+![](assets/images/empowerment.png)  \
 [Bastian Braun, 2018](http://www.applaus-potsdam.de/2018/aussteller/empowerment-durch-co-design)
 
 
-![](assets/coc.png)  \
+![](assets/images/coc.png)  \
 [CoC Playful Minds, 2020](https://www.cocplayfulminds.org/media/c5kplktm/coc-playful-minds_research-journal_build-environment.pdf)
 
 
@@ -368,7 +368,7 @@ Sanders, E. B.-N. and Stappers, P. J. (2008). [Co-creation and the new landscape
 ## Work
 
 
-[<img src='assets/gruppef.png' style='width:10em; '>](https://gruppef.com/)
+[<img src='assets/images/gruppef.png' style='width:10em; '>](https://gruppef.com/)
 
 
 Weeks, K. (2011). [The Problem with Work: Feminism, Marxism, Antiwork Politics, and Postwork Imaginaries](https://caringlabor.files.wordpress.com/2012/05/the-problem-with-work_-feminism-marxism-kathi-weeks.pdf). Introduction chapter. Pages 1–36. Duke University Press.
@@ -376,31 +376,31 @@ Weeks, K. (2011). [The Problem with Work: Feminism, Marxism, Antiwork Politics, 
 >In The Problem with Work, Kathi Weeks boldly challenges the presupposition that work, or waged labor, is inherently a social and political good. While progressive political movements, including the Marxist and feminist movements, have fought for equal pay, better work conditions, and the recognition of unpaid work as a valued form of labor, even they have tended to accept work as a naturalized or inevitable activity. Weeks argues that in taking work as a given, we have “depoliticized” it, or removed it from the realm of political critique. Employment is now largely privatized, and work-based activism in the United States has atrophied. We have accepted waged work as the primary mechanism for income distribution, as an ethical obligation, and as a means of defining ourselves and others as social and political subjects. Taking up Marxist and feminist critiques, Weeks proposes a postwork society that would allow people to be productive and creative rather than relentlessly bound to the employment relation. Work, she contends, is a legitimate, even crucial, subject for political theory.
 
 
-![](assets/pyramid.jpg)  \
+![](assets/images/pyramid.jpg)  \
 [Nedeljkovich, Brashich, & Kuharich, 1911](https://en.wikipedia.org/wiki/Pyramid_of_Capitalist_System)
 
 
-![](assets/unpaidwork.png)  \
+![](assets/images/unpaidwork.png)  \
 [Mona Chalabi, 2018](https://twitter.com/monachalabi/status/971795322904162304)  
 
 
-![](assets/eurostat.png)  \
+![](assets/images/eurostat.png)  \
 [eurostat, 2018](https://ec.europa.eu/eurostat/web/products-eurostat-news/-/EDN-20180307-1)  
 
 
-![](assets/timespent.png)  \  
+![](assets/images/timespent.png)  \  
 [Gus Wezerek and Kristen R. Ghodsee, 2020](https://www.nytimes.com/interactive/2020/03/04/opinion/women-unpaid-labor.html)
 
 
-![](assets/jeffbezos.png)  \
+![](assets/images/jeffbezos.png)  \
 [Mona Chalabi, 2022](https://www.nytimes.com/interactive/2022/04/07/magazine/jeff-bezos-net-worth.html)  
 
 
-[![](assets/allezeit.png)](https://www.ullstein.de/werke/alle-zeit/hardcover/9783550201721)  \
+[![](assets/images/allezeit.png)](https://www.ullstein.de/werke/alle-zeit/hardcover/9783550201721)  \
 Teresa Bücker, 2022
 
 
-![](assets/grundeinkommen.png)
+![](assets/images/grundeinkommen.png)
 [Mein Grundeinkommen, since 2014](https://www.mein-grundeinkommen.de)  
 
 
@@ -409,7 +409,7 @@ Teresa Bücker, 2022
 ## Commons
 
 
-[<img src='assets/regenbogenfabrik.png' style='width:12em; '>](http://regenbogenfabrik.de/)  
+[<img src='assets/images/regenbogenfabrik.png' style='width:12em; '>](http://regenbogenfabrik.de/)  
 Regenbogenfabrik e.V.
 
 
@@ -418,7 +418,7 @@ Ostrom, E., Burger, J., Field, C. B., Norgaard, R. B., and Policansky, D. (1999)
 > In a seminal paper, Garrett Hardin argued in 1968 that users of a commons are caught in an inevitable process that leads to the destruction of the resources on which they depend. This article discusses new insights about such problems and the conditions most likely to favor sustainable uses of common-pool resources. Some of the most difficult challenges concern the management of large-scale resources that depend on international cooperation, such as fresh water in international basins or large marine ecosystems. Institutional diversity may be as important as biological diversity for our long-term survival.
 
 
-![](assets/commons.jpg)  \
+![](assets/images/commons.jpg)  \
 [A Framework for the Commons, 2012](https://www.onthecommons.org/work/framework-commons/index.html)
 
 
@@ -431,23 +431,23 @@ Ostrom, E., Burger, J., Field, C. B., Norgaard, R. B., and Policansky, D. (1999)
 - Trust
 
 
-![](assets/our-open-design-commons.png)  \
+![](assets/images/our-open-design-commons.png)  \
 [Silke Helfrich, 2013](https://commonsblog.wordpress.com/2013/06/14/commoning-or-commoneering-wtf/)
 
 
-![](assets/commoningtriad.jpg)  \
+![](assets/images/commoningtriad.jpg)  \
 [Silke Helfrich and David Bollier, 2019](https://www.resilience.org/stories/2019-12-19/the-triad-of-commoning/)  
 
 
-[![](assets/freefairalivebook.png)](https://freefairandalive.org/read-it/)  
+[![](assets/images/freefairalivebook.png)](https://freefairandalive.org/read-it/)  
 2019
 
 
-![](assets/urbancommons.png)  \
+![](assets/images/urbancommons.png)  \
 [Reclaiming the urban commons, 2019](https://www.re-thinkingthefuture.com/city-and-architecture/a2279-the-concept-of-commoning-what-architects-must-know/)
 
 
-![](assets/cc.png)  \
+![](assets/images/cc.png)  \
 [Creative Commons](https://creativecommons.org/about/)  
 
 
@@ -460,7 +460,7 @@ Ostrom, E., Burger, J., Field, C. B., Norgaard, R. B., and Policansky, D. (1999)
 ## Cybersyn
 
 
-[<img src='assets/supercoop.png' style='width:12em; '>](https://supercoop.de/) 
+[<img src='assets/images/supercoop.png' style='width:12em; '>](https://supercoop.de/) 
 
 
 Medina, E. (2006). [Designing Freedom, Regulating a Nation: Socialist Cybernetics in Allende’s Chile](http://waste.informatik.hu-berlin.de/Lehre/ss11/SE_Kybernetik/reader/edenmedina_cinco.pdf). Journal of Latin American Studies, 38(3):571–606.
@@ -472,15 +472,15 @@ Medina, E. (2006). [Designing Freedom, Regulating a Nation: Socialist Cybernetic
 [Project Cybersyn, 1971-1973](https://en.wikipedia.org/wiki/Project_Cybersyn)  
 
 
-![](assets/countercultureroom.png)  \
+![](assets/images/countercultureroom.png)  \
 [the counterculture room, 2016](http://countercultureroom.com)  
 
 
-![](assets/counterculturescreen.png)  \
+![](assets/images/counterculturescreen.png)  \
 [Manuela Garreton / Isidora González, 2016](https://vimeo.com/243861674)  
 
 
-![](assets/the-santiago-boys.png)  \
+![](assets/images/the-santiago-boys.png)  \
 [The Santiago Boys - Podcast, 2023](https://the-santiago-boys.com)
 
 
@@ -489,7 +489,7 @@ Medina, E. (2006). [Designing Freedom, Regulating a Nation: Socialist Cybernetic
 ## Feminism
 
 
-[<img src='assets/weiberwirtschaft.png' style='width:15em; '>](https://weiberwirtschaft.de/)
+[<img src='assets/images/weiberwirtschaft.png' style='width:15em; '>](https://weiberwirtschaft.de/)
 
 
 D’Ignazio, C. and Klein, L. F. (2020). Data Feminism. MIT Press. [Introduction chapter](https://doi.org/10.7551/mitpress/11805.003.0002).
@@ -501,7 +501,7 @@ D’Ignazio, C. and Klein, L. F. (2020). Data Feminism. MIT Press. [Introduction
 [Feminist Scrollytelling, FH Potsdam, 2019](https://infovis.fh-potsdam.de/femscroll/)  
 
 
-![](assets/datafeminism.png)  \
+![](assets/images/datafeminism.png)  \
 [Data Feminism Infographics, 2020](http://datafeminism.io/blog/book/data-feminism-infographic/)
 
 
@@ -509,11 +509,11 @@ D’Ignazio, C. and Klein, L. F. (2020). Data Feminism. MIT Press. [Introduction
 [Coded Bias | Trailer, 2020](https://www.youtube.com/watch?v=jZl55PsfZJQ)  
 
 
-![](assets/intervis.png)  \
+![](assets/images/intervis.png)  \
 [Hannah Schwan et al., 2021](https://uclab.fh-potsdam.de/intervis/)
 
 
-![](assets/fword.jpg)  \
+![](assets/images/fword.jpg)  \
 [THE F*WORD - Guerrilla Girls and Feminist Graphic Design, MK&G, 2023](https://www.mkg-hamburg.de/en/exhibitions/the-fword/)  
 
 
@@ -522,7 +522,7 @@ D’Ignazio, C. and Klein, L. F. (2020). Data Feminism. MIT Press. [Introduction
 ## Care
 
 
-[<img src='assets/madia.png' style='width:12em'>](https://madia-potsdam.de/)
+[<img src='assets/images/madia.png' style='width:12em'>](https://madia-potsdam.de/)
 
 
 de la Bellacasa, M. P. (2017). [Matters of Care: Speculative Ethics in More Than Human Worlds](https://syllabus.pirate.care/library/Maria%20Puig%20de%20La%20Bellacasa/Matters%20of%20Care%20(171)/Matters%20of%20Care%20-%20Maria%20Puig%20de%20La%20Bellacasa.pdf). Introduction (pages 1-24). Posthumanities. University of Minnesota Press.
@@ -534,15 +534,15 @@ de la Bellacasa, M. P. (2017). [Matters of Care: Speculative Ethics in More Than
 [Mierle Laderman Ukeles, 1973 (2018)](https://www.youtube.com/watch?v=WIhf3UBNTlA)
 
 
-![](assets/carevolution.png)  \
+![](assets/images/carevolution.png)  \
 [Care Revolution, 2018](https://care-revolution.org)  
 
 
-[<img src='assets/criticalcare.png' style='width:12em'>](https://doi.org/10.7551/mitpress/12273.001.0001)  \
+[<img src='assets/images/criticalcare.png' style='width:12em'>](https://doi.org/10.7551/mitpress/12273.001.0001)  \
 2019
 
 
-[<img src='assets/dieganzearbeit.jpg' style='width:12em'>](https://www.endlich-wachstum.de/kapitel/die-ganze-arbeit/)  \
+[<img src='assets/images/dieganzearbeit.jpg' style='width:12em'>](https://www.endlich-wachstum.de/kapitel/die-ganze-arbeit/)  \
 2021
 
 
@@ -566,11 +566,11 @@ The following visualization projects are based on the practices and principles e
 > Within the course, we visited different collectives, cooperatives and other company models that were on a path towards cooperativism. These structures communicate with each other in interwoven, self-determined and fluid ways. Through this unique communication, they jointly develop sustainable and subjective solutions. Communication can help transport values, ideas and benefits of collectives and cooperatives. But because of the individuality of each co-structure, explaining them is often not easy. It takes curiosity and exploration to gain an understanding. I understand this work as an attempt to visualise the complex communication structure of cooperatives and verify the hypothesis if this can function as a mirror of the complex co-operative work environment.
 
 
-<img src='assets/blank.png' class="noresize" style='width:8em'>  \
+<img src='assets/images/blank.png' class="noresize" style='width:8em'>  \
 Vivien Serve
 
 
-![](assets/coopcomm.png)
+![](assets/images/coopcomm.png)
 
 
 ---
@@ -580,11 +580,11 @@ Vivien Serve
 > In an environment mainly consisting of hierarchically organised companies some alternative ways of organising work emerge: cooperatives. What defines their way of growing? What is their influence on traditionally organised companies? How do they affect not only working environment but also our way of thinking?
 
 
-<img src='assets/blank.png' class="noresize" style='width:8em'>  \
+<img src='assets/images/blank.png' class="noresize" style='width:8em'>  \
 Jaqueline Grob
 
 
-![](assets/statusgrowth.png)
+![](assets/images/statusgrowth.png)
 
 
 ---
@@ -594,11 +594,11 @@ Jaqueline Grob
 > This prototype of an animated organigram illustrates the transformation from a hierarchical structured company to a cooperative one, highlighting the significance of flexibility and its effects on both individuals and the collective.
 
 
-<img src='assets/blank.png' class="noresize" style='width:8em'>  \
+<img src='assets/images/blank.png' class="noresize" style='width:8em'>  \
 Luka Saje
 
 
-![](assets/equality.png)
+![](assets/images/equality.png)
 
 
 
@@ -612,11 +612,11 @@ So what would happen if we did away with money?
 This organigram explores the different streams of non-pecuniary value in a heterotopia.
 
 
-<img src='assets/blank.png' class="noresize" style='width:8em'>  \
+<img src='assets/images/blank.png' class="noresize" style='width:8em'>  \
 Chloé Le Mézo
 
 
-![](assets/flows.png)
+![](assets/images/flows.png)
 
 
 
@@ -627,11 +627,11 @@ Chloé Le Mézo
 > This project explores the often sensitive and under-discussed topic of financial distribution within cooperatives. Despite a common belief that "money has no value" in such settings and that resources are equally shared, this research aims to uncover the actual dynamics at play. It delves into the origins of the funds in cooperatives, the methods of allocation among members, and the final monetary compensation each member receives.
 
 
-<img src='assets/blank.png' class="noresize" style='width:8em'>  \
+<img src='assets/images/blank.png' class="noresize" style='width:8em'>  \
 Julia Semenikhina
 
 
-![](assets/moneyflow.png)
+![](assets/images/moneyflow.png)
 
 
 
@@ -642,11 +642,11 @@ Julia Semenikhina
 > Each everyday object the coop members use, subconsciously embody a value of the organization, this gets spread between the members as they use and share that object, helping them build the social environment the coop is shaped on.
 
 
-<img src='assets/blank.png' class="noresize" style='width:8em'>  \
+<img src='assets/images/blank.png' class="noresize" style='width:8em'>  \
 Beatrice Leone
 
 
-![](assets/values.png)
+![](assets/images/values.png)
 
 
 ---
@@ -656,11 +656,11 @@ Beatrice Leone
 > The goal of this data visualization project is to demonstrate the relationships, interactions and overlaps within a cooperative, taking inspiration from the intricate yet incredibly powerful interactions of human cells. The project highlights the significance of working together towards a common goal, like how human cells collaborate to ensure the body functions properly. Exploring this concept delves into the collective entity that cooperatives embody.
 
 
-<img src='assets/blank.png' class="noresize" style='width:8em'>  \
+<img src='assets/images/blank.png' class="noresize" style='width:8em'>  \
 Dishunee Pandya
 
 
-![](assets/interdependency.png)
+![](assets/images/interdependency.png)
 
 
 ---
@@ -670,11 +670,11 @@ Dishunee Pandya
 > The aim of my project was to try to analyse and narrate the historical and cultural value that collectives and cooperatives carry today, in 2023. I interpreted these organisations as bearers of *Social Innovation*, a concept now recognised by the European Union that indicates the construction of "new ideas: services, products or models that meet people needs, create relationships and form new collaborations". Social Innovation can be seen as a response to the enormous density of changes that have occurred since the last century, which have shaken the balance of the world in a very short space of time. In my research, I wanted to see these organisations as part of the path our society is taking in search of a new balance, and new ways of being together.
 
 
-<img src='assets/blank.png' class="noresize" style='width:8em'>  \
+<img src='assets/images/blank.png' class="noresize" style='width:8em'>  \
 Viviana Sorvillo
 
 
-![](assets/socialinnovation.png)
+![](assets/images/socialinnovation.png)
 
 
 ---
@@ -687,16 +687,16 @@ At this point we connected with foodsources like supermarkets, people who work i
 The organigram is visualizing the process of turning the saved foods into soups from the foodsources and the non-hierarchical, democratic structure of the course that allows everyone at Soupi to bring in their own ideas and visions.
 
 
-<img src='assets/blank.png' class="noresize" style='width:8em'>  \
+<img src='assets/images/blank.png' class="noresize" style='width:8em'>  \
 Georg Wähmer
 
 
-![](assets/soupi.jpg)
+![](assets/images/soupi.jpg)
 
 
 
 ---
-[<img src='assets/fhp.svg' style='height:2.25em'>](https://www.fh-potsdam.de/) 
-[<img src='assets/id.svg' style='height:1.75em'>](https://interface.fh-potsdam.de/) 
+[<img src='assets/images/fhp.svg' style='height:2.25em'>](https://www.fh-potsdam.de/) 
+[<img src='assets/images/id.svg' style='height:1.75em'>](https://interface.fh-potsdam.de/) 
 
 [Imprint](https://www.fh-potsdam.de/impressum) · [Privacy](https://www.fh-potsdam.de/en/privacy) · *This is a [Syllabus Site](https://github.com/uclab-potsdam/syllabus-site/)*

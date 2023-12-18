@@ -1,51 +1,43 @@
-@font-face {
-    font-family: hkgrotesk;
-    src: url("fonts/hkgrotesk-bold.woff") format("woff");
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: hkgrotesk;
-    src: url("fonts/hkgrotesk-regular.woff") format("woff");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: hkgrotesk;
-    src: url("fonts/hkgrotesk-italic.woff") format("woff");
-    font-style: italic;
-}
-
-@font-face {
-    font-family: hkgrotesk;
-    src: url("fonts/hkgrotesk-bolditalic.woff") format("woff");
-    font-style: italic;          
-    font-weight: bold;
-}
 /* Global styles*/
 html {
     scroll-behavior: smooth;
 }
 body {
-		touch-action: pan-x pan-y;
-	  --background-menu: hsl(0, 0%, 100%);
-    --background: hsl(0, 0%, 94%);
-    --background-cursor: hsl(0, 0%, 88%);
-    --background-content: hsl(0, 0%, 82%);
-    --gray:hsl(0, 0%, 30%);
-    --primary: #000;
+	touch-action: pan-x pan-y;
+    --background-menu: color-mix(in srgb, var(--theme-color) 10%, hsl(0, 0%, 100%));
+    --background: color-mix(in srgb, var(--theme-color) 10%, hsl(0, 0%, 94%));
+    --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsl(0, 0%, 88%));
+    --background-content: color-mix(in srgb, var(--theme-color)  10%, hsl(0, 0%, 82%));
     --font: #000;
+    --font-inverted: #fff;
+    --link: color-mix(in srgb, var(--theme-color) 60%, var(--font));;
 
     margin: 0;
     overflow-x: hidden;
-    font-family: hkgrotesk, sans-serif;
     background-color: var(--background);
     color: var(--font);
 }
 
+@media (prefers-color-scheme: dark) {
+    body, body.overlay{
+        --background-menu: color-mix(in srgb, var(--theme-color) 10%, hsl(0, 0%, 0%));
+        --background: color-mix(in srgb, var(--theme-color) 10%, hsl(0, 0%, 6%));
+        --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsl(0, 0%, 12%));
+        --background-content: color-mix(in srgb, var(--theme-color) 10%, hsl(0, 0%, 18%));
+        --font: #fff;
+        --font-inverted: #000;
+        --link: color-mix(in srgb, var(--theme-color) 60%, var(--font));;
+
+    }
+    footer img {
+        filter: invert(100%);
+    }
+}
+
+
 *::selection {
-    color: var(--background-menu);
-    background-color: var(--font);
+    color: var(--font-inverted);
+    background-color: var(--theme-color);
     opacity: 1;
 }
 
@@ -206,7 +198,7 @@ p {
 a {
     text-decoration:underline;
     line-height: 0.1em;
-    color: var(--gray);
+    color: var(--link);
 }
 a:hover {
     color: var(--font);
@@ -214,7 +206,7 @@ a:hover {
 
 a[href^="#"] {
     text-decoration: none;
-    border-bottom: .075em dashed var(--primary);
+    border-bottom: .075em dashed var(--link);
 }
 .left{
     left: 5vw;
@@ -345,22 +337,6 @@ footer a:hover img, footer a:active img {
     footer p a:last-child img {
         margin-right: 0;
     }
-}
-@media (prefers-color-scheme: dark) {
-    body, body.overlay{
-        --background-menu: hsl(0, 0%, 0%);
-        --background: hsl(0, 0%, 6%);
-        --background-cursor: hsl(0, 0%, 12%);
-        --background-content: hsl(0, 0%, 18%);
-        --gray: hsl(0, 0%, 70%);
-        --primary: #fff;
-        --font: #fff;
-
-    }
-    footer img {
-        filter: invert(100%);
-    }
-
 }
 
 /* BURGER */
