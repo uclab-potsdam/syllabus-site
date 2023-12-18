@@ -1,8 +1,8 @@
 
 function updateLinks(currentSession, cursorProgress, cursorDimensions) {
-    let position = window.innerHeight - (cursorProgress * window.innerHeight) + (cursorDimensions.height/4)
+    let position = window.innerHeight - (cursorProgress * window.innerHeight) 
     if(currentSession.index == 0){
-        position = window.innerHeight/2 - (cursorProgress * window.innerHeight/2) + (cursorDimensions.height/4)
+        position = window.innerHeight/2 - (cursorProgress * window.innerHeight/2) 
     }
     let anchor1 = [window.innerWidth / 2, position];
     currentSession.items.map((item) => {
