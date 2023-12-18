@@ -4,10 +4,10 @@ html {
 }
 body {
 	touch-action: pan-x pan-y;
-    --background-menu: color-mix(in srgb, var(--theme-color) 10%, hsl(0, 0%, 100%));
-    --background: color-mix(in srgb, var(--theme-color) 10%, hsl(0, 0%, 94%));
-    --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsl(0, 0%, 88%));
-    --background-content: color-mix(in srgb, var(--theme-color)  10%, hsl(0, 0%, 82%));
+    --background-menu: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 100%, 1));
+    --background: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 94%, 1));
+    --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 88%, .95));
+    --background-content: color-mix(in srgb, var(--theme-color)  10%, hsla(0, 0%, 82%, .95));
     --font: #000;
     --font-inverted: #fff;
     --link: color-mix(in srgb, var(--theme-color) 60%, var(--font));;
@@ -15,15 +15,15 @@ body {
     margin: 0;
     overflow-x: hidden;
     background-color: var(--background);
-    color: var(--font);
+    color: var(--font);.9
 }
 
 @media (prefers-color-scheme: dark) {
     body, body.overlay{
-        --background-menu: color-mix(in srgb, var(--theme-color) 10%, hsl(0, 0%, 0%));
-        --background: color-mix(in srgb, var(--theme-color) 10%, hsl(0, 0%, 6%));
-        --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsl(0, 0%, 12%));
-        --background-content: color-mix(in srgb, var(--theme-color) 10%, hsl(0, 0%, 18%));
+        --background-menu: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 0%, 1));
+        --background: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 6%, 1));
+        --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 12%, .95));
+        --background-content: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 18%, .95));
         --font: #fff;
         --font-inverted: #000;
         --link: color-mix(in srgb, var(--theme-color) 60%, var(--font));;
@@ -42,7 +42,7 @@ body {
 }
 
 .content, .content *, canvas, .cursor {
-	transition: opacity 0.25s ease, background-color 0.25s ease;
+	transition: opacity 0.25s ease, background-color 0.25s ease;    
 }
 
 #app.overlay .content, #app.overlay canvas, #app.overlay .cursor {
@@ -66,7 +66,7 @@ body {
 #app.overlay .content.enlarged, #app.overlay .content.enlarged a {
     opacity: 1;
     color: var(--background) !important;
-    background-color: var(--background) !important;
+    xbackground-color: var(--background) !important;
 }
 
 #app.overlay .enlarged img {
