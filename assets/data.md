@@ -22,11 +22,6 @@ This course takes on the challenge to visualize organizational structures that h
 This webpage is an experiment in documenting design courses. Below you find the readings and references along central [themes](#themes), our generous [hosts](#hosts), and the resulting student [projects](#projects).
 
 
-### Central questions
-
-- What would you like to reveal with the organigrams you will make?
-- What kind of work relations would you like to create for the future and put out there for discussion?
-
 ---
 
 3 April
@@ -195,10 +190,6 @@ Fairbairn, B. et al. (1994). [The meaning of Rochdale: The Rochdale Pioneers and
 
 ![](https://img.youtube.com/vi/RsQdi0OU_W0/0.jpg)  \
 [Exploring Co-op City - The Bronx, NYC, 2021](https://www.youtube.com/watch?v=RsQdi0OU_W0)  
-
-
-![](https://img.youtube.com/vi/UsP8I2bT5J8/0.jpg)  \
-[At Home in Utopia Trailer, 2021](https://www.youtube.com/watch?v=UsP8I2bT5J8)  
 
 
 ![](assets/images/workingclassutopias.webp)  \
@@ -557,6 +548,12 @@ Aiming to visualize structures of a social-ecological economy, each student carr
 
 
 The following visualization projects are based on the practices and principles encountered during the visits, readings, and exchanges throughout the semester. 
+
+
+### Central questions
+
+- What would you like to reveal with the organigrams you will make?
+- What kind of work relations would you like to put out there for discussion?
 
 
 ---

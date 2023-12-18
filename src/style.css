@@ -4,10 +4,10 @@ html {
 }
 body {
 	touch-action: pan-x pan-y;
-    --background-menu: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 100%, .9));
-    --background: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 94%, 1));
-    --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 88%, .9));
-    --background-content: color-mix(in srgb, var(--theme-color)  10%, hsla(0, 0%, 82%, .9));
+    --background-menu: hsla(0, 0%, 100%, .8);
+    --background: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 95%, 1));
+    --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 90%, .9));
+    --background-content: color-mix(in srgb, var(--theme-color)  10%, hsla(0, 0%, 85%, .9));
     --font: #000;
     --font-inverted: #fff;
     --link: color-mix(in srgb, var(--theme-color), var(--font));
@@ -21,10 +21,10 @@ body {
 
 @media (prefers-color-scheme: dark) {
     body, body.overlay{
-        --background-menu: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 0%, .9));
-        --background: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 6%, 1));
-        --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 12%, .9));
-        --background-content: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 18%, .9));
+        --background-menu: hsla(0, 0%, 0%, .8);
+        --background: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 5%, 1));
+        --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 10%, .9));
+        --background-content: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 15%, .9));
         --font: #fff;
         --font-inverted: #000;
     }
@@ -96,11 +96,11 @@ h1 {
 }
 h2 {
     margin: .25em 0;
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 h3 {
     margin: .5em 0;
-    font-size: 1.2em;    
+    font-size: 1em;    
 }
 ul {
     padding: 0 0 0 1em;
@@ -244,9 +244,10 @@ a[href^="#"]:hover {
 #anchors p:hover, #burger:hover{
     cursor: pointer;
 }
-#menu.active #anchors{
+#menu.active #anchors {
    left: 0%;
    background-color: var(--background-menu);
+   xbackground: linear-gradient(to right, var(--background-menu), transparent);
 }
 #anchors .active a{
     font-weight: bold;
