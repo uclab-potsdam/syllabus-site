@@ -87,9 +87,19 @@
                 sessionObject.content = sessionData.map(content => { return {"markdown" : content}})
                 data.push(sessionObject)
             })
-            createBaseData(data)
-        })
-            </script>
+            createBaseData(data);
+
+            // check if hash is set
+            if (window.location.hash) {
+                const hash = window.location.hash;            
+                setTimeout(() => {
+                    const targetElement = document.getElementById(hash.substring(1));
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        });
+
+    </script>
 </body>
 
 </html>
