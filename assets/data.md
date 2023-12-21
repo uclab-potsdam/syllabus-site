@@ -567,15 +567,14 @@ Decision tree for missed shifts and shift replacements at SuperCoop Berlin
 Rama, 2021
 
 
-![](assets/images/countercultureroom.png)  \
-[the counterculture room](http://countercultureroom.com)  \
-London Design Biennale, 2016
-
-
 ![](assets/images/muthur6000.webp)  \
 [MU/TH/UR 6000](https://alienanthology.fandom.com/wiki/MU-TH-UR_6000)  \
 Alien, 1979
 
+
+![](assets/images/countercultureroom.png)  \
+[the counterculture room](http://countercultureroom.com)  \
+London Design Biennale, 2016
 
 
 ![](assets/images/counterculturescreen.png)  \
