@@ -12,7 +12,6 @@ body {
     --font-inverted: #fff;
     --link: color-mix(in srgb, var(--theme-color), var(--font));
     --hover: var(--theme-color);
-
     margin: 0;
     overflow-x: hidden;
     background-color: var(--background);
@@ -355,6 +354,7 @@ footer a:hover img, footer a:active img {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
    }
+   
 .icon-1, .icon-2, .icon-3 {
   position: absolute;
   left: .8em;
