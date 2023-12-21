@@ -1,8 +1,36 @@
 /* Global styles*/
+
+@font-face {
+    font-family: hkgrotesk;
+    src: url("./fonts/hkgrotesk-bold.woff") format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: hkgrotesk;
+    src: url("./fonts/hkgrotesk-regular.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: hkgrotesk;
+    src: url("./fonts/hkgrotesk-italic.woff") format("woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: hkgrotesk;
+    src: url("./fonts/hkgrotesk-bolditalic.woff") format("woff");
+    font-style: italic;          
+    font-weight: bold;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
 body {
+    font-family: hkgrotesk, sans-serif;
 	touch-action: pan-x pan-y;
     --background-menu: hsla(0, 0%, 100%, .8);
     --background: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 95%, 1));
