@@ -8,11 +8,11 @@ This course takes on the challenge to visualize organizational structures that h
 
 
 <img src='img/marian.png' class="noresize" style='height:8em'>  \
-[Marian Dörk](https://mariandoerk.de)
+Marian Dörk
 
 
 <img src='img/myriel.png' class="noresize" style='height:8em'>  \
-[Myriel Milicevic](https://www.fh-potsdam.de/hochschule-netzwerk/personen/myriel-milicevic)
+Myriel Milicevic
 
 
 ![](img/firstorgchart.webp)  \
