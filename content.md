@@ -104,7 +104,8 @@ Every week the course takes place at different locations in Berlin or Potsdam. B
 ## Utopia
 
 
-<img src='img/wigwam.png' style='width:12em; '>
+<img src='img/wigwam.png' style='width:12em'>
+
 [Wigwam eG - Kommunikationsagentur](https://wigwam.im/)
 
 
@@ -183,6 +184,7 @@ Lino Zeddies, 2023
 
 
 <img src='img/coopflag.png' style='width:10em; '>
+
 [Co-operative flag, 1925](http://bheleccs.in/co-operative-flag/)
 
 
@@ -239,6 +241,7 @@ The following [cooperative principles](https://www.ica.coop/en/cooperatives/coop
 
 
 <img src='img/smart.png' style='width:12em; '>
+
 [SMartDe - the coop for freelancers](https://smart-eg.de/)
 
 
@@ -289,6 +292,7 @@ Per Axbom, 2023
 
 
 <img src='img/regionalwert.png' style='width:12em; '>
+
 [Regionalwert AG Berlin Brandenburg](https://www.regionalwert-berlin.de/)
 
 
@@ -422,6 +426,7 @@ by CoC Playful Minds, 2020
 
 
 <img src='img/gruppef.png' style='width:12em; '>
+
 [gruppe F - Freiraum für alle GmbH](https://gruppef.com/)
 
 
@@ -479,6 +484,7 @@ Teresa Bücker, 2022
 
 
 <img src='img/regenbogenfabrik.png' style='width:14em; '>
+
 [Regenbogenfabrik e.V.](http://regenbogenfabrik.de/)  
 children's, culture and neighborhood center
 
@@ -541,6 +547,7 @@ UN DESA Sustainable Development, 2020
 
 
 <img src='img/supercoop.png' style='width:14em; '>
+
 [SuperCoop Berlin - This is not a SuperMarket…](https://supercoop.de/) 
 
 
@@ -593,6 +600,7 @@ Evgeny Morozov, 2023
 
 
 <img src='img/weiberwirtschaft.png' style='width:15em; '>
+
 [WeiberWirtschaft eG - Standort für Chefinnen](https://weiberwirtschaft.de/)
 
 
@@ -640,6 +648,7 @@ Project course at FH Potsdam, 2019
 
 
 <img src='img/madia.png' style='width:14em'>
+
 [Madia Potsdam - Gemeinschaft, Café und Familienwohnzimmer](https://madia-potsdam.de/)
 
 
@@ -658,6 +667,7 @@ Smarthistory, 2018
 
 
 <img src='img/criticalcare.png' style='width:12em'>
+
 [Critical Care: Architecture and Urbanism for a Broken Planet](https://doi.org/10.7551/mitpress/12273.001.0001) edited by Angelika Fitz, Elke Krasny, Architekturzentrum Wien, 2019
 
 

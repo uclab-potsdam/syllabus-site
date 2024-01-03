@@ -4,7 +4,7 @@ const sessions = [];
 function setFontSize() {
 	vw = document.documentElement.clientWidth / 100;
 	vh = document.documentElement.clientHeight / 100;
-	fs = 7 + .7 * vw + .3 * vh;
+	fs = 5 + .7 * vw + .3 * vh;
 	document.querySelector("body").style.fontSize = fs + "px";
 	update();
 }
@@ -372,33 +372,41 @@ async function updateView() {
 
 	// wrap image captions with a span
 	document.querySelectorAll('div.content').forEach(div => {
-		// Find all img elements in the div
-		const imgs = div.querySelectorAll('img');
-		
-		// Proceed only if there's exactly one img in the div
-		if (imgs.length === 1) {
-			div.classList.add('hasImg');
-			
-			const img = imgs[0];
-			let current = img.nextSibling;
-			const span = document.createElement('span');
-			
-			// Insert the span right after the img
-			img.parentNode.insertBefore(span, img.nextSibling);
+		// Find all img elements within the div
+		const images = div.querySelectorAll('img');
 	
-			// Move all following elements into the span
-			while (current) {
-				const next = current.nextSibling;
-				span.appendChild(current);
-				current = next;
+		// Proceed only if there is exactly one img element
+		if (images.length === 1) {
+			div.classList.add('hasImg');
+
+			const image = images[0];
+			let elementToWrap = image.nextSibling;
+	
+			// Create a span element to wrap the elements following the image
+			const span = document.createElement('span');
+	
+			// Loop through the sibling nodes following the image
+			while (elementToWrap) {
+				const nextSibling = elementToWrap.nextSibling;
+	
+				// Check if the sibling is within a paragraph
+				if (elementToWrap.parentNode.tagName === 'P') {
+					// Insert the span inside the paragraph, before the current element
+					elementToWrap.parentNode.insertBefore(span, elementToWrap);
+					// Append the current element inside the span
+					span.appendChild(elementToWrap);
+				} else {
+					// Move the sibling into the span
+					span.appendChild(elementToWrap);
+				}
+	
+				elementToWrap = nextSibling;
 			}
+	
+			// Insert the span after the image
+			image.parentNode.insertBefore(span, image.nextSibling);
 		}
 	});
-	
-	
-	
-	
-	
 
 	// images to be resized
 	document.querySelectorAll('.content p > img:not(.noresize)').forEach(img => {
