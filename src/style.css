@@ -113,7 +113,7 @@ div.hasImg {
     text-align: center;
     padding: 0;
 }
-div.hasImg p:first-child {
+div.hasImg p {
     margin-top: 0;
 }
 

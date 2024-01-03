@@ -464,7 +464,7 @@ eurostat, 2018
 Gus Wezerek & Kristen R. Ghodsee, The New York Times, 2020
 
 
-![](img/jeffbezos.png)
+![](img/jeffbezos.png)  
 [9 Ways to Imagine Jeff Bezos’ Wealth](https://www.nytimes.com/interactive/2022/04/07/magazine/jeff-bezos-net-worth.html)  
 Mona Chalabi, The New York Times, 2022
 

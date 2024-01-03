@@ -45,6 +45,7 @@ fetch('content.md')
 			})
 			data.push(sessionObject)
 		})
+		
 		createBaseData(data);
 
 		// check if hash is set
@@ -267,8 +268,6 @@ function calculateDistanceY(p1, p2) {
 }
 
 
-
-
 // DATA
 
 function createBaseData(json) {
@@ -283,14 +282,47 @@ function createBaseData(json) {
 		})
 		sessions.push(session)
 	})
+	wrapCaptions()
+	imagesLoaded()
+	updateView()
+}
+function wrapCaptions() {
+		// wrap image captions with a span
+		document.querySelectorAll('div.content').forEach(div => {
+			console.log("wrap image captions");
+			// Check if there's exactly one image inside the div
+			const images = div.querySelectorAll('img');
+			if (images.length === 1) {
+				let img = images[0];
+				div.classList.add('hasImg');
+	
+				// Case 1: Image outside, caption inside paragraph
+				if (img.parentElement.tagName !== 'P' && img.nextElementSibling?.tagName === 'P') {
+					const p = img.nextElementSibling;
+					p.innerHTML = `<span>${p.innerHTML}</span>`;
+				} 
+				// Case 2: Both image and caption inside paragraph
+				else if (img.parentElement.tagName === 'P') {
+					const p = img.parentElement;
+					const restOfContent = p.innerHTML.split(img.outerHTML)[1];
+					p.innerHTML = img.outerHTML + `<span>${restOfContent}</span>`;
+				}
+				// Case 3: No paragraph element
+				else {
+					const restOfContent = div.innerHTML.split(img.outerHTML)[1];
+					div.innerHTML = img.outerHTML + `<span>${restOfContent}</span>`;
+				}
+			}
+		});	
+}
+function imagesLoaded() {
 	var images = document.getElementsByTagName('img');
-	for (var i = 0; i < images.length; i++) {
+	for (var i = 0; i < images.length; i++) {		
 		images[i].onload = function() {
 			if (!this.style.height) this.style.height = 'auto';
 			update();
 		};
 	}
-	updateView()
 }
 async function updateView() {
 	let anchors = d3.select('#anchors')
@@ -369,45 +401,8 @@ async function updateView() {
 			link.target = '_blank';
 		}
 	});
-
-	// wrap image captions with a span
-	document.querySelectorAll('div.content').forEach(div => {
-		// Find all img elements within the div
-		const images = div.querySelectorAll('img');
-	
-		// Proceed only if there is exactly one img element
-		if (images.length === 1) {
-			div.classList.add('hasImg');
-
-			const image = images[0];
-			let elementToWrap = image.nextSibling;
-	
-			// Create a span element to wrap the elements following the image
-			const span = document.createElement('span');
-	
-			// Loop through the sibling nodes following the image
-			while (elementToWrap) {
-				const nextSibling = elementToWrap.nextSibling;
-	
-				// Check if the sibling is within a paragraph
-				if (elementToWrap.parentNode.tagName === 'P') {
-					// Insert the span inside the paragraph, before the current element
-					elementToWrap.parentNode.insertBefore(span, elementToWrap);
-					// Append the current element inside the span
-					span.appendChild(elementToWrap);
-				} else {
-					// Move the sibling into the span
-					span.appendChild(elementToWrap);
-				}
-	
-				elementToWrap = nextSibling;
-			}
-	
-			// Insert the span after the image
-			image.parentNode.insertBefore(span, image.nextSibling);
-		}
-	});
-
+				
+			
 	// images to be resized
 	document.querySelectorAll('.content p > img:not(.noresize)').forEach(img => {
 		img.addEventListener('click', function(e) {
