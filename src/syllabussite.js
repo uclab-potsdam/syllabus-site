@@ -68,7 +68,6 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
 	update();
 });
 let lastScrollY = null;
-let visibleCursors = [];
 
 function updateCursor(currentSession, currentProgress) {
 	let cursor = d3.select('#cursor' + (currentSession.index))
@@ -165,6 +164,7 @@ function update() {
 		if (session.margin <= window.scrollY + window.innerHeight) {
 			d3.select('#anchor' + (session.index))?.classed('active', (session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height)))
 			let currentProgress = (window.scrollY - session.margin) / session.height
+			if (currentProgress < 0) currentProgress = 0
 			linkItems.push(updateCursor(session, currentProgress))
 		} else {
 			d3.select('#anchor' + (session.index))?.classed('active', false)
@@ -216,7 +216,7 @@ function hashChange() {
 
 // LINKS
 
-function updateLinks(currentSession, cursorProgress, cursorDimensions) {
+function updateLinks(currentSession, cursorProgress) {
 	let position = window.innerHeight - (cursorProgress * window.innerHeight)
 	if (currentSession.index == 0) {
 		position = window.innerHeight / 2 - (cursorProgress * window.innerHeight / 2)
@@ -369,6 +369,36 @@ async function updateView() {
 			link.target = '_blank';
 		}
 	});
+
+	// wrap image captions with a span
+	document.querySelectorAll('div.content').forEach(div => {
+		// Find all img elements in the div
+		const imgs = div.querySelectorAll('img');
+		
+		// Proceed only if there's exactly one img in the div
+		if (imgs.length === 1) {
+			div.classList.add('hasImg');
+			
+			const img = imgs[0];
+			let current = img.nextSibling;
+			const span = document.createElement('span');
+			
+			// Insert the span right after the img
+			img.parentNode.insertBefore(span, img.nextSibling);
+	
+			// Move all following elements into the span
+			while (current) {
+				const next = current.nextSibling;
+				span.appendChild(current);
+				current = next;
+			}
+		}
+	});
+	
+	
+	
+	
+	
 
 	// images to be resized
 	document.querySelectorAll('.content p > img:not(.noresize)').forEach(img => {

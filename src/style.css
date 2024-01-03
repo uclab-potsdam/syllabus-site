@@ -107,14 +107,23 @@ p,li {
 li {
     margin-bottom: 0.25em;
 }
-div.content:has(img) {
+div.hasImg {
     background: none;
     max-width: 20em;
     text-align: center;
     padding: 0;
 }
-div.content:has(img) p:first-child {
+div.hasImg p:first-child {
     margin-top: 0;
+}
+
+div.hasImg img {
+    display: block;
+    margin: auto;
+}
+
+div.hasImg p span {
+    background-color: var(--background);    
 }
 
 h1 {
