@@ -211,11 +211,12 @@ p {
 .content {
     position: absolute;
     padding: 0.25em .75em;
-    max-width: 20em;
+    max-width: 25em;
     background-color: var(--background-content);
     visibility: hidden;
     z-index:2;
     border-radius: .5em;
+    font-size: 0.85em;
 }
 .content img, .cursor img {
     max-width: 100%;
@@ -223,9 +224,7 @@ p {
     max-height: 20em;
     object-fit: contain;
 }
-/* .content:hover, .content:active, .content:focus{
-    z-index: 2;
-} */
+
 a {
     text-decoration:underline;
     line-height: 0.1em;
@@ -322,13 +321,13 @@ footer a:hover img, footer a:active img {
         font-size: 16px !important;
     }
     .content{
-        max-width: 17.5em;
+        max-width: 20em;
         transform: unset !important
     }
     .content img, #cursor img {
-        max-width: 15em;
-        max-height: 15em;
-        height: 15em;
+        max-width: 17.5em;
+        max-height: 17.5em;
+        height: 17.5em;
     }
     .cursor{
         max-width: 85%;
