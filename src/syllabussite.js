@@ -95,10 +95,7 @@ function cloneCursor(originalDivId) {
 
 	// Get the #app element to append clones to
 	const appElement = document.getElementById('app');
-	if (!appElement) {
-		console.error('Element with ID #app not found.');
-		return;
-	}
+	if (!appElement) return;	
 
 	// Check if any part of the original div is in the viewport
 	const rect = originalDiv.getBoundingClientRect();
@@ -289,7 +286,6 @@ function createBaseData(json) {
 function wrapCaptions() {
 		// wrap image captions with a span
 		document.querySelectorAll('div.content').forEach(div => {
-			console.log("wrap image captions");
 			// Check if there's exactly one image inside the div
 			const images = div.querySelectorAll('img');
 			if (images.length === 1) {

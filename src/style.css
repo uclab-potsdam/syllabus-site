@@ -283,7 +283,6 @@ a[href^="#"]:hover {
 #menu.active #anchors {
    left: 0%;
    background-color: var(--background-menu);
-   xbackground: linear-gradient(to right, var(--background-menu), transparent);
 }
 #anchors .active a{
     font-weight: bold;
