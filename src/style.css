@@ -117,9 +117,10 @@ div.hasImg p {
     margin-top: 0;
 }
 
-div.hasImg img {
+div.hasImg img {    
     display: block;
     margin: auto;
+    padding: 0 0 0.5em 0;
 }
 
 div.hasImg span {
