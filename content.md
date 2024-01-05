@@ -1,4 +1,4 @@
-Summer 2023 · [Interface Design](https://interface.fh-potsdam.de) · [FH Potsdam](https://www.fh-potsdam.de/)
+Summer 2023 · [Interface Design](https://interface.fh-potsdam.de) · [FH Potsdam](https://www.fh-potsdam.de/)
 
 # Organigrams for/from the future
 
@@ -111,7 +111,7 @@ Every week the course takes place at different locations in Berlin or Potsdam. B
 
 
 ![](img/wigwam.jpg)
-Organigram of the wigwam co-operative, 2023
+Organigram of Wigwam, 2023
 
 
 [Diagram Utopias: Rota and Network as Instrument and Mirror of Utopia and Agronica](https://www.researchgate.net/profile/Christoph-Lueder/publication/271929881_Diagram_Utopias_Rota_and_Network_as_Instrument_and_Mirror_of_Utopia_and_Agronica/links/5cce194b458515712e9285a2/Diagram-Utopias-Rota-and-Network-as-Instrument-and-Mirror-of-Utopia-and-Agronica.pdf) by Christoph Lueder. Journal of Architectural Education, 67(2):224–233, 2013.

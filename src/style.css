@@ -67,7 +67,7 @@ body {
 }
 
 .content, .content *, canvas, .cursor {
-	transition: opacity 0.25s ease, background-color 0.25s ease;    
+	transition: opacity 0.25s ease, background-color 0.25s ease;
 }
 
 #app.overlay .content, #app.overlay canvas, #app.overlay .cursor {
@@ -259,8 +259,7 @@ a[href^="#"]:hover {
     position: fixed;
     text-align: left;
     pointer-events: all;
-    font-size: 1em;
-    height: 100vh;
+    font-size: 1em;    
 }
 #menu.active {
     z-index: 5;
@@ -323,7 +322,6 @@ footer a:hover img, footer a:active img {
     }
     .content{
         max-width: 20em;
-        transform: unset !important
     }
     .content img, #cursor img {
         max-width: 17.5em;

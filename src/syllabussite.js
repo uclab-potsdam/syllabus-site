@@ -4,7 +4,7 @@ const sessions = [];
 function setFontSize() {
 	vw = document.documentElement.clientWidth / 100;
 	vh = document.documentElement.clientHeight / 100;
-	fs = 5 + .7 * vw + .3 * vh;
+	fs = 7 + .7 * vw + .3 * vh;
 	document.querySelector("body").style.fontSize = fs + "px";
 	update();
 }
@@ -146,8 +146,8 @@ function animation() {
 	}
 
 	if (lastScrollY != window.scrollY) {
-		lastScrollY = window.scrollY;
 		update();
+		lastScrollY = window.scrollY;		
 	}
 
 	//loop the animation frame
@@ -173,8 +173,6 @@ function update() {
 	let clones = document.querySelectorAll('.clone');
 	if (clones.length > 1) removeInvisibleClones();
 }
-
-
 
 
 // NAVIGATION
@@ -397,8 +395,7 @@ async function updateView() {
 			link.target = '_blank';
 		}
 	});
-				
-			
+
 	// images to be resized
 	document.querySelectorAll('.content p > img:not(.noresize)').forEach(img => {
 		img.addEventListener('click', function(e) {
@@ -451,7 +448,6 @@ function preventDefault(e) {
 }
 
 function resetEnlargedImage() {
-
 	document.body.removeEventListener('touchstart', preventDefault);
 	document.body.removeEventListener('wheel', preventDefault);
 	document.removeEventListener('scroll', preventDefault);
@@ -484,7 +480,6 @@ function updateItemPosition(item) {
 
 function updateItemBase(item, session, itemIndex) {
 	item.session = session
-	item.visible = false
 	item.left = itemIndex % 2 == 0 ? session.alignment : !session.alignment
 	createDataRepresentation(item);
 }
