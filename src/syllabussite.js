@@ -268,7 +268,7 @@ function calculateDistanceY(p1, p2) {
 function createBaseData(json) {
 	json.map((session, sessionIndex) => {
 		session.index = sessionIndex
-		session.height = (json.length - 1 == session.index ? window.innerHeight * 2 : 0) //height of the session//if last session add padding at the end
+		session.height = 0
 		//set position for items
 		session.alignment = Math.random() > 0.5 ? true : false
 		session.items = [...session.content]
@@ -344,7 +344,6 @@ async function updateView() {
 
 		let title = "Start"
 		if (sessionIndex != 0) {
-
 			let html = domParser.parseFromString(marked.parse(session.text), 'text/html');
 			title = html.getElementsByTagName('h1');
 			if (title.length == 0) title = html.getElementsByTagName('h2')
@@ -374,7 +373,7 @@ async function updateView() {
 		cursor.attr('style', `top:${session.margin}px;`)
 	})
 	//set height and padding according to datasize
-	let height = sessions.reduce((accumulator, session) => {
+	let height = window.innerHeight*1.5+sessions.reduce((accumulator, session) => {
 		return accumulator += session.height
 	}, 0)
 	//set the body height to the height of the data
