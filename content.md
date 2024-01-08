@@ -7,11 +7,11 @@ How can we visualize an economy built on solidarity, sustainability, and surviva
 This course takes on the challenge to visualize organizational structures that hardly exist yet, but are foreshadowed in the experimental configurations of cooperatives, projects, and initiatives. To seek inspiration we visit organizations that are committed to social-ecological transformation and operate on principles of social and environmental justice. These organizations share their experiences and offer opportunities to see innovative ways of working together, making decisions, and cultivating cooperation in critical times.
 
 
-<img src='img/marian.png' class="noresize" style='height:8em'>
+<img src='img/marian.png' class="noresize" style='height:7em'>
 Marian Dörk
 
 
-<img src='img/myriel.png' class="noresize" style='height:8em'>
+<img src='img/myriel.jpg' class="noresize" style='height:7em'>
 Myriel Milicevic
 
 
@@ -702,7 +702,7 @@ The following visualization projects are based on the practices and principles e
 > Within the course, we visited different collectives, cooperatives and other company models that were on a path towards cooperativism. These structures communicate with each other in interwoven, self-determined and fluid ways. Through this unique communication, they jointly develop sustainable and subjective solutions. Communication can help transport values, ideas and benefits of collectives and cooperatives. But because of the individuality of each co-structure, explaining them is often not easy. It takes curiosity and exploration to gain an understanding. I understand this work as an attempt to visualise the complex communication structure of cooperatives and verify the hypothesis if this can function as a mirror of the complex co-operative work environment.
 
 
-<img src='img/blank.png' class="noresize" style='width:8em'>
+<img src='img/blank.png' class="noresize" style='width:7em'>
 Vivien Serve
 
 
@@ -716,7 +716,7 @@ Vivien Serve
 > In an environment mainly consisting of hierarchically organised companies some alternative ways of organising work emerge: cooperatives. What defines their way of growing? What is their influence on traditionally organised companies? How do they affect not only working environment but also our way of thinking?
 
 
-<img src='img/blank.png' class="noresize" style='width:8em'>
+<img src='img/blank.png' class="noresize" style='width:7em'>
 Jaqueline Grob
 
 
@@ -730,7 +730,7 @@ Jaqueline Grob
 > This prototype of an animated organigram illustrates the transformation from a hierarchical structured company to a cooperative one, highlighting the significance of flexibility and its effects on both individuals and the collective.
 
 
-<img src='img/blank.png' class="noresize" style='width:8em'>
+<img src='img/blank.png' class="noresize" style='width:7em'>
 Luka Saje
 
 
@@ -748,7 +748,7 @@ So what would happen if we did away with money?
 This organigram explores the different streams of non-pecuniary value in a heterotopia.
 
 
-<img src='img/blank.png' class="noresize" style='width:8em'>
+<img src='img/blank.png' class="noresize" style='width:7em'>
 Chloé Le Mézo
 
 
@@ -763,7 +763,7 @@ Chloé Le Mézo
 > This project explores the often sensitive and under-discussed topic of financial distribution within cooperatives. Despite a common belief that "money has no value" in such settings and that resources are equally shared, this research aims to uncover the actual dynamics at play. It delves into the origins of the funds in cooperatives, the methods of allocation among members, and the final monetary compensation each member receives.
 
 
-<img src='img/blank.png' class="noresize" style='width:8em'>
+<img src='img/blank.png' class="noresize" style='width:7em'>
 Julia Semenikhina
 
 
@@ -778,7 +778,7 @@ Julia Semenikhina
 > Each everyday object the coop members use, subconsciously embody a value of the organization, this gets spread between the members as they use and share that object, helping them build the social environment the coop is shaped on.
 
 
-<img src='img/blank.png' class="noresize" style='width:8em'>
+<img src='img/blank.png' class="noresize" style='width:7em'>
 Beatrice Leone
 
 
@@ -792,7 +792,7 @@ Beatrice Leone
 > The goal of this data visualization project is to demonstrate the relationships, interactions and overlaps within a cooperative, taking inspiration from the intricate yet incredibly powerful interactions of human cells. The project highlights the significance of working together towards a common goal, like how human cells collaborate to ensure the body functions properly. Exploring this concept delves into the collective entity that cooperatives embody.
 
 
-<img src='img/blank.png' class="noresize" style='width:8em'>
+<img src='img/blank.png' class="noresize" style='width:7em'>
 Dishunee Pandya
 
 
@@ -806,7 +806,7 @@ Dishunee Pandya
 > The aim of my project was to try to analyse and narrate the historical and cultural value that collectives and cooperatives carry today, in 2023. I interpreted these organisations as bearers of *Social Innovation*, a concept now recognised by the European Union that indicates the construction of "new ideas: services, products or models that meet people needs, create relationships and form new collaborations". Social Innovation can be seen as a response to the enormous density of changes that have occurred since the last century, which have shaken the balance of the world in a very short space of time. In my research, I wanted to see these organisations as part of the path our society is taking in search of a new balance, and new ways of being together.
 
 
-<img src='img/blank.png' class="noresize" style='width:8em'>
+<img src='img/blank.png' class="noresize" style='width:7em'>
 Viviana Sorvillo
 
 
@@ -823,7 +823,7 @@ At this point we connected with foodsources like supermarkets, people who work i
 The organigram is visualizing the process of turning the saved foods into soups from the foodsources and the non-hierarchical, democratic structure of the course that allows everyone at Soupi to bring in their own ideas and visions.
 
 
-<img src='img/blank.png' class="noresize" style='width:8em'>
+<img src='img/blank.png' class="noresize" style='width:7em'>
 Georg Wähmer
 
 
