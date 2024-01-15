@@ -34,8 +34,8 @@ body {
 	touch-action: pan-x pan-y;
     --background-menu: hsla(0, 0%, 100%, .8);
     --background: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 95%, 1));
-    --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 90%, .9));
-    --background-content: color-mix(in srgb, var(--theme-color)  10%, hsla(0, 0%, 85%, .9));
+    --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 100%, .9));
+    --background-content: color-mix(in srgb, var(--theme-color)  5%, hsla(0, 0%, 100%, .9));
     --font: #000;
     --font-inverted: #fff;
     --link: color-mix(in srgb, var(--theme-color), var(--font));
