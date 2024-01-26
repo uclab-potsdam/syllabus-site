@@ -11,7 +11,7 @@ This course takes on the challenge to visualize organizational structures that h
 Marian Dörk
 
 
-<img src='img/myriel.jpg' class="noresize" style='height:7em'>
+<img src='img/myriel.png' class="noresize" style='height:7em'>
 Myriel Milicevic
 
 
@@ -702,7 +702,7 @@ The following visualization projects are based on the practices and principles e
 > Within the course, we visited different collectives, cooperatives and other company models that were on a path towards cooperativism. These structures communicate with each other in interwoven, self-determined and fluid ways. Through this unique communication, they jointly develop sustainable and subjective solutions. Communication can help transport values, ideas and benefits of collectives and cooperatives. But because of the individuality of each co-structure, explaining them is often not easy. It takes curiosity and exploration to gain an understanding. I understand this work as an attempt to visualise the complex communication structure of cooperatives and verify the hypothesis if this can function as a mirror of the complex co-operative work environment.
 
 
-<img src='img/blank.png' class="noresize" style='width:7em'>
+<img src='img/vivien.png' class="noresize" style='width:7em'>
 Vivien Serve
 
 
@@ -778,7 +778,7 @@ Julia Semenikhina
 > Each everyday object the coop members use, subconsciously embody a value of the organization, this gets spread between the members as they use and share that object, helping them build the social environment the coop is shaped on.
 
 
-<img src='img/blank.png' class="noresize" style='width:7em'>
+<img src='img/beatrice.png' class="noresize" style='width:7em'>
 Beatrice Leone
 
 
@@ -787,12 +787,12 @@ Beatrice Leone
 
 ---
 <!--skipnav-->
-## [Interdependency and Collaboration in a Co-operative](https://fhp.incom.org/project/25416)
+## [Interdependency and Collaboration in a Co-operative](https://www.youtube.com/watch?v=LrMH18PGSMU)
 
 > The goal of this data visualization project is to demonstrate the relationships, interactions and overlaps within a cooperative, taking inspiration from the intricate yet incredibly powerful interactions of human cells. The project highlights the significance of working together towards a common goal, like how human cells collaborate to ensure the body functions properly. Exploring this concept delves into the collective entity that cooperatives embody.
 
 
-<img src='img/blank.png' class="noresize" style='width:7em'>
+<img src='img/dishunee.png' class="noresize" style='width:7em'>
 Dishunee Pandya
 
 
@@ -835,4 +835,4 @@ Georg Wähmer
 [<img src='img/fhp.svg' style='height:2.25em'>](https://www.fh-potsdam.de/) 
 [<img src='img/id.svg' style='height:1.75em'>](https://interface.fh-potsdam.de/) 
 
-[Imprint](https://www.fh-potsdam.de/impressum) · [Privacy](https://www.fh-potsdam.de/en/privacy) · *This is a [Syllabus Site](https://github.com/uclab-potsdam/syllabus-site/)*
+[Contact](mailto:marian.doerk@fh-potsdam.de,myriel.milicevic@fh-potsdam.de?subject=Organigrams%20for/from%20the%20future) · [Imprint](https://www.fh-potsdam.de/impressum) · *This is a [Syllabus Site](https://github.com/uclab-potsdam/syllabus-site/)*
