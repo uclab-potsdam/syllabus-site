@@ -325,16 +325,14 @@ async function updateView() {
 	sessions.map((session, sessionIndex) => {
 		session.items.map((item, itemIndex) => {
 			item.bounding = item.domObject.getBoundingClientRect()
-			let mobileQuery = "(max-width: 767px) and (orientation: portrait)";
-			if (window.matchMedia(mobileQuery)) item.height = item.bounding.height + window.innerHeight * 0.05
-			else item.height = item.bounding.height * 0.5 + window.innerHeight * 0.1
+			item.height = item.bounding.height * 0.75 + window.innerHeight * 0.1
 			if (itemIndex === 0) item.margin = 0
 			else item.margin = session.items[itemIndex - 1].margin + session.items[itemIndex - 1].height
 			session.height += item.bounding.height + window.innerHeight * 0.2
 		})
 		session.margin = sessionIndex == 0 ? 0 : sessions[sessionIndex - 1].margin + sessions[sessionIndex - 1].height
 		if (sessionIndex == 0) session.paddingStart = window.innerHeight
-		else session.paddingStart = window.innerHeight * 2
+		else session.paddingStart = window.innerHeight * 2.5
 		session.height += session.paddingStart
 		if (session.height < window.innerHeight) session.height = window.innerHeight
 		session.items.map((item, itemIndex) => {
@@ -464,11 +462,11 @@ function resetEnlargedImage() {
 }
 
 function updateItemPosition(item) {
-	//set height of session according to mobile or desktopy
+	//set height of session according to mobile or desktop
 
 	item.y = item.session.margin + //margin to the top
 		item.session.paddingStart + //height of the session padding-top
-		item.margin //margin to the top of the session
+		item.margin*1.25 //margin to the top of the session
 
 	item.varianz = item.left ? Math.random() * window.innerWidth * 0.1 : Math.random() * -window.innerWidth * 0.1
 	item.x = item.left ? window.innerWidth * 0.05 + item.varianz : window.innerWidth * 0.95 + item.varianz

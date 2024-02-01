@@ -716,7 +716,7 @@ Vivien Serve
 > In an environment mainly consisting of hierarchically organised companies some alternative ways of organising work emerge: cooperatives. What defines their way of growing? What is their influence on traditionally organised companies? How do they affect not only working environment but also our way of thinking?
 
 
-<img src='img/blank.png' class="noresize" style='width:7em'>
+<img src='img/jacky.png' class="noresize" style='width:7em'>
 Jaqueline Grob
 
 
@@ -725,12 +725,12 @@ Jaqueline Grob
 
 ---
 <!--skipnav-->
-## [Flexibility equals power](https://www.figma.com/file/sqE0zBAuWFxidxotFlhuSh/flexibility-equals-power-final?type=design&node-id=0-1&mode=design)
+## [Flexibility equals power](https://www.figma.com/proto/sqE0zBAuWFxidxotFlhuSh/flexibility-equals-power-final?node-id=1-391&starting-point-node-id=1%3A391&show-proto-sidebar=1&scaling=scale-down)
 
 > This prototype of an animated organigram illustrates the transformation from a hierarchical structured company to a cooperative one, highlighting the significance of flexibility and its effects on both individuals and the collective.
 
 
-<img src='img/blank.png' class="noresize" style='width:7em'>
+<img src='img/luka.png' class="noresize" style='width:7em'>
 Luka Saje
 
 
@@ -763,7 +763,7 @@ Chloé Le Mézo
 > This project explores the often sensitive and under-discussed topic of financial distribution within cooperatives. Despite a common belief that "money has no value" in such settings and that resources are equally shared, this research aims to uncover the actual dynamics at play. It delves into the origins of the funds in cooperatives, the methods of allocation among members, and the final monetary compensation each member receives.
 
 
-<img src='img/blank.png' class="noresize" style='width:7em'>
+<img src='img/julia.png' class="noresize" style='width:7em'>
 Julia Semenikhina
 
 
@@ -775,7 +775,7 @@ Julia Semenikhina
 <!--skipnav-->
 ## [Values of cooperatives](https://prezi.com/view/VSVmkvg7c5UTmqBrTZkw/)
 
-> Each everyday object the coop members use, subconsciously embody a value of the organization, this gets spread between the members as they use and share that object, helping them build the social environment the coop is shaped on.
+> Each everyday object the coop members uses, subconsciously embodies a value of the organization, which gets spread between the members as they use and share that object, helping them build the social environment the coop is shaped on.
 
 
 <img src='img/beatrice.png' class="noresize" style='width:7em'>
