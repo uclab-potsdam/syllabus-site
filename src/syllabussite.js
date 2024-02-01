@@ -26,7 +26,7 @@ document.onkeyup = function(e) {
 		}
 	}
 }
-fetch('content.md')
+fetch('README.md')
 	.then(data => data.text())
 	.then(text => {
 		let data = []
