@@ -1,26 +1,25 @@
 
 # Syllabus Site
 
-This is an experiment in documenting design courses and a template for displaying Markdown files as scrollable web pages.
+This is an experiment in documenting design courses and a template for rendering Markdown files as one-page websites.
 
-
-![](img/parallax.gif)
-The parallax effect separates items as foreground from sections as background.
 
 
 Design is all about process, yet we tend to focus on results when documenting design courses. This is an attempt to shift the focus from the latter to the former.
 
 
-This page tries to answer [Why](#why), [What](#what) & [How](#how). 
+Scroll along to find out  
+[why](#why), [what](#what), [how](#how) & [who](#who).  
+
 
 ---
 
 ## Why 
 
-In the realm of design education, there's a common emphasis on the final outcomes—be it presentations or prototypes. This focus, while essential, tends to sideline the  exploratory and dynamic process leading to these results. The journey to the final projects is marked by twists, turns, and tangents. This is where much of the learning and discovery occurs. 
+In the realm of design education and research, there's a common emphasis on outcomes—be it presentations, prototypes, or papers. This focus, while essential, tends to sideline the  exploratory and dynamic process leading to these results. The journey to the final projects is marked by twists, turns, and tangents. This is where much of the learning and discovery occurs. 
 
 
-*Syllabus Site* was conceived as a tool to highlight and document these critical but frequently overlooked aspects of design courses. It serves as a dynamic interface chronicling the semester-long voyage of seminar participants through an array of readings, activities, and discussions. This approach not only retains but celebrates the evolving nature of a design course's intellectual journey, ensuring that the wealth of shared inspirations—from historical examples and theoretical frameworks to contemporary projects and research studies—is preserved and made accessible. 
+*Syllabus Site* was conceived as a tool to highlight and document these critical but frequently overlooked aspects of design projects. It serves as a dynamic interface chronicling the voyage through readings, workshops, and discussions. This approach not only retains but celebrates the meandering nature of design education, research, and practice as intellectual journeys, ensuring that the wealth of shared inspirations—from historical examples and theoretical frameworks to contemporary projects and research studies—is preserved and made accessible. 
 
 
 ---
@@ -30,19 +29,25 @@ In the realm of design education, there's a common emphasis on the final outcome
 A *Syllabus Site* is a one-page website arranging its elements along sections that can be scrolled vertically.
 
 
+### Design
+
+The webpage is designed with the aim to open an evocative information space, where the sources that foster creativity, dialogue, and learning can be gathered, recapitulated, and appreciated. The monolithic structure of conventional documents is broken up, by introducing a relational quality to the connections between sections and items.
+
+
 ### Structure
 
-There are two types of elements:
+There two main types of elements:
 
 - **Sections** – Larger blocks gather the material for weekly course sessions.
 - **Items** – Smaller elements feature images, text, and other content.
 
 Each item is connected with its section by a thin line. The navigation (≡) gives access to all sections.
 
+The last section acts as the footer, where the typical array of logos and links belongs.
 
-### Design
 
-The webpage is designed with the aim to open a evocative information space, where the sources that foster creativity, dialogue, and learning can be gathered, recapitulated, and appreciated. The monolithic structure of conventional documents is broken up, by introducing a relational quality to the connections between sections and items.
+![](img/parallax.gif)
+A parallax effect separates items in the foreground from sections in the back.
 
 
 ### Examples
@@ -89,29 +94,48 @@ You do not need to change anything within **`src/`**, which contains the interna
 
 ### 📖 Syntax
 
-The `README.md` uses the [Markdown](https://en.wikipedia.org/wiki/Markdown) format, a markup language used by many platforms including GitHub.
+The **`README.md`** uses the [Markdown](https://en.wikipedia.org/wiki/Markdown) format, a markup language used by many platforms including GitHub.
 
 There are two conventions we introduce to distinguish and connect sections and items:
 
-- Sections are delineated by a horizontal rule `---` 
-- Items are separated by two empty consecutive lines
+- **Sections** are delineated by a horizontal rule `---` 
+- **Items** are separated by two empty consecutive lines
 
 Each section should contain a heading:
 `#` for primary, `##` for secondary, and so on.
 
+To exclude a section from the navigation menu, include `<!--skipnav-->` at the start of the section.
 
 
-### 📝 Roll your own
+
+### 📝  Get started
 
 1. Download or clone the [GitHub repository](https://github.com/uclab-potsdam/syllabus-site/)
-2. Add your content into `README.md` and `img/`
-3. Include title and open graph fields in `index.html` and adjust theme color
+2. Give your page a title, fill out open graph fields, and adjust theme color in `index.html`
+3. Add your content into `README.md` and `img/`
 
 
 ### ⚠️ Things to consider
 
-- Make sure to include an expressive preview image `img/cover.png` ideally in the dimensions 1200x630
-- Given that your webpage might be accessed from a mobile device, with a slow connection, and/or via a cellular data plan, make sure to optimize image file sizes.
+- Consider including an expressive preview image `img/cover.png` so that your page can be previewed on social media and messaging apps.
+- Given that your webpage might be accessed from a mobile device with a slow connection make sure to optimize image file sizes.
+
+---
+
+## Who
+
+*Syllabus Site* was put together by [Philipp Proff](https://philippproff.eu) and [Marian Dörk](https://mariandoerk.de) with the helping hands from many people.
+
+
+**Terrific typeface**: [HK Grotesk](https://github.com/HankenDesignCo/HK-Grotesk) by Alfredo Marco Pradil
+
+
+**Markdown munching**: [Marked](https://marked.js.org) by Christopher Jeffrey
+
+
+**Friendly feedback**: Myriel Milicevic, Lamin Manneh, Fidel Thomet, Mark-Jan Bludau, Sabine de Günther and Francesca Morini
+
+
 
 
 ---

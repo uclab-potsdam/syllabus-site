@@ -71,20 +71,24 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
 let lastScrollY = null;
 
 function updateCursor(currentSession, currentProgress) {
-	let cursor = d3.select('#cursor' + (currentSession.index))
-	if (cursor.node()) {
-		let cursorDimensions = cursor.node().getBoundingClientRect()
-		let cursorPosition =
-			(currentSession.margin + (currentSession.index == 0 ? window.innerHeight / 2 : window.innerHeight)) + //start from the bottom of the screen
-			(currentProgress * currentSession.height) - //add the progress of the current session
-			(currentProgress * (currentSession.index == 0 ? window.innerHeight / 2 : window.innerHeight)) - //subtract the progress of the window
-			(cursorDimensions.height / 2) //subtract half the height of the cursor
-		cursor.attr('style', `top:${cursorPosition}px;`);
-		cloneCursor('cursor' + (currentSession.index));
-		return updateLinks(currentSession, currentProgress, cursorDimensions)
-	}
-	return []
+    let cursorId = 'cursor' + currentSession.index;
+    let cursor = document.getElementById(cursorId);
+
+    if (cursor) {
+        let cursorDimensions = cursor.getBoundingClientRect();
+        let cursorPosition =
+            (currentSession.margin + (currentSession.index == 0 ? window.innerHeight / 2 : window.innerHeight)) + //start from the bottom of the screen
+            (currentProgress * currentSession.height) - //add the progress of the current session
+            (currentProgress * (currentSession.index == 0 ? window.innerHeight / 2 : window.innerHeight)) - //subtract the progress of the window
+            (cursorDimensions.height / 2); //subtract half the height of the cursor
+        
+        cursor.style.top = `${cursorPosition}px`;
+        cloneCursor(cursorId);
+        return updateLinks(currentSession, currentProgress, cursorDimensions);
+    }
+    return [];
 }
+
 
 function cloneCursor(originalDivId) {
 	const originalDiv = document.getElementById(originalDivId);
@@ -157,22 +161,33 @@ function animation() {
 }
 
 function update() {
-	let linkItems = []
-	sessions.map(session => {
-		if (session.margin <= window.scrollY + window.innerHeight) {
-			d3.select('#anchor' + (session.index))?.classed('active', (session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height)))
-			let currentProgress = (window.scrollY - session.margin) / session.height
-			if (currentProgress < 0) currentProgress = 0
-			linkItems.push(updateCursor(session, currentProgress))
-		} else {
-			d3.select('#anchor' + (session.index))?.classed('active', false)
-		}
-	})
-	drawLinks(linkItems.flat());
+    let linkItems = [];
+    sessions.map(session => {
+        let anchor = document.getElementById('anchor' + session.index);
+        if (session.margin <= window.scrollY + window.innerHeight) {
+            if (anchor) {
+                let isActive = session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height);
+                if (isActive) {
+                    anchor.classList.add('active');
+                } else {
+                    anchor.classList.remove('active');
+                }
+            }
+            let currentProgress = (window.scrollY - session.margin) / session.height;
+            if (currentProgress < 0) currentProgress = 0;
+            linkItems.push(updateCursor(session, currentProgress));
+        } else {
+            if (anchor) {
+                anchor.classList.remove('active');
+            }
+        }
+    });
+    drawLinks(linkItems.flat());
 
-	let clones = document.querySelectorAll('.clone');
-	if (clones.length > 1) removeInvisibleClones();
+    let clones = document.querySelectorAll('.clone');
+    if (clones.length > 1) removeInvisibleClones();
 }
+
 
 
 // NAVIGATION
@@ -204,9 +219,6 @@ function hashChange() {
 		resetEnlargedImage();
 	}
 }
-
-
-
 
 
 
@@ -318,82 +330,82 @@ function imagesLoaded() {
 		};
 	}
 }
+
+
 async function updateView() {
-	let anchors = d3.select('#anchors')
-	let cursors = d3.select('#cursors')
-	let domParser = new DOMParser();
-	sessions.map((session, sessionIndex) => {
-		session.items.map((item, itemIndex) => {
-			item.bounding = item.domObject.getBoundingClientRect()
-			item.height = item.bounding.height * 0.75 + window.innerHeight * 0.1
-			if (itemIndex === 0) item.margin = 0
-			else item.margin = session.items[itemIndex - 1].margin + session.items[itemIndex - 1].height
-			session.height += item.bounding.height + window.innerHeight * 0.2
-		})
-		session.margin = sessionIndex == 0 ? 0 : sessions[sessionIndex - 1].margin + sessions[sessionIndex - 1].height
-		if (sessionIndex == 0) session.paddingStart = window.innerHeight
-		else session.paddingStart = window.innerHeight * 2.5
-		session.height += session.paddingStart
-		if (session.height < window.innerHeight) session.height = window.innerHeight
-		session.items.map((item, itemIndex) => {
-			updateItemPosition(item, itemIndex)
-		})
-		//create menu item with scroll function
+    let anchors = document.getElementById('anchors');
+    let cursors = document.getElementById('cursors');
+    let domParser = new DOMParser();
+    sessions.map((session, sessionIndex) => {
+        session.items.map((item, itemIndex) => {
+            item.bounding = item.domObject.getBoundingClientRect();
+            item.height = item.bounding.height * 0.75 + window.innerHeight * 0.1;
+            if (itemIndex === 0) item.margin = 0;
+            else item.margin = session.items[itemIndex - 1].margin + session.items[itemIndex - 1].height;
+            session.height += item.bounding.height + window.innerHeight * 0.2;
+        });
+        session.margin = sessionIndex == 0 ? 0 : sessions[sessionIndex - 1].margin + sessions[sessionIndex - 1].height;
+        if (sessionIndex == 0) session.paddingStart = window.innerHeight;
+        else session.paddingStart = window.innerHeight * 2.5;
+        session.height += session.paddingStart;
+        if (session.height < window.innerHeight) session.height = window.innerHeight;
+        session.items.map((item, itemIndex) => {
+            updateItemPosition(item, itemIndex);
+        });
 
-		let title = "Start"
-		if (sessionIndex != 0) {
-			let html = domParser.parseFromString(marked.parse(session.text), 'text/html');
-			title = html.getElementsByTagName('h1');
-			if (title.length == 0) title = html.getElementsByTagName('h2')
-			if (title.length == 0) title = html.getElementsByTagName('h3')
-			if (title.length == 0) return
-			else title = title[0].textContent
-		}
-		session.hash = title.toLowerCase()
-		if (!(session.text.indexOf("<!--skipnav-->") > -1)) {
-			anchors.append('p')
-				.attr('class', 'anchor')
-				.attr('id', 'anchor' + sessionIndex)
-				.append('a')
-				.attr('href', '#' + session.hash)
-				.html(title)
-		}
-		let shadowCursor = cursors.append('div')
-			.attr('id', session.hash)
-			.attr('class', 'cursor--shadow')
-		shadowCursor.attr('style', `top:${sessionIndex == 0 ? session.margin: session.margin + session.height /2}px;`)
+        let title = "Start";
+        if (sessionIndex != 0) {
+            let html = domParser.parseFromString(marked.parse(session.text), 'text/html');
+            title = html.getElementsByTagName('h1');
+            if (title.length == 0) title = html.getElementsByTagName('h2');
+            if (title.length == 0) title = html.getElementsByTagName('h3');
+            if (title.length == 0) return;
+            else title = title[0].textContent;
+        }
+        session.hash = title.toLowerCase().replace(/\s+/g, '-'); // Ensure the hash is URL-friendly
+        if (!session.text.includes("<!--skipnav-->")) {
+            let p = document.createElement('p');
+            p.classList.add('anchor');
+            p.id = 'anchor' + sessionIndex;
+            let a = document.createElement('a');
+            a.setAttribute('href', '#' + session.hash);
+            a.innerHTML = title;
+            p.appendChild(a);
+            anchors.appendChild(p);
+        }
+        let shadowCursor = document.createElement('div');
+        shadowCursor.id = session.hash;
+        shadowCursor.className = 'cursor--shadow';
+		let topValue = sessionIndex === 0 ? session.margin : session.margin + session.height / 2;
+        shadowCursor.style.top = topValue+"px"
+        cursors.appendChild(shadowCursor);
 
-		let cursor = cursors.append('div')
-			.attr('class', 'cursor')
-			.attr('id', 'cursor' + sessionIndex)
-			.html(marked.parse(session.text))
+        let cursor = document.createElement('div');
+        cursor.className = 'cursor';
+        cursor.id = 'cursor' + sessionIndex;
+        cursor.innerHTML = marked.parse(session.text);
+        cursor.style.top = session.margin+"px";
+        cursors.appendChild(cursor);
+    });
 
-		cursor.attr('style', `top:${session.margin}px;`)
-	})
-	//set height and padding according to datasize
-	let height = window.innerHeight*1.5+sessions.reduce((accumulator, session) => {
-		return accumulator += session.height
-	}, 0)
-	//set the body height to the height of the data
+    let height = window.innerHeight * 1.5 + sessions.reduce((accumulator, session) => {
+        return accumulator += session.height;
+    }, 0);
 
-	// sessions
-	let elements = ['#wrapper', '#app']
-	elements.map(element => {
-		document.querySelector(element).style.height = height + 'px'
-	})
-	document.querySelectorAll('.content').forEach(n => {
-		n.style.visibility = 'visible'
-	})
-	document.querySelector('footer').style.visibility = 'visible';
+    ['#wrapper', '#app'].forEach(element => {
+        document.querySelector(element).style.height = height + 'px';
+    });
+    document.querySelectorAll('.content').forEach(n => {
+        n.style.visibility = 'visible';
+    });
+    document.querySelector('footer').style.visibility = 'visible';
 
-	// open links in new tab/window
-	document.querySelectorAll('a').forEach(link => {
-		if (!link.getAttribute('href').startsWith('#')) {
-			link.target = '_blank';
-		}
-	});
+    document.querySelectorAll('a').forEach(link => {
+        if (!link.getAttribute('href').startsWith('#')) {
+            link.target = '_blank';
+        }
+    });
 
-	// images to be resized
 	document.querySelectorAll('.content p > img:not(.noresize)').forEach(img => {
 		img.addEventListener('click', function(e) {
 			e.preventDefault();
@@ -434,9 +446,10 @@ async function updateView() {
 			}
 		})
 	});
-	setTimeout(() => {
-		animation()
-	}, 100)
+
+    setTimeout(() => {
+        animation();
+    }, 100);
 }
 
 function preventDefault(e) {
