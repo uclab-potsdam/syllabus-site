@@ -33,9 +33,9 @@ body {
     font-family: hkgrotesk, sans-serif;
 	touch-action: pan-x pan-y;
     --background-menu: hsla(0, 0%, 100%, .8);
-    --background: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 95%, 1));
-    --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 100%, .9));
-    --background-content: color-mix(in srgb, var(--theme-color)  5%, hsla(0, 0%, 100%, .9));
+    --background: color-mix(in srgb, var(--theme-color) 15%, hsla(0, 0%, 90%, 1));
+    --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 95%, .9));
+    --background-content: color-mix(in srgb, var(--theme-color) 5%, hsla(0, 0%, 100%, .95));
     --font: #000;
     --font-inverted: #fff;
     --link: color-mix(in srgb, var(--theme-color), var(--font));
@@ -49,9 +49,9 @@ body {
 @media (prefers-color-scheme: dark) {
     body, body.overlay{
         --background-menu: hsla(0, 0%, 0%, .8);
-        --background: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 5%, 1));
+        --background: color-mix(in srgb, var(--theme-color) 5%, hsla(0, 0%, 5%, 1));
         --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 10%, .9));
-        --background-content: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 15%, .9));
+        --background-content: color-mix(in srgb, var(--theme-color) 15%, hsla(0, 0%, 15%, .95));
         --font: #fff;
         --font-inverted: #000;
     }

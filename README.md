@@ -1,7 +1,7 @@
 
 # Syllabus Site
 
-An experiment in documenting the process of design courses and a template for displaying Markdown files as scrollable web pages.
+This is an experiment in documenting design courses and a template for displaying Markdown files as scrollable web pages.
 
 
 ![](img/parallax.gif)
