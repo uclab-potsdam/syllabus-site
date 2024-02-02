@@ -36,7 +36,7 @@ The webpage is designed with the aim to open an evocative information space, whe
 
 ### Structure
 
-There two main types of elements:
+There are two main types of elements:
 
 - **Sections** – Larger blocks gather the material for weekly course sessions.
 - **Items** – Smaller elements feature images, text, and other content.
