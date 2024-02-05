@@ -140,7 +140,7 @@ To exclude a section from the navigation menu, include `<!--skipnav-->` at the s
 **Friendly feedback**: Myriel Milicevic, Lamin Manneh, Fidel Thomet, Mark-Jan Bludau, Sabine de Günther and Francesca Morini
 
 
-**Liberal license**: Syllabus Site is [made available](https://github.com/uclab-potsdam/syllabus-site/) under an MIT license. Feel free to reuse and revise!
+**Yes, you!**: Syllabus Site is [made available](https://github.com/uclab-potsdam/syllabus-site/) under the liberal MIT license. Feel free to reuse and revise it!
 
 
 
