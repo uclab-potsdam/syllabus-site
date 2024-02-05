@@ -15,16 +15,16 @@
       }
 
       .cls-2 {
-        stroke: #58595b;
+        stroke: #939598;
         stroke-miterlimit: 10;
-        stroke-width: 5px;
+        stroke-width: 8px;
       }
     </style>
   </defs>
   <rect class="cls-1" width="256" height="256"/>
-  <line class="cls-2" x1="135.52" y1="97.19" x2="190.14" y2="156.11"/>
-  <line class="cls-2" x1="110.57" y1="96.04" x2="48.92" y2="190.76"/>
-  <rect class="cls-3" x="15.73" y="183.66" width="82.14" height="54.44" rx="5.17" ry="5.17"/>
-  <rect class="cls-3" x="153.33" y="145.71" width="82.14" height="54.44" rx="5.17" ry="5.17"/>
-  <rect class="cls-4" x="65.33" y="35.9" width="118.48" height="76.9" rx="13.41" ry="13.41"/>
+  <line class="cls-2" x1="148.97" y1="89.47" x2="195.8" y2="156.58"/>
+  <line class="cls-2" x1="108.74" y1="82.55" x2="55.49" y2="189.96"/>
+  <rect class="cls-3" x="9.3" y="186.69" width="94.89" height="62.89" rx="5.17" ry="5.17"/>
+  <rect class="cls-3" x="156.09" y="147.79" width="92.78" height="44.95" rx="5.17" ry="5.17"/>
+  <rect class="cls-4" x="62.57" y="10.29" width="130.85" height="84.93" rx="13.41" ry="13.41"/>
 </svg>
