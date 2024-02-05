@@ -19,7 +19,10 @@ Scroll along to find out
 In the realm of design education and research, there's a common emphasis on outcomes—be it presentations, prototypes, or papers. This focus, while essential, tends to sideline the  exploratory and dynamic process leading to these results. The journey to the final projects is marked by twists, turns, and tangents. This is where much of the learning and discovery occurs. 
 
 
-*Syllabus Site* was conceived as a tool to highlight and document these critical but frequently overlooked aspects of design projects. It serves as a dynamic interface chronicling the voyage through readings, workshops, and discussions. This approach not only retains but celebrates the meandering nature of design education, research, and practice as intellectual journeys, ensuring that the wealth of shared inspirations—from historical examples and theoretical frameworks to contemporary projects and research studies—is preserved and made accessible. 
+*Syllabus Site* was conceived as a tool to highlight and document these critical but frequently overlooked aspects of design projects. It serves as a dynamic interface chronicling the voyage through readings, workshops, and discussions.
+
+
+This approach not only retains but celebrates the meandering nature of design as an intellectual journey, ensuring that the wealth of inspirations—from historical examples and theoretical frameworks to contemporary projects and research studies—is preserved and made accessible. 
 
 
 ---
@@ -117,8 +120,9 @@ To exclude a section from the navigation menu, include `<!--skipnav-->` at the s
 
 ### ⚠️ Things to consider
 
-- Consider including an expressive preview image `img/cover.png` so that your page can be previewed on social media and messaging apps.
+- Include an expressive preview image `img/cover.png` so that your page can be previewed on social media and messaging apps.
 - Given that your webpage might be accessed from a mobile device with a slow connection make sure to optimize image file sizes.
+
 
 ---
 
@@ -135,6 +139,8 @@ To exclude a section from the navigation menu, include `<!--skipnav-->` at the s
 
 **Friendly feedback**: Myriel Milicevic, Lamin Manneh, Fidel Thomet, Mark-Jan Bludau, Sabine de Günther and Francesca Morini
 
+
+**Liberal license**: Syllabus Site is [made available](https://github.com/uclab-potsdam/syllabus-site/) under an MIT license. Feel free to reuse and revise!
 
 
 
