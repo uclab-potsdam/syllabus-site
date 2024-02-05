@@ -131,10 +131,10 @@ To exclude a section from the navigation menu, include `<!--skipnav-->` at the s
 *Syllabus Site* was put together by [Philipp Proff](https://philippproff.eu) and [Marian Dörk](https://mariandoerk.de) with the helping hands from many people.
 
 
-**Terrific typeface**: [HK Grotesk](https://github.com/HankenDesignCo/HK-Grotesk) by Alfredo Marco Pradil
-
-
 **Markdown munching**: [Marked](https://marked.js.org) by Christopher Jeffrey
+
+
+**Terrific typeface**: [HK Grotesk](https://github.com/HankenDesignCo/HK-Grotesk) by Alfredo Marco Pradil
 
 
 **Friendly feedback**: Myriel Milicevic, Lamin Manneh, Fidel Thomet, Mark-Jan Bludau, Sabine de Günther and Francesca Morini
