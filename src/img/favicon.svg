@@ -7,11 +7,11 @@
       }
 
       .cls-3 {
-        fill: #a7a9ac;
+        fill: #b6b8ba;
       }
 
       .cls-4 {
-        fill: #6d6e71;
+        fill: #757679;
       }
 
       .cls-2 {
@@ -24,7 +24,7 @@
   <rect class="cls-1" width="256" height="256"/>
   <line class="cls-2" x1="148.97" y1="89.47" x2="195.8" y2="156.58"/>
   <line class="cls-2" x1="108.74" y1="82.55" x2="55.49" y2="189.96"/>
-  <rect class="cls-3" x="9.3" y="186.69" width="94.89" height="62.89" rx="5.17" ry="5.17"/>
-  <rect class="cls-3" x="156.09" y="147.79" width="92.78" height="44.95" rx="5.17" ry="5.17"/>
-  <rect class="cls-4" x="62.57" y="10.29" width="130.85" height="84.93" rx="13.41" ry="13.41"/>
+  <rect class="cls-3" x="9" y="180" width="90" height="60"/>
+  <rect class="cls-3" x="155" y="147.5" width="90" height="45"/>
+  <rect class="cls-4" x="63" y="12.5" width="130" height="85" rx="13.41" ry="13.41"/>
 </svg>
