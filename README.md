@@ -24,10 +24,9 @@ In the realm of design education and research, there's a common emphasis on outc
 
 This approach not only retains but celebrates the meandering nature of design as an intellectual journey, ensuring that the wealth of inspirations—from historical examples and theoretical frameworks to contemporary projects and research studies—is preserved and made accessible. 
 
-
 ---
 
-## What 
+## What
 
 A *Syllabus Site* is a one-page website arranging its elements along sections that can be scrolled vertically.
 
@@ -49,9 +48,6 @@ Each item is connected with its section by a thin line. The navigation (≡) giv
 The last section acts as the footer, where the typical array of logos and links belongs.
 
 
-![](img/parallax.gif)
-A parallax effect separates items in the foreground from sections in the back.
-
 
 ### Examples
 
@@ -61,11 +57,11 @@ So far the template has been used to document the following courses offered at [
 - **[Organigrams for/from the future](https://infovis.fh-potsdam.de/organigrams/)** (Summer 2023)
 
 
-![](img/decolonizing.png)
+![](img/decolonizing.webp)
 [Decolonizing Data Visualization – Visualizing Postcolonies](https://infovis.fh-potsdam.de/decolonizing/)  
 
 
-![](img/organigrams.png)
+![](img/organigrams.webp)
 [Organigrams for/from the future](https://infovis.fh-potsdam.de/organigrams/)  
 
 
@@ -88,16 +84,16 @@ The template has the following file structure:
       src/
       README.md
 
-The **`README.md`** file contains all the textual content of your page and references the images that you need to add to the **`img/`** directory. 
+The `README.md` file contains all the textual content of your page and references the images that you need to add to the `img/` directory. 
 
-The **`index.html`** file connects template and your content; here you need to make a few edits to add title, description, and preview of your webpage. 
+The `index.html` file connects template and your content; here you need to make a few edits to add title, description, and preview of your webpage. 
 
-You do not need to change anything within **`src/`**, which contains the internal files of the template.
+You do not need to change anything within `src/`, which contains the internal files of the template.
 
 
 ### 📖 Syntax
 
-The **`README.md`** uses the [Markdown](https://en.wikipedia.org/wiki/Markdown) format, a markup language used by many platforms including GitHub.
+The `README.md` uses the [Markdown](https://en.wikipedia.org/wiki/Markdown) format, a markup language used by many platforms including GitHub.
 
 There are two conventions we introduce to distinguish and connect sections and items:
 
