@@ -49,6 +49,7 @@ Each item is connected with its section by a thin line. The navigation (≡) giv
 The last section acts as the footer, where the typical array of logos and links belongs.
 
 
+
 ### Examples
 
 So far the template has been used to document the following courses offered at [FH Potsdam](https://www.fh-potsdam.de/) in the [Interface Design](https://interface.fh-potsdam.de) program:
@@ -71,6 +72,10 @@ So far the template has been used to document the following courses offered at [
 ## How
 
 The *Syllabus Site* template can be easily used with minimal technical requirements.
+
+
+![](img/sidebyside.webp)
+Page content and source side by side
 
 
 ### Files
