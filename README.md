@@ -50,9 +50,12 @@ The last section acts as the footer, where the typical array of logos and links 
 
 
 
-### Examples
+---
 
-So far the template has been used to document the following courses offered at [FH Potsdam](https://www.fh-potsdam.de/) in the [Interface Design](https://interface.fh-potsdam.de) program:
+
+## Where
+
+The template is in use to document the following [Interface Design](https://interface.fh-potsdam.de) courses offered at [FH Potsdam](https://www.fh-potsdam.de/):
 
 - **[Decolonizing Data Visualization – Visualizing Postcolonies](https://infovis.fh-potsdam.de/decolonizing/)** (Summer 2022)
 - **[Organigrams for/from the future](https://infovis.fh-potsdam.de/organigrams/)** (Summer 2023)
@@ -76,6 +79,13 @@ The *Syllabus Site* template can be easily used with minimal technical requireme
 
 ![](img/sidebyside.webp)
 Page content and source side by side
+
+
+### Get started
+
+1. Download or clone the [GitHub repository](https://github.com/uclab-potsdam/syllabus-site/)
+2. Give your page a title, fill out open graph fields, and adjust theme color in `index.html`
+3. Add your content into `README.md` and `img/`
 
 
 ### Files
@@ -108,12 +118,6 @@ Each section should contain a heading:
 
 To exclude a section from the navigation menu, include `<!--skipnav-->` at the start of the section.
 
-
-### Get started
-
-1. Download or clone the [GitHub repository](https://github.com/uclab-potsdam/syllabus-site/)
-2. Give your page a title, fill out open graph fields, and adjust theme color in `index.html`
-3. Add your content into `README.md` and `img/`
 
 
 ### Things to consider
