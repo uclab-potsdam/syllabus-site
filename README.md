@@ -12,6 +12,7 @@ Scroll along to find out
 
 ---
 
+
 ## Why 
 
 In the realm of design education and research, there's a common emphasis on outcomes—be it presentations, prototypes, or papers. This focus, while essential, tends to sideline the  exploratory and dynamic process leading to these results. The journey to the final projects is marked by twists, turns, and tangents. This is where much of the learning and discovery occurs. 
@@ -22,7 +23,9 @@ In the realm of design education and research, there's a common emphasis on outc
 
 This approach not only retains but celebrates the meandering nature of design as an intellectual journey, ensuring that the wealth of inspirations—from historical examples and theoretical frameworks to contemporary projects and research studies—is preserved and made accessible. 
 
+
 ---
+
 
 ## What
 
@@ -46,7 +49,6 @@ Each item is connected with its section by a thin line. The navigation (≡) giv
 The last section acts as the footer, where the typical array of logos and links belongs.
 
 
-
 ### Examples
 
 So far the template has been used to document the following courses offered at [FH Potsdam](https://www.fh-potsdam.de/) in the [Interface Design](https://interface.fh-potsdam.de) program:
@@ -63,17 +65,15 @@ So far the template has been used to document the following courses offered at [
 [Organigrams for/from the future](https://infovis.fh-potsdam.de/organigrams/)  
 
 
-
-
-
 ---
+
 
 ## How
 
 The *Syllabus Site* template can be easily used with minimal technical requirements.
 
 
-### 🗄️ Files
+### Files
 
 The template has the following file structure:
 
@@ -89,7 +89,7 @@ The `index.html` file connects template and your content; here you need to make 
 You do not need to change anything within `src/`, which contains the internal files of the template.
 
 
-### 📖 Syntax
+### Syntax
 
 The `README.md` uses the [Markdown](https://en.wikipedia.org/wiki/Markdown) format, a markup language used by many platforms including GitHub.
 
@@ -104,21 +104,21 @@ Each section should contain a heading:
 To exclude a section from the navigation menu, include `<!--skipnav-->` at the start of the section.
 
 
-
-### 📝  Get started
+### Get started
 
 1. Download or clone the [GitHub repository](https://github.com/uclab-potsdam/syllabus-site/)
 2. Give your page a title, fill out open graph fields, and adjust theme color in `index.html`
 3. Add your content into `README.md` and `img/`
 
 
-### ⚠️ Things to consider
+### Things to consider
 
 - Include an expressive preview image `img/cover.png` so that your page can be previewed on social media and messaging apps.
 - Given that your webpage might be accessed from a mobile device with a slow connection make sure to optimize image file sizes.
 
 
 ---
+
 
 ## Who
 
@@ -137,8 +137,8 @@ To exclude a section from the navigation menu, include `<!--skipnav-->` at the s
 **Yes, you!**: Syllabus Site is [made available](https://github.com/uclab-potsdam/syllabus-site/) under the liberal MIT license. Feel free to reuse and revise it!
 
 
-
 ---
+
 
 [<img src='img/fhp.svg' style='height:2.25em'>](https://www.fh-potsdam.de/) 
 [<img src='img/id.svg' style='height:1.75em'>](https://interface.fh-potsdam.de/) 
