@@ -49,11 +49,7 @@ Each item is connected with its section by a thin line. The navigation (≡) giv
 The last section acts as the footer, where the typical array of logos and links belongs.
 
 
-
----
-
-
-## Where
+## Examples
 
 The template is in use to document the following [Interface Design](https://interface.fh-potsdam.de) courses offered at [FH Potsdam](https://www.fh-potsdam.de/):
 
