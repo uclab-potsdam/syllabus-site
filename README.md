@@ -57,11 +57,11 @@ The template is in use to document the following [Interface Design](https://inte
 - **[Organigrams for/from the future](https://infovis.fh-potsdam.de/organigrams/)** (Summer 2023)
 
 
-![](img/decolonizing.webp)
+![](img/decolonizing.webp)  
 [Decolonizing Data Visualization – Visualizing Postcolonies](https://infovis.fh-potsdam.de/decolonizing/)  
 
 
-![](img/organigrams.webp)
+![](img/organigrams.webp)  
 [Organigrams for/from the future](https://infovis.fh-potsdam.de/organigrams/)  
 
 
@@ -73,7 +73,7 @@ The template is in use to document the following [Interface Design](https://inte
 The *Syllabus Site* template can be easily used with minimal technical requirements.
 
 
-![](img/sidebyside.webp)
+![](img/sidebyside.webp)  
 Page content and source side by side
 
 

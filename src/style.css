@@ -104,23 +104,25 @@ p,li {
     margin: 0;
     font-size: 1em;
 }
+
 li {
     margin-bottom: 0.25em;
 }
+
 div.hasImg {
     background: none;
     max-width: 20em;
     text-align: center;
     padding: 0;
 }
+
 div.hasImg p {
     margin-top: 0;
 }
 
 div.hasImg img {    
-    display: block;
     margin: auto;
-    padding: 0 0 0.5em 0;
+    padding: 0;
 }
 
 div.hasImg span {
