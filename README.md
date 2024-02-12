@@ -57,14 +57,14 @@ The template is in use to document the following [Interface Design](https://inte
 - **[Organigrams for/from the future](https://infovis.fh-potsdam.de/organigrams/)** (Summer 2023)
 
 
+<img src='img/decolonizing.webp' class='noresize'>
 
-[![](img/decolonizing.webp)  
-Decolonizing Data Visualization – Visualizing Postcolonies](https://infovis.fh-potsdam.de/decolonizing/)  
+[Decolonizing Data Visualization – Visualizing Postcolonies](https://infovis.fh-potsdam.de/decolonizing/)
 
 
+<img src='img/organigrams.webp' class='noresize'>
 
-[![](img/organigrams.webp)  
-Organigrams for/from the future](https://infovis.fh-potsdam.de/organigrams/)  
+[Organigrams for/from the future](https://infovis.fh-potsdam.de/organigrams/)
 
 
 ---

@@ -298,35 +298,45 @@ function createBaseData(json) {
 	imagesLoaded()
 	updateView()
 }
-function wrapCaptions() {
-		// wrap image captions with a span
-		document.querySelectorAll('div.content').forEach(div => {
-			// Check if there's exactly one image inside the div
-			const images = div.querySelectorAll('img');
-			if (images.length === 1) {
-				let img = images[0];
 
-				div.classList.add('hasImg');
+function wrapCaptions() {
+	document.querySelectorAll('div.content').forEach(div => {
+		const imgElement = div.querySelector('img:first-child');
+		if (imgElement) {
+			div.classList.add('hasImg');
+			const figure = document.createElement('figure');
+			figure.appendChild(imgElement);
+			const textNodes = Array.from(div.childNodes);
+			// Create a caption element and append the text nodes
+			const caption = document.createElement('figcaption');
+			
+			// Iterate through child nodes, handle text and elements differently
+			Array.from(div.childNodes).forEach(node => {
+				if (node.nodeType === Node.TEXT_NODE) {
+				if (typeof node.innerHTML !== "undefined") caption.appendChild(node);
+				} else if (node.tagName === 'P') {
+					let figpar = node.innerHTML.trim().replace(/^\<br\>/, "");
+					caption.innerHTML += figpar;
+				} else {
+				// Append other elements as-is
+				caption.appendChild(node);
+				}
+			});  
 	
-				// Case 1: Image outside, caption inside paragraph
-				if (img.parentElement.tagName !== 'P' && img.nextElementSibling?.tagName === 'P') {
-					const p = img.nextElementSibling;
-					p.innerHTML = `<span>${p.innerHTML}</span>`;
-				} 
-				// Case 2: Both image and caption inside paragraph
-				else if (img.parentElement.tagName === 'P') {
-					const p = img.parentElement;
-					const restOfContent = p.innerHTML.split(img.outerHTML)[1];
-					p.innerHTML = img.outerHTML + `<span>${restOfContent}</span>`;
-				}
-				// Case 3: No paragraph element, and no link
-				else if (img.parentElement.tagName !== 'A') {			
-					const restOfContent = div.innerHTML.split(img.outerHTML)[1];
-					div.innerHTML = img.outerHTML + `<span>${restOfContent}</span>`;
-				}
-			}
-		});	
+			caption.innerHTML = "<span>"+caption.innerHTML+"</span>";
+
+			// Append the caption to the figure
+			figure.appendChild(caption);
+	
+			// Clear the content of the div
+			div.innerHTML = "";
+	
+			// Append the figure to the div
+			div.appendChild(figure);
+		}
+	});
 }
+
 function imagesLoaded() {
 	var images = document.getElementsByTagName('img');
 	for (var i = 0; i < images.length; i++) {		
@@ -412,12 +422,9 @@ async function updateView() {
         }
     });
 
-	document.querySelectorAll('.content p > img:not(.noresize)').forEach(img => {
+	document.querySelectorAll('.content > figure > img:not(.noresize)').forEach(img => {
 		img.addEventListener('click', function(e) {
-			
 			if (e.target.parentElement.tagName === 'A') return;
-
-			e.preventDefault();
 
 			let content = img.closest('.content');
 			let app = document.querySelector('#app');
