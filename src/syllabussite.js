@@ -305,6 +305,7 @@ function wrapCaptions() {
 			const images = div.querySelectorAll('img');
 			if (images.length === 1) {
 				let img = images[0];
+
 				div.classList.add('hasImg');
 	
 				// Case 1: Image outside, caption inside paragraph
@@ -318,8 +319,8 @@ function wrapCaptions() {
 					const restOfContent = p.innerHTML.split(img.outerHTML)[1];
 					p.innerHTML = img.outerHTML + `<span>${restOfContent}</span>`;
 				}
-				// Case 3: No paragraph element
-				else {
+				// Case 3: No paragraph element, and no link
+				else if (img.parentElement.tagName !== 'A') {			
 					const restOfContent = div.innerHTML.split(img.outerHTML)[1];
 					div.innerHTML = img.outerHTML + `<span>${restOfContent}</span>`;
 				}
@@ -413,6 +414,9 @@ async function updateView() {
 
 	document.querySelectorAll('.content p > img:not(.noresize)').forEach(img => {
 		img.addEventListener('click', function(e) {
+			
+			if (e.target.parentElement.tagName === 'A') return;
+
 			e.preventDefault();
 
 			let content = img.closest('.content');
