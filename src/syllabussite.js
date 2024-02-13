@@ -263,11 +263,6 @@ function drawLinks(items) {
 		ctx.moveTo(item.linePath[0], item.linePath[1]);
 		ctx.lineTo(item.linePath[2], item.linePath[3]);
 		ctx.stroke();
-
-		ctx.beginPath();
-		ctx.arc(item.linePath[2], item.linePath[3], fs/5, 0, Math.PI * 2, true); 
-		ctx.fillStyle = lineColor; 
-		ctx.fill();
 	});
 }
 
