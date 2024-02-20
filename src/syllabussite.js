@@ -155,20 +155,23 @@ function update() {
 	sessions.map(session => {
 		let sessionProgress = (window.scrollY - session.margin) / session.height;
 		let [cursorPosition, cursorHeight] = updateCursor(session, sessionProgress)
-		if (session.anchor != undefined) {
-			if (session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height)) {
+		if (session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height)) {
+			if (session.anchor != undefined) {
 				session.anchor.classList.add('active');
-				let anchor1 = [window.innerWidth / 2, cursorPosition + cursorHeight / 2];
-				session.items.map((item) => {
-					let bounding = item.domObject.getBoundingClientRect();
-					let anchor4 = [bounding.left + bounding.width / 2, bounding.top + bounding.height / 2];
-					item.linePath = [...anchor1, ...anchor4];
-				});
-				links.push(session.items)
-			} else {
+			} 
+			let anchor1 = [window.innerWidth / 2, cursorPosition + cursorHeight / 2];
+			session.items.map((item) => {
+				let bounding = item.domObject.getBoundingClientRect();
+				let anchor4 = [bounding.left + bounding.width / 2, bounding.top + bounding.height / 2];
+				item.linePath = [...anchor1, ...anchor4];
+			});
+			links.push(session.items)
+		}else{
+			if (session.anchor != undefined) {
 				session.anchor.classList.remove('active');
 			}
 		}
+
 	})
 	updateLinks(links.flat());
 }
