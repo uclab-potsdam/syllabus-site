@@ -165,6 +165,7 @@ p {
  /* Specific styles */
 #wrapper {
     position: absolute;
+    visibility: hidden;
     width: 100%;
     top: 0;
     left: 0;
@@ -172,20 +173,20 @@ p {
     justify-content: center;
 }
 .cursor, .cursor--shadow {
-    position: absolute;
     max-width: 25em;
     background-color: var(--background-cursor);
     padding: 1em 1.5em;
     pointer-events: all;
     z-index: 1;
     will-change: top;
-    visibility: hidden;
     border-radius: 1em;
 }
-.cursor.clone, .cursor--shadow.clone {
+.cursor{
+    position: fixed;
     visibility: visible;
 }
 .cursor--shadow {
+    position: absolute;
     visibility:  hidden;
 }
 #cursor0, #cursor0_clone { max-width: 30em;}
@@ -213,7 +214,6 @@ p {
     padding: 0.25em .75em;
     max-width: 25em;
     background-color: var(--background-content);
-    visibility: hidden;
     z-index:2;
     border-radius: .5em;
     font-size: 0.85em;
@@ -299,11 +299,11 @@ a[href^="#"]:hover {
     color: var(--font) !important;
 }
 footer{
-    visibility: hidden;
     display:flex;
     justify-content: space-between;    
     padding: 2em 2em 1em 2em;
     font-size: 1em;
+    margin-top: 100vh;
     background-color: var(--background);
     color: var(--font);
 }
