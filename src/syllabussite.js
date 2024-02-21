@@ -45,7 +45,7 @@ async function init() {
 			item.bounding = item.domObject.getBoundingClientRect();
 			item.height = item.bounding.height * 0.9 + window.innerHeight * 0.1;
 			item.margin = item.index === 0 ? 0 : session.items[item.index - 1].margin + session.items[item.index - 1].height;
-			if (item.index===0 && session.index===0) item.margin = window.innerHeight/3;
+			if (item.index===0 && session.index===0) item.margin = item.height;
 			item.varianz = item.left ? Math.random() * window.innerWidth * 0.1 : Math.random() * -window.innerWidth * 0.1
 			item.x = item.left ? window.innerWidth * 0.05 + item.varianz : window.innerWidth * 0.95 + item.varianz
 
