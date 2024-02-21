@@ -43,17 +43,18 @@ async function init() {
 
 			item.domObject = itemHTMLRootElement;
 			item.bounding = item.domObject.getBoundingClientRect();
-			item.height = item.bounding.height * 0.75 + window.innerHeight * 0.1;
+			item.height = item.bounding.height * 0.9 + window.innerHeight * 0.1;
 			item.margin = item.index === 0 ? 0 : session.items[item.index - 1].margin + session.items[item.index - 1].height;
+			if (item.index===0 && session.index===0) item.margin = window.innerHeight/3;
 			item.varianz = item.left ? Math.random() * window.innerWidth * 0.1 : Math.random() * -window.innerWidth * 0.1
 			item.x = item.left ? window.innerWidth * 0.05 + item.varianz : window.innerWidth * 0.95 + item.varianz
 
-			session.height += item.bounding.height + window.innerHeight * 0.2;
+			session.height += item.bounding.height + window.innerHeight * 0.5;
 			session.items.push(item);
 		})
 		// ADJUST SESSION HEIGHT, MARGIN AND PADDING
-		session.margin = session.index == 0 ? 0 : sessions[session.index - 1].margin + sessions[session.index - 1].height - sessions[session.index - 1].padding;
-		session.padding = window.innerHeight * 1.5;
+		session.margin = session.index == 0 ? -session.height/3 : sessions[session.index - 1].margin + sessions[session.index - 1].height - sessions[session.index - 1].padding;
+		session.padding = window.innerHeight * 1.75;
 		session.height += session.padding;
 
 		// SET POSITION OF ITEMS
@@ -226,9 +227,6 @@ function preventDefault(e) {
 	resetEnlargedImage();
 }
 
-function calculateDistanceY(p1, p2) {
-	return Math.abs(p2[1] - p1[1]);
-}
 function resetEnlargedImage() {
 	document.body.removeEventListener('touchstart', preventDefault);
 	document.body.removeEventListener('wheel', preventDefault);
