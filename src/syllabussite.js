@@ -226,10 +226,6 @@ function preventDefault(e) {
 	resetEnlargedImage();
 }
 
-function remapRange(value, low1, high1, low2, high2) {
-	return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
-}
-
 function calculateDistanceY(p1, p2) {
 	return Math.abs(p2[1] - p1[1]);
 }
