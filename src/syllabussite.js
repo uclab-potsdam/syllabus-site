@@ -94,9 +94,7 @@ function setHTML(session, anchors, cursors) {
 	let title = "Start";
 	let parser = new DOMParser();
 	if (session.index > 0){
-		let titleObject = marked.parse(session.text.split('\n').shift())
-		console.log(titleObject)
-		let parsed = parser.parseFromString(titleObject, 'text/html')
+		let parsed = parser.parseFromString(marked.parse(session.text), 'text/html')
 		title = parsed.querySelector('h1')?.innerHTML
 		if(title == null) title = parsed.querySelector('h2')?.innerHTML
 		if(title == null) title = parsed.querySelector('h3')?.innerHTML
