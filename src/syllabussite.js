@@ -52,9 +52,9 @@ async function init() {
 			session.items.push(item);
 		})
 		// ADJUST SESSION HEIGHT, MARGIN AND PADDING
-		session.margin = session.index == 0 ? 0 : sessions[session.index - 1].margin + sessions[session.index - 1].height - window.innerHeight;
-		session.padding = window.innerHeight;
-		session.height += session.padding * 2;
+		session.margin = session.index == 0 ? 0 : sessions[session.index - 1].margin + sessions[session.index - 1].height - sessions[session.index - 1].padding;
+		session.padding = window.innerHeight * 1.5;
+		session.height += session.padding;
 
 		// SET POSITION OF ITEMS
 		session.items.map((item) => {
@@ -91,7 +91,19 @@ async function init() {
 window.onload = init;
 // LINK HTML 
 function setHTML(session, anchors, cursors) {
-	let title = session.index === 0 ? "Start" : session.text.split('\n').shift().replaceAll('#', '').trim();
+	let title = "Start";
+	let parser = new DOMParser();
+	if (session.index > 0){
+		let titleObject = marked.parse(session.text.split('\n').shift())
+		console.log(titleObject)
+		let parsed = parser.parseFromString(titleObject, 'text/html')
+		title = parsed.querySelector('h1')?.innerHTML
+		if(title == null) title = parsed.querySelector('h2')?.innerHTML
+		if(title == null) title = parsed.querySelector('h3')?.innerHTML
+		if(title == null) title = parsed.querySelector('h4')?.innerHTML
+		if(title == null) title = parsed.querySelector('h5')?.innerHTML
+		if(title == null) title = ""
+	} 
 	session.hash = title.toLowerCase().replace(/\s+/g, '-'); // Ensure the hash is URL-friendly
 	if (!session.text.includes("<!--skipnav-->")) {
 		let anchorWrapper = document.createElement('p');
