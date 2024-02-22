@@ -43,9 +43,8 @@ async function init() {
 
 			item.domObject = itemHTMLRootElement;
 			item.bounding = item.domObject.getBoundingClientRect();
-			item.height = item.bounding.height * 0.9 + window.innerHeight * 0.1;
+			item.height = item.bounding.height;
 			item.margin = item.index === 0 ? 0 : session.items[item.index - 1].margin + session.items[item.index - 1].height;
-			if (item.index===0 && session.index===0) item.margin = item.height;
 			item.varianz = item.left ? Math.random() * window.innerWidth * 0.1 : Math.random() * -window.innerWidth * 0.1
 			item.x = item.left ? window.innerWidth * 0.05 + item.varianz : window.innerWidth * 0.95 + item.varianz
 
@@ -54,7 +53,7 @@ async function init() {
 		})
 		// ADJUST SESSION HEIGHT, MARGIN AND PADDING
 		session.margin = session.index == 0 ? -session.height/3 : sessions[session.index - 1].margin + sessions[session.index - 1].height - sessions[session.index - 1].padding;
-		session.padding = window.innerHeight * 1.75;
+		session.padding = window.innerHeight * 2;
 		session.height += session.padding;
 
 		// SET POSITION OF ITEMS
