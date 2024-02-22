@@ -4,7 +4,7 @@ let fontSize = 14;
 async function init() {
 	// GET DATA FROM FILE
 	setFontSize();
-	let file = await fetch('README2.md')
+	let file = await fetch('README.md')
 	let raw = await file.text()
 	// SPLIT THE FILE ALONG SESSIONS
 	let sessionsRaw = raw.split("---\n")
