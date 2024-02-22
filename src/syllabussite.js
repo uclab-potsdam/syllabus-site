@@ -4,7 +4,7 @@ let fontSize = 14;
 async function init() {
 	// GET DATA FROM FILE
 	setFontSize();
-	let file = await fetch('README.md')
+	let file = await fetch('README2.md')
 	let raw = await file.text()
 	// SPLIT THE FILE ALONG SESSIONS
 	let sessionsRaw = raw.split("---\n")
@@ -60,7 +60,7 @@ async function init() {
 		session.items.map((item) => {
 			item.y = session.margin + //margin to the top
 				session.padding + //height of the session padding-top
-				item.margin * 1.25 //margin to the top of the session
+				(session.height-(session.padding * 1.25))/session.items.length * item.index //set position via height calculation
 
 			item.domObject.style.top = item.y + "px";
 			item.domObject.style.transform = `translate(${item.varianz}px,0)`
@@ -162,13 +162,18 @@ function loop() {
 }
 function update() {
 	let links = [];
+	let anchorProgress = 1;
+	let anchor = undefined;
 	sessions.map(session => {
 		let sessionProgress = (window.scrollY - session.margin) / session.height;
 		let [cursorPosition, cursorHeight] = updateCursor(session, sessionProgress)
 		if (session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height)) {
-			if (session.anchor != undefined) {
-				session.anchor.classList.add('active');
-			} 
+			if (session.anchor != undefined && Math.abs(sessionProgress) < anchorProgress) {
+					anchorProgress = Math.abs(sessionProgress);
+					if(anchor != undefined) anchor.classList.remove('active');
+					anchor = session.anchor;
+					anchor.classList.add('active');
+			}
 			let anchor1 = [window.innerWidth / 2, cursorPosition + cursorHeight / 2];
 			session.items.map((item) => {
 				let bounding = item.domObject.getBoundingClientRect();
@@ -177,12 +182,9 @@ function update() {
 			});
 			links.push(session.items)
 		}else{
-			if (session.anchor != undefined) {
-				session.anchor.classList.remove('active');
-			}
+			if (session.anchor != undefined) session.anchor.classList.remove('active');
 		}
-
-	})
+	}) 
 	updateLinks(links.flat());
 }
 function updateCursor(session, sessionProgress) {
