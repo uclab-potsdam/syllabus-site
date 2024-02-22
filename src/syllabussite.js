@@ -131,7 +131,6 @@ function setHTML(session, anchors, cursors) {
 	session.cursor = cursor;
 }
 // NAVIGATION
-let scrolled = false
 document.onkeyup = function (e) {
 	if (e.key === "Escape") {
 		if (document.querySelector("#app.overlay")) resetEnlargedImage();
