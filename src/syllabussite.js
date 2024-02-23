@@ -83,7 +83,7 @@ function updateSession(session){
 	session.items.map(item => {
 		updateItem(item,session)
 	})
-	session.margin = session.index == 0 ? -session.height/3 : sessions[session.index - 1].margin + sessions[session.index - 1].height - sessions[session.index - 1].padding * 0.75;
+	session.margin = session.index == 0 ? -session.height/3 : sessions[session.index - 1].margin + sessions[session.index - 1].height - sessions[session.index - 1].padding * 0.6;
 	session.padding = window.innerHeight * 2;
 	session.height += session.padding;
 
