@@ -20,7 +20,6 @@ async function init() {
 		let session = {}
 		session.index = sessionIndex;
 		session.alignment = Math.random() > 0.5 ? true : false;
-		session.height = 0;
 		session.text = sessionContent.shift();
 		session.items = []
 
@@ -31,7 +30,9 @@ async function init() {
 			item.session = session;
 			item.markdown = content;
 			item.left = contentIndex % 2 == 0 ? session.alignment : !session.alignment
-
+			item.varianz = item.left ? Math.random() * window.innerWidth * 0.1 : Math.random() * -window.innerWidth * 0.1
+			item.x = item.left ? window.innerWidth * 0.05 + item.varianz : window.innerWidth * 0.95 + item.varianz
+			// CREATE HTML ELEMENT 
 			let itemHTMLRootElement = document.createElement('div');
 			itemHTMLRootElement.classList.add('fixObjects');
 			itemHTMLRootElement.classList.add(item.left ? 'left' : 'right');
@@ -40,32 +41,13 @@ async function init() {
 			let parsed = marked.parse(content).replace('<img ', '<img loading="lazy" ');;
 			itemHTMLRootElement.innerHTML = parsed;
 			contentHTMLRootElement.appendChild(itemHTMLRootElement);
-
+			// SET PARAMETERS
 			item.domObject = itemHTMLRootElement;
-			item.bounding = item.domObject.getBoundingClientRect();
-			item.height = item.bounding.height;
-			item.margin = item.index === 0 ? 0 : session.items[item.index - 1].margin + session.items[item.index - 1].height;
-			item.varianz = item.left ? Math.random() * window.innerWidth * 0.1 : Math.random() * -window.innerWidth * 0.1
-			item.x = item.left ? window.innerWidth * 0.05 + item.varianz : window.innerWidth * 0.95 + item.varianz
-
-			session.height += item.bounding.height + window.innerHeight * 0.25;
+			updateItem(item,session)
+			// APPEND TO SESSION
 			session.items.push(item);
 		})
-		// ADJUST SESSION HEIGHT, MARGIN AND PADDING
-		session.margin = session.index == 0 ? -session.height/3 : sessions[session.index - 1].margin + sessions[session.index - 1].height - sessions[session.index - 1].padding;
-		session.padding = window.innerHeight * 2;
-		session.height += session.padding;
-
-		// SET POSITION OF ITEMS
-		session.items.map((item) => {
-			item.y = session.margin + //margin to the top
-				session.padding + //height of the session padding-top
-				(session.height-(session.padding * 1.25))/session.items.length * item.index //set position via height calculation
-
-			item.domObject.style.top = item.y + "px";
-			item.domObject.style.transform = `translate(${item.varianz}px,0)`
-		});
-
+		updateSession(session)
 		setHTML(session, anchorsHTMLRootElement, cursorsHTMLRootElement);
 		sessions.push(session);
 	})
@@ -87,6 +69,39 @@ async function init() {
 	}
 	// START THE LOOP
 	loop();
+}
+window.addEventListener('resize', () => {
+	console.log('resize')
+	sessions.map(session => {
+		updateSession(session)
+	})
+	document.querySelector('#wrapper').style.visibility = 'visible';
+	document.querySelector('#app').style.height = sessions[sessions.length - 1].margin + sessions[sessions.length - 1].height + "px";
+})
+function updateSession(session){
+	session.height = 0;
+	session.items.map(item => {
+		updateItem(item,session)
+	})
+	session.margin = session.index == 0 ? -session.height/3 : sessions[session.index - 1].margin + sessions[session.index - 1].height - sessions[session.index - 1].padding * 0.75;
+	session.padding = window.innerHeight * 2;
+	session.height += session.padding;
+
+	session.items.map((item) => {
+		item.y = session.margin + //margin to the top
+			session.padding + //height of the session padding-top
+			item.margin  //margin to the top
+			  //padding-top of the item
+		item.domObject.style.top = item.y + "px";
+		item.domObject.style.transform = `translate(${item.varianz}px,0)`
+	});
+}
+function updateItem(item,session){
+	item.bounding = item.domObject.getBoundingClientRect();
+	item.height = item.bounding.height;
+	item.margin = item.index === 0 ? 0 : session.items[item.index - 1].margin + session.items[item.index - 1].padding + session.items[item.index - 1].height;
+	item.padding = window.innerHeight * 0.25;
+	session.height += item.bounding.height + item.padding;
 }
 window.onload = init;
 // LINK HTML 
