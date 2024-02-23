@@ -71,7 +71,6 @@ async function init() {
 	loop();
 }
 window.addEventListener('resize', () => {
-	console.log('resize')
 	sessions.map(session => {
 		updateSession(session)
 	})
