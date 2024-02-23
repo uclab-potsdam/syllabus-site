@@ -48,7 +48,7 @@ async function init() {
 			item.varianz = item.left ? Math.random() * window.innerWidth * 0.1 : Math.random() * -window.innerWidth * 0.1
 			item.x = item.left ? window.innerWidth * 0.05 + item.varianz : window.innerWidth * 0.95 + item.varianz
 
-			session.height += item.bounding.height + window.innerHeight * 0.5;
+			session.height += item.bounding.height + window.innerHeight * 0.25;
 			session.items.push(item);
 		})
 		// ADJUST SESSION HEIGHT, MARGIN AND PADDING
