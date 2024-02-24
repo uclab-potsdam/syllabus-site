@@ -83,7 +83,7 @@ function updateSession(session){
 		updateItem(item,session)
 	})
 	session.margin = session.index == 0 ? -session.height/3 : sessions[session.index - 1].margin + sessions[session.index - 1].height - sessions[session.index - 1].padding * 0.6;
-	session.padding = window.innerHeight * 2;
+	session.padding = window.outerHeight * 2;
 	session.height += session.padding;
 
 	session.items.map((item) => {
@@ -99,7 +99,7 @@ function updateItem(item,session){
 	item.bounding = item.domObject.getBoundingClientRect();
 	item.height = item.bounding.height;
 	item.margin = item.index === 0 ? 0 : session.items[item.index - 1].margin + session.items[item.index - 1].padding + session.items[item.index - 1].height;
-	item.padding = window.innerHeight * 0.25;
+	item.padding = window.outerHeight * 0.25;
 	session.height += item.bounding.height + item.padding;
 }
 window.onload = init;
@@ -140,7 +140,7 @@ function setHTML(session, anchors, cursors) {
 	cursor.className = 'cursor';
 	cursor.id = 'cursor' + session.index;
 	cursor.innerHTML = marked.parse(session.text);
-	cursor.style.top = window.innerHeight + "px";
+	cursor.style.top = window.outerHeight + "px";
 	cursors.appendChild(cursor);
 	session.cursor = cursor;
 }
@@ -203,8 +203,8 @@ function update() {
 function updateCursor(session, sessionProgress) {
 	let cursorDimensions = session.cursor.getBoundingClientRect();
 	let cursorPosition = session.index === 0
-		? (window.innerHeight / 2) - (sessionProgress * (window.innerHeight / 2)) - (sessionProgress * (cursorDimensions.height * 1.5))
-		: window.innerHeight - (sessionProgress * window.innerHeight) - (sessionProgress * (cursorDimensions.height * 1.5))
+		? (window.outerHeight / 2) - (sessionProgress * (window.outerHeight / 2)) - (sessionProgress * (cursorDimensions.height * 1.5))
+		: window.outerHeight - (sessionProgress * window.outerHeight) - (sessionProgress * (cursorDimensions.height * 1.5))
 	session.cursor.style.top = `${cursorPosition}px`;
 	return [cursorPosition, cursorDimensions.height];
 }
@@ -318,7 +318,7 @@ function enhanceMarkdown() {
 				// Calculate centering
 				const rect = img.getBoundingClientRect();
 				const centerX = (window.innerWidth / 2) - (rect.width / 2);
-				const centerY = (window.innerHeight / 2) - (rect.height / 2);
+				const centerY = (window.outerHeight / 2) - (rect.height / 2);
 
 				const offsetX = centerX - rect.left;
 				const offsetY = centerY - rect.top;
@@ -329,7 +329,7 @@ function enhanceMarkdown() {
 
 				// Calculate the maximum scale factor
 				const maxScaleX = window.innerWidth / rect.width;
-				const maxScaleY = window.innerHeight / rect.height;
+				const maxScaleY = window.outerHeight / rect.height;
 				const maxScaleNatural = Math.min(naturalWidth / rect.width, naturalHeight / rect.height);
 				const scale = Math.min(maxScaleX, maxScaleY, maxScaleNatural);
 
