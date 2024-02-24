@@ -1,5 +1,6 @@
 const sessions = [];
 let fontSize = 14;
+let startTime = Date.now();
 // INITIALIZE THE PAGE
 async function init() {
 	// GET DATA FROM FILE
@@ -38,12 +39,12 @@ async function init() {
 			itemHTMLRootElement.classList.add(item.left ? 'left' : 'right');
 			itemHTMLRootElement.classList.add('content');
 
-			let parsed = marked.parse(content).replace('<img ', '<img loading="lazy" ');;
+			let parsed = marked.parse(content).replace('<img ', '<img loading="lazy" ');
 			itemHTMLRootElement.innerHTML = parsed;
 			contentHTMLRootElement.appendChild(itemHTMLRootElement);
 			// SET PARAMETERS
 			item.domObject = itemHTMLRootElement;
-			updateItem(item,session)
+			updateItem(item, session)
 			// APPEND TO SESSION
 			session.items.push(item);
 		})
@@ -59,30 +60,39 @@ async function init() {
 	// REINIT HASH IF SET
 	if (window.location.hash) {
 		const hash = window.location.hash;
-		setTimeout(() => {
-			const targetElement = document.getElementById(hash.substring(1));
-			targetElement.scrollIntoView({
-				behavior: 'smooth',
-				block: 'start'
-			});
-		}, 100);
+		const targetElement = document.getElementById(hash.substring(1));
+		let mutationObserver = new MutationObserver(() => {
+			let triggerTime = Date.now();
+			if (triggerTime - startTime < 1000){
+				targetElement.scrollIntoView({
+					top: targetElement.style.top,
+					behavior: 'smooth'
+				});
+			}
+		});
+		mutationObserver.observe(targetElement, { attributes: true });
 	}
 	// START THE LOOP
 	loop();
 }
 window.addEventListener('resize', () => {
+	recalculate();
+})
+function recalculate() {
 	sessions.map(session => {
 		updateSession(session)
+		session.cursorAnchor.style.top = (session.index === 0 ? session.margin : session.margin + session.height / 2) + "px"
 	})
 	document.querySelector('#wrapper').style.visibility = 'visible';
 	document.querySelector('#app').style.height = sessions[sessions.length - 1].margin + sessions[sessions.length - 1].height + "px";
-})
-function updateSession(session){
+	update();
+}
+function updateSession(session) {
 	session.height = 0;
 	session.items.map(item => {
-		updateItem(item,session)
+		updateItem(item, session)
 	})
-	session.margin = session.index == 0 ? -session.height/3 : sessions[session.index - 1].margin + sessions[session.index - 1].height - sessions[session.index - 1].padding * 0.6;
+	session.margin = session.index == 0 ? -session.height / 3 : sessions[session.index - 1].margin + sessions[session.index - 1].height - sessions[session.index - 1].padding * 0.6;
 	session.padding = window.outerHeight * 2;
 	session.height += session.padding;
 
@@ -90,12 +100,12 @@ function updateSession(session){
 		item.y = session.margin + //margin to the top
 			session.padding + //height of the session padding-top
 			item.margin  //margin to the top
-			  //padding-top of the item
+		//padding-top of the item
 		item.domObject.style.top = item.y + "px";
 		item.domObject.style.transform = `translate(${item.varianz}px,0)`
 	});
 }
-function updateItem(item,session){
+function updateItem(item, session) {
 	item.bounding = item.domObject.getBoundingClientRect();
 	item.height = item.bounding.height;
 	item.margin = item.index === 0 ? 0 : session.items[item.index - 1].margin + session.items[item.index - 1].padding + session.items[item.index - 1].height;
@@ -107,15 +117,15 @@ window.onload = init;
 function setHTML(session, anchors, cursors) {
 	let title = "Start";
 	let parser = new DOMParser();
-	if (session.index > 0){
+	if (session.index > 0) {
 		let parsed = parser.parseFromString(marked.parse(session.text), 'text/html')
 		title = parsed.querySelector('h1')?.innerHTML
-		if(title == null) title = parsed.querySelector('h2')?.innerHTML
-		if(title == null) title = parsed.querySelector('h3')?.innerHTML
-		if(title == null) title = parsed.querySelector('h4')?.innerHTML
-		if(title == null) title = parsed.querySelector('h5')?.innerHTML
-		if(title == null) title = ""
-	} 
+		if (title == null) title = parsed.querySelector('h2')?.innerHTML
+		if (title == null) title = parsed.querySelector('h3')?.innerHTML
+		if (title == null) title = parsed.querySelector('h4')?.innerHTML
+		if (title == null) title = parsed.querySelector('h5')?.innerHTML
+		if (title == null) title = ""
+	}
 	session.hash = title.toLowerCase().replace(/\s+/g, '-'); // Ensure the hash is URL-friendly
 	if (!session.text.includes("<!--skipnav-->")) {
 		let anchorWrapper = document.createElement('p');
@@ -134,6 +144,7 @@ function setHTML(session, anchors, cursors) {
 	cursorAnchor.className = 'cursor--shadow';
 	cursorAnchor.style.top = (session.index === 0 ? session.margin : session.margin + session.height / 2) + "px"
 	cursors.appendChild(cursorAnchor);
+	session.cursorAnchor = cursorAnchor;
 
 	// SET VISIBLE CURSOR THAT IS DISPLACEABLE
 	let cursor = document.createElement('div');
@@ -182,10 +193,10 @@ function update() {
 		let [cursorPosition, cursorHeight] = updateCursor(session, sessionProgress)
 		if (session.margin <= window.scrollY && window.scrollY <= (session.margin + session.height)) {
 			if (session.anchor != undefined && Math.abs(sessionProgress) < anchorProgress) {
-					anchorProgress = Math.abs(sessionProgress);
-					if(anchor != undefined) anchor.classList.remove('active');
-					anchor = session.anchor;
-					anchor.classList.add('active');
+				anchorProgress = Math.abs(sessionProgress);
+				if (anchor != undefined) anchor.classList.remove('active');
+				anchor = session.anchor;
+				anchor.classList.add('active');
 			}
 			let anchor1 = [window.innerWidth / 2, cursorPosition + cursorHeight / 2];
 			session.items.map((item) => {
@@ -194,10 +205,10 @@ function update() {
 				item.linePath = [...anchor1, ...anchor4];
 			});
 			links.push(session.items)
-		}else{
+		} else {
 			if (session.anchor != undefined) session.anchor.classList.remove('active');
 		}
-	}) 
+	})
 	updateLinks(links.flat());
 }
 function updateCursor(session, sessionProgress) {
@@ -296,7 +307,7 @@ function enhanceMarkdown() {
 	document.querySelectorAll('img').forEach(img => {
 		img.onload = function () {
 			if (!this.style.height) this.style.height = 'auto';
-			update();
+			recalculate();
 		};
 	});
 	document.querySelectorAll('a').forEach(link => {
