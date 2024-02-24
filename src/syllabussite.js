@@ -1,6 +1,9 @@
 const sessions = [];
 let fontSize = 14;
 let startTime = Date.now();
+let lastScrollY = 0;
+let lastHeight = window.outerHeight;
+let lastWidth = window.outerWidth;
 // INITIALIZE THE PAGE
 async function init() {
 	// GET DATA FROM FILE
@@ -61,23 +64,25 @@ async function init() {
 	if (window.location.hash) {
 		const hash = window.location.hash;
 		const targetElement = document.getElementById(hash.substring(1));
-		let mutationObserver = new MutationObserver(() => {
-			let triggerTime = Date.now();
-			if (triggerTime - startTime < 1000){
-				targetElement.scrollIntoView({
-					top: targetElement.style.top,
-					behavior: 'smooth'
-				});
-			}
-		});
-		mutationObserver.observe(targetElement, { attributes: true });
+		
+		if (targetElement != null) {
+			let mutationObserver = new MutationObserver(() => {
+				let triggerTime = Date.now();
+				if (triggerTime - startTime < 1000){
+					targetElement.scrollIntoView({
+						top: targetElement.style.top,
+						behavior: 'smooth'
+					});
+				}
+			});
+			mutationObserver.observe(targetElement, { attributes: true });
+		}
 	}
+	recalculate();
 	// START THE LOOP
 	loop();
 }
-window.addEventListener('resize', () => {
-	recalculate();
-})
+
 function recalculate() {
 	sessions.map(session => {
 		updateSession(session)
@@ -100,7 +105,6 @@ function updateSession(session) {
 		item.y = session.margin + //margin to the top
 			session.padding + //height of the session padding-top
 			item.margin  //margin to the top
-		//padding-top of the item
 		item.domObject.style.top = item.y + "px";
 		item.domObject.style.transform = `translate(${item.varianz}px,0)`
 	});
@@ -109,7 +113,7 @@ function updateItem(item, session) {
 	item.bounding = item.domObject.getBoundingClientRect();
 	item.height = item.bounding.height;
 	item.margin = item.index === 0 ? 0 : session.items[item.index - 1].margin + session.items[item.index - 1].padding + session.items[item.index - 1].height;
-	item.padding = window.outerHeight * 0.25;
+	item.padding = window.outerHeight * 0.2;
 	session.height += item.bounding.height + item.padding;
 }
 window.onload = init;
@@ -181,7 +185,8 @@ window.onhashchange = () => {
 }
 // UPDATE VIEW
 function loop() {
-	update();
+	if (lastScrollY!=window.scrollY) update();
+	lastScrollY=window.scrollY;	
 	requestAnimationFrame(loop);
 }
 function update() {
@@ -307,7 +312,6 @@ function enhanceMarkdown() {
 	document.querySelectorAll('img').forEach(img => {
 		img.onload = function () {
 			if (!this.style.height) this.style.height = 'auto';
-			recalculate();
 		};
 	});
 	document.querySelectorAll('a').forEach(link => {
@@ -364,4 +368,14 @@ function setFontSize() {
 	fontSize = 7 + .7 * vw + .3 * vh;
 	document.querySelector("body").style.fontSize = fontSize + "px";
 }
-window.onresize = setFontSize;
+
+function resized() {
+	if (lastHeight != window.outerHeight || lastWidth != window.outerWidth) {
+		setFontSize();
+		recalculate();
+	}
+	lastHeight = window.outerHeight;
+	lastWidth = window.outerWidth;
+}
+
+window.onresize = resized;
