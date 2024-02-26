@@ -333,7 +333,7 @@ function enhanceMarkdown() {
 				// Calculate centering
 				const rect = img.getBoundingClientRect();
 				const centerX = (window.innerWidth / 2) - (rect.width / 2);
-				const centerY = (window.outerHeight / 2) - (rect.height / 2);
+				const centerY = (window.innerHeight / 2) - (rect.height / 2);
 
 				const offsetX = centerX - rect.left;
 				const offsetY = centerY - rect.top;
@@ -344,7 +344,7 @@ function enhanceMarkdown() {
 
 				// Calculate the maximum scale factor
 				const maxScaleX = window.innerWidth / rect.width;
-				const maxScaleY = window.outerHeight / rect.height;
+				const maxScaleY = window.innerHeight / rect.height;
 				const maxScaleNatural = Math.min(naturalWidth / rect.width, naturalHeight / rect.height);
 				const scale = Math.min(maxScaleX, maxScaleY, maxScaleNatural);
 
