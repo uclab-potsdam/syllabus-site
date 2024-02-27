@@ -150,4 +150,4 @@ To exclude a section from the navigation menu, include `<!--skipnav-->` at the s
 [<img src='img/fhp.svg' style='height:2.25em'>](https://www.fh-potsdam.de/) 
 [<img src='img/id.svg' style='height:1.75em'>](https://interface.fh-potsdam.de/) 
 
-[Contact](mailto:marian.doerk@fh-potsdam.de,philipp.proff@gmx.de?subject=Syllabus%20Site) · [Imprint](https://www.fh-potsdam.de/impressum) · [Source](https://github.com/uclab-potsdam/syllabus-site/)
+[Contact](mailto:marian.doerk@fh-potsdam.de,philipp.proff@gmx.de?subject=Syllabus%20Site) · [Imprint](https://www.fh-potsdam.de/impressum) · *This is a [Syllabus Site](https://infovis.fh-potsdam.de/syllabus-site/)*
