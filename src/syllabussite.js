@@ -219,8 +219,8 @@ function update() {
 function updateCursor(session, sessionProgress) {
 	let cursorDimensions = session.cursor.getBoundingClientRect();
 	let cursorPosition = session.index === 0
-		? (window.outerHeight / 2) - (sessionProgress * (window.outerHeight / 2)) - (sessionProgress * (cursorDimensions.height * 1.5))
-		: window.outerHeight - (sessionProgress * window.outerHeight) - (sessionProgress * (cursorDimensions.height * 1.5))
+		? (window.outerHeight * 0.25) - (sessionProgress * (window.outerHeight * 0.25)) - (sessionProgress * (cursorDimensions.height))
+		: window.outerHeight - (sessionProgress * window.outerHeight) - (sessionProgress * (cursorDimensions.height))
 	session.cursor.style.top = `${cursorPosition}px`;
 	return [cursorPosition, cursorDimensions.height];
 }
