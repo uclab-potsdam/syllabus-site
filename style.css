@@ -1,0 +1,600 @@
+/* Global styles*/
+
+@font-face {
+    font-family: hkgrotesk;
+    src: url("./fonts/hkgrotesk-bold.woff") format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: hkgrotesk;
+    src: url("./fonts/hkgrotesk-regular.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: hkgrotesk;
+    src: url("./fonts/hkgrotesk-italic.woff") format("woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: hkgrotesk;
+    src: url("./fonts/hkgrotesk-bolditalic.woff") format("woff");
+    font-style: italic;          
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: "Avenir Next", sans-serif; 
+    src: url("./fonts/AvenirNext-Regular.ttf") format("ttf");
+    font-weight: normal;          
+}
+
+
+@font-face {
+    font-family: "Avenir Next", sans-serif; 
+    src: url("./fonts/AvenirNext-Bold.ttf") format("ttf");
+    font-weight: bold;          
+}
+
+
+@font-face {
+    font-family: "Avenir Next", sans-serif; 
+    src: url("./fonts/AvenirNext-Italic.ttf") format("ttf");
+    font-style: italic;          
+}
+
+
+@font-face {
+    font-family: "Avenir Next", sans-serif; 
+    src: url("./fonts/AvenirNext-BoldItalic.ttf") format("ttf");
+    font-style: italic;          
+    font-weight: bold;     
+}
+
+
+@font-face {
+    font-family: "Avenir Next", sans-serif; 
+    src: url("./fonts/AvenirNext-UltraLightItalic.ttf") format("ttf");
+    font-style: italic;          
+    font-weight: light;     
+}
+
+
+@font-face {
+    font-family: "Avenir Next", sans-serif; 
+    src: url("./fonts/AvenirNext-UltraLight.ttf") format("ttf");
+    font-weight: light;     
+}
+
+
+.allerta-stencil-regular {
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .saira-stencil-one-regular {
+    font-family: "Saira Stencil One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .big-shoulders-stencil-text-regular {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: regular;
+  }
+
+
+.josefin-slab-regular {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.josefin-slab-regular {
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+  }
+  
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Josefin Slab", serif;
+    hyphens: auto;
+	touch-action: pan-x pan-y;
+    --background-menu: hsla(0, 0%, 100%, .8);
+    --background: color-mix(in srgb, var(--theme-color) 15%, hsla(0, 0%, 90%, 1));
+    --background-cursor: color-mix(in srgb, var(--theme-color) 10%, hsla(0, 0%, 95%, .9));
+    --background-content: color-mix(in srgb, var(--theme-color) 5%, #ece9e2);
+    --font: #000;
+    --font-inverted: #fff;
+    --link: #171717; 
+    --hover: #fff; 
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--background);
+    color: var(--font);
+    background-image: url('img/Hintergrund.png') !important; 
+
+}
+
+@media (prefers-color-scheme: dark) {
+    body, body.overlay{
+        --background-menu: #AA4847;
+        --background: color-mix(in srgb, var(--theme-color) 0%,#eae6dc);
+        --background-cursor: color-mix(in srgb, var(--theme-color) 0%,  #f1efe6dd);
+        --background-content: color-mix(in srgb, var(--theme-color) 0%,  #F4F3ED);
+        --font: #171717;
+        --font-inverted: #ffffff;
+        background-image: url('img/Hintergrund.png') !important; 
+
+    }
+    footer img {
+        filter: invert(0%);
+    }
+}
+
+*::selection {
+    color: var(--font-inverted);
+    background-color: var(--theme-color);
+    opacity: 1;
+}
+
+.content, .content *, canvas, .cursor {
+	transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+
+#app.overlay .content, #app.overlay canvas, #app.overlay .cursor {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.content > figure > img {
+    transition: transform 0.5s ease;
+    cursor: zoom-in; 
+}
+
+.content > a > img {
+    cursor: pointer; 
+}
+
+.content > figure > img.noresize {
+    cursor: unset;
+}
+
+#app.overlay .content.enlarged, #app.overlay .content.enlarged a {
+    opacity: 1;
+    color: var(--background);
+    background-color: var(--background);
+}
+
+#app.overlay .enlarged img {
+    z-index: 1000; 
+	pointer-events: auto;
+	cursor: zoom-out;
+}
+
+p,li {
+    margin: 0;
+    font-size: 1em;
+}
+
+li {
+    margin-bottom: 0.25em;
+}
+
+div.hasImg {
+    background: none;
+    max-width: 25em;
+    text-align: center;
+    padding: 0;
+}
+
+div.hasImg p {
+    margin-top: 0;
+}
+
+div.hasImg img {    
+    margin: auto;
+    padding: 0;
+}
+
+div.hasImg span {
+    background-color: var(--background);    
+}
+
+h1 {
+    margin: .25em 0;
+    font-size: 2.5em;
+    color: #AA4847;
+    text-align: center;
+    font-family: "Saira Stencil One", sans-serif;
+    text-transform: uppercase;
+
+
+}
+h2 {
+    margin: .25em 0;
+    font-size: 2.2em;
+    color: #AA4847;
+    text-align: center;
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+
+}
+h3 {
+    margin: .5em 0;
+    font-size: 2em;    
+    font-family: "Avenir Next", sans-serif; 
+    color: #aa494700;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(17, 17, 17);
+    letter-spacing: 3px;
+
+  
+}
+ul {
+    padding: 0 0 0 1em;
+    list-style-type: none;
+    margin: 0.5em 0 0.5em 0;
+}
+ul li::before {
+    content: '·';
+    color: var(--font);
+    margin-right: .55em;
+    margin-left: -.9em;
+}
+blockquote {
+    font-style: italic;
+    margin-inline-start: 1.25em;
+    margin-inline-end: 1.25em;
+    padding: 0;
+}
+p {
+    margin: .5em 0 ;
+    text-align: justify;
+}
+
+ /* Specific styles */
+
+ .verzeichnis {
+    margin: 0% 4% 7%;
+
+    
+}
+
+.verzeichnis li {
+    font-size: 11px; 
+    font-family: Avenir Next;
+}
+
+#bildnachweise ol {
+    list-style: none; 
+    counter-reset: num; 
+    padding: 0;
+    margin: 20px;
+
+}
+
+
+#bildnachweise ol li {
+    counter-increment: num; 
+}
+
+#bildnachweise ol li::before { 
+    content: "Abb." counter(num) ": "; 
+    font-weight: bold;
+} 
+
+
+.verzeichnis h3 {
+    font-size: 22px; 
+    -webkit-text-stroke-width: 1px;
+    color: #EAE6DC;
+
+    
+}
+
+#wrapper {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+.cursor, .cursor--shadow {
+    max-width: 25em;
+    background-color: var(--background-cursor);
+    padding: 1em 1.5em;
+    pointer-events: all;
+    z-index: 1;
+    will-change: top;
+   /* border-radius: 1em;*/
+    border-style: solid;
+    border-width: 0.75px;
+    border-color: #ffffff;
+    /*border-color: #7d6b5ecc;*/
+}
+.cursor{
+    position: fixed;
+    visibility: visible;
+    font-weight: 500;
+}
+.cursor--shadow {
+    position: absolute;
+    visibility:  hidden;
+}
+#cursor0, #cursor0_clone { max-width: 30em;}
+.cursor:has(h1) { max-width: 30em;}
+#links {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    z-index: -2;
+    transform: translate3d(0, 0, 0);
+}
+#content {
+    width: 100%;
+    position: relative;
+    pointer-events: all;
+    
+}
+.content {
+    position: absolute;
+    padding: 0.25em .75em;
+    max-width: 25em;
+    background-color: #AA4847;
+    color: #ffffff;
+    z-index:2;
+    /*border-radius: .5em;*/
+    font-size: 0.75em;
+    font-family: "Avenir Next", sans-serif; 
+    font-weight: light;
+
+
+}
+
+.content figure {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.content img, .cursor img {
+    max-width: 100%;
+    height: 25em;
+    max-height: 25em;
+    object-fit: contain;
+}
+
+a {
+    text-decoration:underline;
+    line-height: 0.1em;
+    color: var(--link);
+}
+a:hover {
+    color: var(--hover);
+}
+.anchor a[href^="#"], .anchor a[href^="#"]:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+a[href^="#"] {
+    text-decoration: none;
+    border-bottom: .075em dashed var(--link);
+}
+a[href^="#"]:hover {
+    text-decoration: none;
+    border-bottom: .075em dashed var(--hover);
+}
+
+.left{
+    left: 5vw;
+}
+.right{
+    right: 5vw;
+}
+#menu{
+    z-index: 0;
+    position: fixed;
+    text-align: left;
+    pointer-events: all;
+    font-size: 1em;    
+}
+#menu.active {
+    z-index: 5;
+}
+#anchors{
+    position: relative;
+    left: -100%;
+    transition: all 0.3s ease-in-out;
+    padding: 3em 0.75em 0.75em 0.75em;
+}
+
+#anchors a {
+    cursor: pointer !important;
+}
+
+#anchors p {
+    margin: 0;
+    padding: 0.2em;
+    font-size: 1em;
+    color: var(--font);
+}
+#anchors p:hover, #burger:hover{
+    cursor: pointer;
+}
+#menu.active #anchors {
+   left: 0%;
+   background-color: var(--background-menu);
+}
+#anchors .active a {
+    font-weight: bold;
+    color: var(--font) !important;
+}
+footer{
+    display:flex;
+    justify-content: space-between;    
+    padding: 2em 2em 1em 2em;
+    font-size: 1em;
+    margin-top: 100vh;
+    background-color: var(--background);
+    color: var(--font);
+}
+footer img {
+    vertical-align: top;
+    margin-right: 1.5em;
+    opacity: .75;
+}
+
+footer a:hover img, footer a:active img {
+    opacity: 1;
+}
+#cursors{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: unset;
+    display: flex;
+    justify-content: center;
+}
+.cursor{
+    scroll-behavior: unset;
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    body {
+        font-size: 15px !important;
+    }
+    h1 { font-size: 1.75em; }
+
+    .content, figure {
+        max-width: 20em !important;
+    }
+
+    .content img, #cursor img {
+        max-width: 17.5em;
+        max-height: 17.5em;
+        height: 17.5em;
+    }
+
+    .cursor{
+        max-width: 85%;
+        left: unset;
+        transform: unset;
+        margin: auto;
+    }
+
+    .cursor:has(h1){
+        max-width: 85%;
+        left: unset;
+        transform: unset;
+        margin: auto;        
+    }
+    #menu{
+        right: 0;
+        text-align: right;
+        font-size: 1.5em;
+    }
+    #anchors {
+        left: unset;
+        right: -100%;
+    }
+    #anchors p {
+        margin: 0;
+        padding: 0.2em;
+        font-size: .9em;
+    }
+    #menu.active #anchors{
+        left: unset;
+        right: 0;
+    }
+
+    footer {
+        display:unset;
+        justify-content: center;
+        margin: auto;
+    }
+
+    footer p {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 1em 0 0 0;
+    }
+    footer p a:last-child img {
+        margin-right: 0;
+    }
+}
+
+/* BURGER */
+
+.hamburger-icon {
+    pointer-events: all;
+    position: fixed;
+    height: 3em;
+    width: 3.5em;
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+   }
+   
+.icon-1, .icon-2, .icon-3 {
+  position: absolute;
+  left: .8em;
+  top: 1.5em;
+  width: 1.75em;
+  height: .1em;
+  background-color: var(--font);
+  transition: all 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.icon-1 {
+  transform: translateY(-8px);
+  animation-delay: 100ms;
+}
+
+.icon-3 {
+  transform: translateY(8px);
+  animation-delay: 250ms;
+}
+.icon-1.a {
+  transform: rotate(40deg);
+}
+
+.icon-3.b {
+  transform: rotate(-40deg);
+}
+
+.icon-2.c {
+  opacity: 0;
+}
+.clear {
+  clear: both;
+}
+@media screen and (orientation: portrait) and (max-width: 767px) {
+    .hamburger-icon{
+        left: unset;
+        right: 1%;
+    }
+}
